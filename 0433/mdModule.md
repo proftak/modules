@@ -156,7 +156,7 @@ A fork is a spinoff, but it is not a clone. A clone is, by default, independent 
 
 For this discussion, it is helpful to introduce the concept of a "branch." Every repository starts with a `main` branch. A branch is a sequence of tracked revisions. The addition of a file is a revision, the editing of a file is a revision, etc. `Fust` publishes only the `main` branch of a repository.
 
-A fork is, as the name implies, a split-off point of a branch. Let us name a forked branch "T" from the `main` branch. After the fork, branch "T" can track its own sequence of revisions, independent to the revisions to the `main` branch. This mechanism is helpful in several use cases:
+A fork is, as the name implies, a split-off point of a branch. Let us name a forked branch "T" from the `main` branch. After the fork, branch "T" can track its own sequence of revisions, independent of the revisions to the `main` branch. This mechanism is helpful in several use cases:
 
 * A major revision that takes a significant amount of time. During the revision, the `main` branch remains to be the one published. This way, learners do not get affected by the partial updates that may render a document unsuitable for publication.
 * A learner may fork a repository for interleaving notes in the source material. This is, in a way, equivalent to making a photocopy of an entire book to mark up the photocopy without affecting what other learners see in the published version.
