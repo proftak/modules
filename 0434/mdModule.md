@@ -59,6 +59,8 @@ Addressing modes in the instruction mnemonics:
 
 The use of parentheses is neither optional nor arbitrary. A pair of parentheses should be used only in an "indirect" operand. The value of an indirect operand is the location or RAM pointed to by a specific register. Only the second operand of `ld` and the first operand of `st` are indirect operands.
 
+Because the only way to dereference is to use the `ld` and `st` instructions, and each one uses one 8-bit register for the indirect address mode, a pointer in TTP is 8-bit wide.
+
 # the `byte` directive
 
 The `byte` directive is used to reserve and initialize the value of a byte:
