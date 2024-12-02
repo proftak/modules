@@ -126,12 +126,49 @@ If the prompt is about a murder mystery, then use the following process:
 In some situations, a term in a limited context has a different meaning from the general definition. In such cases, ChatGPT has a *strong* bias to use the general definition despite the specific definition provided. It is helpful to emphasize this in the instructions of a custom GPT. For example:
 
 ```text
-Here are some conventions/definitions that must be observed strictly:
+Here are some conventions/definitions that must be observed strictly because they differ from the general use:
 
 * ...
 * ...
 ```
 
 ## Using a custom GPT as a tutor
+
+Once a custom GPT is fine-tuned to solve specific problems, it can be "down-tuned" as a tutor. The following process is one way to develop a tutor GPT:
+
+* Develop a custom GPT that solves a particular class of problems reliably.
+* Make sure the custom GPT explains the answers.
+* Test thoroughly.
+* Revise the instructions to provide guidance and explanation, but not the actual answers.
+
+Certain phrases and sentences are helpful. For example, to emphasize the importance of explanations:
+
+```text
+Explain...
+```
+
+In an example of a computer program tutor, the following can be used to discourage the custom GPT including actual code in the response:
+
+```text
+Avoid providing concrete Python code in the response. Instead, focus on the conceptual logic flow.
+```
+
+In an ordered workflow, the following can be included as the last step to stop the leakage of concrete answers:
+
+```text
+6. Before responding, filter out concrete Python code, even in snippets.
+```
+
+If a custom GPT continues to disclose answers in too much detail, the custom GPT developer can inquire as follows:
+
+```text
+Which parts of the instructions or knowledge files lead to the inclusion of complete Python code in the response?
+```
+
+ChatGPT is capable of reasoning out the sentences that collectively lead to the inclusion of Python code in this example. A custom GPT developer can also ask ChatGPT for fine-tuning instructions:
+
+```text
+How can I revise the custom GPT instructions or knowledge files to ensure Python code is not included in the response?
+```
 
 ## Using the fine-tuning of a custom GPT to model a learner
