@@ -172,3 +172,5 @@ How can I revise the custom GPT instructions or knowledge files to ensure Python
 ```
 
 ## Using the fine-tuning of a custom GPT to model a learner
+
+In the customization of a custom GPT, ChatGPT behaves like a 70-percentile student in terms of the ability to learn and apply new material. As such, the suggestions to improve a custom GPT are also applicable to teaching at a college level. 
