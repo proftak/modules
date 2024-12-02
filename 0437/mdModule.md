@@ -1,5 +1,5 @@
 ---
-title: "Module 0437: Implementation structures in TTPASM
+title: "Module 0437: Implementation structures in TTPASM"
 ---
 
 # _{{ page.title }}_
@@ -126,4 +126,155 @@ main:
   ld  b,(d)
   inc d
   jmp b
+```
+
+## Initialization of a "free list"
+
+The following C program illustrates how to initialize a linked list of free nodes, where one node points to the next one. All the nodes are allocated as an array of structures as a global variable.
+
+```c
+#include <stdint.h>
+
+struct Node {
+  uint8_t value;
+  struct Node *next;
+};
+
+#define NUMNODES 5
+
+struct Node nodes[NUMNODES];
+
+struct Node *freePtr;
+
+void initNodes() {
+  struct Node *ptr;
+  uint8_t count;
+
+  ptr = nodes;
+  count = NUMNODES-1;
+  while (count)
+  {
+    ptr = (ptr->next = (ptr+1));
+    count = count - 1;
+  }
+  ptr->next = 0;
+  freePtr = &nodes[0];
+}
+
+int main()
+{
+  initNodes();
+  return 0;
+}
+```
+
+The following is the equivalent program implemented in TTPASM. Note that TTPASM does not have an easy way to "allocate a block of bytes" for the `nodes` array.
+
+```ttpasm
+  nop
+  ldi  d,0
+  ldi  a,. 6 +
+  dec  d
+  st   (d),a
+  jmpi main
+  halt
+
+Node_value: 0
+Node_next: Node_value 1 +
+Node_size: Node_next 1 +
+
+NUMNODES: 5
+
+nodes:
+  byte 0  // nodes[0].value
+  byte 0  // nodes[0].next
+  byte 0  // nodes[1].value
+  byte 0  // nodes[1].next
+  byte 0
+  byte 0
+  byte 0
+  byte 0
+  byte 0
+  byte 0
+
+freePtr:
+  byte 0
+
+initNodes:
+  initNodes_ptr: 0
+  initNodes_count: initNodes_ptr 1 +
+  initNodes_lvs: initNodes_count 1 +
+
+  ldi  b,initNodes_lvs
+  sub  d,b
+
+  ldi  a,nodes
+  ldi  b,initNodes_ptr
+  add  b,d
+  st   (b),a
+
+  ldi  a,NUMNODES 1 -
+  ldi  b,initNodes_count
+  add  b,d
+  st   (b),a
+
+  initNodes_while0_begin:
+    ldi  a,initNodes_count
+    add  a,d
+    ld   a,(a)
+    and  a,a
+    jzi  initNodes_while0_end
+
+      ldi   a,initNodes_ptr
+      add   a,d
+      ld    b,(a)
+//      cpr   c,b
+//      inc   c
+//      inc   c 
+      ldi   c,Node_size
+      add   c,b 
+      ldi   a,Node_next
+      add   a,b
+      st    (a),c
+      ldi   a,initNodes_ptr
+      add   a,d
+      st    (a),c
+
+      ldi   a,initNodes_count
+      add   a,d
+      ld    b,(a)
+      dec   b
+      st    (a),b
+
+    jmpi initNodes_while0_begin
+  initNodes_while0_end:
+
+  ldi  a,initNodes_ptr
+  add  a,d
+  ld   a,(a)
+  ldi  b,Node_next
+  add  a,b
+  ldi  b,0
+  st   (a),b
+
+  ldi  a,nodes
+  ldi  b,freePtr
+  st   (b),a
+
+  ldi  b,initNodes_lvs
+  add  d,b
+
+  ld   b,(d)
+  inc  d
+  jmp  b
+
+main:
+  ldi  a,. 6 +
+  dec  d
+  st   (d),a
+  jmpi initNodes
+
+  ld   b,(d)
+  inc  d
+  jmp  b
 ```
