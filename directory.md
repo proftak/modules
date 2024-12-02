@@ -60,3 +60,4 @@
 * [Module 0434: TTP programming](./0434/mdModule.md)
 * [Module 0435: Custom GPT instructions](./0435/mdModule.md)
 * [Module 0436: Custom GPT as an educational tool](./0436/mdModule.md)
+* [Module 0437: Implementation structures in TTPASM](./0437/mdModule.md)
