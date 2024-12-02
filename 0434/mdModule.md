@@ -59,11 +59,15 @@ Addressing modes in the instruction mnemonics:
 
 The use of parentheses is neither optional nor arbitrary. A pair of parentheses should be used only in an "indirect" operand. The value of an indirect operand is the location or RAM pointed to by a specific register. Only the second operand of `ld` and the first operand of `st` are indirect operands.
 
+# the `byte` directive
+
 The `byte` directive is used to reserve and initialize the value of a byte:
 
 ```
 byte 65 // allocate a byte and initialize it to 65
 ```
+
+The general syntax of the `byte` directive is the word `byte`, followed by exactly one postfix expression that computes the value of the byte being allocated.
 
 Comments start with two slashes. The following is an example of commenting an instruction:
 
