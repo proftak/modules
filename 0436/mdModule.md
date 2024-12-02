@@ -123,3 +123,15 @@ If the prompt is about a murder mystery, then use the following process:
 
 ### Emphasize less common conventions or knowledge
 
+In some situations, a term in a limited context has a different meaning from the general definition. In such cases, ChatGPT has a *strong* bias to use the general definition despite the specific definition provided. It is helpful to emphasize this in the instructions of a custom GPT. For example:
+
+```text
+Here are some conventions/definitions that must be observed strictly:
+
+* ...
+* ...
+```
+
+## Using a custom GPT as a tutor
+
+## Using the fine-tuning of a custom GPT to model a learner
