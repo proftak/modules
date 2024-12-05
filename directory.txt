@@ -61,3 +61,4 @@
 ./0435/mdModule.md:title: "Module 0435: Custom GPT instructions"
 ./0436/mdModule.md:title: "Module 0436: Custom GPT as an educational tool"
 ./0437/mdModule.md:title: "Module 0437: Implementation structures in TTPASM"
+./0438/mdModule.md:title: "Module 0438: CIS sections offering and full-time schedule sign up (proposed)"
