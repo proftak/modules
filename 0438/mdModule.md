@@ -66,6 +66,40 @@ If there are additional factors that are neglected, please help update this docu
 
 Trying to step into a colleague's shoes helps to expand one's perspective on this matter. Having an open-minded face-to-face discussion is even better!
 
+### Proposed scheduling process
+
+#### Individual preference
+
+In order to facilitate better communication and potential collaboration, each full-time faculty member has the option to provide an individual preference list that captures the following information:
+
+* Courses that this individual prefers to teach, for each course, fill in the following:
+  * Preference level so that all listed courses are totally ordered. (0 is the highest priority)
+  * An optional description/comment.
+  * Will this individual make this course open to "strictly by rotating priority" scheduling?
+    * If yes, will this individual share the course material with other faculty members?
+    * If no, will this individual entertain negotiations for someone else to teach this course?
+
+ As an example, (this is *just* an example!):
+
+---
+* CISP 310
+  * Priority: 0
+  * Comment: I have developed a custom processor and the associated tools to teach this course.
+  * Open to rotating priority?
+    * Yes
+      * Willing to share existing course material?
+        * Yes
+* CISP 440
+  * Priority: 1
+  * Comment: This is a fun class to teach, I enjoy teaching the theoretical and math side of computer science.
+  * Open to rotating priority?
+    * No
+      * Willing to entertain negotiation?
+        * Yes
+---
+
+
+
 ### Priority determination
 
 According to the LRCFT contract, the dean of a division has the right of assignment. As such, this section only applies to the prioritization of *requests*.
