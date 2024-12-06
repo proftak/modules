@@ -4,9 +4,65 @@ title: "Module 0438: CIS sections offering and full-time schedule sign up (propo
 
 # _{{ page.title }}_
 
+## What does the union have to say?
+
+The LRCFT contract does not specify how scheduling should be done!
+
 ## Section offering
 
+There are a few factors that determine how sections of courses are offered (without consideration of modality and actual schedule):
+
+* Program needs. For every program in the catalog, a student should be able to complete it in 2 years (4 semesters). Course offerings must at least enable the completion of any program in two years.
+* Published program pathways. It is beneficial to match actual course offerings to match published program pathways.
+
+In terms of modality and schedule (days of week and time slot), there are many additional factors to consider:
+
+* Student population: students who work during the day as opposed to full-time students who do not work full-time.
+* Specific classroom/lab requirements.
+* Prerequisite/corequisite requirements. Courses along a prerequisite chain can potentially be scheduled at the slot (days-of-week and time slot).
+* Competition from sister colleges.
+* Subject matter complexity.
+
+To a certain extent, the scheduling of sections can be adjusted to meet the time constraints of faculty members. 
+
 ## Section request/assignment
+
+### Criteria
+
+There are some key criteria from the assignment (who teaches what) perspective:
+
+* Experience and effectiveness from the perspective of students.
+* Cross-training back-up instructors.
+* Workload due to new preps.
+* Instructor personal time constraints: pick-up and drop-off of children, etc.
+
+### The politics
+
+Fully disclosing and examining the politics of section assignments is healthy, practical, and necessary in this discussion. 
+
+* Senior colleagues (long-timer):
+  * Closer to retirement, do not want to invest energy into new preps because of the limited reuse of the preps.
+  * May have invested a good amount of energy to perfect how to teach certain courses.
+  * Used to the by-seniority method.
+  * Have endured the experience of the by-seniority method as junior colleagues for years, finally getting to "reap the benefits" of being a senior member of the department.
+* Midway colleagues:
+  * Have started to invest energy and effort to specialize in certain courses.
+  * May have older children, but still need time to transport children to/from school.
+  * May benefit from having back-up instructors and use the release time to develop new courses or attend conferences and training.
+  * Still enduring the experience of the by-seniority method, but starting to reap some of the benefits of this method.
+* Junior colleagues:
+  * May have younger children and the needs associated with parents of younger children.
+  * Many courses are new preps that require energy and effort.
+  * May be experimenting with different ways to teach courses.
+  * Experience the full effect of the by-seniority method.
+
+If there are additional factors that are neglected, please help update this document so that this section is more complete.
+
+*Assuming* that the main factors are accounted for, some questions may help each colleague evaluate the proposed method. There is no right or wrong answer because value is individual.
+
+* If the by-seniority method was considered unfair when one was junior, then is it fair to perpetuate the same method to the current junior colleagues?
+  * In other words, is the meaning of fairness relative to one's seniority instead of absolute, regardless of one's current seniority status?
+* 
 
 ### Priority determination
 
