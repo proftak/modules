@@ -74,6 +74,9 @@ In order to facilitate better communication and potential collaboration, each fu
 
 * Courses that this individual prefers to teach, for each course, fill in the following:
   * Preference level so that all listed courses are totally ordered. (0 is the highest priority)
+  * Modality and schedule:
+    * online (specify synchronous or asynchronous), in-person, or hybrid
+    * if it is not fully online and asynchronous, time slots
   * An optional description/comment.
   * Will this individual make this course open to "strictly by rotating priority" scheduling?
     * If yes, will this individual share the course material with other faculty members?
@@ -84,6 +87,7 @@ In order to facilitate better communication and potential collaboration, each fu
 ---
 * CISP 310
   * Priority: 0
+  * Modality and schedule: no restrictions
   * Comment: I have developed a custom processor and the associated tools to teach this course.
   * Open to rotating priority?
     * Yes
@@ -91,6 +95,7 @@ In order to facilitate better communication and potential collaboration, each fu
         * Yes
 * CISP 440
   * Priority: 1
+  * Modality and schedule: In person, Spring, MW 3pm to 4:30pm
   * Comment: This is a fun class to teach, I enjoy teaching the theoretical and math side of computer science.
   * Open to rotating priority?
     * No
@@ -98,11 +103,35 @@ In order to facilitate better communication and potential collaboration, each fu
         * Yes
 ---
 
+There is no limit of how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.
 
+These lists will be compiled and published to the whole department. The purpose of these lists is make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
-### Priority determination
+There is a *possibility* that the initial lists may have conflicts where at least two faculty members list the same course, and all do not open the course to rotating priority. In this situation, the preferred method is to have the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
 
-According to the LRCFT contract, the dean of a division has the right of assignment. As such, this section only applies to the prioritization of *requests*.
+The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list.
+
+#### Course list
+
+From the individual preferences, a course list is prepared to show the following for each course:
+
+* Course code
+  * Whose individual preference list(s) do(es) this course code appear on?
+  * Is this course open to rotating priority?
+    * If no, and it appears on more than one individual preference list, how is scheduling arranged?
+
+The following is an example:
+
+---
+* CISP 440
+  * Tak and Kahkashan
+  * No
+    * Tak teaches in Spring semesters, Kahkashan in Fall semesters
+---
+
+The purpose of the course list is to facilitate an automated method to schedule classes, taking rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
+
+#### Rotating priority determination
 
 A somewhat random and fair way to change priority per semester is to serialize all possible permutations, then use a large prime number to step through the generated results. This can be done using a script like the following:
 
@@ -146,15 +175,15 @@ The output of this script is as follows:
 5,1,4,7,8,0,9,3,2,6
 ```
 
-Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this list is enough for about 6 years because there are three chances to sign up for classes per academic year.
+Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this list is enough for about 6 years because there are three chances to sign up for classes per academic year (Fall, Spring and Summer).
 
 ### Request iterations
 
-For the Fall and Spring semesters, each semester has 3 iterations of requesting sections.
+For the Fall and Spring semesters, each semester has 3 iterations of requesting sections after courses that are closed to rotating priority are assigned based on the individual preference lists and the course list.
 
-In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. 
+In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member has at least 0.5 FTE of sections that are closed to rotating priority does not participate in this iteration.
 
-In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE.
+In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member has at least 1 FTE of sections that are closed to rotating priority does not participate in this iteration.
 
 The **third** iteration is for overload. Faculty members are offered an opportunity in the same priority assignment to request overload FTEs. Combining the first, second, and third iterations, the total FTE requested cannot exceed 1.4 FTE.
 
