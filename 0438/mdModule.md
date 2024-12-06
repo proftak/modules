@@ -62,7 +62,9 @@ If there are additional factors that are neglected, please help update this docu
 
 * If the by-seniority method was considered unfair when one was junior, then is it fair to perpetuate the same method to the current junior colleagues?
   * In other words, is the meaning of fairness relative to one's seniority instead of absolute, regardless of one's current seniority status?
-* 
+* Junior colleagues will, one day, become senior members of the department. Will what is fair to a junior member continue to be fair as the junior member gains seniority?
+
+Trying to step into a colleague's shoes helps to expand one's perspective on this matter.
 
 ### Priority determination
 
