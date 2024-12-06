@@ -177,13 +177,13 @@ The output of this script is as follows:
 
 Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this list is enough for about 6 years because there are three chances to sign up for classes per academic year (Fall, Spring and Summer).
 
-### Request iterations
+#### Request iterations
 
 For the Fall and Spring semesters, each semester has 3 iterations of requesting sections after courses that are closed to rotating priority are assigned based on the individual preference lists and the course list.
 
-In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member has at least 0.5 FTE of sections that are closed to rotating priority does not participate in this iteration.
+In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member who has at least 0.5 FTE of load that are closed to rotating priority does not participate in this iteration.
 
-In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member has at least 1 FTE of sections that are closed to rotating priority does not participate in this iteration.
+In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member who has at least 1 FTE of load that are closed to rotating priority does not participate in this iteration.
 
 The **third** iteration is for overload. Faculty members are offered an opportunity in the same priority assignment to request overload FTEs. Combining the first, second, and third iterations, the total FTE requested cannot exceed 1.4 FTE.
 
