@@ -103,7 +103,7 @@ In order to facilitate better communication and potential collaboration, each fu
         * Yes
 ---
 
-There is no limit of how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.
+There is no limit to how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.
 
 These lists will be compiled and published to the whole department. The purpose of these lists is make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
