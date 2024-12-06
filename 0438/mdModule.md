@@ -101,6 +101,7 @@ In order to facilitate better communication and potential collaboration, each fu
     * No
       * Willing to entertain negotiation?
         * Yes
+
 ---
 
 There is no limit to how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.
@@ -127,6 +128,7 @@ The following is an example:
   * Tak and Kahkashan
   * No
     * Tak teaches in Spring semesters, Kahkashan in Fall semesters
+
 ---
 
 The purpose of the course list is to facilitate an automated method to schedule classes, taking rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
