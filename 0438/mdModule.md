@@ -104,17 +104,17 @@ In order to facilitate better communication and potential collaboration, each fu
 
 ---
 
-There is no limit to how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.
+There is no limit to how many courses can be on this list, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses. In the case that a course is on one single individual preference, the individual must be responsible for the maintenance and updates of the curriculum.
 
-These lists will be compiled and published to the whole department. The purpose of these lists is make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
+These lists will be compiled and published to the whole department. The purpose of these lists is to make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
-There is a *possibility* that the initial lists may have conflicts where at least two faculty members list the same course, and all do not open the course to rotating priority. In this situation, the preferred method is to have the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
+There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. In this situation, the preferred method is to have the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
 
-The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list.
+The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list. 
 
-#### Course list
+#### Course preference list
 
-From the individual preferences, a course list is prepared to show the following for each course:
+From the individual preferences, a course preference list is prepared to show the following for each course:
 
 * Course code
   * Whose individual preference list(s) do(es) this course code appear on?
@@ -131,7 +131,7 @@ The following is an example:
 
 ---
 
-The purpose of the course list is to facilitate an automated method to schedule classes, taking rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
+The purpose of the course preference list is to facilitate an automated method to schedule classes, taking rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
 
 #### Rotating priority determination
 
