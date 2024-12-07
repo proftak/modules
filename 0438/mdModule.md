@@ -6,7 +6,7 @@ title: "Module 0438: CIS sections offering and full-time schedule sign up (propo
 
 ## What does the union have to say?
 
-The LRCFT contract does not specify how scheduling should be done!
+The LRCFT contract does not specify how scheduling should be done! The contract does specify that the dean of a division has the right of assignment. 
 
 ## Section offering
 
