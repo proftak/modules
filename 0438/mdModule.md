@@ -152,7 +152,7 @@ The following is an example:
 
 The purpose of the course preference list is to facilitate an automated method to schedule classes, taking individual preferences and rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
 
-#### Rotating priority algorithem
+#### Rotating priority algorithm
 
 A somewhat random and fair way to change priority per semester is to serialize all possible permutations, then use a large prime number to step through the generated results. This can be done using a script like the following:
 
