@@ -71,7 +71,7 @@ Trying to step into a colleague's shoes helps to expand one's perspective on thi
 Terms:
 
 * Rotating priority: this is a mechanism in which each faculty member is assigned a priority (0 means the highest) each semester to determine the order of section (course offering) request. The algorithm is described [later](#rotating-priority-algorithm).
-* Individual preference (list): each faculty member can specify their preferences for each course. More details on this [later](individual-preference).
+* Individual preference (list): each faculty member can specify their preferences for each course. More details on this [later](#individual-preference).
 * Course preference list: a list of all the courses in which each item is the summary of the individual preferences of all faculty members for that course.
 
 The following proposed process is flexible. The process includes a rotating priority mechanism for courses by default. The rotating priority ensures an *opportunity* for members to request teaching assignments.
