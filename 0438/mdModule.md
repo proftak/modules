@@ -68,11 +68,19 @@ Trying to step into a colleague's shoes helps to expand one's perspective on thi
 
 ### Proposed scheduling process
 
+Terms:
+
+* Rotating priority: this is a mechanism in which each faculty member is assigned a priority (0 means the highest) each semester to determine the order of section (course offering) request. The algorithm is described [later](#rotating-priority-algorithm).
+* Individual preference (list): each faculty member can specify their preferences for each course. More details on this [later](individual-preference).
+* Course preference list: a list of all the courses in which each item is the summary of the individual preferences of all faculty members for that course.
+
 The following proposed process is flexible. The process includes a rotating priority mechanism for courses by default. The rotating priority ensures an *opportunity* for members to request teaching assignments.
 
-However, the proposed process also provides a mechanism for members to close a course from rotating priority. A course that is closed to rotating priority cannot be requested by members who are not on a mutually agreed list. This simply means the course cannot be requested strictly based on the rotating priorities. Members can negotiate on a per semester basis and trade teaching assignments.
+However, the proposed process also includes a mechanism for members to close a course from rotating priority. The scope of the closure is variable. Modality and scheduling details can be added. These additional constraints must be added if the course has multiple offerings in each semester.
 
-This process also includes a third option. A course can be on the preference list of at least one member, but it is not closed to rotating priorities. This announces that the course is preferred by at least one member, but otherwise is available to the rotating priorities process for others to request it *without* negotiation. Before requesting a course, it is collegial to contact those who express a preference, but still open the course to rotating priorities.
+A course (or specific sections there of) that is (are) closed to rotating priority cannot be requested by members who are not on a mutually agreed list. This simply means the course cannot be requested strictly based on the rotating priorities. Members can negotiate on a per semester basis and trade teaching assignments.
+
+This process also offers a third option. A course can be on the individual preference list of at least one member, but it is not closed to rotating priorities. This announces that the course is preferred by at least one member, but otherwise is available to the rotating priorities process for others to request it *without* negotiation. Before requesting a course, it is collegial to contact those who express a preference, but still open the course to rotating priorities.
 
 #### Individual preference
 
@@ -86,7 +94,8 @@ In order to facilitate better communication and potential collaboration, each fu
   * An optional description/comment.
   * Will this individual make this course open to "strictly by rotating priority" scheduling?
     * If yes, will this individual share the course material with other faculty members?
-    * If no, will this individual entertain negotiations for someone else to teach this course?
+    * If no, 
+      * Will this individual entertain negotiations for someone else to teach this course? Answering yes here does not imply an agreement, just a willingness to discuss and negotiate 
 
  As an example, (this is *just* an example!):
 
@@ -94,7 +103,7 @@ In order to facilitate better communication and potential collaboration, each fu
 * CISP 310
   * Priority: 0
   * Modality and schedule: no restrictions
-  * Comment: I have developed a custom processor and the associated tools to teach this course.
+  * Comment: I have developed a custom processor and the associated tools to teach this course. This took years of continual refinement and addition of features.
   * Open to rotating priority?
     * Yes
       * Willing to share existing course material?
@@ -110,11 +119,15 @@ In order to facilitate better communication and potential collaboration, each fu
 
 ---
 
-There is no limit to how many courses can be on this individual preference, but the listed courses should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses. In the case that a course is on one single individual preference, the individual must be responsible for the maintenance and updates of the curriculum.
+There is no limit to how many courses can be on this individual preference, but the listed courses (and sections there of) should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses. 
+
+In the case that a course is on one single individual preference, the individual must be responsible for the maintenance and updates of the curriculum.
 
 These lists will be compiled and published to the whole department. The purpose of these lists is to make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
-There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. In this situation, the *preferred* method is for the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
+There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. Note that a conflict involves overlapping modality and possibly scheduling constraints. If there is no such overlap, then there is no conflict to resolve.
+
+In this situation, the *preferred* method is for the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
 
 The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list. 
 
@@ -139,7 +152,7 @@ The following is an example:
 
 The purpose of the course preference list is to facilitate an automated method to schedule classes, taking individual preferences and rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
 
-#### Rotating priority determination
+#### Rotating priority algorithem
 
 A somewhat random and fair way to change priority per semester is to serialize all possible permutations, then use a large prime number to step through the generated results. This can be done using a script like the following:
 
