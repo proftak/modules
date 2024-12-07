@@ -119,7 +119,9 @@ In order to facilitate better communication and potential collaboration, each fu
 
 ---
 
-There is no limit to how many courses can be on this individual preference, but the listed courses (and sections there of) should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses. 
+There is no limit to how many courses can be on this individual preference, but the listed courses (and sections there of) should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.  
+
+"Regularly" in this context means a high percentage of teaching a section whenever the course is offered. In the case of a new faculty member (on tenure track), "regularly" may not be applicable, the qualification can then be based on what courses the individual was hired to teach.
 
 In the case that a course is on one single individual preference, the individual must be responsible for the maintenance and updates of the curriculum.
 
