@@ -68,6 +68,12 @@ Trying to step into a colleague's shoes helps to expand one's perspective on thi
 
 ### Proposed scheduling process
 
+The following proposed process is flexible. The process includes a rotating priority mechanism for courses by default. The rotating priority ensures an *opportunity* for members to request teaching assignments.
+
+However, the proposed process also provides a mechanism for members to close a course from rotating priority. A course that is closed to rotating priority cannot be requested by members who are not on a mutually agreed list. This simply means the course cannot be requested strictly based on the rotating priorities. Members can negotiate on a per semester basis and trade teaching assignments.
+
+This process also includes a third option. A course can be on the preference list of at least one member, but it is not closed to rotating priorities. This announces that the course is preferred by at least one member, but otherwise is available to the rotating priorities process for others to request it *without* negotiation. Before requesting a course, it is collegial to contact those who express a preference, but still open the course to rotating priorities.
+
 #### Individual preference
 
 In order to facilitate better communication and potential collaboration, each full-time faculty member has the option to provide an individual preference list that captures the following information:
@@ -108,7 +114,7 @@ There is no limit to how many courses can be on this list, but the listed course
 
 These lists will be compiled and published to the whole department. The purpose of these lists is to make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
-There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. In this situation, the preferred method is to have the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
+There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. In this situation, the *preferred* method is for the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
 
 The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list. 
 
@@ -127,11 +133,11 @@ The following is an example:
 * CISP 440
   * Tak and Kahkashan
   * No
-    * Tak teaches in Spring semesters, Kahkashan in Fall semesters
+    * Tak teaches in Spring semesters, Kahkashan in Fall semesters, mutually agreed upon
 
 ---
 
-The purpose of the course preference list is to facilitate an automated method to schedule classes, taking rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
+The purpose of the course preference list is to facilitate an automated method to schedule classes, taking individual preferences and rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
 
 #### Rotating priority determination
 
@@ -177,15 +183,18 @@ The output of this script is as follows:
 5,1,4,7,8,0,9,3,2,6
 ```
 
-Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this list is enough for about 6 years because there are three chances to sign up for classes per academic year (Fall, Spring and Summer).
+Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this quoted list is enough for about 6 years because there are three chances to sign up for classes per academic year (Fall, Spring and Summer). The complete list has 10 factorial permutations, and the use of a large prime number ensures a fair rotation of all permutations.
 
 #### Request iterations
 
 For the Fall and Spring semesters, each semester has 3 iterations of requesting sections after courses that are closed to rotating priority are assigned based on the individual preference lists and the course list.
 
+First, courses that are closed to rotating priority are assigned according to the individual preferences and the course preference list. Exceptions can be made on a per semester basis. A process may be used to confirm the preferences and allow per semester alterations.
+
 In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member who has at least 0.5 FTE of load that are closed to rotating priority does not participate in this iteration.
 
 In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member who has at least 1 FTE of load that are closed to rotating priority does not participate in this iteration.
 
-The **third** iteration is for overload. Faculty members are offered an opportunity in the same priority assignment to request overload FTEs. Combining the first, second, and third iterations, the total FTE requested cannot exceed 1.4 FTE.
+The **third** iteration is for overload. Faculty members are offered an opportunity in the same priority assignment to request overload FTEs. Combining the first, second, and third iterations, the total FTE requested cannot exceed 1.4 FTE. 
 
+In each iteration, timing is crucial. As soon as an individual submits priority-based requests, the schedule is open to the person with the immediately lower priority. The system times out and move on to the next person if no requests is made within the allotted amount of time.
