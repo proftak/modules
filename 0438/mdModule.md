@@ -17,7 +17,7 @@ There are a few factors that determine how sections of courses are offered (with
 
 In terms of modality and schedule (days of week and time slot), there are many additional factors to consider:
 
-* Student population: students who work during the day as opposed to full-time students who do not work full-time.
+* Student population: students who work during the day instead of full-time students who do not work full-time.
 * Specific classroom/lab requirements.
 * Prerequisite/corequisite requirements. Courses along a prerequisite chain can potentially be scheduled at the slot (days-of-week and time slot).
 * Competition from sister colleges.
@@ -40,12 +40,13 @@ There are some key criteria from the assignment (who teaches what) perspective:
 
 Fully disclosing and examining the politics of section assignments is healthy, practical, and necessary in this discussion. 
 
-* Senior colleagues (long-timer):
-  * Closer to retirement, do not want to invest energy into new preps because of the limited reuse of the preps.
-  * May have invested a good amount of energy to perfect how to teach certain courses.
+* Senior colleagues (long-timers):
+  * Closer to retirement, may not want to invest energy into new preps because of the limited reuse value of the preps.
+  * May have invested years, even decades of energy to perfect how to teach certain courses.
+    * By extension, may be the most effective instructors to teach certain courses.
   * Used to the by-seniority method.
-  * Have endured the experience of the by-seniority method as junior colleagues for years, finally getting to "reap the benefits" of being a senior member of the department.
-* Midway colleagues:
+    * Have endured the experience of the by-seniority method as junior colleagues for years, finally getting to "reap the benefits" of being a senior member of the department.
+* Mid-journey colleagues:
   * Have started to invest energy and effort to specialize in certain courses.
   * May have older children, but still need time to transport children to/from school.
   * May benefit from having back-up instructors and use the release time to develop new courses or attend conferences and training.
@@ -63,6 +64,7 @@ If there are additional factors that are neglected, please help update this docu
 * If the by-seniority method was considered unfair when one was junior, then is it fair to perpetuate the same method to the current junior colleagues?
   * In other words, is the meaning of fairness relative to one's seniority instead of absolute, regardless of one's current seniority status?
 * Junior colleagues will, one day, become senior members of the department. Will what is fair to a junior member continue to be fair as the junior member gains seniority?
+* As the more senior faculty members retire, what is the plan to transition specialized courses to newer faculty members?
 
 Trying to step into a colleague's shoes helps to expand one's perspective on this matter. Having an open-minded face-to-face discussion is even better!
 
@@ -70,25 +72,25 @@ Trying to step into a colleague's shoes helps to expand one's perspective on thi
 
 Terms:
 
-* Rotating priority: this is a mechanism in which each faculty member is assigned a priority (0 means the highest) each semester to determine the order of section (course offering) request. The algorithm is described [later](#rotating-priority-algorithm).
+* Rotating priority: this is a mechanism in which each faculty member is assigned a priority (0 means the highest) each semester to determine the order of section (course offering) requests. The algorithm is described [later](#rotating-priority-algorithm).
 * Individual preference (list): each faculty member can specify their preferences for each course. More details on this [later](#individual-preference).
 * Course preference list: a list of all the courses in which each item is the summary of the individual preferences of all faculty members for that course.
 
-The following proposed process is flexible. The process includes a rotating priority mechanism for courses by default. The rotating priority ensures an *opportunity* for members to request teaching assignments.
+The following proposed process is flexible. The process includes a rotating priority mechanism for courses by default. The rotating priority ensures an *opportunity* for every member to request teaching assignments.
 
-However, the proposed process also includes a mechanism for members to close a course from rotating priority. The scope of the closure is variable. Modality and scheduling details can be added. These additional constraints must be added if the course has multiple offerings in each semester.
+However, the proposed process also includes a mechanism for members to close a course from rotating priority. The scope of the closure is variable. Modality and scheduling details add specificality. These additional constraints must be added if the course has multiple offerings in each semester.
 
-A course (or specific sections there of) that is (are) closed to rotating priority cannot be requested by members who are not on a mutually agreed list. This simply means the course cannot be requested strictly based on the rotating priorities. Members can negotiate on a per semester basis and trade teaching assignments.
+A course (or specific sections thereof) that is (are) closed to rotating priority cannot be requested by members who are not on a mutually agreed list. This simply means the course cannot be requested strictly based on the rotating priorities. Members can negotiate on a per-semester basis and trade teaching assignments.
 
 This process also offers a third option. A course can be on the individual preference list of at least one member, but it is not closed to rotating priorities. This announces that the course is preferred by at least one member, but otherwise is available to the rotating priorities process for others to request it *without* negotiation. Before requesting a course, it is collegial to contact those who express a preference, but still open the course to rotating priorities.
 
 #### Individual preference
 
-In order to facilitate better communication and potential collaboration, each full-time faculty member has the option to provide an individual preference list that captures the following information:
+To facilitate better communication and potential collaboration, each full-time faculty member has the option to provide an individual preference list that captures the following information:
 
 * Courses that this individual prefers to teach, for each course, fill in the following:
-  * Preference level so that all listed courses are totally ordered. (0 is the highest priority)
-  * Modality and schedule:
+  * Preference level so that all listed courses are ordered. (0 is the highest priority)
+  * Modality and schedule (optional for specifically):
     * online (specify synchronous or asynchronous), in-person, or hybrid
     * if it is not fully online and asynchronous, time slots
   * An optional description/comment.
@@ -119,9 +121,9 @@ In order to facilitate better communication and potential collaboration, each fu
 
 ---
 
-There is no limit to how many courses can be on this individual preference, but the listed courses (and sections there of) should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.  
+There is no limit to how many courses can be on this individual preference, but the listed courses (and sections thereof) should be *regularly* taught by the individual, and the individual must be willing to help update the curriculum of the listed courses.  
 
-"Regularly" in this context means a high percentage of teaching a section whenever the course is offered. In the case of a new faculty member (on tenure track), "regularly" may not be applicable, the qualification can then be based on what courses the individual was hired to teach.
+"Regularly" in this context means a high percentage of teaching a course/section whenever the course is offered. In the case of a new faculty member (on tenure track), "regularly" may not be applicable, the qualification can then be based on what courses the individual was hired to teach.
 
 In the case that a course is on one single individual preference, the individual must be responsible for the maintenance and updates of the curriculum.
 
@@ -204,12 +206,12 @@ Each faculty member can be assigned a particular position in a list, and each li
 
 For the Fall and Spring semesters, each semester has 3 iterations of requesting sections after courses that are closed to rotating priority are assigned based on the individual preference lists and the course list.
 
-First, courses that are closed to rotating priority are assigned according to the individual preferences and the course preference list. Exceptions can be made on a per semester basis. A process may be used to confirm the preferences and allow per semester alterations.
+First, courses that are closed to rotating priority are assigned according to the individual preferences and the course preference list. Exceptions can be made on a per-semester basis. A process may be used to confirm the preferences and allow per-semester alterations.
 
-In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member who has at least 0.5 FTE of load that are closed to rotating priority does not participate in this iteration.
+In the **first** iteration, the priority determines the order in which each faculty member can sign up for up to 0.5 FTE. This means the total FTE request in this iteration cannot exceed an entire section beyond 0.5 FTE. A faculty member who has at least 0.5 FTE of load that is closed to rotating priority does not participate in this iteration.
 
-In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member who has at least 1 FTE of load that are closed to rotating priority does not participate in this iteration.
+In the **second** iteration, the same priority determines the order in which each faculty member can sign up for up to 1.0 FTE. Again, this means the total FTE request of the first and the second iterations combined cannot exceed an entire section beyond 1.0 FTE. A faculty member who has at least 1 FTE of load that is closed to rotating priority does not participate in this iteration.
 
 The **third** iteration is for overload. Faculty members are offered an opportunity in the same priority assignment to request overload FTEs. Combining the first, second, and third iterations, the total FTE requested cannot exceed 1.4 FTE. 
 
-In each iteration, timing is crucial. As soon as an individual submits priority-based requests, the schedule is open to the person with the immediately lower priority. The system times out and move on to the next person if no requests is made within the allotted amount of time.
+In each iteration, timing is crucial. As soon as an individual submits priority-based requests, the schedule is open to the person with the immediately lower priority. The system times out and moves on to the next person if no requests are made within the allotted amount of time.
