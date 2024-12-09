@@ -66,7 +66,7 @@ If there are additional factors that are neglected, please help update this docu
 * Junior colleagues will, one day, become senior members of the department. Will what is fair to a junior member continue to be fair as the junior member gains seniority?
 * As the more senior faculty members retire, what is the plan to transition specialized courses to newer faculty members?
 * If a faculty member cannot teach a course due to unforeseeable events, what is the backup plan?
-  * It is prudent from the perspective of being able to offer specialized courses like CISP 310 each semester. However, as a specialized course, it can be challenging as a new prep without the "old hand" providing support.
+  * It is prudent to have at least two faculty members who are ready to teach a course from the perspective of being able to offer specialized courses like CISP 310 each semester. However, as a specialized course, it can be challenging as a new prep without the "old hand" providing support.
 
 Trying to step into a colleague's shoes helps to expand one's perspective on this matter. Having an open-minded face-to-face discussion is even better!
 
