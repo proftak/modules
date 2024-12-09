@@ -65,6 +65,8 @@ If there are additional factors that are neglected, please help update this docu
   * In other words, is the meaning of fairness relative to one's seniority instead of absolute, regardless of one's current seniority status?
 * Junior colleagues will, one day, become senior members of the department. Will what is fair to a junior member continue to be fair as the junior member gains seniority?
 * As the more senior faculty members retire, what is the plan to transition specialized courses to newer faculty members?
+* If a faculty member cannot teach a course, what is the backup plan?
+  * It is prudent from the perspective of being able to offer specialized courses like CISP 310 each semester. However, as a specialized course, it can be challenging as a new prep without the "old hand" providing support.
 
 Trying to step into a colleague's shoes helps to expand one's perspective on this matter. Having an open-minded face-to-face discussion is even better!
 
@@ -105,7 +107,7 @@ To facilitate better communication and potential collaboration, each full-time f
 * CISP 310
   * Priority: 0
   * Modality and schedule: no restrictions
-  * Comment: I have developed a custom processor and the associated tools to teach this course. This took years of continual refinement and addition of features.
+  * Comment: I have developed a custom processor and the associated tools to teach this course. This took years of continual refinement and the addition of features.
   * Open to rotating priority?
     * Yes
       * Willing to share existing course material?
@@ -129,9 +131,9 @@ In the case that a course is on one single individual preference, the individual
 
 These lists will be compiled and published to the whole department. The purpose of these lists is to make it clear to all colleagues the preferences of each individual. Courses that do not appear on anyone's list are, by default, open to rotating priority.
 
-There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. Note that a conflict involves overlapping modality and possibly scheduling constraints. If there is no such overlap, then there is no conflict to resolve.
+There is a *possibility* that the initial individual preference lists may have conflicts where at least two faculty members list the same course, and at least one does not open the course to rotating priority. Note that a conflict involves overlapping modalities and possibly scheduling constraints. If there is no such overlap, then there is no conflict to resolve.
 
-In this situation, the *preferred* method is for the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. In the event that the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
+In this situation, the *preferred* method is for the affected faculty members to work it out. The course may be shared by the individuals with an alternating schedule while remaining closed to rotating priority. If the individuals cannot come to a resolution, then the dean is the only person with the authority to determine the scheduling of the course.
 
 The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list. 
 
@@ -158,7 +160,7 @@ The purpose of the course preference list is to facilitate an automated method t
 
 #### Rotating priority algorithm
 
-A somewhat random and fair way to change priority per semester is to serialize all possible permutations, then use a large prime number to step through the generated results. This can be done using a script like the following:
+A somewhat random and fair way to change priority per semester is to serialize all possible permutations, and then use a large prime number to step through the generated results. This can be done using a script like the following:
 
 ```javascript
 "use strict";
