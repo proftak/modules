@@ -51,7 +51,7 @@ First, we need to know what each symbol represents. As with most definitions, th
 
 The explanations of the symbols are as follows:
 
-> Here $\alpha$ and $\beta$ are complex numbers such that, $|\alpha|^2+|\beta|^2 = 1$.
+> Here $\alpha$ and $\beta$ are complex numbers such that, $\|\alpha\|^2+\|\beta\|^2 = 1$.
 
 
 Fortunately, I vaguely remember what a complex number is. A quick search finds that a complex number has two components, one coefficient for a real component, and one coefficient for the imaginary component. In other words, if $x$ is a complex number, it can be expressed as $x=x_r + x_i i$ where $i$ is the imaginary number of $\sqrt{-1}$.
@@ -140,15 +140,15 @@ This is not so much that a reader should not trust the author, but rather use ev
 
 </div>
 
-I also *question* the claim that $|\alpha|^2$ is a "probability". A probability is a value between 0 and 1 (inclusively), and it cannot be a complex number. The first hurdle is "how to compute the absolute value of a complex number"? Recall that a complex number has two components, a real component, and an imaginary component. 
+I also *question* the claim that $\|\alpha\|^2$ is a "probability". A probability is a value between 0 and 1 (inclusively), and it cannot be a complex number. The first hurdle is "how to compute the absolute value of a complex number"? Recall that a complex number has two components, a real component, and an imaginary component. 
 
 To crystalize this question, what is $\|\alpha_r + \alpha_i i\|$?
 
-Instead of guessing it, I am looking this up. After reading a few articles on the absolute value of a complex number, the definition is as follows: $|x_r + x_i i|=\sqrt{x_r^2 + x_i^2}$. And a pictorial picture of how $x_r$ and $x_i$ are seen as coordinates of a point on a circle centered at $(0,0)$, and the absolute value is the radius of the circle.
+Instead of guessing it, I am looking this up. After reading a few articles on the absolute value of a complex number, the definition is as follows: $\|x_r + x_i i\|=\sqrt{x_r^2 + x_i^2}$. And a pictorial picture of how $x_r$ and $x_i$ are seen as coordinates of a point on a circle centered at $(0,0)$, and the absolute value is the radius of the circle.
 
 Does this make sense? A real number can be seen as a complex number with a zero for the imaginary component. Ah, this method (radius of a circle) of interpreting absolute value works out for real numbers as special cases of complex numbers. Because the coefficients $x_r$ and $x_i$ of a complex number $x$ are both real numbers, the square root of their squares must be a real number, as well.
 
-Plugging this understanding of "the absolute value of a complex number" in our qubit discussion, $|\alpha|^2 = {\sqrt{\alpha_r^2 + \alpha_i^2}}^2 = \alpha_r^2+\alpha_i^2$. This is, indeed, a real number and it can serve as a probability. The same argument applies to $|\beta|^2$. The earlier constraint that $|\alpha|^2+|\beta|^2 = 1$ restricts both terms to a range of 0 to 1, further qualifying each term as being suitable as a probability.
+Plugging this understanding of "the absolute value of a complex number" in our qubit discussion, $\|\alpha\|^2 = {\sqrt{\alpha_r^2 + \alpha_i^2}}^2 = \alpha_r^2+\alpha_i^2$. This is, indeed, a real number and it can serve as a probability. The same argument applies to $\|\beta\|^2$. The earlier constraint that $\|\alpha\|^2+\|\beta\|^2 = 1$ restricts both terms to a range of 0 to 1, further qualifying each term as being suitable as a probability.
 
 This section concludes with the following sentence:
 
@@ -269,7 +269,7 @@ In the last part of this section, a simplification notation is introduced so tha
 
 Understanding the definitions (and lots of them) is one aspect of understanding concepts, but making connections between the concept is another. In other words, if formal definitions are pine needles, it is important to step back and look at the general shape of the tree once in a while.
 
-It helps to compare the concepts being learned to concepts that I am already familiar with. A bit has two states, 0 or 1. A qubit, on the other hand, has an infinite number of states because the state of a qubit, $\ket{phi}$ is described by the complex coefficients of two basis vectors, $\ket{0}$ and $\ket{1}$. Due to the constraints placed on the coefficients (scalars) $\ket{\phi}=\alpha \ket{0} + \beta \ket{1}, |\alpha|^2+|\beta|^2=1$, $\alpha$ and $\beta$ are not independent variables if one is known the other one can be derived. For all practical purposes, if we are only examining one qubit, $\alpha$ (the scalar of $\ket{0}$) is sufficient to describe its state.
+It helps to compare the concepts being learned to concepts that I am already familiar with. A bit has two states, 0 or 1. A qubit, on the other hand, has an infinite number of states because the state of a qubit, $\ket{phi}$ is described by the complex coefficients of two basis vectors, $\ket{0}$ and $\ket{1}$. Due to the constraints placed on the coefficients (scalars) $\ket{\phi}=\alpha \ket{0} + \beta \ket{1}, \|\alpha\|^2+\|\beta\|^2=1$, $\alpha$ and $\beta$ are not independent variables if one is known the other one can be derived. For all practical purposes, if we are only examining one qubit, $\alpha$ (the scalar of $\ket{0}$) is sufficient to describe its state.
 
 However, $\alpha$ is not a binary digit. $\alpha$ is a complex number, and it can be seen as a real number two-tuple. As such, unless extra constraints are placed on $\alpha$, $\alpha$ alone can encode "more information" than a single binary digit. Think of a qubit as the hand of a clock, it is "continuous" 
 
@@ -283,7 +283,7 @@ In this definition, each individual basis vector set is $B=(\ket{0}, \ket{1})$, 
 
 Then something caught my eye:
 
-> But it is possible for three qubits to be in a state that cannot be written as the tensor product of three single qubit states. An example of such a state is, $\ket{\psi} = \frac{1}{\sqrt{2}}(|\ket{000}+\ket{111})$.
+> But it is possible for three qubits to be in a state that cannot be written as the tensor product of three single qubit states. An example of such a state is, $\ket{\psi} = \frac{1}{\sqrt{2}}(\|\ket{000}+\ket{111})$.
 
 <div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
@@ -388,37 +388,37 @@ Right here, I have some questions in my mind. Exactly what is an inner product? 
 
 The next significant sentence is as follows:
 
-> The overlap between these two states is denoted in the ket notation as $\braket{\psi|\phi} = \gamma^* \alpha + \delta^* \beta$ ($\ket{\phi}=\alpha \ket{0} + \beta\ket{1}, \ket{\psi}=\gamma \ket{0}+ \delta \ket{1}$) where $^*$ denotes the complex conjugate.
+> The overlap between these two states is denoted in the ket notation as $\braket{\psi\|\phi} = \gamma^* \alpha + \delta^* \beta$ ($\ket{\phi}=\alpha \ket{0} + \beta\ket{1}, \ket{\psi}=\gamma \ket{0}+ \delta \ket{1}$) where $^*$ denotes the complex conjugate.
 
 The concept that was not explicitly explained here is "complex conjugate." [Wikipedia](https://en.wikipedia.org/wiki/Complex_conjugate) uses a different notation (of overbar), but states that the conjugate of $a+bi$ is $a-bi$. [Wolfram MathWorld](https://mathworld.wolfram.com/ComplexConjugate.html) also confirms this and that both $\bar{z}$ and $z^*$ can be used to represent the conjugate of a complex number $z$.
 
 Note that looking up the definition of "complex conjugate" and confirming the notation is important before continuing with the article. This is because although "conjugate" *is* an English word meaning "different form", there are many ways to think of a "different form" for a complex number. Furthermore, if one source mentions $\bar{z}$ means the conjugate of $z$, it is important to confirm that $z^*$ also represents the conjugate of $z$ to eliminate any potential misunderstanding.
 
-But wait, we are not quite ready to move on, yet. This is because $\braket{\psi | \phi}=\gamma^* \alpha + \delta^* \beta$ is not a definition, but the consequence of the notation representing the *inner product* of $\psi$ and $\phi$. At this point, it is crucial to look up the definition of inner product.
+But wait, we are not quite ready to move on, yet. This is because $\braket{\psi \| \phi}=\gamma^* \alpha + \delta^* \beta$ is not a definition, but the consequence of the notation representing the *inner product* of $\psi$ and $\phi$. At this point, it is crucial to look up the definition of inner product.
 
-[Wikipedia](https://en.wikipedia.org/wiki/Inner_product_space#Complex_coordinate_space) defines the inner product on a complex space as $\braket{x,y}=y^\dagger \mathbf{M}x$, where $\mathbf{M}$ is any Hermitian positive-definite matrix. The first question is whether $\braket{x,y} = \braket{x|y}$ as an alternative notation. The second question is "what is a Hermitian positive-definite matrix?"
+[Wikipedia](https://en.wikipedia.org/wiki/Inner_product_space#Complex_coordinate_space) defines the inner product on a complex space as $\braket{x,y}=y^\dagger \mathbf{M}x$, where $\mathbf{M}$ is any Hermitian positive-definite matrix. The first question is whether $\braket{x,y} = \braket{x\|y}$ as an alternative notation. The second question is "what is a Hermitian positive-definite matrix?"
 
-The answer to the first question turns out not to be trivial. [A PDF from Clark University](https://mathcs.clarku.edu/~ma130/inner2.pdf) defines $\braket{v|w} = \sum_{k=1}^{n}v_k\bar{w_k}$ where $v=(v_1,\dots v_n)$ and $w=(w_1, \dots w_n)$. 
+The answer to the first question turns out not to be trivial. [A PDF from Clark University](https://mathcs.clarku.edu/~ma130/inner2.pdf) defines $\braket{v\|w} = \sum_{k=1}^{n}v_k\bar{w_k}$ where $v=(v_1,\dots v_n)$ and $w=(w_1, \dots w_n)$. 
 
-This means that $\braket{x,y}$ is related to $\braket{x|y}$, but they are not the same. [Looking up Hermitian matrix](https://en.wikipedia.org/wiki/Hermitian_matrix), the simplest definition is "a complex square matrix that is equal to its own conjugate transpose." Because $1=1+0i=1-0i=\bar{1}$, the identity matrix is, indeed Hermitian. Furthermore, $1$ is an identity with respect to multiplication for complex numbers because $(x+yi)(1)=x1+yi1=(x+yi)$. In other words, the identity matrix for real vectors also works for complex vectors.
+This means that $\braket{x,y}$ is related to $\braket{x\|y}$, but they are not the same. [Looking up Hermitian matrix](https://en.wikipedia.org/wiki/Hermitian_matrix), the simplest definition is "a complex square matrix that is equal to its own conjugate transpose." Because $1=1+0i=1-0i=\bar{1}$, the identity matrix is, indeed Hermitian. Furthermore, $1$ is an identity with respect to multiplication for complex numbers because $(x+yi)(1)=x1+yi1=(x+yi)$. In other words, the identity matrix for real vectors also works for complex vectors.
 
-*So*, $\braket{x|y}$ is a special case of $\braket{x,y}$ where $\mathrm{M}$ is the identity matrix. This clarification is important because now we understand all the properties of $\braket{x,y}$ also apply to $\braket{x|y}$.
+*So*, $\braket{x\|y}$ is a special case of $\braket{x,y}$ where $\mathrm{M}$ is the identity matrix. This clarification is important because now we understand all the properties of $\braket{x,y}$ also apply to $\braket{x\|y}$.
 
 Now we are ready to continue. The article then claims the following:
 
-> Notice that $\braket{\psi | \phi} = \braket{\phi | \psi}^*$. 
+> Notice that $\braket{\psi \| \phi} = \braket{\phi \| \psi}^*$. 
 
 Although generally speaking we can trust the author(s), it is a good exercise to prove this claim. Using the same definitions of $\ket{\phi}$ and $\ket{\psi}$ from before, 
 
-$\begin{eqnarray}\braket{\psi|\phi} & = & \gamma^* \alpha + \delta^* \beta \\ & = & \gamma_r * \alpha_r + \\ & & (-\gamma_i \alpha_r + \gamma_r \alpha_i)i + \\ & &  \gamma_i \alpha_i + \\ & & \delta_r \beta_r + \\ & & (-\delta_i \beta + \delta_r \beta_i)i + \\ & & \delta_i \beta_i \\ & = & \gamma_r \alpha_r + \gamma_i \alpha_i + \delta_r \beta_r + \delta_i \beta_i + \\ & &  (-\gamma_i \alpha_r + \gamma_r \alpha_i - \delta_i \beta_r + \delta_r \beta_i)i\end{eqnarray}$ 
+$\begin{eqnarray}\braket{\psi\|\phi} & = & \gamma^* \alpha + \delta^* \beta \\ & = & \gamma_r * \alpha_r + \\ & & (-\gamma_i \alpha_r + \gamma_r \alpha_i)i + \\ & &  \gamma_i \alpha_i + \\ & & \delta_r \beta_r + \\ & & (-\delta_i \beta + \delta_r \beta_i)i + \\ & & \delta_i \beta_i \\ & = & \gamma_r \alpha_r + \gamma_i \alpha_i + \delta_r \beta_r + \delta_i \beta_i + \\ & &  (-\gamma_i \alpha_r + \gamma_r \alpha_i - \delta_i \beta_r + \delta_r \beta_i)i\end{eqnarray}$ 
 
 where subscript-i means the imaginary coefficient and subscript-r means the real coefficient of a complex number. 
 
 By definition, 
 
-$\begin{eqnarray}(\braket{\phi|\psi})^* & = & (\alpha^* \gamma + \beta^* \delta)^* \\ & = & ((\alpha_r \gamma_r + \alpha_i \gamma_i + \beta_r \delta_r + \beta_i \delta_i)+ \\ & & (\alpha_r \gamma_i - \alpha_i \gamma_r + \beta_r \delta_i - \beta_i \delta_r)i)^* \\ & = & (\alpha_r \gamma_r + \alpha_i \gamma_i + \beta_r \delta_r + \beta_i \delta_i) + \\ & &  (-\alpha_r \gamma_i + \alpha_i \gamma_r - \beta_r \delta_i + \beta_i \delta_r)i\end{eqnarray}$ 
+$\begin{eqnarray}(\braket{\phi\|\psi})^* & = & (\alpha^* \gamma + \beta^* \delta)^* \\ & = & ((\alpha_r \gamma_r + \alpha_i \gamma_i + \beta_r \delta_r + \beta_i \delta_i)+ \\ & & (\alpha_r \gamma_i - \alpha_i \gamma_r + \beta_r \delta_i - \beta_i \delta_r)i)^* \\ & = & (\alpha_r \gamma_r + \alpha_i \gamma_i + \beta_r \delta_r + \beta_i \delta_i) + \\ & &  (-\alpha_r \gamma_i + \alpha_i \gamma_r - \beta_r \delta_i + \beta_i \delta_r)i\end{eqnarray}$ 
 
-Using the commutative law of multiplication, we can then establish $\braket{\psi|\phi} = \braket{\phi|\psi}^*$
+Using the commutative law of multiplication, we can then establish $\braket{\psi\|\phi} = \braket{\phi\|\psi}^*$
 
 This step may seem like a waste of time because the paper already claims the equality. There are two reasons to take on these steps. The first one is to verify that the claim is, indeed true, *just in case* the authors had a mistake. A more important reason, however, is to *practice* proof techniques, and in doing so, exercise the use of the definitions mentioned and understood up to this point. In other words, this is a built-in exercise to help strengthen the understanding of the concepts, *but only if the reader chooses to do so.* 
 
