@@ -125,24 +125,24 @@ Ah, this confirms the earlier fuzzy conclusion that the state of a qubit is a "m
 
 As last part of the explanation of what a qubit is, the explanation continues to compare a qubit with a conventional bit (binary digit):
 
-> Unlike a classical bit, the state of a qubit cannot be measured without changing it. Measuring a qubit, whose state given by Eq. (1), will yield the classical value of either zero ($\ket{0}$) with probability $|\alpha|^2$ or one ($\ket{1}$) with probability $|\beta|^2$. 
+> Unlike a classical bit, the state of a qubit cannot be measured without changing it. Measuring a qubit, whose state given by Eq. (1), will yield the classical value of either zero ($\ket{0}$) with probability $\|\alpha\|^2$ or one ($\ket{1}$) with probability $\|\beta\|^2$. 
 
 When this sentence is encountered, I can recall *some* quantum physics that I have studied in the past. However, I am not relying on those faint memory when reading technical content. Instead, I use the definition provided by the material.
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 A paper may implicitly or explicitly make claims without further explanations or proofs. It is important to practice **critical thinking** to:
 
 * identify such claims, and
 * verify, prove, or otherwise validate such claims
 
-This is not so much that a reader should not trust the author, but rather using every opportunity to make connections between concepts. Such connections facilitates the *application* of knowledge, especially in the process of **problem-solving**.
+This is not so much that a reader should not trust the author, but rather use every opportunity to make connections between concepts. Such connections facilitate the *application* of knowledge, especially in the process of **problem-solving**.
 
 </div>
 
 I also *question* the claim that $|\alpha|^2$ is a "probability". A probability is a value between 0 and 1 (inclusively), and it cannot be a complex number. The first hurdle is "how to compute the absolute value of a complex number"? Recall that a complex number has two components, a real component, and an imaginary component. 
 
-To crystalize this question, what is $|\alpha_r + \alpha_i i|$?
+To crystalize this question, what is $\|\alpha_r + \alpha_i i\|$?
 
 Instead of guessing it, I am looking this up. After reading a few articles on the absolute value of a complex number, the definition is as follows: $|x_r + x_i i|=\sqrt{x_r^2 + x_i^2}$. And a pictorial picture of how $x_r$ and $x_i$ are seen as coordinates of a point on a circle centered at $(0,0)$, and the absolute value is the radius of the circle.
 
@@ -152,11 +152,11 @@ Plugging this understanding of "the absolute value of a complex number" in our q
 
 This section concludes with the following sentence:
 
-> Qubit implementations and technologies are a very active area of research that not the focus of our review, and intrested refer is referred to [80] for a survey.
+> Qubit implementations and technologies are a very active area of research that is not the focus of our review, and interested refer is referred to [80] for a survey.
 
 This means the implementation does not affect the definition of a qubit, and therefore is not further discussed. 
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 As you practice **critical thinking** and read teaching material, your mind may generate questions "but how?" and "but why?" because "certain things do not add up." Because most teaching material is linear, the sequencing of the material may mean the answer to those questions can be *way* further down. 
 
@@ -220,7 +220,7 @@ The main question in my mind is "why is a bilinear map important in the definiti
 
 Now we are back to the definition of "tensor product." To utilize what I just learned, I am expanding the definition. Consider $f: V \times W \rightarrow V \otimes W$ as a bilinear map. This means that $\forall w \in W$, if I define $f_w(v)=f(v,w)$, then $f_w: V \rightarrow V \otimes W$ is a linear map. Likewise, $\forall v \in V$, if I define $f_v(w)=f(v,w)$, then $f_v: W \rightarrow V \otimes W$ is also a linear map. This is how I reinforce the knowledge and understanding of prerequisite concepts: to utilize it right away to further explain the depender concept.
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 Though not common, certain people with high levels of curiosity can occasionally overshoot rabbit hole/squirrel tree traversing and start to learn about concepts that are no longer relevant to the learning objectives.
 
@@ -244,7 +244,7 @@ The original paper continues to explain the following:
 
 > Say we have two single qubit states $\ket{\phi} = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}$ and $\ket{\phi'} = \pmatrix{\alpha ' \\ \beta '}$. Then the full state of a system composed of two independent qubits is given by, $\ket{\phi} \otimes \ket{\phi'} = \pmatrix{\alpha \\ \beta} \otimes \pmatrix{\alpha' \\ \beta'} =  \pmatrix{\alpha \alpha ' \\ \alpha \beta' \\ \beta \alpha' \\ \beta \beta'}$
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 Practicing **critical thinking** as you read teaching material, you may discover that your understanding of a symbol, a definition, or a concept, may differ from what is explicitly stated.
 
@@ -285,7 +285,7 @@ Then something caught my eye:
 
 > But it is possible for three qubits to be in a state that cannot be written as the tensor product of three single qubit states. An example of such a state is, $\ket{\psi} = \frac{1}{\sqrt{2}}(|\ket{000}+\ket{111})$.
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 Keep in mind that authors of any teaching material are probably experts. This means the material may trivialize the importance of a claim or the proof thereof. As a learner, taking such claims without proof may *seem* to be a good use of time, but this kind of practice is missing out on golden opportunities to **practice, problem-solve, and gain a deeper understanding** of the material.
 
@@ -334,7 +334,7 @@ In other words, in order to make the product of two complex numbers zero, at lea
 
 But in this scenario, we already know that none of $\alpha_1, \alpha_2, \alpha_3$ is zero, and the same applies to the $\beta$s. This is why it is impossible to have the scalars of basis vectors other than $\ket{000}$ and $\ket{111}$ be non-zero.
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 Understanding definitions and knowing how to derive proofs is one aspect of learning, but finding the "meaning" of a concept is equally, if not more, important.
 
@@ -368,7 +368,7 @@ But this speculation also explains why a system of qubits is much more powerful 
 
 # Inner and output products (1.1.4)
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 By now, the reader probably recognizes that "understanding" does not come easily nor quickly. How quantum computing relate to this author is probably about the same as how a class relates to a student who has fulfilled the prerequisite (and occasionally co-requisite) requirements.
 
