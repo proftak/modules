@@ -21,6 +21,7 @@
 ./0312/mdModule.md:title: "Module 0312: Relations"
 ./0351/mdModule.md:title: "Module 0351: Signed vs unsigned integer representation"
 ./0352/mdModule.md:title: "Module 0352: Binary comparison"
+./0364/mdModule.md:title: "Module 0364: An example of how to understand something"
 ./0368/mdModule.md:title: "Module 0368: Tracking changes of a circuit"
 ./0371/mdModule.md:title: "Module 0371: Tracing TTP code execution"
 ./0372/mdModule.md:title: "Module 0372: Caller-callee agreement"
