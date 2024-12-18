@@ -23,7 +23,7 @@ The quantum computing example used in this module is from a publication *Quantum
 If you have a strong interest in learning about quantum computing, read this document sentence-by-sentence! However, I suspect the average reader is not interested in quantum computing.
 
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="true">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 The right boxes contain points related to the general process of understanding abstract and technical concepts. You can focus on the content in these right boxes and ignore the rest of the content.
 
@@ -35,7 +35,7 @@ Furthermore, the section titled [A bit of non-technical discussion](#a-bit-of-no
 
 # The definition of the state of a qubit (section 1.1.1)
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="true">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 Read a paragraph or two at a time. As you read, jot down the terms and/or concepts that need additional clarification or definition. Many writers first introduce a concept or definition, *then* proceed to lay out the terminology and assumptions used in the explanation. 
 
@@ -57,7 +57,7 @@ The explanations of the symbols are as follows:
 Fortunately, I vaguely remember what a complex number is. A quick search finds that a complex number has two components, one coefficient for a real component, and one coefficient for the imaginary component. In other words, if $x$ is a complex number, it can be expressed as $x=x_r + x_i i$ where $i$ is the imaginary number of $\sqrt{-1}$.
 
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="true">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 A *vague* memory is not sufficient! Spending the extra few minutes to *confirm* an understanding of a concept learned some time ago is important. A wrong assumption can end up wasting far more than the amount of time taken to verify.
 
