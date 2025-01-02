@@ -63,3 +63,4 @@
 * [Module 0436: Custom GPT as an educational tool](./0436/mdModule.md)
 * [Module 0437: Implementation structures in TTPASM](./0437/mdModule.md)
 * [Module 0438: CIS sections offering and full-time schedule sign up (proposed)](./0438/mdModule.md)
+* [Module 0439: OpenSCAD programming](./0439/mdModule.md)
