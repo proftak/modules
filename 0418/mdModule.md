@@ -4,15 +4,15 @@
 
 Before the actual discussion, let us first explore the meaning of some terms that will be used.
 
-## Gen-AI?
+## What is Gen-AI?
 
-Gen-AI (generative artificial intelligence) refers to technologies that generate content based on simple prompts. The content can be text, images, video, music, etc.
+Gen-AI (generative artificial intelligence) is a technology that generates content based on "simple" prompts. The content can be text, images, video, music, etc.
 
 ## Academic Integrity
-
+content being submitted
 There are varying definitions of academic integrity. All the definitions share a common theme: the outcome of an assessment authentically reflects the ability and competence of the individual (human) being assessed. American River College has [a web page dedicated to Academic Integrity](https://arc.losrios.edu/about-us/mission-vision-and-values/student-rights-and-responsibilities/plagiarism-and-cheating).
 
-A common misunderstanding is that "cheating" occurs *only if* another person is involved, or the content being submitted is copied from another person. The use of Gen-AI can be considered "unauthorized materials or aids," hence leading to a verdict of cheating.
+A common misunderstanding is that "cheating" occurs *only if* another person is involved, or the submitted content is copied from another person. The use of Gen-AI can be considered "unauthorized materials or aids," hence leading to a verdict of cheating.
 
 ## Aptitude
 
