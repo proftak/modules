@@ -18,3 +18,5 @@ Here is a quick update regarding recent AI developments.
 ## Online classes
 
 While the online asynchronous modality offers flexibility to students who otherwise cannot take classes in person, it also opens a floodgate of potential cheating. 
+
+![Solicitation to cheat](Screenshot_20250110_080433_Discord.jpg) 
