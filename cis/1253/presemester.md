@@ -27,7 +27,7 @@ This was found posted on a Discord server that is run by a student club. Given t
 
 This is strictly Tak's opinion: sooner or later, nothing.
 
-It is not just [an Yahoo! article](https://www.yahoo.com/news/computer-science-grads-job-market-091301837.html), but confirmed, first-hand, by many recent graduates. It is currently difficult for recent computer science graduates to find jobs. This is due to a combination of many factors:
+It is not just [a Yahoo! article](https://www.yahoo.com/news/computer-science-grads-job-market-091301837.html), but confirmed, first-hand, by many recent graduates. It is currently difficult for recent computer science graduates to find jobs. This is due to a combination of many factors:
 
 * COVID: the quality of classes is impacted. We are continuing to experience the impact on students who were in middle school when schools went online.
 * Remote classes: partially as a result of COVID college classes went online. I have heard, firsthand, from students how that impacted their learning. And, there are *just the honest ones.* Businesses like Chegg boomed as a result of online classes.
