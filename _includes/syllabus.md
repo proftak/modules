@@ -13,7 +13,13 @@ header-includes: |
 
 {% include_relative relative.md %}
 
-{{ include.courseInfo | replace: "\\n", "\n" }}
+{% assign courseInfo = include.courseInfo | split: "\n" %}
+
+{% for courseInfoLine in courseInfo }
+{{ courseInfoLine }}
+{% endfor}
+
+{% include.courseInfo | replace: "\\n", "\n" %}
 
 # Class/section Information
 
