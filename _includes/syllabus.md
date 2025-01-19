@@ -9,9 +9,15 @@ header-includes: |
   </style>
 ---
 
-{{ courseInfo }}
+# Course Information
 
-{{ classInfo }}
+{% include_relative relative.md %}
+
+{{ include.courseInfo }}
+
+# Class/section Information
+
+{{ include.classInfo }}
 
 # Professor information
 
@@ -19,7 +25,6 @@ header-includes: |
 * email: auyeunt@arc.losrios.edu
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
-
 {{ officeHours }}
 
 # Important dates
