@@ -13,7 +13,7 @@ header-includes: |
 
 {% include_relative relative.md %}
 
-{{ include.courseInfo }}
+{{ include.courseInfo | replace: "\\n", "\n" }}
 
 # Class/section Information
 
