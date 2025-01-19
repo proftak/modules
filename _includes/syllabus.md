@@ -25,7 +25,11 @@ header-includes: |
 
 # Class/section Information
 
-{{ include.classInfo }}
+{% assign classInfo=include.classInfo | split: "\n" %}
+
+{% for classInfoLine in courseInfo %}
+{{ classInfoLine -}}
+{% endfor %}
 
 # Professor information
 
