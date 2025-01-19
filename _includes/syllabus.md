@@ -19,8 +19,6 @@ header-includes: |
 {{ courseInfoLine }}
 {% endfor %}
 
-{% include.courseInfo | replace: "\\n", "\n" %}
-
 # Class/section Information
 
 {{ include.classInfo }}
