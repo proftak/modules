@@ -13,9 +13,9 @@ header-includes: |
 
 {% include_relative relative.md %}
 
-{% assign courseInfo = include.courseInfo | split: "\n" -%}
+{% assign courseInfo = include.courseInfo | split: "\n" %}
 
-{% for courseInfoLine in courseInfo -%}
+{% for courseInfoLine in courseInfo %}
 {{ courseInfoLine -}}
 {% endfor %}
 
