@@ -1,1 +1,1 @@
-{% include syllabus.md courseCode="10820" courseInfo="a\nb" %}
+{% include syllabus.md courseCode="10820" courseInfo="*emphasize*" %}
