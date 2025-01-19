@@ -27,7 +27,7 @@ header-includes: |
 
 {% assign classInfo=include.classInfo | split: "\n" %}
 
-{% for classInfoLine in courseInfo %}
+{% for classInfoLine in classInfo %}
 {{ classInfoLine -}}
 {% endfor %}
 
