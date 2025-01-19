@@ -326,5 +326,5 @@ This exam occurs at the end of the semester. The instructor follows the policies
 !include topicSchedule.md
 
 <script>
-  document.title = "Syllabus of {{-include.courseTitle-}} section {{- include.courseCode -}} in {{- include.semester -}}";
+  document.title = "Syllabus of {{include.courseTitle -}} section {{ include.courseCode -}} in {{ include.semester -}}";
 </script>
