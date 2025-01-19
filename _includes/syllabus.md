@@ -17,7 +17,7 @@ header-includes: |
 # Student learning outcomes
 {% include_relative relative.md %}
 
-{% assign courseInfo = include.courseInfo | split: "\n" %}
+{% assign courseInfo=include.courseSLO | split: "\n" %}
 
 {% for courseInfoLine in courseInfo %}
 {{ courseInfoLine -}}
