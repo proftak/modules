@@ -1,12 +1,6 @@
 ---
 author: Tak Auyeung
-mustache:
-- ./vars.yaml
 title: "Syllabus of {{classnumber}} (section {{classcode}}) in {{semester}}"
-output: 
-	md_document:
-  	varient: markdown_mmd
-template: html
 header-includes: |
   <style>
   td {
