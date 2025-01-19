@@ -11,9 +11,10 @@ header-includes: |
 
 # Course Information
 
-* Title: {{- include.courseTitle -}}
-* Description: {{- include.courseDescription -}}
-* Student learning outcomes:
+* Title: {{- include.courseTitle }}
+* Description: {{- include.courseDescription }}
+
+# Student learning outcomes
 {% include_relative relative.md %}
 
 {% assign courseInfo = include.courseInfo | split: "\n" %}
