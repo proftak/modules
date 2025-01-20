@@ -1,4 +1,6 @@
-# _Module 0419: Student Support at American River College_
+---
+title: "Module 0419: Student Support at American River College"
+---
 
 * [Overall support resources](https://arc.losrios.edu/student-resources)
 * Academic
