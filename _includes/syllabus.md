@@ -324,12 +324,7 @@ This exam occurs at the end of the semester. The instructor follows the policies
 
 # Topics
 
-{%- assign topics=include.topics | split: "\n" -%}
-{%- for topicLine in topics -%}
-{{ topicLine -}}
-{% endfor %}
-
-post
+{{ include.topics }}
 
 <script>
   document.title = "Syllabus of {{include.courseTitle }} section {{ include.courseCode }} in {{ include.semester }}";
