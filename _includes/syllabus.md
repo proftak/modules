@@ -33,7 +33,7 @@
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
 {% assign officeHour=include.officeHour | split: "\n" %}
-{% for officeHourLine in officeHour %}
+{% for officeHourLine in officeHour -%}
 {{ officeHourLine -}}
 {% endfor %}
 
@@ -321,7 +321,7 @@ This exam occurs at about $\frac{2}{3}$ through the semester. This exam also use
 
 This exam occurs at the end of the semester. The instructor follows the policies regarding *when* to hold the final exam. For synchronous online classes and face-to-face classes, refer to the final exam schedule for the date and time of the final exam.
 
-{% assign topics=include.topics | split: "\n" -%}
+{% assign topics=include.topics | split: "\n" %}
 {% for topicLine in topics -%}
 {{ topicLine -}}
 {% endfor %}
