@@ -33,7 +33,7 @@
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
 {% assign officeHour=include.officeHour | split: "\n" %}
-{% for officeHourLine in officeHour -%}
+{% for officeHourLine in officeHour %}
 {{ officeHourLine -}}
 {% endfor %}
 
@@ -324,7 +324,7 @@ This exam occurs at the end of the semester. The instructor follows the policies
 # Topics
 
 {% assign topics=include.topics | split: "\n" %}
-{% for topicLine in topics -%}
+{% for topicLine in topics %}
 {{ topicLine -}}
 {% endfor %}
 
