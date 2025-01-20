@@ -19,6 +19,7 @@
 * [Module 0307: Parameters and local variables](./0307/mdModule.md)
 * [Module 0310: Graph search algorithms](./0310/mdModule.md)
 * [Module 0312: Relations](./0312/mdModule.md)
+* [Module 0319: Introduction to algorithm design and pseudocoding](./0319/mdModule.md)
 * [Module 0351: Signed vs unsigned integer representation](./0351/mdModule.md)
 * [Module 0352: Binary comparison](./0352/mdModule.md)
 * [Module 0364: An example of how to understand something](./0364/mdModule.md)
