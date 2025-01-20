@@ -2,8 +2,6 @@
 title: "Module 0305: Counting"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:
