@@ -27,7 +27,7 @@
 {% endfor %}
 
 # Professor information
-
+<pre>
 * Tak Auyeung
 * email: auyeunt@arc.losrios.edu
 * phone: 916-484-8250
@@ -36,6 +36,8 @@
 {%- for officeHourLine in officeHour %}
 {{ officeHourLine -}}
 {% endfor %}
+</pre>
+
 
 # Important dates
 
