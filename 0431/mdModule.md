@@ -2,8 +2,6 @@
 title: "Module 0431: Creative Commons in OER"
 ---
 
-# _{{ page.title }}_
-
 # Personal history
 
 I have been developing free educational content since 1993, starting with the teaching material for the Micromouse Design course series at UC Davis. I also switched to using open-source software in 2000 and have never looked back.

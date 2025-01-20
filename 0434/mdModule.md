@@ -2,8 +2,6 @@
 title: "Module 0434: TTP programming"
 ---
 
-# _{{ page.title }}_
-
 # General description of the architecture and instructions
 
 A, B, C and D are the four instruction-addressable general-purpose registers. The program counter, PC, is not directly addressable in instructions.

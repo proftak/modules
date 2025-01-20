@@ -2,8 +2,6 @@
 title: "Module 0436: Custom GPT as an educational tool"
 ---
 
-# _{{ page.title }}_
-
 ## An educational tool in more than one way
 
 1. Using a custom GPT as a tutor.

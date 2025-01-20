@@ -2,8 +2,6 @@
 title: "Module 0429: Notetaking"
 ---
 
-# _{{ page.title }}_
-
 # Why?
 
 When we learn from a lecture, a book, or a video, there is an illusion of grasping the material. At the moment of reading, watching, or conversing, the learner may feel everything is connected and hence understood. However, this is an illusion because the short-term memory is elusive and limited.

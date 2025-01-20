@@ -2,8 +2,6 @@
 title: "Module 0432: A general description of TTP"
 ---
 
-# _{{ page.title }}_
-
 # The general architecture
 
 This is a general description of TTP (Tak's Toy Processor). There are four instruction-addressable registers: A, B, C, and D. The registers are general-purpose registers, meaning that there are no restrictions on which instruction applies to which register. The program counter, PC, is not directly addressable in instructions.

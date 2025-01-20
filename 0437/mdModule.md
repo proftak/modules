@@ -2,12 +2,10 @@
 title: "Module 0437: Implementation structures in TTPASM"
 ---
 
-# _{{ page.title }}_
-
-## Linked list example
+# Linked list example
 
 ```c
-#include <stdint.h>
+include <stdint.h>
 
 struct X
 {
@@ -128,19 +126,19 @@ main:
   jmp b
 ```
 
-## Initialization of a "free list"
+# Initialization of a "free list"
 
 The following C program illustrates how to initialize a linked list of free nodes, where one node points to the next one. All the nodes are allocated as an array of structures as a global variable.
 
 ```c
-#include <stdint.h>
+include <stdint.h>
 
 struct Node {
   uint8_t value;
   struct Node *next;
 };
 
-#define NUMNODES 5
+define NUMNODES 5
 
 struct Node nodes[NUMNODES];
 
