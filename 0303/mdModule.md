@@ -5,8 +5,6 @@ kramdown:
     disable: true
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:

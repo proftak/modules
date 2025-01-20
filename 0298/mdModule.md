@@ -2,8 +2,6 @@
 title: "Module 0298: D-ﬂipﬂop and other basic memory devices"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [Module 0281](../0281/mdModule.html)

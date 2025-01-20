@@ -2,8 +2,6 @@
 title: "Module 0297: Propositional Logic"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0280](../0280/mdModule.html), [0285](../0285/mdModule.html), [0288](../0288/mdModule.html),
