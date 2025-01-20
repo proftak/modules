@@ -32,7 +32,7 @@
 * email: auyeunt@arc.losrios.edu
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
-{% assign officeHour=include.officeHour | split: "\n" %}
+{%- assign officeHour=include.officeHour | split: "\n" %}
 {%- for officeHourLine in officeHour %}
 {{ officeHourLine -}}
 {% endfor %}
