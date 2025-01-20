@@ -1,4 +1,6 @@
-# _Module 0285: Quantifiers_
+---
+title: "Module 0285: Quantifiers"
+---
 
 # About this module
 
