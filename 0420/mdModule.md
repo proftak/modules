@@ -1,4 +1,6 @@
-# _Module 0420: Symbols, Definitions, Rigor, and Precision_
+---
+title: "Module 0420: Symbols, Definitions, Rigor, and Precision"
+---
 
 # Potential challenges of a STEM class
 
