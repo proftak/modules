@@ -1,4 +1,6 @@
-# _Module 0394: Installing riverSpider_
+---
+title: "Module 0394: Installing riverSpider"
+---
 
 # What is `riverSpider`?
 
