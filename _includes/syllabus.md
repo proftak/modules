@@ -21,7 +21,7 @@
 # Class/section Information
 
 {% assign classInfo=include.classInfo | split: "\n" %}
-{% for classInfoLine in classInfo -%}
+{% for classInfoLine in classInfo %}
 {{ classInfoLine -}}
 {% endfor %}
 
