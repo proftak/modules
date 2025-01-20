@@ -21,7 +21,7 @@
 # New Student Learning Outcomes
 * Upon completion of this course, the student will be able to:
 
-{% assign sloArray include.slos | split: '
+{% assign sloArray = include.slos | split: '
 ' %}
 {% for sloLine in sloArray %}
 * {{- sloLine -}}
