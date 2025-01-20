@@ -2,7 +2,6 @@
 title: "Module 0364: An example of how to understand something"
 author: Tak Auyeung
 ---
-# _{{ page.title }}_
 
 # Why do I want to read this article?
 
