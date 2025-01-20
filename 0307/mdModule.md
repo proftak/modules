@@ -2,8 +2,6 @@
 title: "Module 0307: Parameters and local variables"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0304](../0304/mdModule.html), [0306](../0306/mdModule.md)
