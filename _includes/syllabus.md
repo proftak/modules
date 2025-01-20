@@ -12,13 +12,11 @@
 # Student Learning Outcomes
 *Upon completion of this course, the student will be able to:*
 
-<pre>
 {% assign sloArray = include.slos | split: '
 ' %}
 {% for sloLine in sloArray %}
 * {{ sloLine -}}
 {% endfor %}
-</pre>
 
 # Class/section Information
 
