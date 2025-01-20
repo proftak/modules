@@ -1,4 +1,6 @@
-# _Module 0282: Values, Numbers and Bases_
+---
+title: "Module 0282: Values, Numbers and Bases"
+---
 
 # About this module
 
