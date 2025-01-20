@@ -192,7 +192,7 @@ Neither the college (ARC) nor district (LRCCD) specifies what reasons of absence
 
 Each student can be absent according to roll taking mechanisms up to five (5) times before qualifying as excessively absent and dropped from class. This policy excludes the first three (3) class meetings. *Any absences* in the first three meetings of a class qualifies to be dropped (this is a part of district wide regulation).
 
-Essentially, the absence allowance permits up to 5 absences throughout the entire semester. Note that $\frac{5}{2\times 16}=15.625\%$.
+Essentially, the absence allowance permits up to 5 absences throughout the entire semester. Note that $\frac{5}{2\times 16}=15.625\\%$.
 
 ### Consideration of excuses
 
