@@ -2,8 +2,6 @@
 title: "Module 0422: Introduction to `git`"
 ---
 
-# _{{ page.title }}_
-
 # What is `git`?
 
 `git` is a tool designed for collaboration in terms of coding. However, `git` can also be used for projects that involve mostly or wholly documentation. `git` works best for source material that is in plain text.
