@@ -9,16 +9,7 @@
 * Title: {{- include.courseTitle }}
 * Description: {{- include.courseDescription }}
 
-# Student learning outcomes
-{% include_relative relative.md %}
-
-{% assign courseInfo=include.courseSLO | split: "\n" %}
-
-{% for courseInfoLine in courseInfo %}
-{{ courseInfoLine -}}
-{% endfor %}
-
-# New Student Learning Outcomes
+# Student Learning Outcomes
 *Upon completion of this course, the student will be able to:*
 
 {% assign sloArray = include.slos | split: '
