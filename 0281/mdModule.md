@@ -1,4 +1,6 @@
-# _Module 0281: Transistor to logic gate_
+---
+title: "Module 0281: Transistor to logic gate"
+---
 
 # About this module
 
