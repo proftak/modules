@@ -32,18 +32,18 @@
 ./0394/mdModule.md:title: "Module 0394: Installing riverSpider"
 ./0395/mdModule.md:title: "Module 0395: CISP 310 Final Exam Explanations"
 ./0408/mdModule.md:title: "Module 0408: What's up with GitHub and Open Educational Resources?"
-./0409/mdModule.md:# _Module 0409: Defining a "session"_
-./0410/mdModule.md:# _Module 0410: Start of Semester Check-list for CIS instructors_
+./0409/mdModule.md:title: "Module 0409: Defining a \"session\""
+./0410/mdModule.md:title: "Module 0410: Start of Semester Check-list for CIS instructors"
 ./0411/mdModule.md:# _Module 0411: Starting Fall 2024 Semester_
-./0412/mdModule.md:# _Module 0412: Student-centric generative AI_
-./0413/mdModule.md:# _Module 0413: Roster Management_
-./0414/mdModule.md:# _Module 0414: GitHub Markdown OER for students_
-./0415/mdModule.md:# _Module 0415: Basic Guide to Audio/Video use in STEM Classrooms_
-./0416/mdModule.md:# _Module 0416: Computer Information Science (CIS) as a prospect career choice_
-./0417/mdModule.md:# _Module 0417: Time Budgeting and Management for College Students_
-./0418/mdModule.md:# _Module 0418: A Student's Guide to Gen-AI_
-./0419/mdModule.md:# _Module 0419: Student Support at American River College_
-./0420/mdModule.md:# _Module 0420: Symbols, Definitions, Rigor, and Precision_
+./0412/mdModule.md:title: "Module 0412: Student-centric generative AI"
+./0413/mdModule.md:title: "Module 0413: Roster Management"
+./0414/mdModule.md:title: "Module 0414: GitHub Markdown OER for students"
+./0415/mdModule.md:title: "Module 0415: Basic Guide to Audio/Video Use in STEM Classrooms"
+./0416/mdModule.md:title: "Module 0416: Computer Information Science (CIS) as a prospect career choice"
+./0417/mdModule.md:title: "Module 0417: Time Budgeting and Management for College Students"
+./0418/mdModule.md:title: "Module 0418: A Student's Guide to Gen-AI"
+./0419/mdModule.md:title: "Module 0419: Student Support at American River College"
+./0420/mdModule.md:title: "Module 0420: Symbols, Definitions, Rigor, and Precision"
 ./0421/mdModule.md:title: "Module 0421: Student-Centricity, Robots, and Academic Rigor"
 ./0422/mdModule.md:title: "Module 0422: Introduction to `git`"
 ./0423/mdModule.md:title: "Module 0423: Markdown, GitHub and OER"
