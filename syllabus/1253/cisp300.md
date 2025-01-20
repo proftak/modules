@@ -4,7 +4,7 @@
 {% assign classInfo="* Meetings: MW 0900-1020\n* Drop date: 2025/04/20\n* Units: 3\n" %}
 {% assign courseTitle="CISP 300: Algorithm Design/Problem Solving" %}
 {% assign courseDescription="This course introduces methods for solving typical computer problems through algorithm design. Topics include assessing and analyzing computer problems in a top-down, divide-and-conquer approach that leads to a programming solution. It also covers programming plans and detailed design documents from which source code versions of programs are created."  %}
-{% capture slos %}
+{%- capture slos -%}
 define operators, including arithmetic, comparison, and logical operators.
 differentiate control structures, including branches (conditional statements) and loops (pre-checking and post-checking loops).
 deduce post-condition from pre-condition for control structures, including assignment statements, branches, and loops.
