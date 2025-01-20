@@ -2,21 +2,19 @@
 title: "Module 0433: Fust: a framework to integrate Creative Commons, Open Educational Resources, and GitHub"
 ---
 
-# _{{ page.title }}_
+# How they connect
 
-## How they connect
-
-### Open Educational Resource (OER)
+## Open Educational Resource (OER)
 
 OER refers to books, articles, activities, etc. that are "open" and for educational purposes. "Open" has multiple meanings. The most essential element of "open" is "free of charge." Unlike materials that are paid for by a college and therefore free of charge to students, OER is free of charge to be redistributed. 
 
 There are some nuances regarding how "open" is "open". For example, some OER content is free-of-charge to be redistributed, but not open to be modified. Some OER material is open for any type of redistribution and even incorporation into commercial products, others have restrictions. This is where Creative Commons licenses become important.
 
-### Creative Commons (CC)
+## Creative Commons (CC)
 
 CC is both the name of an organization and also the licenses that it creates. There are several CC licenses. For the purpose of this module, we will focus on licenses that do not include "No Derivatives" (ND) as a part of the CC license. This is because `GitHub` is a mechanism that benefits OER and is intended to be remixed and derived.
 
-### `GitHub`
+## `GitHub`
 
 `GitHub` is a cloud resource that integrates the use of `git` at the core. `git` is the name of a revision control tool that is commonly used by (software) developers to keep track of changes and also to facilitate expansive teamwork.
 
@@ -28,17 +26,17 @@ While there are many other platforms to author, publish, and adopt OER, `GitHub`
 
 "Pull" is a feature unique to `git`, by extension, `GitHub`.
 
-### Putting everything together
+## Putting everything together
 
 For the purposes of this work, the `GitHub` repository that publishes this work is called Fust (pronounced fOOst), in honor of the financier who did not invent the printing press, but financed Gutenberg (the inventor) and later operated the first printing firm.
 
-## Licensing
+# Licensing
 
 The strength of `GitHub` is the ease of spinning off an OER project. As such, while `GitHub` is also useful for OERs that have ND in their CC licenses, OERs that are CC licensed without ND benefit even more from the `git` mechanisms.
 
 For `GitHub` to publish content, some customization is needed. Such customization has coding involved and is therefore licensed separately. In other words, any OER developer who chooses to use Fust can specify different licenses for the *content* while maintaining the licensing of Fust.
 
-## On the technical side
+# On the technical side
 
 `GitHub` supports Markdown (MD) as a markup language. MD is a fairly rich markup language that can fall back to HTML when necessary. However, even by itself, it supports normal text formatting, equations, drawing various types of diagrams, formatting tables, etc. Compared to HTML, MD is easier to learn and type even with a plain-text editor like `notepad` in Windows. Many open-source and free previewing editors can render MD side-by-side with the MD document. 
 
@@ -57,15 +55,15 @@ For content quality assurance, the following steps are suggested. Assume `userna
 
 In order to circumvent issues related to static and out-of-date Markdown rendering, the configuration of this repository relies on client-side (browser side) Javascript rendering.
 
-## Getting started
+# Getting started
 
-### Setting up an account
+## Setting up an account
 
 To get started, an OER developer first registers with [GitHub](https://github.com) for a free account using the "Sign up" button. As the last page of the registration process, it is best to identify as a "Teacher". In order to finish the registration as a teacher, you will need to use a school email address (one that ends with `.edu`).
 
 As for the top 2 things you want to do with GitHub, "Connect with other developers" and "Contribute to Open Source projects" are good choices for an OER project.
 
-### Cloning the project
+## Cloning the project
 
 Go to the [home page](https://github.com) after you sign in. Click ["Import repository"](https://github.com/new/import). You will need to fill in the details of the repository.
 
@@ -77,7 +75,7 @@ Go to the [home page](https://github.com) after you sign in. Click ["Import repo
 
 Click "Begin import" to start the process. It may take a few minutes to import the project.
 
-### Publishing the rendered pages
+## Publishing the rendered pages
 
 Because the OER content is cloned along with the configuration and customization, you probably want to clean up the content before starting your own. Before doing that, however, it is helpful to first make sure the content is published correctly.
 
@@ -91,7 +89,7 @@ At this point, you are still under "Settings" (red underline on the top bar). Un
 
 Refresh this page a few times. In a couple of minutes, the top should report that "Your site is live at..."
 
-### Cleaning up the content
+## Cleaning up the content
 
 The repository comes with its own OER content that you probably do not need. To remove the current modules, follow these instructions:
 
@@ -111,7 +109,7 @@ The repository comes with its own OER content that you probably do not need. To 
   * Click "Run workflow" in the pop-up.
   * There is a lag, then the pop-up will show that the workflow is in progress (turning a yellow circle to the left).
 
-### Writing a new module
+## Writing a new module
 
 To start a new module:
 
@@ -127,7 +125,7 @@ To start a new module:
 title: "Module 0241: Some module"
 ---
 
-# _{{ page.title }}_
+ _{{ page.title }}_
 ```
 
 The explanation is as follows:
@@ -138,15 +136,15 @@ The explanation is as follows:
 
 Then type the actual content in this document. Remember to to click "Commit changes..." when you are done, or at a point that you want to save the document.
 
-## Customization
+# Customization
 
-### Choice of CC license for the content
+## Choice of CC license for the content
 
 If you remove all the modules that came with the repository, you can choose your own content license. To change your content license, modify `_layouts/default.html`. Specifically, locate the line that starts with "This site is licensed under..", then modify the URL to the Creative Commons license and update the symbols.
 
 Note that the licensing of the content is independent of the licensing of the HTML and YAML files that form the framework of the publication mechanism.
 
-## Learners
+# Learners
 
 `GitHub` has mechanisms that benefit learners. Each repository has mechanisms for people to report "issues" as well as to participate in "discussions." Learners or OER collaborators can make use of these two features to officially report problems or to engage in discussions.
 
