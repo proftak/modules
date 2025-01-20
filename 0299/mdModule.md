@@ -2,8 +2,6 @@
 title: "Module 0299: Clocked circuits"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0298](../0298/mdModule.html)
