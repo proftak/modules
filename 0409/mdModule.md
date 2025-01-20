@@ -1,4 +1,6 @@
-# _Module 0409: Defining a "session"_
+---
+title: "Module 0409: Defining a \"session\""
+---
 
 The definition of a "session" is important because the word is referenced in the [Los Rios Regulation R-2222](https://losrios.edu/shared/doc/board/regulations/R-2222.pdf). Ultimately, how this term is defined dictates the interpretation of attendance or the lack thereof.
 

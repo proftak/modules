@@ -2,8 +2,6 @@
 title: "Module 0424: A Brief History of Creative Commons" 
 ---
 
-# _{{ page.title }}_
-
 # At a glance
 
 * 1998: Sonny Bono Copyright Term Extension Act ([CTEA](#CETA)

@@ -1,4 +1,6 @@
-# _Module 0417: Time Budgeting and Management for College Students_
+---
+title: "Module 0417: Time Budgeting and Management for College Students"
+---
 
 ## What is this?
 

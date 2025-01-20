@@ -1,4 +1,6 @@
-# _Module 0418: A Student's Guide to Gen-AI_
+---
+title: "Module 0418: A Student's Guide to Gen-AI"
+---
 
 # What is...
 

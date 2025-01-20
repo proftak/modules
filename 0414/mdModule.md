@@ -1,4 +1,6 @@
-# _Module 0414: GitHub Markdown OER for students_
+---
+title: "Module 0414: GitHub Markdown OER for students"
+---
 
 # What is this?
 

@@ -1,4 +1,6 @@
-# _Module 0416: Computer Information Science (CIS) as a prospect career choice_
+---
+title: "Module 0416: Computer Information Science (CIS) as a prospect career choice"
+---
 
 # Why should I consider CIS?
 
