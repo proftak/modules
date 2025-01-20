@@ -1,7 +1,6 @@
 ---
 title: "Module 0371: Tracing TTP code execution"
 ---
-# _{{ page.title }}_
 
 # To start
 
