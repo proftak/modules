@@ -1,4 +1,6 @@
-# _Module 0413: Roster Management_
+---
+title: "Module 0413: Roster Management"
+---
 
 # Accessing class rosters
 
