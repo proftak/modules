@@ -2,8 +2,6 @@
 title: "Module 0289: Functions as Sets"
 ---
 
-# _{{ page.title}}_
-
 # About this module
 
 -   Prerequisites: [0288](../0288/mdModule.html)

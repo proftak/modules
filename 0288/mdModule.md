@@ -1,4 +1,6 @@
-# _Module 0288: Set notations defined using quantifiers_
+---
+title: "Module 0288: Set notations defined using quantifiers"
+---
 
 # About this module
 

@@ -2,8 +2,6 @@
 title: "Module 0279: Boolean Operator"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:

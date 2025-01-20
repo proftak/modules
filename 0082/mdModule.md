@@ -2,8 +2,6 @@
 title: "Module 0082: Big and little Omicron, Omega and Theta"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:

@@ -2,8 +2,6 @@
 title: "Module 0290: Injection, Surjection and Bijection"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0289](../0289/mdModule.html)

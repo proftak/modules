@@ -1,4 +1,6 @@
-# _Module 0283: Binary Adition and Subtraction_
+---
+title: "Module 0283: Binary Adition and Subtraction"
+---
 
 # Addition
 
