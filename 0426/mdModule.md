@@ -2,8 +2,6 @@
 title: "Module 0426: What to do after the First Midterm/Exam"
 ---
 
-# _{{ page.title }}_
-
 # When should I get concerned?
 
 Because Canvas runs a weighted average of all the work submitted and graded, the letter grade of the total can be inflated by lab activities and homework assignments where most people get close to perfect scores. While lab activities and homework assignments do count to the final grade, the percentage decreases as more exams are administered. It is best to evaluate the situation solely based on the score of the midterm exam and not to include lab activities and homework assignments in consideration.
