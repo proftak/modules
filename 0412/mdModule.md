@@ -1,4 +1,6 @@
-# _Module 0412: Student-centric generative AI_
+---
+title: "Module 0412: Student-centric generative AI"
+---
 
 ---
 
