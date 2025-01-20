@@ -2,15 +2,13 @@
 title: "Module 0439: OpenSCAD programming"
 ---
 
-# _{{ page.title }}_
-
-## What is this document?
+# What is this document?
 
 This document describes how to use OpenSCAD from the perspective of a typical programmer.
 
-## Syntax
+# Syntax
 
-### Action statement
+## Action statement
 
 While not the lowest level of language constructs, the action statement is a logical place to start the description of the syntax of OpenSCAD. Generally speaking, an action statement is similar to a C statement where it ends with a semi-colon (`;`), or it is a compound statement using braces (`{}`). However, unlike a C statement, an OpenSCAD action statement may have optional "operators." In certain OpenSCAD documentation, an "operator" is also called a "transformation." The term "transformation" describes the language construct better.
 
@@ -35,7 +33,7 @@ An action statement is, therefore:
 
 * `stmt ::= transformations control-stmt`
 
-### Variables
+## Variables
 
 The term "variable" has a different meaning in OpenSCAD. The value of a variable is constant in the same scope, determined by the last update of the variable within said scope. This is because OpenSCAD is a *functional* programming language, as opposed to an *imperative* programming language. Specifically, OpenSCAD has referential transparency.
 
