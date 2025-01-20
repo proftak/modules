@@ -2,8 +2,6 @@
 title: "Module 0427: Creative Commons Licenses, Remixes, and Derivative"
 ---
 
-# _{{ page.title }}_
-
 # Just including and sharing
 
 It is not uncommon to include content that is licensed by one of the Creative Common licenses. For example, the following photograph conveys a sense of sharing better than words.
