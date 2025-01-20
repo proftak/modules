@@ -26,7 +26,7 @@
 * [Module 0371: Tracing TTP code execution](./0371/mdModule.md)
 * [Module 0372: Caller-callee agreement](./0372/mdModule.md)
 * [Module 0374: Structures and arrays in TTPASM](./0374/mdModule.md)
-* [Module 0382: The recursive definition of summation and other "big-operators"](./0382/mdModule.md)
+* [Module 0382: The recursive definition of summation and other \"big-operators\"](./0382/mdModule.md)
 * [Module 0383: TTP](./0383/mdModule.md)
 * [Module 0384: TTP conditional jumps](./0384/mdModule.md)
 * [Module 0394: Installing riverSpider](./0394/mdModule.md)

@@ -1,11 +1,11 @@
 ./0082/mdModule.md:title: "Module 0082: Big and little Omicron, Omega and Theta"
 ./0279/mdModule.md:title: "Module 0279: Boolean Operator"
-./0280/mdModule.md:# _Module 0280: Basic Set Notations_
-./0281/mdModule.md:# _Module 0281: Transistor to logic gate_
-./0282/mdModule.md:# _Module 0282: Values, Numbers and Bases_
-./0283/mdModule.md:# _Module 0283: Binary Adition and Subtraction_
-./0285/mdModule.md:# _Module 0285: Quantifiers_
-./0288/mdModule.md:# _Module 0288: Set notations defined using quantifiers_
+./0280/mdModule.md:title: "Module 0280: Basic Set Notations"
+./0281/mdModule.md:title: "Module 0281: Transistor to logic gate"
+./0282/mdModule.md:title: "Module 0282: Values, Numbers and Bases"
+./0283/mdModule.md:title: "Module 0283: Binary Adition and Subtraction"
+./0285/mdModule.md:title: "Module 0285: Quantifiers"
+./0288/mdModule.md:title: "Module 0288: Set notations defined using quantifiers"
 ./0289/mdModule.md:title: "Module 0289: Functions as Sets"
 ./0290/mdModule.md:title: "Module 0290: Injection, Surjection and Bijection"
 ./0293/mdModule.md:title: "Module 0293: Aleph null"
@@ -26,12 +26,12 @@
 ./0371/mdModule.md:title: "Module 0371: Tracing TTP code execution"
 ./0372/mdModule.md:title: "Module 0372: Caller-callee agreement"
 ./0374/mdModule.md:title: "Module 0374: Structures and arrays in TTPASM"
-./0382/mdModule.md:# _Module 0382: The recursive definition of summation and other "big-operators"_
+./0382/mdModule.md:title: "Module 0382: The recursive definition of summation and other \"big-operators\""
 ./0383/mdModule.md:title: "Module 0383: TTP"
 ./0384/mdModule.md:title: "Module 0384: TTP conditional jumps"
-./0394/mdModule.md:# _Module 0394: Installing riverSpider_
+./0394/mdModule.md:title: "Module 0394: Installing riverSpider"
 ./0395/mdModule.md:title: "Module 0395: CISP 310 Final Exam Explanations"
-./0408/mdModule.md:# _Module 0408: What's up with GitHub and Open Educational Resources?_
+./0408/mdModule.md:title: "Module 0408: What's up with GitHub and Open Educational Resources?"
 ./0409/mdModule.md:# _Module 0409: Defining a "session"_
 ./0410/mdModule.md:# _Module 0410: Start of Semester Check-list for CIS instructors_
 ./0411/mdModule.md:# _Module 0411: Starting Fall 2024 Semester_
