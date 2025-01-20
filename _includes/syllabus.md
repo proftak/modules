@@ -22,7 +22,7 @@
 
 {% assign classInfo=include.classInfo | split: "\n" %}
 
-{% for classInfoLine in classInfo %}
+{%- for classInfoLine in classInfo -%}
 {{ classInfoLine -}}
 {% endfor %}
 
@@ -32,7 +32,10 @@
 * email: auyeunt@arc.losrios.edu
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
-{{ officeHours }}
+{% assign officeHour=include.officeHour | split: "\n" %}
+{% for officeHourLine in officeHour %}
+{{ officeHourLine -}}
+{% endfor %}
 
 # Important dates
 
