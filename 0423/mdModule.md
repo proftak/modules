@@ -2,8 +2,6 @@
 title: "Module 0423: Markdown, GitHub and OER"
 ---
 
-# _{{ page.title }}_
-
 # GitHub
 
 GitHub is an online revision control repository (repo) service that has a user-friendly web interface. Everything in this module requires a registered account. If you already have a GitHub account, you can ignore the following steps.
