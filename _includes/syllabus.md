@@ -34,7 +34,7 @@
 * office: Diane Bryant STEM Innovation Center (STEM) 316
 <pre>
 {% assign officeHour=include.officeHour | split: "\n" %}
-{% for officeHourLine in officeHour %}
+{%- for officeHourLine in officeHour %}
 {{ officeHourLine -}}
 {% endfor %}
 </pre>
