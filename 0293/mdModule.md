@@ -2,8 +2,6 @@
 title: "Module 0293: Aleph null"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0290](../0290/mdModule.html), [0280](../0280/mdModule.html)
