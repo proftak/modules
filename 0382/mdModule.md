@@ -1,4 +1,6 @@
-# _Module 0382: The recursive definition of summation and other "big-operators"_
+---
+title: "Module 0382: The recursive definition of summation and other \"big-operators\""
+---
 
 # Summation
 

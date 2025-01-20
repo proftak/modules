@@ -5,7 +5,6 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 ---
-# _{{ page.title }}_
 
 # What is this document?
 

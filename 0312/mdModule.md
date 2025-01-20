@@ -2,8 +2,6 @@
 title: "Module 0312: Relations"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites: [0280](../0280/mdModule.html),[0285/mdModule.html](../0285/mdModule.html)

@@ -3,8 +3,6 @@ title: "Module 0384: TTP conditional jumps"
 author: Tak Auyeung
 ---
 
-# _{{ page.title }}_
-
 # Description
 
 A conditional jump is a jump instruction, like `jmpi` and the corresponding register-based instruction `jmp`, but only conditionally. A conditional jump instruction uses a specific bit in the `flags` register to determine whether to jump or not.

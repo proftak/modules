@@ -3,8 +3,6 @@ title: "Module 0374: Structures and arrays in TTPASM"
 author: Tak Auyeung
 ---
 
-# _{{ page.title }}_
-
 # Arrays
 
 Most compilers allocate space for arrays in a straightforward way.  Let us consider the following declaration where `TYPEX` is the name of a type, and `BUFLEN` is a natural number.

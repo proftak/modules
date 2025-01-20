@@ -2,7 +2,6 @@
 title: "Module 0383: TTP"
 author: Tak Auyeung
 ---
-# _{{ page.title }}_
 
 # Main sections of TTP
 

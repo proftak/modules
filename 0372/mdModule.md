@@ -2,7 +2,6 @@
 title: "Module 0372: Caller-callee agreement"
 author: Tak Auyeung
 ---
-# _{{ page.title }}_
 
 # Stack operation specification
 

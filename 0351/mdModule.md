@@ -2,8 +2,6 @@
 title: "Module 0351: Signed vs unsigned integer representation"
 ---
 
-# _{{ page.title }}_
-
 # Finite bit-width
 
 Although the set of integers (math symbol $\mathbb{Z}$) has an infinite number of elements, the way an integer value is store in a computer has a finite bit-width. And with that, a finite range of values to be represented.

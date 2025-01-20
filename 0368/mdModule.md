@@ -3,8 +3,6 @@ title: "Module 0368: Tracking changes of a circuit"
 author: Tak Auyeung
 ---
 
-# _{{ page.title }}_
-
 * Terms:
   * Port: a port is a point of connection on a component, such as a gate, to a wire.
   * Node: a node is a collection of wires that are electrically connected.

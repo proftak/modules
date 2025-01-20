@@ -2,8 +2,6 @@
 title: "Module 0310: Graph search algorithms"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:
