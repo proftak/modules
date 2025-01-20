@@ -32,10 +32,12 @@
 * email: auyeunt@arc.losrios.edu
 * phone: 916-484-8250
 * office: Diane Bryant STEM Innovation Center (STEM) 316
+<pre>
 {% assign officeHour=include.officeHour | split: "\n" %}
 {% for officeHourLine in officeHour %}
 {{ officeHourLine -}}
 {% endfor %}
+</pre>
 
 # Important dates
 
@@ -323,10 +325,12 @@ This exam occurs at the end of the semester. The instructor follows the policies
 
 # Topics
 
+<pre>
 {% assign topics=include.topics | split: "\n" %}
 {% for topicLine in topics %}
 {{ topicLine -}}
 {% endfor %}
+</pre>
 
 <script>
   document.title = "Syllabus of {{include.courseTitle }} section {{ include.courseCode }} in {{ include.semester }}";
