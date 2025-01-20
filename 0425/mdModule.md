@@ -2,8 +2,6 @@
 title: "Module 0425: Copyright Law"
 ---
 
-# _{{ page.title }}_
-
 # The Purpose of Copyright
 
 As the name implies, "copyright" is, literally, the "right to copy." Historically, the concept of copyright became important when the press was invented. Before the press was invented, content could only be copied by hand. As a result, it was easier to *limit* the availability of copies of any work.
