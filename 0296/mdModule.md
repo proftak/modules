@@ -2,8 +2,6 @@
 title: "Module 0296: Floating point numbers"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:
