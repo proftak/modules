@@ -2,8 +2,6 @@
 title: "Module 0304: Calling and returning from functions"
 ---
 
-# _{{ page.title }}_
-
 # About this module
 
 -   Prerequisites:
