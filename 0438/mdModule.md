@@ -2,13 +2,11 @@
 title: "Module 0438: CIS sections offering and full-time schedule sign up (proposed)"
 ---
 
-# _{{ page.title }}_
-
-## What does the union have to say?
+# What does the union have to say?
 
 The LRCFT contract does not specify how scheduling should be done! The contract does specify that the dean of a division has the right of assignment. 
 
-## Section offering
+# Section offering
 
 There are a few factors that determine how sections of courses are offered (without consideration of modality and actual schedule):
 
@@ -25,9 +23,9 @@ In terms of modality and schedule (days of week and time slot), there are many a
 
 To a certain extent, the scheduling of sections can be adjusted to meet the time constraints of faculty members. 
 
-## Section request/assignment
+# Section request/assignment
 
-### Criteria
+## Criteria
 
 There are some key criteria from the assignment (who teaches what) perspective:
 
@@ -36,7 +34,7 @@ There are some key criteria from the assignment (who teaches what) perspective:
 * Workload due to new preps.
 * Instructor personal time constraints: pick-up and drop-off of children, etc.
 
-### The politics
+## The politics
 
 Fully disclosing and examining the politics of section assignments is healthy, practical, and necessary in this discussion. 
 
@@ -70,7 +68,7 @@ If there are additional factors that are neglected, please help update this docu
 
 Trying to step into a colleague's shoes helps to expand one's perspective on this matter. Having an open-minded face-to-face discussion is even better!
 
-### Proposed scheduling process
+## Proposed scheduling process
 
 Terms:
 
@@ -86,7 +84,7 @@ A course (or specific sections thereof) that is (are) closed to rotating priorit
 
 This process also offers a third option. A course can be on the individual preference list of at least one member, but it is not closed to rotating priorities. This announces that the course is preferred by at least one member, but otherwise is available to the rotating priorities process for others to request it *without* negotiation. Before requesting a course, it is collegial to contact those who express a preference, but still open the course to rotating priorities.
 
-#### Individual preference
+### Individual preference
 
 To facilitate better communication and potential collaboration, each full-time faculty member has the option to provide an individual preference list that captures the following information:
 
@@ -137,7 +135,7 @@ In this situation, the *preferred* method is for the affected faculty members to
 
 The individual preferences can be updated. When a course curriculum is developed, the developer is the only person who can specify the new course in his/her individual preference list. 
 
-#### Course preference list
+### Course preference list
 
 From the individual preferences, a course preference list is prepared to show the following for each course:
 
@@ -158,7 +156,7 @@ The following is an example:
 
 The purpose of the course preference list is to facilitate an automated method to schedule classes, taking individual preferences and rotating priority into consideration. It also provides a quick way for any colleague who wants to take on a new prep to check whether someone else may be impacted (listed but open to rotating priority) or may need a personal negotiation (closed to rotating priority). 
 
-#### Rotating priority algorithm
+### Rotating priority algorithm
 
 A somewhat random and fair way to change priority per semester is to serialize all possible permutations, and then use a large prime number to step through the generated results. This can be done using a script like the following:
 
@@ -204,7 +202,7 @@ The output of this script is as follows:
 
 Each faculty member can be assigned a particular position in a list, and each list is for one semester. As a result, this quoted list is enough for about 6 years because there are three chances to sign up for classes per academic year (Fall, Spring and Summer). The complete list has 10 factorial permutations, and the use of a large prime number ensures a fair rotation of all permutations.
 
-#### Request iterations
+### Request iterations
 
 For the Fall and Spring semesters, each semester has 3 iterations of requesting sections after courses that are closed to rotating priority are assigned based on the individual preference lists and the course list.
 
