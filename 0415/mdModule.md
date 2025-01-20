@@ -1,4 +1,6 @@
-# _Module 0415: Basic Guide to Audio/Video use in STEM Classrooms_
+---
+title: "Module 0415: Basic Guide to Audio/Video Use in STEM Classrooms"
+---
 
 # Normal operation
 
