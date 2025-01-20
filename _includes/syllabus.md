@@ -325,8 +325,7 @@ This exam occurs at the end of the semester. The instructor follows the policies
 <pre>
 # Topics
 
-
-{%- assign topics=include.topics | split: "\n" %}
+{% assign topics=include.topics | split: "\n" %}
 {%- for topicLine in topics %}
 {{ topicLine -}}
 {% endfor %}
