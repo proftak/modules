@@ -19,6 +19,8 @@ The syntax of C++ is intermediate compared to other programming languages. A pla
 
 ## How to read the BNF notation
 
+### The basics
+
 Each syntactic rule (also called a "production") consists of two parts:
 
 * the token being defined
@@ -28,7 +30,19 @@ Let us consider the following example. An [iteration-statement](https://alx71hub
 
 |token|expansion|
 |-|-|
-|iteration-statment|**while (** *condition* **)** *statement*<br />**do** *statement* **while (** *expression* **);** <br /> **for (** *for-init-statmentcondition*<sub>opt</sub> **;** *expression*<sub>opt</sub> **)** *statement* <br />**for (** *for-range-declaration* **:** *for-range-initializer* **)** *statement*
+|*iteration-statment*|**while (** *condition* **)** *statement*<br />**do** *statement* **while (** *expression* **);** <br /> **for (** *for-init-statmentcondition*<sub>opt</sub> **;** *expression*<sub>opt</sub> **)** *statement* <br />**for (** *for-range-declaration* **:** *for-range-initializer* **)** *statement*
 
 In this syntactic rule, the token "iteration-statement" has four alternative expansions as each line of the "expansion" column is one alternative. In each expansion alternative, anything that is **boldface** must be entered verbatim, while anything that is not in boldface is a token that has its own expansion. The subscript "opt" designates the token to be optional. Optional means the same as zero or one occurrence.
 
+### Repetition
+
+BNF can be used to express the repetition of a pattern. Let us consider the syntactic rule of a `statement-seq` (statement sequence):
+
+|token|expansion|
+|-|-|
+|*statement-seq*|*statement*<br />*statement-seq statement*|
+
+This shows that there are two alternatives to expand a `statement-seq` token:
+
+* *`statement`*: the first alternative is a simpler token, it is a single statement.
+* `statement-seq statement`: the second alternative specifies a statement sequence, followed by a single statement.
