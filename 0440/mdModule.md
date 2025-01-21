@@ -74,3 +74,35 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 7. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
 8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Change". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
+Graphically, we can represent it as follows:
+
+```mermaid
+flowchart LR
+john[John]
+and1[and]
+ali[Ali]
+and2[and]
+chang[Chang]
+friend1(friend)
+friends1(friends)
+friend2(friend)
+friends2(friends)
+friend3(friend)
+friends3((friends))
+john-->and1
+and1-->ali
+ali-->and2
+and2-->chang
+john-.-> friend1
+friend1-.-> friends1
+ali-.->friend2
+friends1-.->friends2
+and1-.->friends2
+friend2-.->friends2
+chang-.->friend3
+friends2-.->friends3
+and2-.->friends3
+friend3-.->friends3
+```
+
+In this diagram, solid arrows indicate the flow in the text to be processed, "John and Ali and Chang". Dotted arrows indicate the recognition of a token (think of these arrows as "reversed expansion").
