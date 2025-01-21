@@ -34,6 +34,8 @@ Let us consider the following example. An [iteration-statement](https://alx71hub
 
 In this syntactic rule, the token *`iteration-statement`* has four alternative expansions as each line of the "expansion" column is one alternative. In each expansion alternative, anything that is **boldface** must be entered verbatim, while anything not in boldface is a token with its own expansion. The subscript "opt" designates the token to be optional. Optional means the same as zero or one occurrence.
 
+Essentially, a token (italicized and not boldfaced) is a placeholder. A placeholder can be holding a space (a position in a sequence) for nothing or many components. A boldfaced item is also known as a "terminal", a terminal specifies the text expected verbatim.
+
 ### Repetition
 
 BNF can be used to express the repetition of a pattern. Let us consider the syntactic rule of a `statement-seq` (statement sequence):
@@ -53,7 +55,7 @@ Let us consider an example that does not relate to a complex programming languag
 
 *`token1`* ::= *`token2`* **blah**
 
-The above example is a rule to expand *`token1`* to *`token2`* followed by the word "blah" verbatim.
+The above example is a rule to expand *`token1`* to *`token2`* followed by the word "blah" verbatim. You can consider the symbol ::= to mean "can expand to".
 
 With this notation, now we define the following rules:
 
@@ -62,6 +64,8 @@ With this notation, now we define the following rules:
 * R3: *`friend`* ::= **Chang**
 * R4: *`friends`* ::= *`friend`*
 * R5: *`friends`* ::= *`friends`* **and** *`friend`*
+
+Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 are alternatives to expand *`friends`*.
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
