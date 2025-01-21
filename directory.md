@@ -1,3 +1,4 @@
+* [Module 0012: Variables, assignment statements and sequences](./0012/mdModule.md)
 * [Module 0082: Big and little Omicron, Omega and Theta](./0082/mdModule.md)
 * [Module 0279: Boolean Operator](./0279/mdModule.md)
 * [Module 0280: Basic Set Notations](./0280/mdModule.md)
@@ -65,3 +66,4 @@
 * [Module 0437: Implementation structures in TTPASM](./0437/mdModule.md)
 * [Module 0438: CIS sections offering and full-time schedule sign up (proposed)](./0438/mdModule.md)
 * [Module 0439: OpenSCAD programming](./0439/mdModule.md)
+* [Module 0440: Syntax and the Syntax to Describe Syntax](./0440/mdModule.md)
