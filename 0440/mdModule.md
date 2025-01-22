@@ -70,7 +70,7 @@ Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 
 * *`friend`* ::= **Ali** | **John** | **Chang**
 * *`friends`* ::= *`friend`* | *`friends`* **and** *`friend`*
 
-In the concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the `::=` symbol. 
+In the concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the "::=" symbol. 
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
