@@ -23,6 +23,7 @@
 * [Module 0319: Introduction to algorithm design and pseudocoding](./0319/mdModule.md)
 * [Module 0351: Signed vs unsigned integer representation](./0351/mdModule.md)
 * [Module 0352: Binary comparison](./0352/mdModule.md)
+* [Module 0355: Taking and Maintaining Notes](./0355/mdModule.md)
 * [Module 0364: An example of how to understand something](./0364/mdModule.md)
 * [Module 0368: Tracking changes of a circuit](./0368/mdModule.md)
 * [Module 0371: Tracing TTP code execution](./0371/mdModule.md)
