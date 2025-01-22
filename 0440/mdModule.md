@@ -65,7 +65,12 @@ With this notation, now we define the following rules:
 * R4: *`friends`* ::= *`friend`*
 * R5: *`friends`* ::= *`friends`* **and** *`friend`*
 
-Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 are alternatives to expand *`friends`*.
+Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 are alternatives to expand *`friends`*. A more concise way to represent the same set of rules is as follows:
+
+* *`friend`* ::= **Ali** | **John** | **Chang**
+* *`friends`* ::= *`friend`* | *`friends`* **and** *`friend`*
+
+In the concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the `::=` symbol. 
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
