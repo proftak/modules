@@ -27,7 +27,7 @@ These are also the ones that we tend to use in natural languages.
 
 ## Conjunction
 
-Conjunction is known as the English word "and". This is a Boolean
+Conjunction is known as the English word "and". The mathematical symbol $\wedge$ represents conjunction. This is a Boolean
 operator described by the following truth table:
 
 |x|y|$x \wedge y$|
