@@ -67,8 +67,8 @@ With this notation, now we define the following rules:
 
 Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 are alternatives to expand *`friends`*. A more concise way to represent the same set of rules is as follows:
 
-* *`friend`* ::= **Ali** | **John** | **Chang**
-* *`friends`* ::= *`friend`* | *`friends`* **and** *`friend`*
+* *`friend`* ::= **Ali** \| **John** \| **Chang**
+* *`friends`* ::= *`friend`* \| *`friends`* **and** *`friend`*
 
 In the concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the "::=" symbol. 
 
