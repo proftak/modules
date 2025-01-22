@@ -68,3 +68,4 @@
 * [Module 0438: CIS sections offering and full-time schedule sign up (proposed)](./0438/mdModule.md)
 * [Module 0439: OpenSCAD programming](./0439/mdModule.md)
 * [Module 0440: Syntax and the Syntax to Describe Syntax](./0440/mdModule.md)
+* [Module 0441: A super-catalog of student related modules](./0441/mdModule.md)
