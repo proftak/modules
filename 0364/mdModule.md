@@ -73,7 +73,7 @@ A quick search found an entry in Wikipedia, explaining:
 > A **ket** is of the form $\ket{v}$. Mathematically, it denotes a vector, $v$, in an abstract (complex) vector space $V$, and physically it represents a state of some quantum system.
 
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 One new definition or concept ~~may~~ *often* require an understanding of other definitions or concepts. Your mind can probably track three new concepts being learned.
 
@@ -100,7 +100,7 @@ Wikipedia defines a vector space as follows:
 From this, I understand that what differentiates a "real/normal" vector space from an "abstract/complex vector space" is *whether the scalar can only be a real number or a complex number*. Note that it is also *inferred* that a vector that is scaled remains as a vector itself. I feel comfortable with these concepts, for now.
 
 
-<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px">
+<div style="position: static; float: right; border: thin solid; width: 40%; padding: 10px 10px 10px 10px" markdown="1">
 
 You may realize that the explanation of quantum computing has prerequisites of: complex numbers, linear algebra, and abstract algebra. This dependency is also why courses have prerequisites.
 
