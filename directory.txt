@@ -69,3 +69,4 @@
 ./0439/mdModule.md:title: "Module 0439: OpenSCAD programming"
 ./0440/mdModule.md:title: "Module 0440: Syntax and the Syntax to Describe Syntax"
 ./0441/mdModule.md:title: "Module 0441: A super-catalog of student related modules"
+./0442/mdModule.md:title: "Module 0442: Performance Review Standards"
