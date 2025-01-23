@@ -39,6 +39,10 @@ What is the perspective of potential employers?
 * AI can accomplish many entry-level jobs. AI also helps more senior employees improve productivity. There is no need to hire entry-level employees.
 * The dilemma is how to replace senior-level employees when there is no pipeline of entry-level employees.
 
+The grammar bad!
+
+
+
 # The trajectory
 
 
