@@ -2,9 +2,7 @@
 title: "2025 Spring Pre-semester Material"
 ---
 
-# _{{ page.title }}_
-
-## AI matches on!
+# AI matches on!
 
 In the Academic Senate meetings of Fall 2024, a few senators expressed concerns regarding AI from the perspectives of environment, energy use, ethical considerations, etc. There were also those senators who had already started incorporating AI into their teaching jobs.
 
@@ -15,15 +13,15 @@ Here is a quick update regarding recent AI developments.
 * [Unbound Academic experiments with school-without-teacher](https://www.zdnet.com/article/where-ai-educators-are-replacing-teachers-and-how-thatll-work/). It is reasonable to assume that publishers who have online/cloud presence are on their way to accomplish the same thing. Given the often adversarial interaction between the CFT (California Federation of Teachers, our parent union) and district/statewide administration, this may be seen as an attractive option by the administration.
 * [Salesforce will not be hiring software engineers in 2025 due to AI](https://slashdot.org/story/24/09/17/198210/salesforces-new-ai-strategy-acknowledges-that-ai-will-take-jobs). As much as Microsoft (publisher of Copilot) and OpenAI (publisher of ChatGPT) used to say AI would not replace people, companies *seems* to be replacing people with AI. Whether this remains a concern for our students is unknown.
 
-## Online classes and potential cheating
+# Online classes and potential cheating
 
 While the online asynchronous modality offers flexibility to students who otherwise cannot take classes in person, it also opens a floodgate of potential cheating. 
 
 ![Solicitation to cheat](Screenshot_20250110_080433_Discord.jpg) 
 
-This was found posted on a Discord server that is run by a student club. Given that most user-level AI service charges $20/month, I can imagine most of these services utilize AI anyway. 
+This was posted on a Discord server run by a student club. Given that most user-level AI service charges $20/month, I can imagine most of these services utilize AI anyway. 
 
-## How much is a degree worth?
+# How much is a degree worth?
 
 This is strictly Tak's opinion: sooner or later, nothing.
 
@@ -38,6 +36,7 @@ It is not just [a Yahoo! article](https://www.yahoo.com/news/computer-science-gr
 What is the perspective of potential employers?
 
 * The diploma and GPA mean nothing. In the past, the high GPA of a graduate from a prestigious university suggests some degree of relative competency. Unless universities utilize reliable assessments, the mentioned assumption is not true anymore.
-* Many jobs for entry-level employees can now be accomplished by AI. The more senior employees have improved productivity (also due to AI). There is no need to hire entry-level employees.
+* AI can accomplish many entry-level jobs. AI also helps more senior employees improve productivity. There is no need to hire entry-level employees.
+* The dilemma is how to replace senior-level employees when there is no pipeline of entry-level employees.
 
-## 
+# 
