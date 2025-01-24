@@ -18,15 +18,15 @@ are/were used to implement computers at one point of time or another.
 
 ### Electro-mechanical
 
-A electro-mechanical device is one that uses electricity to physically
+An electro-mechanical device is one that uses electricity to physically
 (mechanically) actuate/move contacts. A motor drives a rotor. On each
 rotor are contact points at different rotational positions. The rotor
 then connects different electrical contact points on the stator.
 
-A electro-mechanical computer is extremely bulky due to the use of
+An electro-mechanical computer is extremely bulky due to the use of
 rotors, plug boards and motors. The use of motors (to change state by
 changing the rotational state of rotors) is also very slow compared to
-other mechanisms. However, given the right circumstances, a
+other mechanisms. However, given the right circumstances, an
 electro-mechanical computer can be worthwhile.
 
 At the end of World War 2, German Enigma encryption machines received a
