@@ -69,7 +69,7 @@ $$\begin{aligned}
 This is hardly exciting. But then we see a pattern. In computer
 programming, when we see a pattern, it means the concept can be
 represented in a concise abstract way. First, we need a method to
-designate each digit in a number. We use the nogation $d_i$ to represent
+designate each digit in a number. We use the notation $d_i$ to represent
 the digit that indicates the quantity of 10 raised to the power of $i$.
 In this example, $d_1=1, d_0=6, d_{-1}=3$, etc. With this notation, the
 value $v$ represented by a base-10 number with digits $d_i$ is as

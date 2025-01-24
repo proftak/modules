@@ -37,7 +37,7 @@ operator described by the following truth table:
 |1|0|       0|
 |1|1|       1|
 
-A few explanations is needed here. First, the symbol $0$ (normally known
+A few explanations are needed here. First, the symbol $0$ (normally known
 as zero) means false, and the symbol $1$ (normally known as one) means
 true.
 

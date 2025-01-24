@@ -30,7 +30,7 @@ Let us consider the following example. An [iteration-statement](https://alx71hub
 
 |token|expansion|
 |-|-|
-|*iteration-statment*|**while (** *condition* **)** *statement*<br />**do** *statement* **while (** *expression* **);** <br /> **for (** *for-init-statmentcondition*<sub>opt</sub> **;** *expression*<sub>opt</sub> **)** *statement* <br />**for (** *for-range-declaration* **:** *for-range-initializer* **)** *statement*
+|*iteration-statement*|**while (** *condition* **)** *statement*<br />**do** *statement* **while (** *expression* **);** <br /> **for (** *for-init-statmentcondition*<sub>opt</sub> **;** *expression*<sub>opt</sub> **)** *statement* <br />**for (** *for-range-declaration* **:** *for-range-initializer* **)** *statement*
 
 In this syntactic rule, the token *`iteration-statement`* has four alternative expansions as each line of the "expansion" column is one alternative. In each expansion alternative, anything that is **boldface** must be entered verbatim, while anything not in boldface is a token with its own expansion. The subscript "opt" designates the token to be optional. Optional means the same as zero or one occurrence.
 

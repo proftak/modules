@@ -14,14 +14,14 @@ Although basic set theory was already discussed in module
 [0280](../0280/mdModule.html), that was discussed without the use of quantifiers.
 Quantifiers are useful tools for a variety of math topics, set theory is
 a part of those topics. By reexamining basic set theory, we reinforce
-the understanding of both set theory as well as quantifiers.
+the understanding of both set theory and quantifiers.
 
 # Equality
 
 Given two items, $x$ and $y$, how do we know they are the same? In order
 words, how do we evaluate $x=y$?
 
-First of all, if one is a set and other is not, then $x=y$ is false.
+First of all, if one is a set and the other is not, then $x=y$ is false.
 
 Given that $x$ and $y$ are not sets, then the "normal" comparison
 applies.
@@ -46,7 +46,7 @@ $\forall x(x \in E \Leftrightarrow P(x))$
 
 This makes it clear where we get (how we bind) the value of the variable
 to some "thing." $x$ can be anything in the universe! Without the
-quantifier $\forall$, one can ask the question where do we get a value
+quantifier $\forall$, one can ask where do we get a value
 for $x$ to be evaluated.
 
 # The empty set
