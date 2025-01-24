@@ -14,7 +14,7 @@ Although basic set theory was already discussed in module
 [0280](../0280/mdModule.html), that was discussed without the use of quantifiers.
 Quantifiers are useful tools for a variety of math topics, set theory is
 a part of those topics. By reexamining basic set theory, we reinforce
-the understanding of both set theory as well as quantifiers.
+the understanding of both set theory and quantifiers.
 
 # Equality
 
