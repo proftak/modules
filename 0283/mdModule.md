@@ -1,5 +1,5 @@
 ---
-title: "Module 0283: Binary Adition and Subtraction"
+title: "Module 0283: Binary Addition and Subtraction"
 ---
 
 # Addition
