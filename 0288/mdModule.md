@@ -21,7 +21,7 @@ the understanding of both set theory and quantifiers.
 Given two items, $x$ and $y$, how do we know they are the same? In order
 words, how do we evaluate $x=y$?
 
-First of all, if one is a set and other is not, then $x=y$ is false.
+First of all, if one is a set and the other is not, then $x=y$ is false.
 
 Given that $x$ and $y$ are not sets, then the "normal" comparison
 applies.
