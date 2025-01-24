@@ -46,7 +46,7 @@ $\forall x(x \in E \Leftrightarrow P(x))$
 
 This makes it clear where we get (how we bind) the value of the variable
 to some "thing." $x$ can be anything in the universe! Without the
-quantifier $\forall$, one can ask the question where do we get a value
+quantifier $\forall$, one can ask where do we get a value
 for $x$ to be evaluated.
 
 # The empty set
