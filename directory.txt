@@ -4,7 +4,7 @@
 ./0280/mdModule.md:title: "Module 0280: Basic Set Notations"
 ./0281/mdModule.md:title: "Module 0281: Transistor to logic gate"
 ./0282/mdModule.md:title: "Module 0282: Values, Numbers and Bases"
-./0283/mdModule.md:title: "Module 0283: Binary Adition and Subtraction"
+./0283/mdModule.md:title: "Module 0283: Binary Addition and Subtraction"
 ./0285/mdModule.md:title: "Module 0285: Quantifiers"
 ./0288/mdModule.md:title: "Module 0288: Set notations defined using quantifiers"
 ./0289/mdModule.md:title: "Module 0289: Functions as Sets"
