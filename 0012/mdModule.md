@@ -141,7 +141,7 @@ aeTotalExpense} = aeTotalExpense + x;
 ```
 
 This is where things seem confusing. For this
-example, let us assume `aeTotalExpense" is \$263, and `x` (the balance of this month) is \$71
+example, let us assume `aeTotalExpense` is \$263, and `x` (the balance of this month) is \$71
 before the assignment.
 
 Remember, we always evaluate the right-hand side first for assignment
@@ -168,16 +168,23 @@ variable *after* the statement executes.
 To facilitate better tracing, we can add line numbers to algorithms,
 such as the following:
 
-``` {.numberLines .algorithm language="algorithm" numbers="left"}
-@ $\mathrm{availableFunds} \leftarrow \mathrm{availableFunds} - x$ \label{algor:updateAvail} @
-@ $\mathrm{aETotalExpense} \leftarrow \mathrm{aETotalExpense} + x$ \label{algor:updateTotal} @
+```c
+availableFunds = availableFunds - x; // line 1
+aeTotalExpense = aeTotalExpense} + x; // line 2
 ```
+
+In C/C++ and most derived languages, two slashes `//` begins comments. Comments are content in a program that is not interpreted by the machine but rather only serve as annotations to a human reader.
 
 This way, we can use a column in a trace table to identify statements.
 In our example, the trace table should look like the following:
 
-  line \#                                                                                           availableFunds   aETotalExpense
-  ------------------------------------------------------------------------------------------------- ---------------- ----------------
-  pre                                                                                               261              0
-  [\[algor:updateAvail\]](#algor:updateAvail){reference-type="ref" reference="algor:updateAvail"}   190              0
-  [\[algor:updateTotal\]](#algor:updateTotal){reference-type="ref" reference="algor:updateTotal"}   190              71
+|line#|`availableFunds`|`aeTotalExpense`|
+|:-|:-|:-|
+|pre|261|0|
+|1|190|0|
+|2|190|71|
+|post|190|71|
+
+The word "pre" represents "pre-condition", this row represents the state of the variables before the code runs. Likewise, the word "post" represents "post-condition", this row represents the state of the variables after the entire code runs. The row that corresponds to line 1 reports the states of the variables *after* the execution of line 1.
+
+In essence, this "trace table" is like a reel of film, where each row is a frame. The trace table records all the changes to the variables throughout the execution of the code.
