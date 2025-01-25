@@ -75,7 +75,7 @@ change "availableFunds" and "aeTotalExpense" as follows:
 
 ```c
 availableFunds = availableFunds - x;
-aeTotalExpense = aeTotalExpense - x;
+aeTotalExpense = aeTotalExpense + x;
 ```
 
 Does this look confusing? Let us look into this more closely.
@@ -136,25 +136,26 @@ assignment, it *always* becomes 0 after the assignment executes.
 
 Let us take a look at something more confusing:
 
-$\mathrm{aeTotalExpense} \leftarrow \mathrm{aeTotalExpense} + x$
+```c
+aeTotalExpense} = aeTotalExpense + x;
+```
 
-This is where things get a little bit confusing. If we had used the `=`
-symbol for assignment, it would have been even more confusing! For this
-example, let us assume "aE total expense" is \$263, and $x$ is \$71
+This is where things seem confusing. For this
+example, let us assume `aeTotalExpense" is \$263, and `x` (the balance of this month) is \$71
 before the assignment.
 
-Remember, we always evaluate the right hand side first for assignment
+Remember, we always evaluate the right-hand side first for assignment
 statements. In this particular case, we need to evaluate
-$\mathrm{aETotalExpense} + x$. Since we already know the values of these
+`aeTotalExpense + x`. Since we already know the values of these
 two variables are \$263 and \$71, the answer is quite simple: \$334.
 
-Next, we take the value from the right hand side, and use it to update
-the variable specified by the left hand side. *It just so happens* that
-the variable on the left hand side is "aETotalExpense". After the
-assignment statement, the value of "aETotalExpense" becomes \$334.
+Next, we take the value from the right-hand side and use it to update
+the variable specified by the left-hand side. *It just so happens* that
+the variable on the left-hand side is `aeTotalExpense`. After the
+assignment statement, the value of `aeTotalExpense` becomes \$334.
 
 In summary, the assignment statement updates the value of
-"aETotalExpense" from \$261 to \$334.
+`aeTotalExpense` from \$261 to \$334.
 
 # Visualizing Variables
 
