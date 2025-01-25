@@ -101,11 +101,11 @@ The actual BNF of the assignment operator in C++ is quite complex. For now, we a
 *`varName`* is a token to represent a "variable name." A variable name can start with a lowercase or uppercase letter or the underscore symbol, followed by any number of lowercase or uppercase letters, the underscore symbol, and any digit. As such, technically, we can define the following:
 
 * *`varName`* ::= *`identifier`*
-* *`digit`* ::= **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9**
-* *`lcase`* ::= **a** | **b** | ... **z**
-* *`ucase`* ::= **A** | **B** | ... **Z**
-* *`idFirstChar`* ::= *`lcase`* | *`ucase`* | **_**
-* *`idRestChar`* ::= *`idFirstChar`* | *`digit`*
+* *`digit`* ::= **0** \| **1** \| **2** \| **3** \| **4** \| **5** \| **6** \| **7** \| **8** \| **9**
+* *`lcase`* ::= **a** \| **b** \| ... **z**
+* *`ucase`* ::= **A** \| **B** \| ... **Z**
+* *`idFirstChar`* ::= *`lcase`* \| *`ucase`* \| **_**
+* *`idRestChar`* ::= *`idFirstChar`* \| *`digit`*
 * *`identifier`* ::= *`idFirstChar`* *`idRestPortion`*<sub>opt</sub>
 * *`idRestPortion`* ::= *`idRestChar`*
 * *`idRestPortion`* ::= *`idRestPortion`* *`idRestChar`*
@@ -169,11 +169,13 @@ To facilitate better tracing, we can add line numbers to algorithms,
 such as the following:
 
 ```c
-availableFunds = availableFunds - x; // line 1
+availableFunds = availableFunds - x;  // line 1
 aeTotalExpense = aeTotalExpense} + x; // line 2
 ```
 
-In C/C++ and most derived languages, two slashes `//` begins comments. Comments are content in a program that is not interpreted by the machine but rather only serve as annotations to a human reader.
+In C/C++ and most derived languages, two slashes `//` begins comments. Comments are content in a program that is not interpreted by the machine but rather only serve as annotations to a human reader. In this case, we are only using the comments to indicate the line number so that the trace table can reference the line.
+
+This code is also a *sequence* (of statements). A sequence means that there may be multiple steps, and the order of the steps is important. 
 
 This way, we can use a column in a trace table to identify statements.
 In our example, the trace table should look like the following:
