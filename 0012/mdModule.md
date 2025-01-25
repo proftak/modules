@@ -4,7 +4,7 @@ title: "Module 0012: Variables, assignment statements and sequences"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [Module 0440: BNF](../0440/mdModule.html)
 
 -   Objectives: This module introduces the most basic elements of
     programming.
