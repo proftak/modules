@@ -4,13 +4,13 @@ title: "Module 0420: Symbols, Definitions, Rigor, and Precision"
 
 # Potential challenges of a STEM class
 
-In almost every STEM subject, there is an extensive use of precise symbols and rigorous application of definitions. By comparison, human-human interaction is often fuzzy, flexible, verbose, and ambiguous.
+In almost every STEM subject, precise symbols and rigorous application of definitions are extensively used. By comparison, human-human interaction is often fuzzy, flexible, verbose, and ambiguous.
 
 Students who have started studying STEM early on are already used to working with precise symbols and rigorous use of definitions and reasoning. However, for students who first encounter a STEM college-level subject, especially one that is at the transfer level, these common elements of STEM subjects can present a challenge.
 
 # Symbols and Definitions
 
-A symbol is a concise and yet precise way to represent a concept. For example, the digit 0 represents "zero", "none", "nada", etc. But in some contexts, it can also represent "false". Yet in some other contexts, it simply represents "the identity of addition." As a result, it is important to establish the *context* in which a symbol is defined. In this example, "0" represents different concepts in algebra, *boolean* algebra, and *abstract* algebra.
+A symbol is a concise and yet precise way to represent a concept. For example, the digit 0 represents "zero," "none," "nada," etc. But in some contexts, it can also represent "false." Yet, in some other contexts, it simply represents "the identity of addition." As a result, it is important to establish the *context* in which a symbol is defined. In this example, "0" represents different concepts in algebra, *boolean* algebra, and *abstract* algebra.
 
 What is conciseness? It means "no simpler way to denote" something. What about precision? It means "no two ways to interpret" something. *Both* are important in the use of symbols and names in any STEM subject.
 
@@ -24,7 +24,7 @@ This definition makes use of $x$ and $y$ as symbols of variables, $+$ as the sym
 
 ## Spotting definitions
 
-In studying a STEM topic, the first step is to spot definitions that involve symbols. For example, in physics, a statement may say "Let $v$ be the velocity." This definition is crucial to understanding other definitions in the same context. 
+In studying a STEM topic, the first step is to spot definitions that involve symbols. For example, in physics, a statement may say, "Let $v$ be the velocity." This definition is crucial to understanding other definitions in the same context. 
 
 In more complex STEM subjects, there may be many symbols in a context. The human mind can track about 5 to 7 items in short-term memory. Until the definitions of symbols are fully understood and become a part of long-term memory, it can be challenging to keep track of many new symbols that are all being introduced at the same time.
 
@@ -32,7 +32,7 @@ In more complex STEM subjects, there may be many symbols in a context. The human
 
 This is where note-taking becomes important. Some authors [compare note-taking to developing a second brain](https://www.buildingasecondbrain.com/resources). Note-taking is a mechanism to expand the capacity of short-term memory.
 
-In the study of a complex STEM topic, a list of symbols and their definitions and meanings can be very helpful. Just the creation of the list is a form of studying. Reading, writing, listening, and speaking all involve different neural pathways. The more neural pathways are involved, the more likely we are to remember, to recall, and to apply something that we learn. This is also why handwriting is considered better than typing for people who are tactile sensitive.
+In the study of a complex STEM topic, a list of symbols and their definitions and meanings can be very helpful. The creation of the list is just a form of studying. Reading, writing, listening, and speaking all involve different neural pathways. The more neural pathways are involved, the more likely we are to remember, to recall, and to apply something that we learn. This is also why handwriting is considered better than typing for people who are tactile sensitive.
 
 Does a list from the text do the same? Can't the professor provide a list of definitions?
 
@@ -52,7 +52,7 @@ The converse is someone who did not read ahead before a lecture. The sensation o
 
 Yes. Depending on the individual, it can be a *significant* amount of time. 
 
-[Time budgeting, management, and prioritization](../0417/mdModule.html) are all crucial in the learning process. This module focuses on *how* to use the resource (time), read the linked module on how to plan to make sure the resource is available and used efficiently.
+[Time budgeting, management, and prioritization](../0417/mdModule.html) are all crucial in the learning process. This module focuses on *how* to use the resource (time); read the linked module on how to plan to make sure the resource is available and used efficiently.
 
 # Rigor and Precision
 
@@ -77,7 +77,7 @@ When people think of rigor, it is usually thought of as the opposite of being cu
 
 Scientific rigor often leads to evidence that shows existing theories may not be entirely correct. For example, the phenomenon of starlight bending around the sun is evidence that Newtonian physics is not entirely correct. This would not have been discovered without rigor. 
 
-Curios scientists would get energized because they would have thought, "Fascinating, the current theories do not explain this, what can possibly cause this?" The ensuing journey can be gratifying. This example is fictional because *looking* for light bending was an experiment to confirm Einstein's theory of relativity.
+Curios scientists would get energized because they would have thought, "Fascinating, the current theories do not explain this; what can possibly cause this?" The ensuing journey can be gratifying. This example is fictional because *looking* for light bending was an experiment to confirm Einstein's theory of relativity.
 
 Another example, this time non-fictional, involves debugging computer program code. A rigorous developer would test code more methodically and extensively than one who uses a few test cases and declares "It works!" Upon the discovery of the computer program failing at least one test case, what are the possible reactions?
 
@@ -99,4 +99,4 @@ Starting with the verbal-only passing of knowledge before there was writing, tec
 
 Specifically, LLM Gen-AI (large language model generative artificial intelligence) empowers students to be self-sufficient learners who practice rigor, and learning how to use LLM Gen-AI becomes a crucial component in STEM education. Can LLM Gen-AI replace human professors? Perhaps not yet for some time.
 
-At this point (2024), LLM Gen-AI can take on the role of a *personal* teaching assistant who meets students where they are. LLM Gen-AI is not without its limitations, and as a result a professor still needs to guide students on how to make the most of the LLM Gen-AI, and address questions and doubts when the needs arise. 
+At this point (2024), LLM Gen-AI can take on the role of a *personal* teaching assistant who meets students where they are. LLM Gen-AI is not without its limitations, and as a result, a professor still needs to guide students on how to make the most of the LLM Gen-AI and address questions and doubts when the needs arise. 
