@@ -112,7 +112,7 @@ The actual BNF of the assignment operator in C++ is quite complex. For now, we a
 
 If this is cumbersome, the BNF of *`expression`* is much worse! For now, we will simply assume that *`expression`* can be any "common mathematical expression."
 
-But what about the semi-colon? In C/C++ and all derived languages, assignment is an *expression*, not a *statement*. In order to turn an expression into a statement, a semi-color is needed. In other words:
+But what about the semi-colon? In C/C++ and all derived languages, assignment is an *expression*, not a *statement*. In order to turn an expression into a statement, a semi-colon is needed. In other words:
 
 * *`assignmentStmt`* ::= *`assignment`* **;**
 
