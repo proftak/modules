@@ -70,3 +70,4 @@
 * [Module 0440: Syntax and the Syntax to Describe Syntax](./0440/mdModule.md)
 * [Module 0441: A super-catalog of student related modules](./0441/mdModule.md)
 * [Module 0442: Performance Review Standards](./0442/mdModule.md)
+* [Module 0443: A more hair-splitting way to define set notations](./0443/mdModule.md)
