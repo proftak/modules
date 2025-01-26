@@ -10,13 +10,13 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 
 # Operators and notations
 
-* $a \in X$ means $a$, as a value, is an element of set $X$. This is a boolean operator that can evaluate to be true or false.
+* $\boxed{a \in X}$ means $a$, as a value, is an element of set $X$. This is a boolean operator that can be evaluated to be true or false.
 * $a = b$ means that the value of $a$ and the value of $b$ are the same, hence interchangeable.
 * As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of an expression that is a placeholder.
-* $\forall e(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
-* $\exists e(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
-* $(e \in (X \cap Y)) \Leftrightarrow (\forall e((e \in X) \wedge (e \in Y)))$, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$.
-* $(e \in (X \cup Y)) \Leftrightarrow (\forall e((e \in X) \vee (e \in Y)))$. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
+* $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
+* $\boxed{\exists e}(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
+* $\forall e((e \in (X \cap Y)) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$.
+* $\forall e((e \in (X \cup Y)) \Leftrightarrow ((e \in X) \vee (e \in Y)))$. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
 * $(e \in (X - Y)) \Leftrightarrow (\forall e((e \in X) \wedge \neg(e \in Y)))$. $X - Y$ is the *difference* of the sets $X$ and $Y$.
 * $(X \subseteq Y) \Leftrightarrow (\forall e((e \in X) \Rightarrow (e \in Y)))$. $X \subset Y$ evaluates whether $X$ is a subset of $Y$, it says "every element $e$ in set $X$ is also in set $Y$."
 * $(X \subset Y) \Leftrightarrow ((\forall e((e \in X) \Rightarrow (e \in Y))) \wedge (\exists e((e \in Y) \wedge \neg(e \in X))))$. $X \subset Y$ evaluates whether $X$ is a *proper* subset of $Y$. There needs to be one element that is in $Y$ but not in $X$.
