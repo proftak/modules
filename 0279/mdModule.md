@@ -624,5 +624,3 @@ What is the truth table of the expression $((p) \Rightarrow (q)) \vee (r)$?
 |1|1|1|1|
 
 </details>
-
-
