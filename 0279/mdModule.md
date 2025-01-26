@@ -224,3 +224,102 @@ The truth table of equivalence is as follows:
 | 1 | 0 |           0 |
 | 1 | 1 |           1 |
 
+# AI-generated practice questions
+
+    <details>
+        <summary>1. Construct the truth table for $x \wedge (y \vee z)$.</summary>
+        <pre>
+| x | y | z | $x \wedge (y \vee z)$ |
+|---|---|---|-----------------------|
+| 0 | 0 | 0 |          0            |
+| 0 | 0 | 1 |          0            |
+| 0 | 1 | 0 |          0            |
+| 0 | 1 | 1 |          0            |
+| 1 | 0 | 0 |          0            |
+| 1 | 0 | 1 |          1            |
+| 1 | 1 | 0 |          1            |
+| 1 | 1 | 1 |          1            |
+        </pre>
+    </details>
+
+    <details>
+        <summary>2. Construct the truth table for $(x \vee y) \wedge \neg z$.</summary>
+        <pre>
+| x | y | z | $(x \vee y) \wedge \neg z$ |
+|---|---|---|----------------------------|
+| 0 | 0 | 0 |            0               |
+| 0 | 0 | 1 |            0               |
+| 0 | 1 | 0 |            1               |
+| 0 | 1 | 1 |            0               |
+| 1 | 0 | 0 |            1               |
+| 1 | 0 | 1 |            0               |
+| 1 | 1 | 0 |            1               |
+| 1 | 1 | 1 |            0               |
+        </pre>
+    </details>
+
+    <details>
+        <summary>3. Construct the truth table for $\neg x \wedge (y \vee z)$.</summary>
+        <pre>
+| x | y | z | $\neg x \wedge (y \vee z)$ |
+|---|---|---|----------------------------|
+| 0 | 0 | 0 |            0               |
+| 0 | 0 | 1 |            1               |
+| 0 | 1 | 0 |            1               |
+| 0 | 1 | 1 |            1               |
+| 1 | 0 | 0 |            0               |
+| 1 | 0 | 1 |            0               |
+| 1 | 1 | 0 |            0               |
+| 1 | 1 | 1 |            0               |
+        </pre>
+    </details>
+
+    <details>
+        <summary>4. Construct the truth table for $x \Rightarrow (y \wedge \neg z)$.</summary>
+        <pre>
+| x | y | z | $x \Rightarrow (y \wedge \neg z)$ |
+|---|---|---|----------------------------------|
+| 0 | 0 | 0 |               1                  |
+| 0 | 0 | 1 |               1                  |
+| 0 | 1 | 0 |               1                  |
+| 0 | 1 | 1 |               1                  |
+| 1 | 0 | 0 |               0                  |
+| 1 | 0 | 1 |               0                  |
+| 1 | 1 | 0 |               1                  |
+| 1 | 1 | 1 |               0                  |
+        </pre>
+    </details>
+
+    <details>
+        <summary>5. Construct the truth table for $(x \vee \neg y) \wedge z$.</summary>
+        <pre>
+| x | y | z | $(x \vee \neg y) \wedge z$ |
+|---|---|---|---------------------------|
+| 0 | 0 | 0 |            0              |
+| 0 | 0 | 1 |            1              |
+| 0 | 1 | 0 |            0              |
+| 0 | 1 | 1 |            0              |
+| 1 | 0 | 0 |            0              |
+| 1 | 0 | 1 |            1              |
+| 1 | 1 | 0 |            0              |
+| 1 | 1 | 1 |            1              |
+        </pre>
+    </details>
+
+    <details>
+        <summary>6. Construct the truth table for $\neg(x \wedge y) \vee z$.</summary>
+        <pre>
+| x | y | z | $\neg(x \wedge y) \vee z$ |
+|---|---|---|---------------------------|
+| 0 | 0 | 0 |            1              |
+| 0 | 0 | 1 |            1              |
+| 0 | 1 | 0 |            1              |
+| 0 | 1 | 1 |            1              |
+| 1 | 0 | 0 |            1              |
+| 1 | 0 | 1 |            1              |
+| 1 | 1 | 0 |            0              |
+| 1 | 1 | 1 |            1              |
+        </pre>
+    </details>
+
+
