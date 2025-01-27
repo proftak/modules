@@ -12,7 +12,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 
 * $\boxed{a \in X}$ means $a$, as a value, is an element of set $X$. This is a boolean operator that can be evaluated to be true or false.
 * $a = b$ means that the value of $a$ and the value of $b$ are the same, hence interchangeable.
-* As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of an expression that is a placeholder.
+* As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of a potentially complicated expression. The actual definition of $P(a)$ depends on the context. 
 * $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
 * $\boxed{\exists e}(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
 * $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
