@@ -15,12 +15,12 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of an expression that is a placeholder.
 * $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
 * $\boxed{\exists e}(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
-* $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$.
-* $\forall e((e \in (\boxed{X \cup Y)}) \Leftrightarrow ((e \in X) \vee (e \in Y)))$. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
-* $\forall e((e \in (\boxed{X - Y})) \Leftrightarrow ((e \in X) \wedge \neg(e \in Y)))$. $X - Y$ is the *difference* of the sets $X$ and $Y$.
-* $(\boxed{X \subseteq Y}) \Leftrightarrow (\forall e((e \in X) \Rightarrow (e \in Y)))$. $X \subset Y$ evaluates whether $X$ is a subset of $Y$, it says "every element $e$ in set $X$ is also in set $Y$."
-* $(\boxed{X \subset Y}) \Leftrightarrow ((\forall e((e \in X) \Rightarrow (e \in Y))) \wedge (\exists e((e \in Y) \wedge \neg(e \in X))))$. $X \subset Y$ evaluates whether $X$ is a *proper* subset of $Y$. There needs to be one element in $Y$ but not in $X$.
-* $(X=\boxed{\\{e\|P(e)\\}}) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (P(e))))$. This is a notation to describe the membership of a set with an infinite number of elements where $P$ is a predicate.
+* $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
+* $\forall e((e \in (\boxed{X \cup Y)}) \Leftrightarrow ((e \in X) \vee (e \in Y)))$ is *definitive*. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
+* $\forall e((e \in (\boxed{X - Y})) \Leftrightarrow ((e \in X) \wedge \neg(e \in Y)))$ is *definitive*. $X - Y$ is the *difference* of the sets $X$ and $Y$.
+* $(\boxed{X \subseteq Y}) \Leftrightarrow (\forall e((e \in X) \Rightarrow (e \in Y)))$ is *definitive*. $X \subset Y$ evaluates whether $X$ is a subset of $Y$, it says "every element $e$ in set $X$ is also in set $Y$."
+* $(\boxed{X \subset Y}) \Leftrightarrow ((\forall e((e \in X) \Rightarrow (e \in Y))) \wedge (\exists e((e \in Y) \wedge \neg(e \in X))))$ is definitive. $X \subset Y$ evaluates whether $X$ is a *proper* subset of $Y$. There needs to be one element in $Y$ but not in $X$.
+* $(X=\boxed{\\{e\|P(e)\\}}) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (P(e))))$ is *definitive*. This is a notation to describe the membership of a set with an infinite number of elements where $P$ is a predicate.
 * To describe all the members of a set that has a finite number of elements:
   * The general BNF syntax is as follows: **\{** [ *`element`* \{ **,** *`element`* \}*] **\}**
     * Anything that is **bold** is a terminal; it should be a part of the expression verbatim.
