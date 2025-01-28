@@ -38,7 +38,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 
 # Examples
 
-* $\{a,b,c\} \cap \{d,a,c\}=\{c,a\}$
-* $\{a,b,c\} \cup \{d,a,c\}=\{b,d,c,a\}$
-* $\{a,b,c\} - \{d,a,c\}=\{b\}$
+* $\\{a,b,c\\} \cap \\{d,a,c\\}=\\{c,a\\}$
+* $\\{a,b,c\\} \cup \\{d,a,c\\}=\\{b,d,c,a\\}$
+* $\\{a,b,c\\} - \\{d,a,c\\}=\\{b\\}$
  
