@@ -180,13 +180,17 @@ This code is also a *sequence* (of statements). A sequence means that there may 
 This way, we can use a column in a trace table to identify statements.
 In our example, the trace table should look like the following:
 
-|line#|`availableFunds`|`aeTotalExpense`|
-|:-|:-|:-|
-|pre|261|0|
-|1|190|0|
-|2|190|71|
-|post|190|71|
+|line#|`x`|`availableFunds`|`aeTotalExpense`|
+|:-|:-|:-|:-|
+|pre|71|261|0|
+|1|71|190|0|
+|2|71|190|71|
+|post|71|190|71|
 
 The word "pre" represents "pre-condition", this row represents the state of the variables before the code runs. Likewise, the word "post" represents "post-condition", this row represents the state of the variables after the entire code runs. The row that corresponds to line 1 reports the states of the variables *after* the execution of line 1.
 
 In essence, this "trace table" is like a reel of film, where each row is a frame. The trace table records all the changes to the variables throughout the execution of the code.
+
+# How to make a trace table?
+
+There are many ways to create a table electronically. One of the most convenient methods is to use a cloud-based spreadsheet, such as Google Sheets. The trace table used in the example can be [captured as a Google Sheet](https://docs.google.com/spreadsheets/d/12vSbSZAMIYsgOC5hMRHGoYR9Tz-Lzl4PQX-dVKZB5Vo/edit?usp=sharing).
