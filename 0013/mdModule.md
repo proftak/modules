@@ -106,9 +106,11 @@ shifted a little to the right-hand side. The purpose of indentation is
 to indicate how a statement "embeds" another one. This will become more
 important later.
 
-A conditional statement is also graphically presented in figure
-[1](#figure:ifthenelse_template){reference-type="ref"
-reference="figure:ifthenelse_template"}. Note that this is not a
+A conditional statement is also graphically presented as follows:
+
+![If-then-else template](ifthenelse_template.png) 
+
+Note that this is not a
 flow-chart, but rather a "trail-map". There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
