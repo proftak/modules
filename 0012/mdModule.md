@@ -147,7 +147,7 @@ aeTotalExpense = aeTotalExpense + x;
 ```
 
 This is where things seem confusing. For this
-example, let us assume `aeTotalExpense` is \$263, and `x` (the balance of this month) is \$71
+example, let us assume `aeTotalExpense` is \\$263, and `x` (the balance of this month) is \\$71
 before the assignment.
 
 Remember, we always evaluate the right-hand side first for assignment
@@ -158,10 +158,10 @@ two variables are \$263 and \$71, the answer is quite simple: \$334.
 Next, we take the value from the right-hand side and use it to update
 the variable specified by the left-hand side. *It just so happens* that
 the variable on the left-hand side is `aeTotalExpense`. After the
-assignment statement, the value of `aeTotalExpense` becomes \$334.
+assignment statement, the value of `aeTotalExpense` becomes \\$334.
 
 In summary, the assignment statement updates the value of
-`aeTotalExpense` from \$261 to \$334.
+`aeTotalExpense` from \\$263 to \\$334.
 
 # Visualizing Variables
 
@@ -188,10 +188,10 @@ In our example, the trace table should look like the following:
 
 |line#|`x`|`availableFunds`|`aeTotalExpense`|
 |:-|:-|:-|:-|
-|pre|71|261|0|
-|1|71|190|0|
-|2|71|190|71|
-|post|71|190|71|
+|pre|71|261|263|
+|1|71|190|263|
+|2|71|190|334|
+|post|71|190|334|
 
 The word "pre" represents "pre-condition", this row represents the state of the variables before the code runs. Likewise, the word "post" represents "post-condition", this row represents the state of the variables after the entire code runs. The row that corresponds to line 1 reports the states of the variables *after* the execution of line 1.
 
