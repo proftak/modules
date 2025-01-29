@@ -35,14 +35,14 @@ answer is "no". This is why "yes" and "no" are not really good answers.
 
 As a result, it is better to pose questions as follows:
 
-Is it true or false that $x > y$?
+Is it true or false that `x > y`?
 
 We can now flip the question as follows: Is it true or false that `x` is
 not greater than `y`?
 
-It is important to remember that in programming, `x > y` is not an assertion, it is a question. That is, `x > y` is not saying that
+It is important to remember that in programming, `x > y` is not an assertion; it is a question. That is, `x > y` is not saying that
 `x` is actually greater than `y`, but rather asking the question "is it
-true that `x` is greater than `y`". This means that $` > y` in
+true that `x` is greater than `y`". This means that `x > y` in
 programming should have been `x ?>? y`, just to make it
 clear.
 
@@ -140,7 +140,7 @@ for algorithm `findmax2`. The resulting trail map is presented as follows:
 
 Although comparison operators are important and useful, they are not
 sufficient to express all the different kinds of conditions needed in
-programming. Let us think about the logic to figure out the maximum $z$
+programming. Let us think about the logic to figure out the maximum `z`
 of three variables `w`, `x` and `y`.
 
 We know that we need to rely on a conditional statement. In fact, we can
@@ -166,6 +166,12 @@ then by definition, `w` is the maximum. But how do we express this as
 
 The syntax to do this is `(w >= x) && (w >= y)`. The symbol `&&` means "and," also known as "conjunction" in mathematics.
 
+## How to say "true" and "false"
+
+In C++, the literal constant value to specify true is simply **true** as a terminal. Similarly, **false** is the terminal to specify the value of false.
+
+Any value that is **true** or **false** is also known as a _boolean_ value.
+
 ## Conjunction
 
 "Conjunction" is an operator that has two sides. The entire
@@ -174,14 +180,26 @@ conjunction is "and". In C and other C-derived languages, the
 conjunction operator is `&&`. In Pascal, SQL, and Visual Basic, the
 operator is simply spelled as `AND`.
 
-<!--
-
 The four possible combinations are as follows:
 
--   $({\rm true} \wedge {\rm true})$ is true
--   $({\rm false} \wedge {\rm true})$ is false
--   $({\rm true} \wedge {\rm false})$ is false
--   $({\rm false} \wedge {\rm false})$ is false
+-   `true && true` is true
+-   `true && false` is false
+-   `false && true` is false
+-   `false && false` is false
+
+The can also be summarized in a truth table as follows:
+
+|`x`|`y`|`x && y`|
+|-|-|-|
+|`false`|`false`|`false`|
+|`false`|`true`|`false`|
+|`true`|`false`|`false`|
+|`true`|`true`|`true`|
+
+In this table, `x` and `y` are _independent variables_, meaning their values do not depend on each other. Each row of the table shows the value of the boolean expression `x && y` given the values of `x` and `y` specified on the same row.
+
+<!--
+
 
 ## Disjunction
 
