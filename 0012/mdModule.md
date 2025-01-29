@@ -143,7 +143,7 @@ assignment, it *always* becomes 0 after the assignment executes.
 Let us take a look at something more confusing:
 
 ```c
-aeTotalExpense} = aeTotalExpense + x;
+aeTotalExpense = aeTotalExpense + x;
 ```
 
 This is where things seem confusing. For this
