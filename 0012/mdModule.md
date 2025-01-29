@@ -116,6 +116,12 @@ But what about the semi-colon? In C/C++ and all derived languages, assignment is
 
 * *`assignmentStmt`* ::= *`assignment`* **;**
 
+Because an assignment is one of many types of statements, 
+
+* *`statement`* ::= *`assignmentStmt`*
+
+We will define additional alternatives to expand the *`statement`* token in other modules.
+
 ## Constant assignment
 
 Let us take a step back and look at a simple assignment:
