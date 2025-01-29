@@ -194,3 +194,26 @@ In essence, this "trace table" is like a reel of film, where each row is a frame
 # How to make a trace table?
 
 There are many ways to create a table electronically. One of the most convenient methods is to use a cloud-based spreadsheet, such as Google Sheets. The trace table used in the example can be [captured as a Google Sheet](https://docs.google.com/spreadsheets/d/12vSbSZAMIYsgOC5hMRHGoYR9Tz-Lzl4PQX-dVKZB5Vo/edit?usp=sharing).
+
+# Unknown values and values that do not change
+
+Let's take a look at the following code:
+
+```c
+x=6;   // line 1
+y=x+5; // line 2
+y=y*3; // line 3
+```
+
+The trace table is as follows:
+
+|line#|x|y|comments|
+|:-|:-|:-|:-|
+|pre|?|?|Initially, we do not know the value of any of the variables.|
+|1|6| |Now we know the value of x is 6 after line 1.|
+|2| |11|Variable y is now changed from unknown to 11.|
+|3| |33|Variable y is changed again to 33.|
+
+Note how the pre-condition states clearly that none of the two variables have any specific value, hence the question mark "?". Also, in this table, note how unchanged values are left blank. In order to know the value (state) of a variable after the execution on a line, we need to first look up that line. If the value of a variable is blank, then look *up* until a value (including unknown) is found.
+
+In other words, a cell in the table has a value only if a variable is assigned to.
