@@ -176,7 +176,7 @@ such as the following:
 
 ```c
 availableFunds = availableFunds - x;  // line 1
-aeTotalExpense = aeTotalExpense} + x; // line 2
+aeTotalExpense = aeTotalExpense + x; // line 2
 ```
 
 In C/C++ and most derived languages, two slashes `//` begins comments. Comments are content in a program that is not interpreted by the machine but rather only serve as annotations to a human reader. In this case, we are only using the comments to indicate the line number so that the trace table can reference the line.
