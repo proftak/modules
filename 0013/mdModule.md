@@ -84,6 +84,7 @@ I think we have enough suspense already. The proper code for this logic
 is as follows:
 
 ```c
+// algorithm findmax2
 if (x > y) // line 1
   z = x;   // line 2
 else       // line 3
@@ -111,85 +112,69 @@ A conditional statement is also graphically presented as follows:
 ![If-then-else template](ifthenelse_template.png) 
 
 Note that this is not a
-flow-chart, but rather a "trail-map". There is no special symbol to
+flow-chart but rather a "trail-map". There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
-the question (on the post). If the answer is "true", then the left path
-is chosen. If the answer is "false", then the right path is chosen. The
-bubble on the left hand side is labeled "then", it represents whatever
+the question (on the post). If the answer is "true," then the left path
+is chosen. If the answer is "false," then the right path is chosen. The
+bubble on the left-hand side is labeled "then", it represents whatever
 needs to be done if the answer is "true". Likewise, the bubble on the
-right hand side is labeled "else", it represents whatever needs to be
+right-hand side is labeled "else", it represents whatever needs to be
 done if the answer is "false".
 
 ![The pictorial template of a basic conditional (if-then-else)
-statement.](ifthenelse_template.png){#figure:ifthenelse_template}
+statement.](ifthenelse_template.png)
 
 Given this template, we can substitute the proper condition and actions
-for algorithm [\[algorithm:max2\]](#algorithm:max2){reference-type="ref"
-reference="algorithm:max2"}. The resulting trail map is presented in
-figure [2](#figure:max2){reference-type="ref" reference="figure:max2"}.
+for algorithm `findmax2`. The resulting trail map is presented as follows:
 
-![The pictorial representation of algorithm
-[\[algorithm:max2\]](#algorithm:max2){reference-type="ref"
-reference="algorithm:max2"}.](ifthenelse_max2.png){#figure:max2}
+![The pictorial representation of algorithm findmax2](ifthenelse_max2.png)
 
 # Logical operators
 
 Although comparison operators are important and useful, they are not
 sufficient to express all the different kinds of conditions needed in
 programming. Let us think about the logic to figure out the maximum $z$
-of three variables $w$, $x$ and $y$.
+of three variables `w`, `x` and `y`.
 
 We know that we need to rely on a conditional statement. In fact, we can
-guess the overall form of the statement (in listing
-[\[algorithm:max3t\]](#algorithm:max3t){reference-type="ref"
-reference="algorithm:max3t"}:
+guess the overall form of the statement (in algorithm template findmax3).
 
-``` {#algorithm:max3t .numberLines .pseudocode language="pseudocode" numbers="left" escapechar="\\%" label="algorithm:max3t" caption="Template to find max of 3 variables"}
-if %$c_1$% then
-  %$z \leftarrow w$% %\label{max3:w}%
-else if %$c_2$% then
-  %$z \leftarrow x$% %\label{max3:x}%
-else
-  %$z \leftarrow y$% %\label{max3:y}%
-end if
+```c
+// algorithm findmax3 template
+if (_c1_)      // line 1
+  z = w;       // line 2
+else if (_c2_) // line 3
+  z = x;       // line 4
+else           // line 5
+  z = y;       // line 6
 ```
 
-Line [\[max3:w\]](#max3:w){reference-type="ref" reference="max3:w"}
-should execute if and only if $w$ is, indeed, the maximum. Similar logic
-applies to lines [\[max3:x\]](#max3:x){reference-type="ref"
-reference="max3:x"} and [\[max3:y\]](#max3:y){reference-type="ref"
-reference="max3:y"}. Let us focus on line
-[\[max3:w\]](#max3:w){reference-type="ref" reference="max3:w"} for now.
+The notations `_c1_` on line 1 and `_c2_` are placeholders for two conditions that we need to figure out.
+Line 2 should execute if and only if `w` is the maximum. Similar logic
+applies to lines 4 and 5. Let us focus on line 2 for now.
 
-How can we confirm that $w$ is the maximum? If $w \ge x$ and $w \ge y$,
-then by definition, $w$ is the maximum. But how do we express this as
-$c_1$?
+How can we confirm that `w` is the maximum? If `w >= x` and `w >= y`,
+then by definition, `w` is the maximum. But how do we express this as
+`_c1_`?
 
-How about just "$w \ge x$ and $w \ge y$"?
-
-Bingo! That's the answer! The word "and" *is* a logical operator! It is
-called a "conjunction". A conjunction means the whole expression is true
-if and only if both sides of the operator are true. Let us explore all
-the logical operators.
+The syntax to do this is `(w >= x) && (w >= y)`. The symbol `&&` means "and," also known as "conjunction" in mathematics.
 
 ## Conjunction
 
-As stated, conjunction is an operator that has two sides. The entire
+"Conjunction" is an operator that has two sides. The entire
 expression is true if and only if both sides are true. In English, a
-conjunction is "and". The mathematical symbol of conjunction is $\wedge$
-(like an inverted "V"). In C and other C-derived languages, the
-conjunction operator is `&&`. In Pascal, SQL and Visual Basic, the
+conjunction is "and". In C and other C-derived languages, the
+conjunction operator is `&&`. In Pascal, SQL, and Visual Basic, the
 operator is simply spelled as `AND`.
+
+<!--
 
 The four possible combinations are as follows:
 
 -   $({\rm true} \wedge {\rm true})$ is true
-
 -   $({\rm false} \wedge {\rm true})$ is false
-
 -   $({\rm true} \wedge {\rm false})$ is false
-
 -   $({\rm false} \wedge {\rm false})$ is false
 
 ## Disjunction
@@ -364,3 +349,5 @@ only one statement. The following is the C code that I would have used:
 
 The advantage of this approach is that I can add lines to the "else"
 case without worrying that I need to add curly braces.
+
+-->
