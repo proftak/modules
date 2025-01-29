@@ -112,18 +112,15 @@ A conditional statement is also graphically presented as follows:
 ![If-then-else template](ifthenelse_template.png) 
 
 Note that this is not a
-flow-chart but rather a "trail-map". There is no special symbol to
+flow-chart but rather a "trail map". There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
 the question (on the post). If the answer is "true," then the left path
 is chosen. If the answer is "false," then the right path is chosen. The
-bubble on the left-hand side is labeled "then", it represents whatever
-needs to be done if the answer is "true". Likewise, the bubble on the
-right-hand side is labeled "else", it represents whatever needs to be
-done if the answer is "false".
-
-![The pictorial template of a basic conditional (if-then-else)
-statement.](ifthenelse_template.png)
+bubble on the left-hand side is labeled "then"; it represents whatever
+needs to be done if the answer is "true." Likewise, the bubble on the
+right-hand side is labeled "else"; it represents whatever needs to be
+done if the answer is "false."
 
 Given this template, we can substitute the proper condition and actions
 for algorithm `findmax2`. The resulting trail map is presented as follows:
