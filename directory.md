@@ -1,4 +1,5 @@
 * [Module 0012: Variables, assignment statements and sequences](./0012/mdModule.md)
+* [Module 0013: Conditions and conditional statements](./0013/mdModule.md)
 * [Module 0082: Big and little Omicron, Omega and Theta](./0082/mdModule.md)
 * [Module 0279: Boolean Operator](./0279/mdModule.md)
 * [Module 0280: Basic Set Notations](./0280/mdModule.md)
