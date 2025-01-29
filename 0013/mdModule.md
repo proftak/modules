@@ -134,7 +134,7 @@ for algorithm `findmax2`. The resulting trail map is presented as follows:
 * *`elsePart`* ::= **else** *`elseStmt`*
 * *`elseStmt`* ::= *`statement`*
 
-*`condStmt`* is a conditional statement. *`condition`* is a condition, which is also known as an expression that evaluates to true or false. *`condStmt`* is the "then statement," it executes if and only if `*condition`* is true. *`elsePart`* is an optional part to specify an else statement. *`elseStmt`* is the "else statement," it executes if and only if `*condition*` is false.
+*`condStmt`* is a conditional statement. *`condition`* is a condition, which is also known as an expression that evaluates to true or false. *`condStmt`* is the "then statement," it executes if and only if `*condition`* is true. *`elsePart`* is an optional part to specify an else statement. *`elseStmt`* is the "else statement," it executes if and only if *`condition`* is false.
 
 # Logical operators
 
