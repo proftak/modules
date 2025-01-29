@@ -130,6 +130,15 @@ for algorithm `findmax2`. The resulting trail map is presented as follows:
 
 ![The pictorial representation of algorithm findmax2](ifthenelse_max2.png)
 
+# The syntax of a conditional statement
+
+* *`condStmt`* ::= **if (** *`condition`* **)** *`condStmt`* *`elsePart`*<sub>opt</sub>
+* *`condStmt`* ::= *`statement`*
+* *`elsePart`* ::= **else** *`elseStmt`*
+* *`elseStmt`* ::= *`statement`*
+
+*`condStmt`* is a conditional statement. *`condition`* is a condition, which is also known as an expression that evaluates to true or false. *`condStmt`* is the "then statement," it executes if and only if `*condition`* is true. *`elsePart`* is an optional part to specify an else statement. *`elseStmt`* is the "else statement," it executes if and only if `*condition*` is false.
+
 # Logical operators
 
 Although comparison operators are important and useful, they are not
