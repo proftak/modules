@@ -219,6 +219,7 @@ The trace table is as follows:
 |1|6| |Now we know the value of x is 6 after line 1.|
 |2| |11|Variable y is now changed from unknown to 11.|
 |3| |33|Variable y is changed again to 33.|
+|post| | |This line is to mark the conclusion of running the algorithm.|
 
 Note how the pre-condition states clearly that none of the two variables have any specific value, hence the question mark "?". Also, in this table, note how unchanged values are left blank. In order to know the value (state) of a variable after the execution on a line, we need to first look up that line. If the value of a variable is blank, then look *up* until a value (including unknown) is found.
 
