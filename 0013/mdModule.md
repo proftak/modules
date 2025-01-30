@@ -239,7 +239,7 @@ The two possible combinations are as follows:
 
 This can also be summarized in a truth table as follows:
 
-|`x`||`!x`|
+|`x`|`!x`|
 |-|-|
 |`false`|`true`|
 |`true`|`false`|
