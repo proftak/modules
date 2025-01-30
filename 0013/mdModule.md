@@ -187,7 +187,7 @@ The four possible combinations are as follows:
 -   `false && true` is false
 -   `false && false` is false
 
-The can also be summarized in a truth table as follows:
+This can also be summarized in a truth table as follows:
 
 |`x`|`y`|`x && y`|
 |-|-|-|
@@ -198,42 +198,53 @@ The can also be summarized in a truth table as follows:
 
 In this table, `x` and `y` are _independent variables_, meaning their values do not depend on each other. Each row of the table shows the value of the boolean expression `x && y` given the values of `x` and `y` specified on the same row.
 
-<!--
-
 
 ## Disjunction
 
 Disjunction is the English word "or". This operator also requires two
 sides. The entire disjunction expression is true if and only if at least
-one side is true. The mathematical symbol of disjunction is $\vee$ (like
-a "V"). In C and other C-drived languages, the disjunction operator is
-`||`. In Pascal, SQL and Visual Basic, the operator is simply spelled as
+one side is true. In C and other C-derived languages, the disjunction operator is
+`||`. In Pascal, SQL, and Visual Basic, the operator is simply spelled as
 `OR`.
 
 The four possible combinations are as follows:
 
--   $({\rm true} \vee {\rm true})$ is true
+-   `false || false` is `false`
+-   `false || true` is `true`
+-   `true || false` is `true`
+-   `true || true` is `true`
 
--   $({\rm false} \vee {\rm true})$ is true
+This can also be summarized in a truth table as follows:
 
--   $({\rm true} \vee {\rm false})$ is true
+|`x`|`y`|`x || y`|
+|-|-|-|
+|`false`|`false`|`false`|
+|`false`|`true`|`true`|
+|`true`|`false`|`true`|
+|`true`|`true`|`true`|
 
--   $({\rm false} \vee {\rm false})$ is false
 
 ## Negation
 
 Negation is the English word "not". This operator only has one side (on
-the right hand side). A negation expression is true if and only if the
-value of the right hand side is false. The mathematical symbol is $\neg$
-(like a cliff). In C and other C-derived languages, the operator is `!`
-(exclamation point). In Pascal, SQL and Visual Basic, the operator is
+the right-hand side). A negation expression is true if and only if the
+value of the right-hand side is false. In C and other C-derived languages, the operator is `!`
+(exclamation point). In Pascal, SQL, and Visual Basic, the operator is
 spelled out as `NOT`.
 
 The two possible combinations are as follows:
 
--   $(\neg {\rm true})$ is false
+-   `!false` is `true`
+-   `!true` is `false`
 
--   $(\neg {\rm false})$ is true
+This can also be summarized in a truth table as follows:
+
+|`x`||`!x`|
+|-|-|
+|`false`|`true`|
+|`true`|`false`|
+
+<!--
 
 # Back to the example
 
