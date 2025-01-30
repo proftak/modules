@@ -48,7 +48,7 @@ clear.
 
 ## Comparisons
 
-The first and more primitive kind of conditions is the comparison
+The first and more primitive kind of condition consists of the comparison
 operators. This is a list of comparison operators that exist in all
 programming languages:
 
@@ -282,7 +282,7 @@ executes.
 Now, it is your turn to work out the next example. Assume `w==2`, `x==3`, and `y==3`. Create a trace table that shows exactly which lines get
 executed.
 
-## Else if?
+## What is "Else if"?
 
 In algorithm `findmax3`, we use a construct that was not present in
 algorithm `findmax2`. What exactly is "else if"? 
@@ -302,10 +302,10 @@ else                           // line 3
 
 Most programming languages like C++ and Java ignore indentations and how a program is broken into lines. This new way to express `findmax3` is functionally identical to the earlier one. However, the indentations in this newer version are structurally correct. There are two conditional statements, one is nested within the other.
 
-The following is an over-simplified syntax analysis of algorithm `findmax3`. Note how one conditional statment is the *`elseStmt`* of another.
+The following is an over-simplified syntax analysis of algorithm `findmax3`. Note how one conditional statement is the *`elseStmt`* of another.
 
 ```mermaid
-flowchart LR
+flowchart TD
 if1[if]
 op1["("]
 cond1["(w >= x) && (w >= y)"]
@@ -319,6 +319,8 @@ stmt3(elseStmt)
 stmt4(condStmt)
 stmt5(condStmt)
 stmt6(elseStmt)
+elsePart1(elsePart)
+elsePart2(elsePart)
 stmt5 -.-> stmt6
 else1[else]
 if2[if]
@@ -337,6 +339,7 @@ cp1 --> zGetsW
 zGetsW --> else1
 zGetsW -.-> stmt1
 else1 --> if2
+else1 -.-> elsePart1
 if2 --> op2
 op2 --> cond2
 cond2 --> cp2
@@ -351,13 +354,16 @@ cond1 -.-> condition1
 condition1 -.-> stmt4
 cp1 -.-> stmt4
 stmt1 -.-> stmt4
-else1 -.-> stmt4
-stmt6 -.-> stmt4
+stmt6 -.-> elsePart1
+elsePart1 -.-> stmt4
 if2 -.-> stmt5
 op2 -.-> stmt5
 condition2 -.-> stmt5
 cp2 -.-> stmt5
 stmt2 -.-> stmt5
-else2 -.-> stmt5
-stmt3 -.-> stmt5
+else2 -.-> elsePart2
+stmt3 -.-> elsePart2
+elsePart2 -.-> stmt5
 ```
+
+
