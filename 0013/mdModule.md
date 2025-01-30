@@ -112,7 +112,7 @@ A conditional statement is also graphically presented as follows:
 ![If-then-else template](ifthenelse_template.png) 
 
 Note that this is not a
-flow-chart but rather a "trail map". There is no special symbol to
+flowchart but rather a "trail map". There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
 the question (on the post). If the answer is "true," then the left path
@@ -129,12 +129,15 @@ for algorithm `findmax2`. The resulting trail map is presented as follows:
 
 # The syntax of a conditional statement
 
-* *`condStmt`* ::= **if (** *`condition`* **)** *`condStmt`* *`elsePart`*<sub>opt</sub>
-* *`condStmt`* ::= *`statement`*
+* *`condStmt`* ::= **if (** *`condition`* **)** *`thenStmt`* *`elsePart`*<sub>opt</sub>
+* *`thenStmt`* ::= *`statement`*
 * *`elsePart`* ::= **else** *`elseStmt`*
 * *`elseStmt`* ::= *`statement`*
+* *`statement`* ::= *`condStmt`*
 
-*`condStmt`* is a conditional statement. *`condition`* is a condition, which is also known as an expression that evaluates to true or false. *`condStmt`* is the "then statement," it executes if and only if `*condition`* is true. *`elsePart`* is an optional part to specify an else statement. *`elseStmt`* is the "else statement," it executes if and only if *`condition`* is false.
+*`condStmt`* is a conditional statement. *`condition`* is a condition, which is also known as an expression that evaluates to true or false. *`thenStmt`* is the "then statement," it executes if and only if `*condition`* is true. *`elsePart`* is an optional part of specifying an else statement. *`elseStmt`* is the "else statement," it executes if and only if *`condition`* is false.
+
+The last rule specifies that a *`statement`* can expand to a *`condStmt`* (conditional statement). 
 
 # Logical operators
 
@@ -244,145 +247,117 @@ This can also be summarized in a truth table as follows:
 |`false`|`true`|
 |`true`|`false`|
 
-<!--
-
 # Back to the example
 
 Getting back to the example to compute the maximum of three variables,
-we can now utilize the conjunction operator as in listing
-[\[algorithm:max3\]](#algorithm:max3){reference-type="ref"
-reference="algorithm:max3"}.
+we can now utilize the conjunction operator as in the following code.
 
-``` {#algorithm:max3 .numberLines .pseudocode language="pseudocode" label="algorithm:max3" numbers="left" escapechar="\\%" caption="Find max of 3 variables"}
-if %$(w \ge x) \wedge (w \ge y)$% then %\label{max3a:if}%
-  %$z \leftarrow w$% %\label{max3a:w}%
-else if %$(x \ge w) \wedge (x \ge y)$% then
-  %$z \leftarrow x$% %\label{max3a:x}%
-else
-  %$z \leftarrow y$% %\label{max3a:y}%
-end if %\label{max3a:endif}%
+```c
+// algorithm findmax3
+if ((w >= x) && (w >= y))      // line 1
+  z = w;                       // line 2
+else if ((x >= w) && (x >= y)) // line 3
+  z = x;                       // line 4
+else                           // line 5
+  z = y;                       // line 6
 ```
 
 Now that the algorithm is finished, let us try to trace it. In our first
-example, let us assume $w=2$, $x=2$ and $y=2$. Although this is a
+example, let us assume `w==2`, `x==2` and `y==2. Although this is a
 trivial case, a trace of the algorithm illustrates a conditional
 statement with multiple conditions.
 
-  line \#                                                                         w   x   y   z   comments
-  ------------------------------------------------------------------------------- --- --- --- --- ----------------------------------------------------
-  pre                                                                             2   2   2   ?   we don't know the value of $z$
-  [\[max3a:if\]](#max3a:if){reference-type="ref" reference="max3a:if"}            2   2   2   ?   $2 \ge 2$ is true, the conjunction is true as well
-  [\[max3a:w\]](#max3a:w){reference-type="ref" reference="max3a:w"}               2   2   2   2   $z$ gets its value from $w$
-  [\[max3a:endif\]](#max3a:endif){reference-type="ref" reference="max3a:endif"}   2   2   2   2   we only executes one case
+|line #|`w`|`x`|`y`|`z`|comments|
+|:-|:-|:-|:-|:-|:-|
+|pre|2|2|2|?|`z` has an unknown value|
+|1| | | | |`2 >= 2` is true, the condition is true|
+|2| | | |2|`z` is updated by `w`|
+|post| | | | | |
 
 This example illustrates one very important point. In a complex
 conditional statement, even though multiple conditions may be true, only
 the statement matching the first (in top-to-bottom order) true condition
 executes.
 
-Now, it is your turn to work out the next example. Assume $w=2$, $x=3$
-and $y=3$. Create a trace table that shows exactly which lines get
+Now, it is your turn to work out the next example. Assume `w==2`, `x==3`, and `y==3`. Create a trace table that shows exactly which lines get
 executed.
 
 ## Else if?
 
-In algorithm [\[algorithm:max3\]](#algorithm:max3){reference-type="ref"
-reference="algorithm:max3"}, we use a construct that was not present in
-algorithm [\[algorithm:max2\]](#algorithm:max2){reference-type="ref"
-reference="algorithm:max2"}. What exactly is "else if"? It is best to
-first take a look of the template of a conditional statement with an
-"else if" in figure
-[3](#figure:ifthenelseifelse_template){reference-type="ref"
-reference="figure:ifthenelseifelse_template"}.
+In algorithm `findmax3`, we use a construct that was not present in
+algorithm `findmax2`. What exactly is "else if"? 
 
-![The template of a if-then-else-if-else conditional
-statement](ifthenelseifelse_template.png){#figure:ifthenelseifelse_template}
+Let us rewrite algorithm `findmax3` in a slightly different format.
 
-Note that "condition2" is evaluated if-and-only-if "condition1"
-evaluates to false. If "condition1" is true, we simply executes the
-"then" action, and then bypass everything else and exit the statement.
-This also means that if we execute the action "else then" or "else
-else", we know, for sure, that "condition1" is false.
-
-Once we fill in the details of algorithm
-[\[algorithm:max3\]](#algorithm:max3){reference-type="ref"
-reference="algorithm:max3"}, the picture becomes the one in figure
-[4](#figure:max3){reference-type="ref" reference="figure:max3"}.
-
-![The pictorial representation of algorithm
-[\[algorithm:max3\]](#algorithm:max3){reference-type="ref"
-reference="algorithm:max3"}.](ifthenelseifelse_max3.png){#figure:max3}
-
-# Language issues
-
-## Markers
-
-In pseudocode, we can use any marker keywords. However, in a real
-programming language, many of these marker keywords are not present.
-This is especially the case in a "concise" programming language, such as
-C and its derived languages.
-
-Let us consider the following pseudocode example:
-
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
-if %$x \ne y$% then
-  %$z \leftarrow x + y$%
-else
-  %$z \leftarrow x - y$%
-end if
+```c
+// algorithm findmax3
+if ((w >= x) && (w >= y))      // line 1
+  z = w;                       // line 2
+else                           // line 3
+  if ((x >= w) && (x >= y))    // line 4
+    z = x;                     // line 5
+  else                         // line 6
+    z = y;                     // line 7
 ```
 
-Don't mind the meaning of this code. Rather, focus on the translation
-into C language:
+Most programming languages like C++ and Java ignore indentations and how a program is broken into lines. This new way to express `findmax3` is functionally identical to the earlier one. However, the indentations in this newer version are structurally correct. There are two conditional statements, one is nested within the other.
 
-    if (x != y)
-      z = x + y;
-    else
-      z = x - y;
+The following is an over-simplified syntax analysis of algorithm `findmax3`. Note how one conditional statment is the *`elseStmt`* of another.
 
-Note that the marker words "then" and "end if" are missing.
-
-Now, let us consider a slightly more complex example:
-
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
-if %$c > l$% then
-  %$c \leftarrow c - l$%
-  %$x \leftarrow x + 1$%
-else
-  %$y \leftarrow y + 1$%
-end if
+```mermaid
+flowchart LR
+if1[if]
+op1["("]
+cond1["(w >= x) && (w >= y)"]
+cp1[")"]
+condition1(condition)
+condition2(condition)
+zGetsW[z = w;]
+stmt1(thenStmt)
+stmt2(thenStmt)
+stmt3(elseStmt)
+stmt4(condStmt)
+stmt5(condStmt)
+stmt6(elseStmt)
+stmt5 -.-> stmt6
+else1[else]
+if2[if]
+op2["("]
+cond2["(x >= w) && (x >= y)"]
+cond2 -.-> condition2
+cp2[")"]
+zGetsX[z = x;]
+zGetsX -.-> stmt2
+else2[else]
+zGetsY[z = y;]
+if1 --> op1
+op1 --> cond1
+cond1 --> cp1
+cp1 --> zGetsW
+zGetsW --> else1
+zGetsW -.-> stmt1
+else1 --> if2
+if2 --> op2
+op2 --> cond2
+cond2 --> cp2
+cp2 --> zGetsX
+zGetsX --> else2
+zGetsX -.-> stmt2
+else2 --> zGetsY
+zGetsY -.-> stmt3
+if1 -.-> stmt4
+op1 -.-> stmt4
+cond1 -.-> condition1
+condition1 -.-> stmt4
+cp1 -.-> stmt4
+stmt1 -.-> stmt4
+else1 -.-> stmt4
+stmt6 -.-> stmt4
+if2 -.-> stmt5
+op2 -.-> stmt5
+condition2 -.-> stmt5
+cp2 -.-> stmt5
+stmt2 -.-> stmt5
+else2 -.-> stmt5
+stmt3 -.-> stmt5
 ```
-
-The corresponding C code is as follows:
-
-    if (c > l)
-    {
-      c = c - l;
-      x = x + 1;
-    }
-    else
-      y = y + 1;
-
-Curly braces (`{}`) are used to group the two lines for the "then" case.
-This is because C can only specify one statement for the "then" case,
-and another one for the "else" case. In order to perform multiple steps
-in either case, the curly braces are used to group multiple steps into a
-"compound statement".
-
-As a personal preference, I always use curly braces, even if there is
-only one statement. The following is the C code that I would have used:
-
-    if (c > l)
-    {
-      c = c - l;
-      x = x + 1;
-    }
-    else
-    {
-      y = y + 1;
-    }
-
-The advantage of this approach is that I can add lines to the "else"
-case without worrying that I need to add curly braces.
-
--->
