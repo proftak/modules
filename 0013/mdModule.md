@@ -204,19 +204,19 @@ In this table, `x` and `y` are _independent variables_, meaning their values do 
 Disjunction is the English word "or". This operator also requires two
 sides. The entire disjunction expression is true if and only if at least
 one side is true. In C and other C-derived languages, the disjunction operator is
-`||`. In Pascal, SQL, and Visual Basic, the operator is simply spelled as
+`\|\|`. In Pascal, SQL, and Visual Basic, the operator is simply spelled as
 `OR`.
 
 The four possible combinations are as follows:
 
--   `false || false` is `false`
--   `false || true` is `true`
--   `true || false` is `true`
--   `true || true` is `true`
+-   `false \|\| false` is `false`
+-   `false \|\| true` is `true`
+-   `true \|\| false` is `true`
+-   `true \|\| true` is `true`
 
 This can also be summarized in a truth table as follows:
 
-|`x`|`y`|`x || y`|
+|`x`|`y`|`x \|\| y`|
 |-|-|-|
 |`false`|`false`|`false`|
 |`false`|`true`|`true`|
