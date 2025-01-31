@@ -53,11 +53,11 @@
             or <a href="https://github.com/proftak/modules">create an issue or participate in a discussion.</a> <br />
             {% capture viewUrl -%}
             {% github_edit_link -%}
-            {% endcapture %}
+            {% endcapture -%}
             or <a href={{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}>View the source document.</a><br />
             {% capture rawUrl -%}
-            {{ viewUrl | replace: "edit", "refs/heads" | replace: "github", "raw.githubusercontent" | prepend: '"' | append: '"' }}
-            {% endcapture %}
+            {{ viewUrl | replace: "edit", "refs/heads" | replace: "github", "raw.githubusercontent" | prepend: '"' | append: '"' -}}
+            {% endcapture -%}
             <button onclick="copyRawMd()">Click to copy source to clipboard.</button>
         </div>
         {% endif %}
