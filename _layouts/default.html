@@ -48,7 +48,10 @@
         {{ content }} 
         {% if site.github.private != true and site.github.license %}
         <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-            This site is licensed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International 🅭🅯🄏🄎</a>. {% github_edit_link "Improve this page by contributing and editing " %}, or <a href="https://github.com/proftak/modules">create an issue or participate in a discussion.</a>
+            This site is licensed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International 🅭🅯🄏🄎</a>. <br />
+            {% github_edit_link "Improve this page by contributing and editing " %}, <br />
+            or <a href="https://github.com/proftak/modules">create an issue or participate in a discussion.</a> <br />
+            or <a href="{% raw %}{% github_edit_link | replace: "edit", "blob" %}{% endraw %} ">View the source document."</a><br />
         </div>
         {% endif %}
     </div>
@@ -68,6 +71,14 @@
 <!-- and it's easy to individually load additional languages -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/c.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/javascript.min.js"></script>
+
+    <script>
+        function copyRawMd() {
+            navigator.clipboard.writeText("{{ content }}");
+            
+        
+        }
+    </script>
     
     <script src="https://proftak.github.io/modules/highlight/highlight.min.js">
     </script>
