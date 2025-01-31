@@ -81,7 +81,7 @@
 
     <script>
         function copyRawMd() {
-            let request = new Request({{ rawUrl }});
+            let request = new Request({{ rawUrl -}});
             let content = await fetch(request);
             navigator.clipboard.writeText(content.text());
         }
