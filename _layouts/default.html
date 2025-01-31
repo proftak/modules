@@ -80,7 +80,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/javascript.min.js"></script>
 
     <script>
-        function copyRawMd() {
+        async function copyRawMd() {
             let request = new Request({{ rawUrl -}});
             let content = await fetch(request);
             navigator.clipboard.writeText(content.text());
