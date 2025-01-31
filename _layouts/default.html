@@ -55,7 +55,7 @@
             {% github_edit_link %}
             {% endcapture %}
             or <a href={{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}>View the source document.</a><br />
-            {{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}
+            {{ viewUrl | replace: "edit", "refs/heads" | replace: "github", "raw.githubusercontent" | prepend: '"' | append: '"' }}
         </div>
         {% endif %}
     </div>
