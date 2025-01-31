@@ -53,6 +53,7 @@
             or <a href="https://github.com/proftak/modules">create an issue or participate in a discussion.</a> <br />
             {% assign viewUrl = github_edit_link %}
             or <a href={{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}>View the source document.</a><br />
+            {{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}
         </div>
         {% endif %}
     </div>
