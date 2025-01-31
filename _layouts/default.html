@@ -55,7 +55,10 @@
             {% github_edit_link %}
             {% endcapture %}
             or <a href={{ viewUrl | replace: "edit", "blob" | prepend: '"' | append: '"' }}>View the source document.</a><br />
+            {% capture rawUrl %}
             {{ viewUrl | replace: "edit", "refs/heads" | replace: "github", "raw.githubusercontent" | prepend: '"' | append: '"' }}
+            {% endcapture %}
+            <button onclick="copyRawMd()">Click to copy source to clipboard.</button>
         </div>
         {% endif %}
     </div>
@@ -78,9 +81,9 @@
 
     <script>
         function copyRawMd() {
-            navigator.clipboard.writeText("{{ content }}");
-            
-        
+            let request = new Request("{{ rawUrl }}");
+            let content = await fetch(request);
+            navigator.clipboard.writeText(content.text());
         }
     </script>
     
