@@ -33,5 +33,10 @@ title: "FACCC Policy Forum on AI"
     * Problem-solving.
 4.  What are the impacts, positive and/or negative, you've observed so far of AI in education?
   * Students who use AI as a shortcut, especially those taking classes where assessment cannot be authenticated, will encounter a rude awakening after graduation.
+    * AI is why Chegg is almost gone.
   * "Custom GPTs" (in ChatGPT) can be effective as a tutor/mentor on specific topics (TTPASM example).
 5.  What are words of advice to both faculty and students struggling to understand the appropriate role of AI in teaching and learning?
+  * *Experiment!* Find out what AI can and cannot do.
+  * Identify and focus on the *long-term* goals.
+  * Work with others who are also curious about AI.
+  * "If AI can do it, people are not needed (to perform the same task)!" This applies to both faculty and students.
