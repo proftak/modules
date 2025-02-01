@@ -25,8 +25,7 @@ title: "FACCC Policy Forum on AI"
     * Asking AI for knowledge.
 3.  What AI skills will benefit students post-education?
   * How to use AI as a teaching assistant/aid who can help patiently explain concepts and is available 24/7.
-  * Expectations from employers.
-    * Industry/career-dependent and changes rapidly.
+  * Expectations from employers. Industry/career-dependent and changes rapidly.
   * Not so much a skill, but an awareness of what AI cannot do, at least not very well. This is why *people* are hired.
     * Critical thinking.
     * Rigor in the application of logic.
