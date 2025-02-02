@@ -219,7 +219,7 @@ The four possible combinations are as follows:
 
 This can also be summarized in a truth table as follows:
 
-|`x`|`y`|`x \|\| y`|
+|`x`|`y`|`x || y`|
 |-|-|-|
 |`false`|`false`|`false`|
 |`false`|`true`|`true`|
