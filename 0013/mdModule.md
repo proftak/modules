@@ -112,7 +112,7 @@ A conditional statement is also graphically presented as follows:
 ![If-then-else template](ifthenelse_template.png) 
 
 Note that this is not a
-flowchart but rather a "trail map". There is no special symbol to
+flowchart but rather a "trail map." There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
 the question (on the post). If the answer is "true," then the left path
@@ -126,6 +126,24 @@ Given this template, we can substitute the proper condition and actions
 for algorithm `findmax2`. The resulting trail map is presented as follows:
 
 ![The pictorial representation of algorithm findmax2](ifthenelse_max2.png)
+
+In practice, it is difficult to draw trail maps. Instead, flowcharts are used. The following is a flowchart that represents the same logic as the above trail map.
+
+```mermaid
+flowchart TD
+start@{shape: terminal, label: "start"}
+cond@{shape: diamond, label: "x > y"}
+start --> cond
+thenStmt@{shape: rect, label: "z = x"}
+cond -->| true | thenStmt
+cond -->| false | elseStmt
+elseStmt@{shape: rect, label: "z = y"}
+end1@{shape: diamond, label: " "}
+end2@{shape: terminal, label: "end"}
+thenStmt --> end1
+elseStmt --> end1
+end1 --> end2
+```
 
 # The syntax of a conditional statement
 
@@ -262,6 +280,31 @@ else                           // line 5
   z = y;                       // line 6
 ```
 
+The corresponding flowchart is as follows:
+
+```mermaid
+flowchart TD
+start@{shape: terminal, label: "start"}
+cond1@{shape: diamond, label: "w >= x && w >= y"}
+cond2@{shape: diamond, label: "x >= w && x >= y"}
+start --> cond1
+thenStmt1@{shape: rect, label: "z = w"}
+cond1 -->| true | thenStmt1
+cond1 -->| false | cond2
+cond2 --> | true | elseThenStmt
+cond2 --> | false | elseElseStmt
+elseElseStmt@{shape: rect, label: "z = y"}
+elseThenStmt@{shape: rect, label: "z = x"}
+end3@{shape: diamond, label: " "}
+elseThenStmt --> end3
+elseElseStmt --> end3
+end1@{shape: diamond, label: " "}
+end2@{shape: terminal, label: "end"}
+thenStmt1 --> end1
+end3 --> end1
+end1 --> end2
+```
+
 Now that the algorithm is finished, let us try to trace it. In our first
 example, let us assume `w==2`, `x==2` and `y==2. Although this is a
 trivial case, a trace of the algorithm illustrates a conditional
@@ -300,7 +343,36 @@ else                           // line 3
     z = y;                     // line 7
 ```
 
-Most programming languages like C++ and Java ignore indentations and how a program is broken into lines. This new way to express `findmax3` is functionally identical to the earlier one. However, the indentations in this newer version are structurally correct. There are two conditional statements, one is nested within the other.
+Most programming languages like C++ and Java ignore indentations and how a program is broken into lines. This new way to express `findmax3` is functionally identical to the earlier one. However, the indentations in this newer version are structurally correct. There are two conditional statements; one is nested within the other. Technically, the following flowchart represents the nested nature of this code.
+
+```mermaid
+flowchart TD
+start@{shape: terminal, label: "start"}
+cond1@{shape: diamond, label: "w >= x && w >= y"}
+cond2@{shape: diamond, label: "x >= w && x >= y"}
+start --> cond1
+thenStmt1@{shape: rect, label: "z = w"}
+cond1 -->| true | thenStmt1
+cond1 -->| false | elseBlock
+subgraph elseBlock
+start2@{shape: terminal, label: "start"}
+start2-->cond2
+cond2 --> | true | elseThenStmt
+cond2 --> | false | elseElseStmt
+elseElseStmt@{shape: rect, label: "z = y"}
+elseThenStmt@{shape: rect, label: "z = x"}
+end3@{shape: diamond, label: " "}
+elseThenStmt --> end3
+elseElseStmt --> end3
+end4@{shape: terminal, comment: "end"}
+end3-->end4
+end
+end1@{shape: diamond, label: " "}
+end2@{shape: terminal, label: "end"}
+thenStmt1 --> end1
+elseBlock --> end1
+end1 --> end2
+```
 
 The following is an over-simplified syntax analysis of algorithm `findmax3`. Note how one conditional statement is the *`elseStmt`* of another.
 
