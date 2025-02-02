@@ -112,7 +112,7 @@ A conditional statement is also graphically presented as follows:
 ![If-then-else template](ifthenelse_template.png) 
 
 Note that this is not a
-flowchart but rather a "trail map". There is no special symbol to
+flowchart but rather a "trail map." There is no special symbol to
 remember! In this picture, the condition is a question of a post before
 entering the fork. One path of the fork is chosen based on the answer to
 the question (on the post). If the answer is "true," then the left path
@@ -126,6 +126,24 @@ Given this template, we can substitute the proper condition and actions
 for algorithm `findmax2`. The resulting trail map is presented as follows:
 
 ![The pictorial representation of algorithm findmax2](ifthenelse_max2.png)
+
+In practice, it is difficult to draw trail maps. Instead, flowcharts are used. The following is a flowchart that represents the same logic as the above trail map.
+
+```mermaid
+flowchart TD
+start@{shape: terminal, label: "start"}
+cond@{shape: diamond, label: "x > y"}
+start --> cond
+thenStmt@{shape: rect, label: "z = x"}
+cond -->| true | thenStmt
+cond -->| false | elseStmt
+elseStmt@{shape: rect, label: "z = y"}
+end1@{shape: diamond, label: " "}
+end2@{shape: terminal, label: "end"}
+thenStmt --> end1
+elseStmt --> end1
+end1 --> end2
+```
 
 # The syntax of a conditional statement
 
