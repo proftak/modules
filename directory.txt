@@ -72,3 +72,4 @@
 ./0441/mdModule.md:title: "Module 0441: A super-catalog of student related modules"
 ./0442/mdModule.md:title: "Module 0442: Performance Review Standards"
 ./0443/mdModule.md:title: "Module 0443: A more hair-splitting way to define set notations"
+./0444/mdModule.md:title: "Module 0444: The Block Statement"
