@@ -58,8 +58,8 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * $(X \subset Y) \Leftrightarrow ((X \subseteq Y) \wedge (Y-X \ne \\{\\}))$
 * $(X \subset Y) \Leftrightarrow ((X \subseteq Y) \wedge (Y \cup X \ne X))$
 * $X \subset X$ is always false assuming $X$ is a set.
-* $E=\\{n|(n\in \mathbb{Z}) \wedge (n \mod 2 = 0)\\}$ is the same as $\forall n((n \in E) \Leftrightarrow ((n \in \mathbb{Z}) \wedge (n \mod 2 = 0)))$
-* $|\mathbb{Z}|=|\mathbb{N}|$
+* $E=\\{n\|(n\in \mathbb{Z}) \wedge (n \mod 2 = 0)\\}$ is the same as $\forall n((n \in E) \Leftrightarrow ((n \in \mathbb{Z}) \wedge (n \mod 2 = 0)))$
+* $\|\mathbb{Z}\|=\|\mathbb{N}\|$
 * $\forall e \in \\{\\}(0)$ is true or false? True
 * $\forall e((e \in \\{\\}) \Rightarrow 0)$ is true or false? True
  
