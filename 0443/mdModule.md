@@ -41,4 +41,25 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * $\\{a,b,c\\} \cap \\{d,a,c\\}=\\{c,a\\}$
 * $\\{a,b,c\\} \cup \\{d,a,c\\}=\\{b,d,c,a\\}$
 * $\\{a,b,c\\} - \\{d,a,c\\}=\\{b\\}$
+* $\\{a,b,c\\} \cap \\{\\}=\\{\\}$
+* $\\{a,b,c\\} \cup \\{\\}=\\{b,c,a\\}$
+* $\\{a,b,c\\} - \\{\\}=\\{a,b,c\\}$
+* $\\{a,b\\} \cap \\{d,c\\}=\\{\\}$
+* $\\{a,b\\} \cup \\{d,c\\}=\\{c,a,b,d\\}$
+* $\\{\\} - \\{a,b\\} = \\{\\}$
+* for any set $A$, $A \cup \\{\\} = A$
+* $\forall e(e \in A \Leftrightarrow (e \in (A \cup \\{\\}))$
+* $X=\\{a,b\\}, Y=\\{a,b,c\\}$
+	* $e=a, (e\in X \Rightarrow e \in Y)=1$
+	* $e=b, (e\in X \Rightarrow e \in Y)=1$
+	* $e=\mathrm{Tak}, (e\in X \Rightarrow e \in Y)=1$
+	* $e=23, (e\in X \Rightarrow e \in Y)=1$
+* $X \subseteq X$ is always true assuming $X$ is a set.
+* $(X \subset Y) \Leftrightarrow ((X \subseteq Y) \wedge (Y-X \ne \\{\\}))$
+* $(X \subset Y) \Leftrightarrow ((X \subseteq Y) \wedge (Y \cup X \ne X))$
+* $X \subset X$ is always false assuming $X$ is a set.
+* $E=\\{n|(n\in \mathbb{Z}) \wedge (n \mod 2 = 0)\\}$ is the same as $\forall n((n \in E) \Leftrightarrow ((n \in \mathbb{Z}) \wedge (n \mod 2 = 0)))$
+* $|\mathbb{Z}|=|\mathbb{N}|$
+* $\forall e \in \\{\\}(0)$ is true or false? True
+* $\forall e((e \in \\{\\}) \Rightarrow 0)$ is true or false? True
  
