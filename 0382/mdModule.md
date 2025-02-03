@@ -34,7 +34,7 @@ $\begin{eqnarray} \sum_{i=2}^{5} i^2 & = & 2^2 + \sum_{i=3}^{5} i^2 \\ & = & 2^2
 
 # The other "big-operators"
 
-Summation (addition) is not the only that is used in computer science:
+Summation (addition) is not the only operator that is used in computer science:
 
 Note that for multiplication, the base-case default value is 1 because 1 is the identity of multiplication.
 
