@@ -35,7 +35,8 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * $\boxed{\exists e \in X(P(e))}$ is an abbreviation of $\exists e((e \in X) \wedge (P(e)))$, it says "there is at least one element $e$ in set $X$ such that $P(e)$ is true."
 * The general BNF of a tuple is as follows: **(** [ *`element`* \{ **,** *`element`* \}*] **)**. The ordering of values in a tuple is significant.
 * $\forall e(\forall f(((e,f) \in \boxed{X \times Y}) \Leftrightarrow ((e \in X) \wedge (f \in Y))))$ is definitive. $X \times Y$ is called the cartesian product of the sets $X$ and $Y$, each element in $X \times Y$ is a two-tuple (tuple with two items), where the first item in the 2-tuple is an element from $X$ and the second item is an element from $Y$.
-* Given $X$ and $Y$ are sets, then $(\boxed{X=Y}) \Leftrightarrow ((X \subseteq Y) \wedge (Y \subseteq X))$, this defines the equality of two sets, and it lays the foundation of understanding nested sets.
+* Given $X$ and $Y$ are sets, then $(\boxed{X=Y}) \Leftrightarrow ((X \subseteq Y) \wedge (Y \subseteq X))$, this defines the equality of two sets, and it lays the foundation of understanding nested sets. This definition is also equivalent to $(X=Y) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (e \in Y)))$.
+  * Examples to be discussed in class.
 
 # Examples
 
@@ -82,6 +83,6 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 	* $\\{a,b,c\\}$
 * $\mathbb{P}(S)$ is called the "power set of the set $S$", it consists all subsets of $S$.
 * $|\mathbb{P}(S)| = 2^{|S|}$
-* TODO: add section on nested containment
+* ~~TODO: add section on nested containment~~ (completed)
 * $\\{a,b\\} \times \\{1,2,3\\} = \\{ (a,1), (a,2), (a,3), (b,1), (b,2), (b,3)  \\}$
 	* $(Tak, Iraj) \in \\{a,b\\} \times \\{1,2,3\\}$ is false
