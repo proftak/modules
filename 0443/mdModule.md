@@ -35,6 +35,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * $\boxed{\exists e \in X(P(e))}$ is an abbreviation of $\exists e((e \in X) \wedge (P(e)))$, it says "there is at least one element $e$ in set $X$ such that $P(e)$ is true."
 * The general BNF of a tuple is as follows: **(** [ *`element`* \{ **,** *`element`* \}*] **)**. The ordering of values in a tuple is significant.
 * $\forall e(\forall f(((e,f) \in \boxed{X \times Y}) \Leftrightarrow ((e \in X) \wedge (f \in Y))))$ is definitive. $X \times Y$ is called the cartesian product of the sets $X$ and $Y$, each element in $X \times Y$ is a two-tuple (tuple with two items), where the first item in the 2-tuple is an element from $X$ and the second item is an element from $Y$.
+* Given $X$ and $Y$ are sets, then $(\boxed{X=Y}) \Leftrightarrow ((X \subseteq Y) \wedge (Y \subseteq X))$, this defines the equality of two sets, and it lays the foundation of understanding nested sets.
 
 # Examples
 
@@ -62,4 +63,25 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * $\|\mathbb{Z}\|=\|\mathbb{N}\|$
 * $\forall e \in \\{\\}(0)$ is true or false? True
 * $\forall e((e \in \\{\\}) \Rightarrow 0)$ is true or false? True
- 
+* $\\{a,b\\} \subseteq \\{a,b\\}$ is true
+* $\\{a,b\\} \subset \\{a,b\\}$ is false
+* $\\{a,b\\} \subseteq \\{a,b,c\\}$ is true
+* $\\{a,b\\} \subset \\{a,b,c\\}$ is true
+* $\boxed{X \subseteq Y} \Leftrightarrow \forall e(((e \in X) \Rightarrow (e \in Y)))$
+* $\\{a,b,c,d\\} \subseteq \\{a,b,c\\}$
+* "Is {a,b,c,d} a subset of {a,b,c}?"
+* $X \subseteq Y$ is asking "is it true or false that X is a subset of Y?"
+* The following is a list of all the subsets of $\\{a,b,c\\}$:
+	* $\\{\\}$
+	* $\\{a\\}$
+	* $\\{b\\}$
+	* $\\{c\\}$
+	* $\\{a,b\\}$
+	* $\\{a,c\\}$
+	* $\\{b,c\\}$
+	* $\\{a,b,c\\}$
+* $\mathbb{P}(S)$ is called the "power set of the set $S$", it consists all subsets of $S$.
+* $|\mathbb{P}(S)| = 2^{|S|}$
+* TODO: add section on nested containment
+* $\\{a,b\\} \times \\{1,2,3\\} = \\{ (a,1), (a,2), (a,3), (b,1), (b,2), (b,3)  \\}$
+	* $(Tak, Iraj) \in \\{a,b\\} \times \\{1,2,3\\}$ is false
