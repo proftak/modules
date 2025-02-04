@@ -78,7 +78,7 @@ $r(u,v)$ is a little more tricky:
 |1|0|1|
 |1|1|0|
 
-There is no single logical operator in C to perform this operation. However, in mathematics, exclusive-or is an exact match. In other words, $r(u,v) = u \oplus v$ in base-2. If insisted, it is also possible to use the "regular" C logical operators to implement $r(u,v)$:
+There is no single logical operator in C to perform this operation. However, in mathematics, exclusive-or (often abbreviated to `xor`) is an exact match. In other words, $r(u,v) = u \oplus v$ in base-2. If insisted, it is also possible to use the "regular" C logical operators to implement $r(u,v)$:
 
 ```c
 unsigned r(unsigned u, unsigned v)
