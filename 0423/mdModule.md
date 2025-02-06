@@ -48,10 +48,16 @@ It will take some time to finish the cloning. Once completed, click on the new r
 
 Once cloned, you need to change a few settings. Click "Settings" when you are viewing the repo.
 
-* [ ] `Pages` Click `Pages` on the left to specify how the HTML documents are published.
-* [ ] In `Build and deployment`,
-  * [ ] Select "Deplay from a branch" for `Source`,
-  * [ ] Select "main" and "/root" for `Branch`.
+* [ ] `Pages`:
+  * [ ]  Click `Pages` on the left to specify how the HTML documents are published.
+  * [ ] In `Build and deployment`,
+    * [ ] Select "Deplay from a branch" for `Source`,
+    * [ ] Select "main" and "/root" for `Branch`.
+* [ ]  `Code and automation`
+  * [ ] Click `Actions` under `Code and automation`
+  * [ ] Click `General`
+  * [ ] On the right-hand side, scroll down to `Workflow permissions`
+    * [ ] Select the radio button `Read and write permissions`
  
 After the content is built, the URL to the published content will be `https://<username>.github.io/<repo>`, replace `<username>` with your GitHub username, and replace `<repo>` with the name of the repository. Note that the initial publication can take some time!
 
