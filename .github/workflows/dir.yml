@@ -38,8 +38,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo `pwd`
-          find . -regextype sed -regex "\./[0-9]\{4\}/mdModule.md" | sort
-          grep -H -e "^# _Module.*_" -e "^title:\s*\"Module.*\"" `find . -regextype sed -regex "\./[0-9]\{4\}/mdModule.md" | sort` > directory.txt
+          find . -regextype sed -regex "\./[0-9]\{4\}/\(mdModule\|index\)\.md" | sort
+          grep -H -e "^# _Module.*_" -e "^title:\s*\"Module.*\"" `find . -regextype sed -regex "\./[0-9]\{4\}/\(mdModule\|index\)\.md" | sort` > directory.txt
           cat directory.txt | sed -e "s/^\(.*\):\(#\s*_\|title:\s*\"\)\(.*\)\([_\|\"]\)/* [\3](\1)/" > directory1.md
           if ! diff -q directory.md directory1.md; then
             mv directory1.md directory.md
