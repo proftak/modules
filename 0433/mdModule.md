@@ -77,11 +77,11 @@ Here are the detailed steps:
 
 Go to the [home page](https://github.com) after you sign in. Click ["Import repository"](https://github.com/new/import). You will need to fill in the details of the repository.
 
-- [ ] "The URL for your *source* repository:" This is the URL of the repository from which to clone. Specify `https://github.com/proftak/modules.git` here.
-- [ ] "Your username for your source repository" and "Your access token or password for your source repository": Leave both blank because you are cloning from a public repository, and there is a username or password to specify.
-- [ ] Under "Your new repository details", you can use any repository name.
-- [ ] You can also mark your project as "Public" or "Private".
-  - [ ] If you intend the OER to be ND (no derivatives), choose "Private."
+- [ ]  "The URL for your *source* repository:" This is the URL of the repository from which to clone. Specify `https://github.com/proftak/modules.git` here.
+- [ ]  "Your username for your source repository" and "Your access token or password for your source repository": Leave both blank because you are cloning from a public repository, and there is a username or password to specify.
+- [ ]  Under "Your new repository details", you can use any repository name.
+- [ ]  You can also mark your project as "Public" or "Private".
+  - [ ]  If you intend the OER to be ND (no derivatives), choose "Private."
 
 Click "Begin import" to start the process. It may take a few minutes to import the project.
 
