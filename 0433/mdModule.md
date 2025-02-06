@@ -2,11 +2,7 @@
 title: "Module 0433: Fust: a framework to integrate Creative Commons, Open Educational Resources, and GitHub"
 ---
 
-# Advisory
-
-[Module 0423](../0423/mdModule.html) contains some additional information that may be useful.
-
-# How they connect
+# How the components connect
 
 ## Open Educational Resource (OER)
 
