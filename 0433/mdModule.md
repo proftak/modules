@@ -65,23 +65,23 @@ As for the top 2 things you want to do with GitHub, "Connect with other develope
 
 Here are the detailed steps:
 
-* [ ] Visit [https://github.com](https://github.com). Click `Sign up` in the upper right corner to register for an account.
-* [ ] You can use any email address. However, use the "w1234567@arc.losrios.edu" email to get some additional free benefits for educators.
-* [ ] Choose a password that is difficult to guess.
-* [ ] Think of a username.
-* [ ] Check your email for the launch code and enter it.
-* [ ] Sign in.
-* [ ] Answer a few questions. (There are more questions if you sign up as a teacher; you must upload a picture of your ID.)
+- [ ] Visit [https://github.com](https://github.com). Click `Sign up` in the upper right corner to register for an account.
+- [ ] You can use any email address. However, use the "w1234567@arc.losrios.edu" email to get some additional free benefits for educators.
+- [ ] Choose a password that is difficult to guess.
+- [ ] Think of a username.
+- [ ] Check your email for the launch code and enter it.
+- [ ] Sign in.
+- [ ] Answer a few questions. (There are more questions if you sign up as a teacher; you must upload a picture of your ID.)
 
 ## Cloning the project
 
 Go to the [home page](https://github.com) after you sign in. Click ["Import repository"](https://github.com/new/import). You will need to fill in the details of the repository.
 
-* [ ] "The URL for your *source* repository:" This is the URL of the repository from which to clone. Specify `https://github.com/proftak/modules.git` here.
-* [ ] "Your username for your source repository" and "Your access token or password for your source repository": Leave both blank because you are cloning from a public repository, and there is a username or password to specify.
-* [ ] Under "Your new repository details", you can use any repository name.
-* [ ] You can also mark your project as "Public" or "Private".
-  * [ ] If you intend the OER to be ND (no derivatives), choose "Private."
+- [ ] "The URL for your *source* repository:" This is the URL of the repository from which to clone. Specify `https://github.com/proftak/modules.git` here.
+- [ ] "Your username for your source repository" and "Your access token or password for your source repository": Leave both blank because you are cloning from a public repository, and there is a username or password to specify.
+- [ ] Under "Your new repository details", you can use any repository name.
+- [ ] You can also mark your project as "Public" or "Private".
+  - [ ] If you intend the OER to be ND (no derivatives), choose "Private."
 
 Click "Begin import" to start the process. It may take a few minutes to import the project.
 
@@ -91,16 +91,16 @@ Once cloned, you need to change a few settings. Click "Settings" when you are vi
 
 First, click `Settings` on the top bar, then follow these steps:
 
-* [ ] `Pages`:
-  * [ ]  Click `Pages` on the left to specify how the HTML documents are published.
-  * [ ] In `Build and deployment`,
-    * [ ] Select "Deplay from a branch" for `Source`,
-    * [ ] Select "main" and "/root" for `Branch`.
-* [ ]  `Code and automation`:
-  * [ ] Click `Actions` under `Code and automation`
-  * [ ] Click `General`
-  * [ ] On the right-hand side, scroll down to `Workflow permissions`
-    * [ ] Select the radio button `Read and write permissions`
+- [ ] `Pages`:
+  - [ ]  Click `Pages` on the left to specify how the HTML documents are published.
+  - [ ] In `Build and deployment`,
+    - [ ] Select "Deplay from a branch" for `Source`,
+    - [ ] Select "main" and "/root" for `Branch`.
+- [ ]  `Code and automation`:
+  - [ ] Click `Actions` under `Code and automation`
+  - [ ] Click `General`
+  - [ ] On the right-hand side, scroll down to `Workflow permissions`
+    - [ ] Select the radio button `Read and write permissions`
  
 After the content is built, the URL to the published content will be `https://<username>.github.io/<repo>`, replace `<username>` with your GitHub user name, and replace `<repo>` with the name of the repository. Note that the initial publication can take some time!
 
@@ -110,32 +110,32 @@ On the left, click `Actions`, then `General`. Under "Workflow permissions", clic
 
 The repository comes with its own OER content that you probably do not need. To remove the current modules, follow these instructions:
 
-* [ ] First, navigate to the home of your repository at `https://github.com/<username>/<reponame>`
-* [ ] To safely remove modules one by one:
-  * [ ] Click on a module (a four-digit folder name).
-    * [ ] Click the "..." on the right-hand side.
-    * [ ] Click "Delete Directory"
-    * [ ] Click "Commit changes"
-    * [ ] Confirm by clicking "Commit changes" again.
-* [ ] To (dangerously!) remove all modules:
-  * [ ] First, consider backing up all the files by downloading the repo as a ZIP file!
-  * [ ] Click "Actions" on the horizontal menu bar.
-  * [ ] On the left pane, under "Actions", "All workflows", click `rmModules` (remove Modules).
-  * [ ] Make sure this is what you want to do!
-  * [ ] On the right pane, click "Run workflow".
-  * [ ] Click "Run workflow" in the pop-up.
-  * [ ] There is a lag, then the pop-up will show that the workflow is in progress (turning a yellow circle to the left).
+- [ ] First, navigate to the home of your repository at `https://github.com/<username>/<reponame>`
+- [ ] To safely remove modules one by one:
+  - [ ] Click on a module (a four-digit folder name).
+    - [ ] Click the "..." on the right-hand side.
+    - [ ] Click "Delete Directory"
+    - [ ] Click "Commit changes"
+    - [ ] Confirm by clicking "Commit changes" again.
+- [ ] To (dangerously!) remove all modules:
+  - [ ] First, consider backing up all the files by downloading the repo as a ZIP file!
+  - [ ] Click "Actions" on the horizontal menu bar.
+  - [ ] On the left pane, under "Actions", "All workflows", click `rmModules` (remove Modules).
+  - [ ] Make sure this is what you want to do!
+  - [ ] On the right pane, click "Run workflow".
+  - [ ] Click "Run workflow" in the pop-up.
+  - [ ] There is a lag, then the pop-up will show that the workflow is in progress (turning a yellow circle to the left).
 
 ## Writing a new module
 
 To start a new module:
 
-* [ ] Navigate to the home of the repository `https://github.com/<username>/<reponame>`.
-* [ ] Note the number of the last module.
-* [ ] Depending on the width of your screen, click the `+` button or the button labeled `Add file`.
-* [ ] Select "Create new file".
-* [ ] In the textbox immediately to the right side of your repository name, type something like `0241/mdModule.md`, and replace `0241` with a number that is after the number of the last module.
-* [ ] In the main text area, start with the following content (change the number 0241 and the title "Some module"!).
+- [ ] Navigate to the home of the repository `https://github.com/<username>/<reponame>`.
+- [ ] Note the number of the last module.
+- [ ] Depending on the width of your screen, click the `+` button or the button labeled `Add file`.
+- [ ] Select "Create new file".
+- [ ] In the textbox immediately to the right side of your repository name, type something like `0241/mdModule.md`, and replace `0241` with a number that is after the number of the last module.
+- [ ] In the main text area, start with the following content (change the number 0241 and the title "Some module"!).
 
 ```markdown
 ---
