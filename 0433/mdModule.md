@@ -146,10 +146,9 @@ title: "Module 0241: Some module"
 The explanation is as follows:
 
 * `---` is the marker to begin and end the YAML (yet another markup language) section.
-  * In this section, `title: "Module 0241: Some module"` specifies the title of the page. If this is not the format you want to use, some additional customization needs to be done.
-* `# _{{ page.title }}_` uses HTML H1 as the title of the HTML. This part is optional and you can specify alternative formatting.
+* In this section, `title: "Module 0241: Some module"` specifies the title of the page. If this is not the format you want to use, some additional customization needs to be done.
 
-Then type the actual content in this document. Remember to to click "Commit changes..." when you are done, or at a point that you want to save the document.
+Then type the actual content in this document after the YAML section. Remember to to click "Commit changes..." when you are done, or at a point that you want to save the document.
 
 # Customization
 
