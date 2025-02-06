@@ -2,6 +2,10 @@
 title: "Module 0433: Fust: a framework to integrate Creative Commons, Open Educational Resources, and GitHub"
 ---
 
+# Advisory
+
+[Module 0423](../0423/mdModule.html) contains some additional information that may be useful.
+
 # How they connect
 
 ## Open Educational Resource (OER)
@@ -59,73 +63,88 @@ In order to circumvent issues related to static and out-of-date Markdown renderi
 
 ## Setting up an account
 
-To get started, an OER developer first registers with [GitHub](https://github.com) for a free account using the "Sign up" button. As the last page of the registration process, it is best to identify as a "Teacher". In order to finish the registration as a teacher, you will need to use a school email address (one that ends with `.edu`).
+To get started, an OER developer first registers with [GitHub](https://github.com) for a free account using the "Sign up" button. On the last page of the registration process, it is best to identify as a "Teacher." In order to finish the registration as a teacher, you will need to use a school email address (one that ends with `.edu`).
 
 As for the top 2 things you want to do with GitHub, "Connect with other developers" and "Contribute to Open Source projects" are good choices for an OER project.
+
+Here are the detailed steps:
+
+* [ ] Visit [https://github.com](https://github.com). Click `Sign up` in the upper right corner to register for an account.
+* [ ] You can use any email address. However, use the "w1234567@arc.losrios.edu" email to get some additional free benefits for educators.
+* [ ] Choose a password that is difficult to guess.
+* [ ] Think of a username.
+* [ ] Check your email for the launch code and enter it.
+* [ ] Sign in.
+* [ ] Answer a few questions. (There are more questions if you sign up as a teacher; you must upload a picture of your ID.)
 
 ## Cloning the project
 
 Go to the [home page](https://github.com) after you sign in. Click ["Import repository"](https://github.com/new/import). You will need to fill in the details of the repository.
 
-* "The URL for your *source* repository:" This is the URL of the repository to clone from. Specify `https://github.com/proftak/modules.git` here.
-* "Your username for your source repository" and "Your access token or password for your source repository": leave both blank because you are cloning from a public repository, there is a username or password to specify.
-* Under "Your new repository details", you can use any repository name.
-* You can also mark your project as "Public" or "Private".
-  * If you intend the OER to be ND, choose "Private."
+* [ ] "The URL for your *source* repository:" This is the URL of the repository from which to clone. Specify `https://github.com/proftak/modules.git` here.
+* [ ] "Your username for your source repository" and "Your access token or password for your source repository": Leave both blank because you are cloning from a public repository, and there is a username or password to specify.
+* [ ] Under "Your new repository details", you can use any repository name.
+* [ ] You can also mark your project as "Public" or "Private".
+  * [ ] If you intend the OER to be ND (no derivatives), choose "Private."
 
 Click "Begin import" to start the process. It may take a few minutes to import the project.
 
-## Publishing the rendered pages
+## Configuring GitHub to publish HTML
 
-Because the OER content is cloned along with the configuration and customization, you probably want to clean up the content before starting your own. Before doing that, however, it is helpful to first make sure the content is published correctly.
+Once cloned, you need to change a few settings. Click "Settings" when you are viewing the repo. The URL to the repo's main page is `https://github.com/<username>/<reponame>`, replace `<username>` with your GitHub user name, and replace `<reponame>` with the name of the repository.
 
-To check the published content, go to the URL `https://username.github.io/reponame` (`username` is a placeholder of your actual `GitHub` user name, and `reponame` is a placeholder of your actual repository name). You are likely to see a "404" error because there are some additional steps to finish the configuration and customization.
+First, click `Settings` on the top bar, then follow these steps:
 
-Head to the home of your repository. This page has an URL of the form of `https://github.com/username/reponame`. Click "Settings".
+* [ ] `Pages`:
+  * [ ]  Click `Pages` on the left to specify how the HTML documents are published.
+  * [ ] In `Build and deployment`,
+    * [ ] Select "Deplay from a branch" for `Source`,
+    * [ ] Select "main" and "/root" for `Branch`.
+* [ ]  `Code and automation`:
+  * [ ] Click `Actions` under `Code and automation`
+  * [ ] Click `General`
+  * [ ] On the right-hand side, scroll down to `Workflow permissions`
+    * [ ] Select the radio button `Read and write permissions`
+ 
+After the content is built, the URL to the published content will be `https://<username>.github.io/<repo>`, replace `<username>` with your GitHub user name, and replace `<repo>` with the name of the repository. Note that the initial publication can take some time!
 
-On the left pane, under "Code and automation", click "Actions", then click "General". In "Action Permissions", under "workflow permissions", select "Read and write permissions." This is necessary for the workflow script to perform its action. Click "Save".
-
-At this point, you are still under "Settings" (red underline on the top bar). Under "Code and automation", click "Pages". Under "Build and deployment" and "Source", Keep the default "Deploy from a branch". On the same page, under "Branch", make sure you are using "main" as the branch, and "/root" as the root directory. 
-
-Refresh this page a few times. In a couple of minutes, the top should report that "Your site is live at..."
+On the left, click `Actions`, then `General`. Under "Workflow permissions", click "Read and write permissions". Click "Save".
 
 ## Cleaning up the content
 
 The repository comes with its own OER content that you probably do not need. To remove the current modules, follow these instructions:
 
-* First, navigate to the home of your repository at `https://github.com/username/reponame`
-* To safely remove modules one by one:
-  * Click on a module (a four-digit folder name).
-    * Click the "..." on the right-hand side.
-    * Click "Delete Directory"
-    * Click "Commit changes"
-    * Confirm by clicking "Commit changes" again.
-* To (dangerously!) remove all modules:
-  * First, consider backing up all the files by downloading the repo as a ZIP file!
-  * Click "Actions" on the horizontal menu bar.
-  * On the left pane, under "Actions", "All workflows", click `rmModules` (remove Modules).
-  * Make sure this is what you want to do!
-  * On the right pane, click "Run workflow".
-  * Click "Run workflow" in the pop-up.
-  * There is a lag, then the pop-up will show that the workflow is in progress (turning a yellow circle to the left).
+* [ ] First, navigate to the home of your repository at `https://github.com/<username>/<reponame>`
+* [ ] To safely remove modules one by one:
+  * [ ] Click on a module (a four-digit folder name).
+    * [ ] Click the "..." on the right-hand side.
+    * [ ] Click "Delete Directory"
+    * [ ] Click "Commit changes"
+    * [ ] Confirm by clicking "Commit changes" again.
+* [ ] To (dangerously!) remove all modules:
+  * [ ] First, consider backing up all the files by downloading the repo as a ZIP file!
+  * [ ] Click "Actions" on the horizontal menu bar.
+  * [ ] On the left pane, under "Actions", "All workflows", click `rmModules` (remove Modules).
+  * [ ] Make sure this is what you want to do!
+  * [ ] On the right pane, click "Run workflow".
+  * [ ] Click "Run workflow" in the pop-up.
+  * [ ] There is a lag, then the pop-up will show that the workflow is in progress (turning a yellow circle to the left).
 
 ## Writing a new module
 
 To start a new module:
 
-* Navigate to the home of the repository `https://github.com/username/reponame`.
-* Note the number of the last module.
-* Depending on the width of your screen, click the `+` button or the button labeled `Add file`.
-* Select "Create new file".
-* In the textbox immediately to the right side of your repository name, type something like `0241/mdModule.md`, and replace `0241` with a number that is after the number of the last module.
-* In the main text area, start with the following content.
+* [ ] Navigate to the home of the repository `https://github.com/<username>/<reponame>`.
+* [ ] Note the number of the last module.
+* [ ] Depending on the width of your screen, click the `+` button or the button labeled `Add file`.
+* [ ] Select "Create new file".
+* [ ] In the textbox immediately to the right side of your repository name, type something like `0241/mdModule.md`, and replace `0241` with a number that is after the number of the last module.
+* [ ] In the main text area, start with the following content (change the number 0241 and the title "Some module"!).
 
 ```markdown
 ---
 title: "Module 0241: Some module"
 ---
-
- _{{ page.title }}_
 ```
 
 The explanation is as follows:
