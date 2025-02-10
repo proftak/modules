@@ -18,7 +18,7 @@ The syntax related to a block statement *`blkStmt`* is as follows:
 
 * *`statement`* ::= *`blkStmt`*
 * *`blkStmt`* ::= **{** *`statements`*<sub>opt</sub> **}**
-* *`statements`* ::= *`statement`* | *`statements`* *`statement`*
+* *`statements`* ::= *`statement`* \| *`statements`* *`statement`*
 
 # An example
 
