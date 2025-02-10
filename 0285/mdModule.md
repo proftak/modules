@@ -187,7 +187,7 @@ As a concrete example, $\exists e \in \\{1,2,3\\}(e \mod 2 = 0)$ is functionally
 ## Question 6
 **Statement:** Convert the following to natural language: $\exists x(\neg P(x))$
 
-<details>
+<details markdown="1">
   <summary>Answer</summary>
   "There exists at least one $x$ in the universe such that $P(x)$ is false." or "There is something that does not satisfy $P(x)$."
 </details>
