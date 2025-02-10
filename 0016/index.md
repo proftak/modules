@@ -67,7 +67,7 @@ special property of a "do-while" loop is that the action is performed *at
 least once*. This is because the "while" condition is evaluated after
 the action is performed.
 
-# The flowchart of a "repeat" loop
+## The flowchart of a "do" loop
 
 The logic of the code in the previous section can be represented by the following flowchart:
 
@@ -84,6 +84,13 @@ eat --> decision
 decision -->|true| merge
 decision -->|false| finish
 ```
+
+## The syntax of a "do" loop
+
+A "do" loop (also called a *post-checking* loop) is a kind of *`statement`*, the related BNF rules are as follows:
+
+* *`statement`* ::= *`doStmt`*
+* *`doStmt`* ::= **do** *`statement`* **while (** *`condition`* **)**
 
 # Is this all worth while?
 
@@ -112,6 +119,8 @@ The following table is a trace of algorithm if a person is full (not hungry) to 
 |1|because the person is full already, the condition "one is hungry" is false
 |post|when the condition of a "while" loop is false, the loop is terminated.
 
+## The flowchart of a "while" loop
+
 The following is a flowchart corresponding to the "while" loop algorithm.
 
 ```mermaid
@@ -125,40 +134,10 @@ decision -->|true| eat
 decision -->|false| finish
 eat --> decision
 ```
-# Argh, repeat no more!
 
-Some languages support the concept of "repeat", but C and its derived
-languages do not have repeat. Instead, such languages have an "upside
-down while". Let us illustrate with an example.
+## The syntax of a "while" loop
 
-Let us consider algorithm
-[\[algorithm:repeatex\]](#algorithm:repeatex){reference-type="ref"
-reference="algorithm:repeatex"} as an example.
+A "while" loop is also known as a *pre-checking* loop. It is a kind of statement. The BNF rules related to a "while" loop are as follows:
 
-``` {#algorithm:repeatex .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:repeatex" caption="Repeat-until example to illustrate an upside-down while loop."}
-repeat
-  ask for a ZIP code
-until the ZIP code is valid
-```
-
-This logic keeps asking for a ZIP code until a valid one is entered.
-Note that because this is a repeat-until loop, the action (asking for a
-ZIP code) is performed *before* asking the question whether the ZIP code
-is valid. This only makes sense.
-
-In C (and its derived languages), this logic is expressed as follows:
-
-    do
-    {
-      ask for a ZIP code
-    } while (ZIP code is not valid);
-
-It doesn't seem very different. Instead of "repeat", we use "while", and
-we use "while" to end the construct instead of "until". However, a
-closer look reveals a major difference. In the repeat version, the
-condition is "the ZIP code is valid". However, in the do-while version,
-the condition is "the ZIP code is *not* valid".
-
-In other words, a repeat-until loop specifies an exit condition (when
-true, exit). A do-while loop, however, specifies a do-it-again condition
-(when true, do it again).
+* *`statement`* ::= *`whileStmt`*
+* *`whileStmt`* ::= **while (** *`condition`* **)** *`statement`*
