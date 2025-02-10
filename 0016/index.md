@@ -73,11 +73,16 @@ The logic of the code in the previous section can be represented by the followin
 
 ```mermaid
 flowchart TD
-start@{shape:stadium,label:"start"}
-merge@{shape:diamond,label:" "}
-eat@{shape:process,label:"take a bite"}
-decision@{shape:diamond,label:"is one hungry?"}
-finish@{shape:stadium,label:"end"}
+start@{shape: stadium, label: "start"}
+merge@{shape: diamond, label: " "}
+eat@{shape: rect, label: "take a bite"}
+decision@{shape: diamond, label: "is one hungry?"}
+finish@{shape: stadium, label: "end"}
+start --> merge
+merge --> eat
+eat --> decision
+decision -->|true| merge
+decision -->|false| finish
 ```
 
 # Is this all worth while?
