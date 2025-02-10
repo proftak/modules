@@ -87,88 +87,44 @@ decision -->|false| finish
 
 # Is this all worth while?
 
-Since we concluded that algorithm
-[\[algorithm:repeateat\]](#algorithm:repeateat){reference-type="ref"
-reference="algorithm:repeateat"} is not perfect, there must be a better
+Since we concluded that the previous "eating" algorithm is not perfect, there must be a better
 way. What we need is a loop construct that evaluates the condition first
 to see if an iteration is necessary, then perform the action only if it
 is necessary.
 
-This loop structure is as displayed in algorithm
-[\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-reference="algorithm:whileeat"}.
+This loop structure is as displayed in the following algorithm.
 
-``` {#algorithm:whileeat .numberLines .pseudocode language="pseudocode" numbers="left" caption="Correct eating logic" label="algorithm:whileeat"}
-while one is not full %\label{whileeat:while}%
-  take a bite %\label{whileeat:eat}%
-end while %\label{whileeat:end}%
-done! %\label{whileeat:done}%
+```c
+while (one is hungry) // line 1
+  take a bite         // line 2
 ```
 
-This control structure looks like a "repeat" loop reversed. Let's
-explain each line in algorithm
-[\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-reference="algorithm:whileeat"}.
+This control structure looks like a "do-while" loop reversed. Let's
+explain each line in the new algorithm.
 
--   line [\[whileeat:while\]](#whileeat:while){reference-type="ref"
-    reference="whileeat:while"}: this line is analoguous to line
-    [\[repeateat:condition\]](#repeateat:condition){reference-type="ref"
-    reference="repeateat:condition"}. It is a marker to mark the
-    beginning of actions to be performed. It also presents a condition
-    to be evaluated. If this condition is "true" then the action is
-    performed. If the condition is "false" then the loop terminates and
-    continues on line
-    [\[whileeat:end\]](#whileeat:end){reference-type="ref"
-    reference="whileeat:end"}.
+-   line 1: this line is analoguous to line 3 of the "do-while" algorithm. It is a marker to mark the beginning of actions to be performed. It also presents a condition to be evaluated. If this condition is "true" then the action is   performed. If the condition is "false" then the loop terminates.
+-   line 2: this line is the action to be *possibly* performed repeatedly. Note that after the action is performed, we go back to line 1 so that we can determine whether it is necessary to perform the action again.
 
--   line [\[whileeat:eat\]](#whileeat:eat){reference-type="ref"
-    reference="whileeat:eat"}: this line is the action to be *possibly*
-    performed repeatedly. Note that after the action is performed, we go
-    back to line
-    [\[whileeat:while\]](#whileeat:while){reference-type="ref"
-    reference="whileeat:while"} so that we can determine whether it is
-    necessary to perform the action again.
+The following table is a trace of algorithm if a person is full (not hungry) to begin with.
 
--   line [\[whileeat:end\]](#whileeat:end){reference-type="ref"
-    reference="whileeat:end"}: this is a marker to mark the end of the
-    action that may be performed again and again.
+|line #|comment|
+|:-|:-|
+|1|because the person is full already, the condition "one is hungry" is false
+|post|when the condition of a "while" loop is false, the loop is terminated.
 
--   line [\[whileeat:done\]](#whileeat:done){reference-type="ref"
-    reference="whileeat:done"}: this is simply a line after the loop so
-    that we can indicate the termination of the loop in a trace.
+The following is a flowchart corresponding to the "while" loop algorithm.
 
-Table [2](#table:whileeat){reference-type="ref"
-reference="table:whileeat"} is a trace of algorithm
-[\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-reference="algorithm:whileeat"}.
-
-::: {#table:whileeat}
-  line \#                                                                                  comment
-  ---------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------
-  [\[whileeat:while\]](#whileeat:while){reference-type="ref" reference="whileeat:while"}   because the person is full already, the condition "one is *not* full" is false
-  [\[whileeat:done\]](#whileeat:done){reference-type="ref" reference="whileeat:done"}      when the condition of a "while" loop is false, the loop is terminated. Execution moves to the line immediately following the end marker.
-
-  : A trace of algorithm
-  [\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-  reference="algorithm:whileeat"}, assuming a person is already full
-  before this algorithm.
-:::
-
-No explanation is complete without a picture. Figure
-[2](#figure:whileeat){reference-type="ref" reference="figure:whileeat"}
-illustrates the logic of algorithm
-[\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-reference="algorithm:whileeat"}. You can tell that it is a loop because
-of the loop-back branch on the left hand side. Note that this loop back
-goes from bottom to top. Also note the branching fork is *below* (or
-after) the merge point. This means that when we loop back after taking a
-bite, we always reevaluate the condition "one is not full", then
-determine whether to take the "true" path or "false" path.
-
-![Trail path representing the logic of algorithm
-[\[algorithm:whileeat\]](#algorithm:whileeat){reference-type="ref"
-reference="algorithm:whileeat"}.](whileeat){#figure:whileeat}
-
+```mermaid
+flowchart TD
+start@{shape: stadium, label: "start"}
+decision@{shape: diamond, label: "is one huntry?"}
+eat@{shape: rect, label: "take a bite" }
+finish@{shape: stadium, label: "end" }
+start --> decision
+decision -->|true| eat
+decision -->|false| finish
+eat --> decision
+```
 # Argh, repeat no more!
 
 Some languages support the concept of "repeat", but C and its derived
