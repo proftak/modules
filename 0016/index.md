@@ -141,3 +141,32 @@ A "while" loop is also known as a *pre-checking* loop. It is a kind of statement
 
 * *`statement`* ::= *`whileStmt`*
 * *`whileStmt`* ::= **while (** *`condition`* **)** *`statement`*
+
+# Examples
+
+## Counting
+
+```c
+x=0;              // line 1
+while  (x < 3) {  // line 2
+  x=x+1;          // line 3
+}                 // line 4
+```
+
+To trace this code, line 4 is not in the table because it is a syntactic construct that does not perform any action. However, line 2 is important because it evaluates the condition `x < 3`. The trace is as follows:
+
+|line #|`x`|comments|
+|:-|:-|:-|
+|pre|?|We were not told any assumption about `x`|
+|1|0| |
+|2| |`x` is not changed, but the condition evalutes to `0 < 3` which is true|
+|3|1|`x` is incremented|
+|2| |`x` is 1, `1 < 3` is true|
+|3|2| |
+|2| |`x` is 2, `2 < 3` is true|
+|3|3| |
+|2| |`x` is 3, `3 < 3` is false|
+|post| |exit from the loop|
+
+Note that even though line 2 does not change `x`, the comments states whether the condition evaluates to true or false. This is important in a trace so that we can track the logic of a loop. Also, note how at the end of the trace, the trace goes from line 2 to "post".
+
