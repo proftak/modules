@@ -67,25 +67,18 @@ special property of a "do-while" loop is that the action is performed *at
 least once*. This is because the "while" condition is evaluated after
 the action is performed.
 
-# Picture of a "repeat" loop
+# The flowchart of a "repeat" loop
 
-Let's look at a "trail map" of algorithm
-[\[algorithm:repeateat\]](#algorithm:repeateat){reference-type="ref"
-reference="algorithm:repeateat"} in figure
-[1](#figure:repeateat){reference-type="ref"
-reference="figure:repeateat"}.
+The logic of the code in the previous section can be represented by the following flowchart:
 
-!["Trail map" of algorithm
-[\[algorithm:repeateat\]](#algorithm:repeateat){reference-type="ref"
-reference="algorithm:repeateat"}.](repeateat){#figure:repeateat}
-
-In a trail map representation, each path is one-way only. The top
-junction is a merge junction, which means the top and right paths merge
-into the down path. The bottom junction is a fork, which means the top
-path splits into the down path and the right path. The rectangle labeled
-"one is full?" is the question to answer. Depending on whether the
-answer is "true" or "false", the bottom or right path is chosen,
-respectively.
+```mermaid
+flowchart TD
+start@{shape:stadium,label:"start"}
+merge@{shape:diamond,label:" "}
+eat@{shape:process,label:"take a bite"}
+decision@{shape:diamond,label:"is one hungry?"}
+finish@{shape:stadium,label:"end"}
+```
 
 # Is this all worth while?
 
