@@ -34,52 +34,37 @@ while (one is hungry) // line 3
 
 Now, let's take a closer look at this block of code.
 
--   line [\[repeateat:repeat\]](#repeateat:repeat){reference-type="ref"
-    reference="repeateat:repeat"}: this is a "marker" that marks the
+-   line 1: this is a "marker" that marks the
     beginning of actions to be repeated.
-
 -   line
-    [\[repeateat:condition\]](#repeateat:condition){reference-type="ref"
-    reference="repeateat:condition"}: this line serves two purposes.
+    2: this line serves two purposes.
     First, the word "until" is a marker that marks the end of actions to
     be repeated. Second, this line expresses the condition that
     specifies when the action should not be repeated anymore.
+-   line 3: this is the action to be repeated. In
+    general, there can be exactly one statement between the markers
+    "do" and "while".
 
--   line [\[repeateat:bite\]](#repeateat:bite){reference-type="ref"
-    reference="repeateat:bite"}: this is the action to be repeated. In
-    general, there can be any number of lines between the markers
-    "repeat" and "until".
-
-No explanation is complete without a trace. Table
-[1](#table:repeateat){reference-type="ref" reference="table:repeateat"}
+No explanation is complete without a trace. The following trace able
 illustrates the steps taken when someone only needs three bites to
 become full.
 
-::: {#table:repeateat}
-  line \#                                                                                                 comment
-  ------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------
-  [\[repeateat:repeat\]](#repeateat:repeat){reference-type="ref" reference="repeateat:repeat"}            this is not necessary since it doesn't do anything
-  [\[repeateat:bite\]](#repeateat:bite){reference-type="ref" reference="repeateat:bite"}                  this is the first bite
-  [\[repeateat:condition\]](#repeateat:condition){reference-type="ref" reference="repeateat:condition"}   the condition is evaluated, one is not full, yet
-  [\[repeateat:repeat\]](#repeateat:repeat){reference-type="ref" reference="repeateat:repeat"}            this part is important, we get back to this line because the condition is not true
-  [\[repeateat:bite\]](#repeateat:bite){reference-type="ref" reference="repeateat:bite"}                  this is the second bite
-  [\[repeateat:condition\]](#repeateat:condition){reference-type="ref" reference="repeateat:condition"}   the condition is still false
-  [\[repeateat:repeat\]](#repeateat:repeat){reference-type="ref" reference="repeateat:repeat"}            since one is not full yet, here we go again
-  [\[repeateat:bite\]](#repeateat:bite){reference-type="ref" reference="repeateat:bite"}                  this is the third bite
-  [\[repeateat:condition\]](#repeateat:condition){reference-type="ref" reference="repeateat:condition"}   this time around, one is full, and this condition is true now; *we don't have to take another bite!*
-  [\[repeateat:done\]](#repeateat:done){reference-type="ref" reference="repeateat:done"}                  once a loop exits, a program continues with the line following the "until" marker.
+|line #|comment|
+|:-|:-|
+|1|this is not necessary since it doesn't do anything|
+|2|this is the first bite|
+|3|the condition is evaluated, one is still hungry|
+|1|this part is important, we get back to this line because the condition is true|
+|2|this is the second bite|
+|3|the condition is still true|
+|1|since one is not full yet, here we go again|
+|2|this is the third bite|
+|3|this time around, one is full, and this condition is false now; *we don't have to take another bite!*|
+|post|the algorithm exits|
 
-  : Trace table of algorithm
-  [\[algorithm:repeateat\]](#algorithm:repeateat){reference-type="ref"
-  reference="algorithm:repeateat"} when someone is full after three
-  bites.
-:::
-
-There is a problem with algorithm
-[\[algorithm:repeateat\]](#algorithm:repeateat){reference-type="ref"
-reference="algorithm:repeateat"}. What if someone is already full? A
-special property of a "repeat" loop is that the action is performed *at
-least once*. This is because the "until" condition is evaluated after
+There is a problem with the above algorithm. What if someone is already full to begin with? A
+special property of a "do-while" loop is that the action is performed *at
+least once*. This is because the "while" condition is evaluated after
 the action is performed.
 
 # Picture of a "repeat" loop
