@@ -38,9 +38,9 @@ Now, let's take a closer look at this block of code.
     beginning of actions to be repeated.
 -   line
     2: this line serves two purposes.
-    First, the word "until" is a marker that marks the end of actions to
+    First, the word "while" is a marker that marks the end of actions to
     be repeated. Second, this line expresses the condition that
-    specifies when the action should not be repeated anymore.
+    specifies when the action should be repeated.
 -   line 3: this is the action to be repeated. In
     general, there can be exactly one statement between the markers
     "do" and "while".
@@ -51,6 +51,7 @@ become full.
 
 |line #|comment|
 |:-|:-|
+|pre|this person needs to take 3 bites to stop the hunger|
 |1|this is not necessary since it doesn't do anything|
 |2|this is the first bite|
 |3|the condition is evaluated, one is still hungry|
@@ -116,6 +117,7 @@ The following table is a trace of algorithm if a person is full (not hungry) to 
 
 |line #|comment|
 |:-|:-|
+|pre|this person is already full to begin with|
 |1|because the person is full already, the condition "one is hungry" is false
 |post|when the condition of a "while" loop is false, the loop is terminated.
 
@@ -126,7 +128,7 @@ The following is a flowchart corresponding to the "while" loop algorithm.
 ```mermaid
 flowchart TD
 start@{shape: stadium, label: "start"}
-decision@{shape: diamond, label: "is one huntry?"}
+decision@{shape: diamond, label: "is one hungry?"}
 eat@{shape: rect, label: "take a bite" }
 finish@{shape: stadium, label: "end" }
 start --> decision
