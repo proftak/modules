@@ -28,7 +28,7 @@ Let's examine some examples where $f: \\{a,b\\} \rightarrow \\{1,2,3\\}$:
 
 -   $f=\\{(a,2), (a,1)\\}$: this set $f$ is not even a function!
 
--   $f=\\{(a,1), (b,1)\\}$: two things maps to 1, leaving the other
+-   $f=\\{(a,1), (b,1)\\}$: two things map to 1, leaving the other
     element in $X$.
 
 -   $f=\\{(a,1), (b,2)\\}$: this is injective despite having an element in
