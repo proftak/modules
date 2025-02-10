@@ -1,5 +1,6 @@
 ./0012/mdModule.md:title: "Module 0012: Variables, assignment statements and sequences"
 ./0013/mdModule.md:title: "Module 0013: Conditions and conditional statements"
+./0016/index.md:title: "Module 0016: Loops"
 ./0082/mdModule.md:title: "Module 0082: Big and little Omicron, Omega and Theta"
 ./0279/mdModule.md:title: "Module 0279: Boolean Operator"
 ./0280/mdModule.md:title: "Module 0280: Basic Set Notations"
