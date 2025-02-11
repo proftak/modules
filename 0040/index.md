@@ -23,7 +23,7 @@ kind of statement. Indeed, a loop and embed another loop!
 
 Let's begin with an example that we have already seen in another module:
 
-```c {#algorithm:simpleNest .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:simpleNest" caption="A simple algorithm with a nested statement"}
+```c
 while (x < 5) {  // line 1
   x = x + 1;     // line 2
 }                // line 3
@@ -35,13 +35,7 @@ whereas line 3 marks the end of the block statement of the prechecking loop. The
 statement on line 2 is contained within the prechecking loop. We
 can say that the assignment statement on line 2 is nested inside a block statement, which is in return, nested in the prechecking loop.
 
-Note that use indentation to indicate that line
-2 is contained within the construct that begins
-on line 1 and 3.
-Whenever we nest a statement inside another one, the nested (or
-embedded) one is indented by one additional level. Although this is not
-strictly a required pseudocode syntax, it is commonly used and
-expected.
+Note that use indentation to indicate that line 2 is contained within the construct that begins on lines 1 and 3. Whenever we nest a statement inside another one, the nested (or embedded) one is indented by one additional level. Although this is not strictly a required pseudocode syntax, it is commonly used and expected.
 
 # A more complex example
 
