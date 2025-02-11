@@ -74,6 +74,7 @@ It may be helpful to show a flowchart of this algorithm.
 flowchart TD
 start@{shape: stadium, label: "start"}
 sEq0@{shape: rect, label: "s=0"}
+xEq0@{shape: rect, label: "x=0"}
 whileXLt3@{shape: diamond, label: "x < 3"}
 yEq0@{shape: rect, label: "y=0"}
 whileYLT2@{shape: diamond, label: "y < 2"}
@@ -82,7 +83,8 @@ accS@{shape: rect, label: "s=s+y+x"}
 incX@{shape: rect, label: "x=x+1"}
 finish@{shape: stadium, label: "end"}
 start --> sEq0
-sEq0 --> whileXLt3
+sEq0 --> xEq0
+xEq0 --> whileXLt3
 whileXLt3 -->|false| finish
 whileXLt3 -->|true| yEq0
 yEq0 --> whileYLT2
@@ -137,39 +139,6 @@ Of course, no explanation is complete without a trace!
 
 # How to interpret nested statements?
 
-When we have nested statements, there are a few points to observe.
+When we have nested statements, there are a few points to observe. Because line 7 is the last statement of the block statement that forms the body of the inner loop, the next line to execute is the matching beginning of that loop on line 5. Only when the condition evaluated on line 5 becomes false does the inner loop exit and continue execution on the line after the inner loop, line 9.
 
-When we go from an embedding (enclosing) statement to its nested
-content, there is no special consideration: we follow the order from top
-to bottom.
-
-The most critical part about nested statements is when we finish the
-nested content, and are ready to get back to the embedding (enclosing)
-statement. In some cases, we need to match the beginning of enclosing
-statements. In other words, after we execute line
-[\[while1:incx\]](#while1:incx){reference-type="ref"
-reference="while1:incx"} of algorithm
-[\[algorithm:whilewhile\]](#algorithm:whilewhile){reference-type="ref"
-reference="algorithm:whilewhile"}, we need to find the matching
-beginning of line
-[\[while1:outerwhileend\]](#while1:outerwhileend){reference-type="ref"
-reference="while1:outerwhileend"}, which is on line
-[\[while1:outerwhilebegin\]](#while1:outerwhilebegin){reference-type="ref"
-reference="while1:outerwhilebegin"}.
-
-It is also important to find the matching end of an embedding statement.
-For example, when $x$ eventually becomes 3 to exit the outer loop in
-algorithm
-[\[algorithm:whilewhile\]](#algorithm:whilewhile){reference-type="ref"
-reference="algorithm:whilewhile"}, we need to find the matching end of
-the outer prechecking loop that starts on line
-[\[while1:outerwhilebegin\]](#while1:outerwhilebegin){reference-type="ref"
-reference="while1:outerwhilebegin"}. Using indentation as a visual clue,
-we find that line
-[\[while1:outerwhileend\]](#while1:outerwhileend){reference-type="ref"
-reference="while1:outerwhileend"} marks the end of this loop.
-Consequently, the next statement to execute (after line
-[\[while1:outerwhilebegin\]](#while1:outerwhilebegin){reference-type="ref"
-reference="while1:outerwhilebegin"} and $x = 4$) is line
-[\[while1:following\]](#while1:following){reference-type="ref"
-reference="while1:following"}.
+As a side note, the lines that only contain a close-brace `}` are not traced. This is because these lines are strictly for ending a block statement from the syntactic perspective. 
