@@ -49,23 +49,24 @@ Now that we understand the simpler example let us consider a slightly
 more complex example:
 
 ```c
-s = 0; // line 1 while1:init2
-while (x < 3) { // line 2 while1:outerwhilebegin
-  y = 0; // line 3 while1:reset:y
-  while (y < 2) { // line 4 while1:innerwhilebegin
-    y = y + 1; // line 5 while1:innermost1
-    s = s + y + x; // line 6while1:innermost2
-  } // line 7 while1:innerwhileend
-  x = x + 1; // line 8 while1:incx
-} // line 9 while1:outerwhileend
+s = 0;             // line 1
+x = 0;             // line 2
+while (x < 3) {    // line 3
+  y = 0;           // line 4
+  while (y < 2) {  // line 5
+    y = y + 1;     // line 6
+    s = s + y + x; // line 7
+  }                // line 8
+  x = x + 1;       // line 9
+}                  // line 10
 ```
 
-The indentation shows how the statements are nested. Lines 5 and 6 are the most nested statements. They are
-nested within the prechecking loop that begins on line 4 and ends on line 7.
+The indentation shows how the statements are nested. Lines 6 and 7 are the most nested statements. They are
+nested within the prechecking loop that begins on line 5 and ends on line 8.
 
-Note that the assignment statements on lines 3 and 8 are "peers" (on the same nesting level) of the prechecking loop that begins on line 4 and ends on line 7.
+Note that the assignment statements on lines 4 and 9 are "peers" (on the same nesting level) of the prechecking loop that begins on line 5 and ends on line 8.
 
-Everything from line 3 to line 8 is nested inside the outer prechecking loop.
+Everything from line 4 to line 9 is nested inside the outer prechecking loop.
 
 It may be helpful to show a flowchart of this algorithm. 
 
@@ -94,38 +95,45 @@ end
 incX --> whileXLt3
 ```
 
-![Graphical representation of algorithm
-[\[algorithm:whilewhile\]](#algorithm:whilewhile){reference-type="ref"
-reference="algorithm:whilewhile"}.](whilewhile){#figure:whilewhile}
+Of course, no explanation is complete without a trace! 
 
-Of course, no explanation is complete without a trace! Table
-[1](#table:whilewhile){reference-type="ref"
-reference="table:whilewhile"} traces this algorithm.
-
-::: {#table:whilewhile}
-  line#                                                                                                            x      y      s      comments
-  ---------------------------------------------------------------------------------------------------------------- ------ ------ ------ ----------------------------------------------------------------
-                                                                                                                                        
-  pre                                                                                                              ?      ?      ?      we know nothing about the variables
-  [\[while1:init1\]](#while1:init1){reference-type="ref" reference="while1:init1"}                                 0      ?      ?      x is initialized
-  [\[while1:init2\]](#while1:init2){reference-type="ref" reference="while1:init2"}                                 0      ?      0      s is initialized
-  [\[while1:outerwhilebegin\]](#while1:outerwhilebegin){reference-type="ref" reference="while1:outerwhilebegin"}   0      ?      0      $x = 0 < 3$ is true, get into the outer loop
-  [\[while1:resety\]](#while1:resety){reference-type="ref" reference="while1:resety"}                              0      0      0      initialize y
-  [\[while1:innerwhilebegin\]](#while1:innerwhilebegin){reference-type="ref" reference="while1:innerwhilebegin"}   0      0      0      $y = 0 < 2$ is true, get into the inner loop
-  [\[while1:innermost1\]](#while1:innermost1){reference-type="ref" reference="while1:innermost1"}                  0      1      0      y is incremented
-  [\[while1:innermost2\]](#while1:innermost2){reference-type="ref" reference="while1:innermost2"}                  0      1      1      s gets 0(s) + 1(y) + 0(x), loop back!
-  [\[while1:innerwhilebegin\]](#while1:innerwhilebegin){reference-type="ref" reference="while1:innerwhilebegin"}   0      1      1      $y = 1 < 2$ is true, get into the inner loop
-  [\[while1:innermost1\]](#while1:innermost1){reference-type="ref" reference="while1:innermost1"}                  0      2      1      y is incremented again
-  [\[while1:innermost2\]](#while1:innermost2){reference-type="ref" reference="while1:innermost2"}                  0      2      3      s gets 1(s) + 2(y) + 0(x), loop back
-  [\[while1:innerwhilebegin\]](#while1:innerwhilebegin){reference-type="ref" reference="while1:innerwhilebegin"}   0      2      3      $y = 2 < 2$ is false, exit inner loop
-  [\[while1:incx\]](#while1:incx){reference-type="ref" reference="while1:incx"}                                    1      2      3      x is incremented, loop back to the beginning of the outer loop
-  [\[while1:outerwhilebegin\]](#while1:outerwhilebegin){reference-type="ref" reference="while1:outerwhilebegin"}   1      2      3      $x = 1 < 3$ is true, get into the outer loop
-  \...                                                                                                             \...   \...   \...   
-
-  : Partial trace of algorithm
-  [\[algorithm:whilewhile\]](#algorithm:whilewhile){reference-type="ref"
-  reference="algorithm:whilewhile"}.
-:::
+|line #|`s`|`x`|`y`|comments|
+|:-|:-|:-|:-|:-|
+|pre|?|?|?|no assumption about the initial value of variables|
+|1|0| | | |
+|2| |0| | |
+|3| | | |`x < 3` is true because x equals 0|
+|4| | |0| |
+|5| | | |`y < 2` is true because y equals 0|
+|6| | |1| |
+|7|0| | | |
+|5| | | |`y < 2` is true because y equals 1|
+|6| | |2| |
+|7|1| | | |
+|5| | | |`y < 2` is false because y equals 2|
+|9| |1| | |
+|3| | | |`x < 3` is true because x equals 1|
+|4| | |0| |
+|5| | | |`y < 2` is true because y equals 0|
+|6| | |1| |
+|7|3| | | |
+|5| | | |`y < 2` is true because y equals 1|
+|6| | |2| |
+|7|6| | | |
+|5| | | |`y < 2` is false because y equals 2|
+|9| |2| | |
+|3| | | |`x < 3` is true because x equals 2|
+|4| | |0| |
+|5| | | |`y < 2` is true because y equals 0|
+|6| | |1| |
+|7|9| | | |
+|5| | | |`y < 2` is true because y equals 1|
+|6| | |2| |
+|7|13| | | |
+|5| | | |`y < 2` is false because y equals 2|
+|9| |3| | |
+|3| | | |`x < 3` is false because x equals 3|
+|post| | | | |
 
 # How to interpret nested statements?
 
