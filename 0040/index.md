@@ -87,8 +87,10 @@ whileYLT2 -->|true| incY
 whileYLT2 -->|false| incX
 incY --> accS
 accS --> whileYLT2
+accS --- incX
 end
 incX --> whileXLt3
+incX --- finish
 ```
 
 Of course, no explanation is complete without a trace! 
