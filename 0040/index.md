@@ -104,30 +104,30 @@ Of course, no explanation is complete without a trace!
 |4| | |0| |
 |5| | | |`y < 2` is true because y equals 0|
 |6| | |1| |
-|7|0| | | |
+|7|1| | | |
 |5| | | |`y < 2` is true because y equals 1|
 |6| | |2| |
-|7|1| | | |
+|7|2| | | |
 |5| | | |`y < 2` is false because y equals 2|
 |9| |1| | |
 |3| | | |`x < 3` is true because x equals 1|
 |4| | |0| |
 |5| | | |`y < 2` is true because y equals 0|
 |6| | |1| |
-|7|3| | | |
+|7|4| | | |
 |5| | | |`y < 2` is true because y equals 1|
 |6| | |2| |
-|7|6| | | |
+|7|7| | | |
 |5| | | |`y < 2` is false because y equals 2|
 |9| |2| | |
 |3| | | |`x < 3` is true because x equals 2|
 |4| | |0| |
 |5| | | |`y < 2` is true because y equals 0|
 |6| | |1| |
-|7|9| | | |
+|7|10| | | |
 |5| | | |`y < 2` is true because y equals 1|
 |6| | |2| |
-|7|13| | | |
+|7|14| | | |
 |5| | | |`y < 2` is false because y equals 2|
 |9| |3| | |
 |3| | | |`x < 3` is false because x equals 3|
