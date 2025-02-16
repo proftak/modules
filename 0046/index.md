@@ -4,7 +4,7 @@ title: "Module 0046: Pre and post conditions"
 
 # About this module
 
--   Prerequisites: [0011](../0011/mdModule.html), [0012](../0012/mdModule.html), [0013](../0013)
+-   Prerequisites: [0011](../0011/mdModule.html), [0012](../0012/mdModule.html), [0013](../0013/mdModule.html)
 
 -   Objectives: This module introduces the concepts of pre and post
     conditions for various types of statements.
@@ -38,7 +38,7 @@ solid background in logic and mathematics enables a programmer to troubleshoot f
 well-trained in mathematics also tend to design more elegant programs
 that minimize the chances of errors to begin with.
 
-# Pre and post conditions
+# Pre and post-conditions
 
 A pre-condition is simply "what we know before the execution of a
 statement in a program." A post-condition is "what we know after executing a statement in a program." The analysis of the pre and post-conditions of a program is essential, because we can prove the
@@ -121,12 +121,11 @@ $\begin{align}       \rm{post(3)} & = & \rm{forget(\rm{post(2)},x)} \wedge (x = 
 Now, onto the last statement. We only have to reapply what we learned in
 the previous step:
 
-$\begin{aligned}
-      \rm{post(4)} & = & \rm{forget(\rm{post(3)},y)} \wedge (y = 1) \\
-                                   & = & \rm{forget((y = 2) \wedge (x = 5),y)} \wedge (y = 1) \\
+$\begin{align}
+      \rm{post(4)} & = & \rm{forget(\rm{post(3)},y)} \wedge (y = 1) \\\\
+                                   & = & \rm{forget((y = 2) \wedge (x = 5),y)} \wedge (y = 1) \\\\
                                    & = & (x = 5) \wedge (y = 1)
-    
-\end{aligned}$
+\end{align}$
 
 Are you surprised at the result?
 
