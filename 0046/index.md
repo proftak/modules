@@ -204,7 +204,7 @@ On to the last statement, we define $g(y) = y - 1$. The inverse function
 is $g^{-1}(y) = y + 1$ so that $g^{-1}(g(y)) = y$. Given this, we can
 finish the derivation:
 
-$\begin{align} \rm{post(3)} & = & \rm{sub(\rm{post(2)},y,g^{-1}(y))} \\\\ & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\\\  & = & (x = 3) \wedge ((y+1) = 2) \\\\ & = & (x = 3) \wedge (y = 1) \end{aligned}$
+$\begin{align} \rm{post(3)} & = & \rm{sub(\rm{post(2)},y,g^{-1}(y))} \\\\ & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\\\  & = & (x = 3) \wedge ((y+1) = 2) \\\\ & = & (x = 3) \wedge (y = 1) \end{align}$
 
 This is yet another earth-breaking discovery (not!). Although it may
 seem that we could have used intuition (sometimes called "eyeball
@@ -237,10 +237,9 @@ previous value before the assignment statement.
 
 As a result, you can use the substitution rule if and only if the
 following conditions are all true for an assignment statement
-$x \leftarrow e$ ($e$ is an expression):
+`x = e` (`e` is an expression):
 
--   The RHS ($e$) refers to the LHS. If so, let us define $f(x)=e$
-
+-   The RHS (`e`) refers to the LHS. If so, let us define $f(x)=e$
 -   There is an inverse function $f'(x)$ such that $f'(f(x))=x$
 
 For *all* other assignment statements, the forget rule should be used.
@@ -280,18 +279,11 @@ argument, the only way we get to line
 saying `x <= y`. As a result,
 $\rm{pre(4)} = (x \le y)$.
 
-The post-condition of line 2 is simply
-$\rm{post(2)} = \rm{pre(2)} \wedge (z = x) = (x > y) \wedge (z = x)$.
-Similarly, the post-condition of line
-4 is
-$\rm{post(4)} = \rm{pre(4)} \wedge (z = y) = (x \le y) \wedge (z = y)$.
+The post-condition of line 2 is simply $\rm{post(2)} = \rm{pre(2)} \wedge (z = x) = (x > y) \wedge (z = x)$. Similarly, the post-condition of line 4 is $\rm{post(4)} = \rm{pre(4)} \wedge (z = y) = (x \le y) \wedge (z = y)$.
 
-Here comes the tricky part: what is $\rm{pre(5)}$? In
-other words, after the entire conditional statement, what can we
-conclude?
+Here comes the tricky part: what is $\rm{pre(5)}$? In other words, after the entire conditional statement, what can we conclude?
 
-There are two ways to get to line 5. We can get there from line 2, or from line 4. Consequently, the pre-condition of line 5 is the post-condition of line 2 or the post-condition of line
-4. In other words,
+There are two ways to get to line 5. We can get there from line 2, or from line 4. Consequently, the pre-condition of line 5 is the post-condition of line 2 or the post-condition of line 4. In other words,
 
 $\begin{align} \rm{pre(5)} & = & \rm{post(2)} \vee \rm{4)} \\\\  & = & ((x > y) \wedge (z = x)) \vee ((x \le y) \wedge (z = y)) \end{align}$
 
@@ -299,27 +291,19 @@ Does this make sense?
 
 Here is the general conditional statement:
 
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
-if c then %\label{genif:if}%
-    then-block %\label{genif:then}%
-else
-    else-block %\label{genif:else}%
-end if %\label{genif:endif}%
+```c
+if (c) // line n
+    then-block // lines n+1 to n+t, t lines of code in this then block
+else  // line n+t+1
+    else-block // line n+t+2 to n+t+e+1, e lines of code in this else block
+// line n+t+e+2
 ```
 
--   $\rm{pre(\ref{genif:then})} = \rm{pre(\ref{genif:if})} \wedge c$
-
--   $\rm{pre(\ref{genif:else})} = \rm{pre(\ref{genif:if})} \wedge \neg c$
-
--   $\rm{post(\ref{genif:then})}$ has no general form, it depends on the
-    actual code of "then-block". Note that even $c$ may not true after
-    the code of "then-block".
-
--   $\rm{post(\ref{genif:else})}$ has no general form, it depends on the
-    actual code of "else-block". Note that $c$ may actually be true
-    after the code of "else-block".
-
--   $\rm{post(\ref{genif:endif})} = \rm{post(\ref{genif:then})} \vee \rm{post(\ref{genif:else})}$
+-   $\rm{pre(n+1)} = \rm{pre(n)} \wedge c$
+-   $\rm{pre(n+t+2)} = \rm{pre(n)} \wedge \neg c$
+-   $\rm{post(n+t)}$ has no general form; it depends on the actual code of "then-block". Note that even $c$ may not be true after the code of "then-block".
+-   $\rm{post(n+t+e+1)}$ has no general form; it depends on the actual code of "else-block". Note that $c$ may actually be true after the code of "else-block".
+-   $\rm{pre(n+t+e+2)} = \rm{post(n+t)} \vee \rm{post(n+t+e+1)}$
 
 ## Loops
 
