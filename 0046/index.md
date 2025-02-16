@@ -116,16 +116,12 @@ $x$ should be forgotten. Then, we add the fact that $x = 5$."
 
 This results in the following derivation:
 
-$\begin{align}       \rm{post(3)} & = & \rm{forget(\rm{post(2)},x)} \wedge (x = 5) \\\\                                    & = & \rm{forget((x = 0) \wedge (y = 2),x)} \wedge (x = 5) \\\\                                   & = & (y = 2) \wedge (x = 5) \end{align}$
+$\begin{align} \rm{post(3)} & = & \rm{forget(\rm{post(2)},x)} \wedge (x = 5) \\\\  & = & \rm{forget((x = 0) \wedge (y = 2),x)} \wedge (x = 5) \\\\  & = & (y = 2) \wedge (x = 5) \end{align}$
 
 Now, onto the last statement. We only have to reapply what we learned in
 the previous step:
 
-$\begin{align}
-      \rm{post(4)} & = & \rm{forget(\rm{post(3)},y)} \wedge (y = 1) \\\\
-                                   & = & \rm{forget((y = 2) \wedge (x = 5),y)} \wedge (y = 1) \\\\
-                                   & = & (x = 5) \wedge (y = 1)
-\end{align}$
+$\begin{align} \rm{post(4)} & = & \rm{forget(\rm{post(3)},y)} \wedge (y = 1) \\\\ & = & \rm{forget((y = 2) \wedge (x = 5),y)} \wedge (y = 1) \\\\ & = & (x = 5) \wedge (y = 1) \end{align}$
 
 Are you surprised at the result?
 
@@ -199,13 +195,7 @@ With these new tools, we can get back to work. Let us keep the
 definition that $f(x) = x + 3$ and $f^{-1}(x) = x - 3$. Then, we have the
 following derivation:
 
-$\begin{aligned}
-      \rm{post(2)} & = & \rm{sub(\rm{pre(2)},x,f^{-1}(x))} \\
-                                   & = & \rm{sub((x = 0) \wedge (y = 2),x,x - 3)} \\
-                                   & = & ((x - 3) = 0) \wedge (y = 2) \\
-                                   & = & (x = 3) \wedge (y = 2)
-    
-\end{aligned}$
+$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(2)},x,f^{-1}(x))} \\\\ & = & \rm{sub((x = 0) \wedge (y = 2),x,x - 3)} \\\\ & = & ((x - 3) = 0) \wedge (y = 2) \\\\ & = & (x = 3) \wedge (y = 2) \end{align}$
 
 Of course, this doesn't really come as a surprise. However, we now know
 *why* it is the case!
@@ -214,13 +204,7 @@ On to the last statement, we define $g(y) = y - 1$. The inverse function
 is $g^{-1}(y) = y + 1$ so that $g^{-1}(g(y)) = y$. Given this, we can
 finish the derivation:
 
-$\begin{aligned}
-      \rm{post(3)} & = & \rm{sub(\rm{post(2)},y,g^{-1}(y))} \\
-                                   & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\
-                                   & = & (x = 3) \wedge ((y+1) = 2) \\
-                                   & = & (x = 3) \wedge (y = 1)
-    
-\end{aligned}$
+$\begin{align} \rm{post(3)} & = & \rm{sub(\rm{post(2)},y,g^{-1}(y))} \\\\ & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\\\  & = & (x = 3) \wedge ((y+1) = 2) \\\\ & = & (x = 3) \wedge (y = 1) \end{aligned}$
 
 This is yet another earth-breaking discovery (not!). Although it may
 seem that we could have used intuition (sometimes called "eyeball
@@ -243,7 +227,8 @@ The forget operation is applicable for assignment statements whenever
 the substitution operation cannot be performed. This means that the
 following statement should use the "forget" operation:
 
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
+```c
+x=y;
 ```
 
 This is because the RHS of the assignment does not refer to the LHS.
@@ -272,68 +257,43 @@ statement.
 
 ## Conditional statements
 
-Let's consider algorithm
-[\[algorithm:findmax\]](#algorithm:findmax){reference-type="ref"
-reference="algorithm:findmax"} that makes $z$ the maximum of $x$ and
+Let's consider algorithm `findmax` that makes $z$ the maximum of $x$ and
 $y$.
 
-``` {#algorithm:findmax .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:findmax"}
-if %$x>y$% then %\label{findmax:if}%
-  %$z \leftarrow x$ \label{findmax:zgx}%
-else
-  %$z \leftarrow y$ \label{findmax:zgy}%
-end if %\label{findmax:endif}%
+```c
+if (x>y) // line 1 findmax:if
+  z = x; // line 2 findmax:zgx
+else     // line 3
+  z = y; // line 4 findmax:zgy
+// line 5
 ```
 
-Let us express the pre and post conditions of each statement. In this
-case, let us not to assume any values in the variables. In other words,
-$\rm{pre(\ref{findmax:if})} = \rm{true}$
+Let us express the pre- and post-conditions of each statement. In this
+case, let us not assume any values in the variables. In other words,
+$\rm{pre(1)} = \rm{true}$
 
-The pre condition of line
-[\[findmax:zgx\]](#findmax:zgx){reference-type="ref"
-reference="findmax:zgx"} is not just $\rm{true}$. This is because the
-only way that we get to line
-[\[findmax:zgx\]](#findmax:zgx){reference-type="ref"
-reference="findmax:zgx"} is that the condition $x > y$ must be true.
-Consequently, $\rm{pre(\ref{findmax:zgx})} = (x > y)$. Using the same
+The pre-condition of line 2 is not just $\rm{true}$. This is because the
+only way that we get to line 2 is that the condition `x > y` must be true.
+Consequently, $\rm{pre(2)} = (x > y)$. Using the same
 argument, the only way we get to line
-[\[findmax:zgy\]](#findmax:zgy){reference-type="ref"
-reference="findmax:zgy"} is that $\neg(x > y)$, which is equivalent to
-saying $x \le y$. As a result,
-$\rm{pre(\ref{findmax:zgy})} = (x \le y)$.
+4 is that `x > y` is false, which is equivalent to
+saying `x <= y`. As a result,
+$\rm{pre(4)} = (x \le y)$.
 
-The post condition of line
-[\[findmax:zgx\]](#findmax:zgx){reference-type="ref"
-reference="findmax:zgx"} is simply
-$\rm{post(\ref{findmax:zgx})} = \rm{pre(\ref{findmax:zgx})} \wedge (z = x) = (x > y) \wedge (z = x)$.
-Similarly, the post condition of line
-[\[findmax:zgy\]](#findmax:zgy){reference-type="ref"
-reference="findmax:zgy"} is
-$\rm{post(\ref{findmax:zgy})} = \rm{pre(\ref{findmax:zgy})} \wedge (z = y) = (x \le y) \wedge (z = y)$.
+The post-condition of line 2 is simply
+$\rm{post(2)} = \rm{pre(2)} \wedge (z = x) = (x > y) \wedge (z = x)$.
+Similarly, the post-condition of line
+4 is
+$\rm{post(4)} = \rm{pre(4)} \wedge (z = y) = (x \le y) \wedge (z = y)$.
 
-Here comes the tricky part: what is $\rm{post(\ref{findmax:endif})}$? In
+Here comes the tricky part: what is $\rm{pre(5)}$? In
 other words, after the entire conditional statement, what can we
 conclude?
 
-There are two ways to get to line
-[\[findmax:endif\]](#findmax:endif){reference-type="ref"
-reference="findmax:endif"}. We can get there from line
-[\[findmax:zgx\]](#findmax:zgx){reference-type="ref"
-reference="findmax:zgx"}, or from line
-[\[findmax:zgy\]](#findmax:zgy){reference-type="ref"
-reference="findmax:zgy"}. Consequently, the post condition of line
-[\[findmax:endif\]](#findmax:endif){reference-type="ref"
-reference="findmax:endif"} is the post condition of line
-[\[findmax:zgx\]](#findmax:zgx){reference-type="ref"
-reference="findmax:zgx"} or the post condition of line
-[\[findmax:zgy\]](#findmax:zgy){reference-type="ref"
-reference="findmax:zgy"}. In other words,
+There are two ways to get to line 5. We can get there from line 2, or from line 4. Consequently, the pre-condition of line 5 is the post-condition of line 2 or the post-condition of line
+4. In other words,
 
-$\begin{aligned}
-      \rm{post(\ref{findmax:endif})} & = & \rm{post(\ref{findmax:zgx})} \vee \rm{post(\ref{findmax:zgy})} \\
-                                 & = & ((x > y) \wedge (z = x)) \vee ((x \le y) \wedge (z = y)) 
-    
-\end{aligned}$
+$\begin{align} \rm{pre(5)} & = & \rm{post(2)} \vee \rm{4)} \\\\  & = & ((x > y) \wedge (z = x)) \vee ((x \le y) \wedge (z = y)) \end{align}$
 
 Does this make sense?
 
