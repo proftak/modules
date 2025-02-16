@@ -4,7 +4,7 @@ title: "Module 0046: Pre and post conditions"
 
 # About this module
 
--   Prerequisites: [0011](../0011/mdModule.html), [0012](../0012/mdModule.html), [0013](../0013/mdModule.html)
+-   Prerequisites: [0012](../0012/mdModule.html), [0013](../0013/mdModule.html)
 
 -   Objectives: This module introduces the concepts of pre and post
     conditions for various types of statements.
@@ -82,7 +82,7 @@ What is the post-condition of line 1? Since this is a constant assignment
 statement, we know that variable $x$ must end up with a value of 0. In
 other words, we know that $x = 0$ after this statement. Consequently, we
 "add" the fact to $\rm{pre(1)}$ so that
-$\rm{post(1)} = \rm{pre(1)} \wedge (x = 0)$
+$\rm{post(1)} = \rm{pre(1)} \wedge (x = 0)$. Here, we are using the mathematical symbol for conjunction. In other words, the `&&` operator in C++ is the same as the mathematical symbol $\wedge$.
 If you look up the conjunction definition, $x \wedge true$ is simply
 $x$. We can simplify our post condition so that
 $\rm{post(1)} = (x = 0)$.
@@ -274,8 +274,7 @@ $\rm{pre(1)} = \rm{true}$
 The pre-condition of line 2 is not just $\rm{true}$. This is because the
 only way that we get to line 2 is that the condition `x > y` must be true.
 Consequently, $\rm{pre(2)} = (x > y)$. Using the same
-argument, the only way we get to line
-4 is that `x > y` is false, which is equivalent to
+argument, the only way we get to line 4 is that `x > y` is false, which is equivalent to
 saying `x <= y`. As a result,
 $\rm{pre(4)} = (x \le y)$.
 
@@ -283,19 +282,21 @@ The post-condition of line 2 is simply $\rm{post(2)} = \rm{pre(2)} \wedge (z = x
 
 Here comes the tricky part: what is $\rm{pre(5)}$? In other words, after the entire conditional statement, what can we conclude?
 
-There are two ways to get to line 5. We can get there from line 2, or from line 4. Consequently, the pre-condition of line 5 is the post-condition of line 2 or the post-condition of line 4. In other words,
+There are two ways to get to line 5. We can get there from line 2 or from line 4. Consequently, the pre-condition of line 5 is the post-condition of line 2 or the post-condition of line 4. In other words,
 
-$\begin{align} \rm{pre(5)} & = & \rm{post(2)} \vee \rm{4)} \\\\  & = & ((x > y) \wedge (z = x)) \vee ((x \le y) \wedge (z = y)) \end{align}$
+$\begin{align} \rm{pre(5)} & = & \rm{post(2)} \vee \rm{post(4)} \\\\  & = & ((x > y) \wedge (z = x)) \vee ((x \le y) \wedge (z = y)) \end{align}$
 
-Does this make sense?
+Here, we introduce the mathematical symbol for disjunction. In other words, the operator `||` in C++ is the same as the mathematical symbol $\vee$.
+
+Does this logic make sense?
 
 Here is the general conditional statement:
 
 ```c
 if (c) // line n
-    then-block // lines n+1 to n+t, t lines of code in this then block
+    // lines n+1 to n+t, t lines of code in the then-block
 else  // line n+t+1
-    else-block // line n+t+2 to n+t+e+1, e lines of code in this else block
+    // line n+t+2 to n+t+e+1, e lines of code in the else-block
 // line n+t+e+2
 ```
 
@@ -309,71 +310,54 @@ else  // line n+t+1
 
 We are now on our final stretch!
 
-Let us consider algorithm
+Let us consider algorithm `while loop 1`
 [\[algorithm:while1\]](#algorithm:while1){reference-type="ref"
 reference="algorithm:while1"}.
 
-``` {#algorithm:while1 .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:while1"}
-while %$x<3$% do %\label{while1:while}%
-  %$x \leftarrow x + 1$ \label{while1:step}%
-end while %\label{while1:endwhile}%
+```c
+// algorithm while loop 1
+x = 0;        // line 1 while1:init
+while (x<3)   // line 2 while1:while
+  x = x + 1;  // line 3 while1:step
+// line 4, this is after the loop
 ```
 
-Let's begin with $\rm{pre(\ref{while1:while})}$. After the
+Let's begin with $\rm{pre(1)}$. After the
 initialization of $x$, we know that
-$\rm{pre(\ref{while1:while})} = (x = 0)$. However, the post condition of
-line [\[while1:while\]](#while1:while){reference-type="ref"
-reference="while1:while"} is not as simple. This is because there are
-actually *two* ways to get to line
-[\[while1:while\]](#while1:while){reference-type="ref"
-reference="while1:while"}. In the first iteration, we enter from line
-[\[while1:init\]](#while1:init){reference-type="ref"
-reference="while1:init"}. However, in subsequent iterations, we enter
-from line [\[while1:step\]](#while1:step){reference-type="ref"
-reference="while1:step"}. On the other hand, no matter which way we come
+$\rm{pre(\ref{while1:while})} = (x = 0)$. However, the post-condition of
+line 2 is not as simple. This is because there are
+actually *two* ways to get to line 2. In the first iteration, we enter from line 1. However, in subsequent iterations, we enter
+from line 2. On the other hand, no matter which way we come
 from, we know that the condition $(x < 3)$ must be true if we enter the
 loop.
 
 As a result, all we say at this time is that
-$\rm{post(\ref{while1:while})} =
-    (x < 3) \wedge ((x = 0) \vee \rm{post(\ref{while1:step})})$. Note
-that $\rm{pre(\ref{while1:step})} = \rm{post(\ref{while1:while})}$.
+$\rm{post(2)} = (x < 3) \wedge ((x = 0) \vee \rm{post(3)})$. Note
+that $\rm{pre(3)} = \rm{post(2)}$.
 
 The statement on line
-[\[while1:step\]](#while1:step){reference-type="ref"
-reference="while1:step"} looks familiar. It involves a function of $x$.
+3 looks familiar. It involves a function of $x$.
 In this case, the inverse function is $x-1$. We can then derive the
 following:
 
-$\begin{aligned}
-      \rm{post(\ref{while1:step})} & = & \rm{sub(\rm{pre(\ref{while1:step})},x,x - 1)} \\
-                               & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(\ref{while1:step})}) \\
-                               & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(\ref{while1:step})})
-    
-\end{aligned}$
+$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(\2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{aligned}$
 
 This is interesting because the same notation appears on the left and
-the right hand side of the equation. The solution is to find a
+the right-hand side of the equation. The solution is to find a
 definition that works in this equation. Choosing
-$\rm{post(\ref{while1:step})} = (x \le 3)$ works. This is because
+$\rm{post(2)} = (x \le 3)$ works. This is because
 $(x = 1) \vee (x \le 3)$ simplifies to $x \le 3$ because it includes the
 case of $x=1$. Furthermore, $(x \le 3) \wedge (x \le 3)$ can also
 simplify to just $x \le 3$. In conclusion, we can define
-$\rm{post(\ref{while1:step})} = (x \le 3)$.
+$\rm{post(2)} = (x \le 3)$.
 
-How about $\rm{post(\ref{while1:endwhile})}$? In theory, we can get
+How about $\rm{pre(4)}$? In theory, we can get
 there using two means. First, it is possible not to enter the loop at
-all. Second, we can go through the loop at least once, then exit the
+all. Second, we can go through the loop at least once, and then exit the
 loop. Regardless of whether we get into the loop or not, one thing is
 for sure: $x < 3$ must be false. As a result,
 
-$\begin{aligned}
-      \rm{post(\ref{while1:endwhile})} & = & \neg(x < 3) \wedge (\rm{pre(\ref{while1:while})} \vee \rm{post(\ref{while1:step})}) \\
-                                   & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\
-                                   & = & (x \ge 3) \wedge (x \le 3) \\
-                                   & = & (x = 3)
-    
-\end{aligned}$
+$\begin{align} \rm{pre(\ref{4})} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{aligned}$
 
 In other words, when we exit the loop, we know that $x = 3$.
 
