@@ -310,9 +310,7 @@ else  // line n+t+1
 
 We are now on our final stretch!
 
-Let us consider algorithm `while loop 1`
-[\[algorithm:while1\]](#algorithm:while1){reference-type="ref"
-reference="algorithm:while1"}.
+Let us consider algorithm `while loop 1`.
 
 ```c
 // algorithm while loop 1
@@ -340,7 +338,7 @@ The statement on line
 In this case, the inverse function is $x-1$. We can then derive the
 following:
 
-$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(\2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{aligned}$
+$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(\2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{align}$
 
 This is interesting because the same notation appears on the left and
 the right-hand side of the equation. The solution is to find a
@@ -353,7 +351,7 @@ $\rm{post(2)} = (x \le 3)$.
 
 How about $\rm{pre(4)}$? In theory, we can get
 there using two means. First, it is possible not to enter the loop at
-all. Second, we can go through the loop at least once, and then exit the
+all. Second, we can go through the loop at least once and then exit the
 loop. Regardless of whether we get into the loop or not, one thing is
 for sure: $x < 3$ must be false. As a result,
 
