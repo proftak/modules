@@ -322,7 +322,7 @@ while (x<3)   // line 2 while1:while
 
 Let's begin with $\rm{pre(1)}$. After the
 initialization of $x$, we know that
-$\rm{pre(\ref{while1:while})} = (x = 0)$. However, the post-condition of
+$\rm{pre(2)} = (x = 0)$. However, the post-condition of
 line 2 is not as simple. This is because there are
 actually *two* ways to get to line 2. In the first iteration, we enter from line 1. However, in subsequent iterations, we enter
 from line 2. On the other hand, no matter which way we come
