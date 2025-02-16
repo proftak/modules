@@ -357,38 +357,30 @@ all. Second, we can go through the loop at least once, and then exit the
 loop. Regardless of whether we get into the loop or not, one thing is
 for sure: $x < 3$ must be false. As a result,
 
-$\begin{align} \rm{pre(\ref{4})} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{aligned}$
+$\begin{align} \rm{pre(\ref{4})} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{align}$
 
 In other words, when we exit the loop, we know that $x = 3$.
 
 In its general form, a prechecking loop is as follows:
 
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
-while c do %\label{while:while}%
-    block %\label{while:in}%
-end while %\label{while:endwhile}%
+```c
+while (c) // line n while:while}%
+    // while-block lines n+1 to n+w, w is the number of lines in the while-block
+// line n+w+1, this is after the loop
 ```
 
--   $\rm{post(\ref{while:while})} = \rm{pre(\ref{while:in})} = c \wedge (\rm{pre(\ref{while:while})} \vee \rm{post(\ref{while:in})})$
+-   $\rm{post(n)} = \rm{pre(n+1)} = c \wedge (\rm{pre(n)} \vee \rm{post(n+w)})$
+-   $\rm{pre(n+w+1)} = \neg c \wedge (\rm{pre(n)} \vee \rm{post(n+w)})$
+-   The trick is to find a good definition of $\rm{post(n+w)}$! $\rm{post(n+w)}$ is also called the "loop invariant".
 
--   $\rm{post(\ref{while:endwhile})} = \neg c \wedge (\rm{pre(\ref{while:while})} \vee \rm{post(\ref{while:in})})$
+The general form of a post-checking loop is as follows:
 
--   The trick is to find a good definition of
-    $\rm{post(\ref{while:in})}$! $\rm{post(\ref{while:in})}$ is also
-    called the "loop invariant".
-
-The general form of a postchecking loop is as follows:
-
-``` {.numberLines .pseudocode language="pseudocode" numbers="left"}
-repeat %\label{repeat:repeat}%
-    block %\label{repeat:step}%
-until c %\label{repeat:until}
+```c
+do // line n %\label{repeat:repeat}%
+    // lines n+1 to n+d, there are d lines in the do-block
+while (c) // line n+d+1
 ```
 
--   $\rm{pre(\ref{repeat:step})} = \rm{pre(\ref{repeat:repeat})} \vee \rm{post(\ref{repeat:step})}$
-
--   $\rm{post(\ref{repeat:until})} = c \wedge \rm{post(\ref{repeat:step})}$
-
--   Again, the trick is to find a good definition for
-    $\rm{post(\ref{repeat:step})}$, it is also called the "loop
-    invariant".
+-   $\rm{pre(n+1)} = \rm{pre(n)} \vee \rm{post(n+d)}$
+-   $\rm{post(n+d+1)} = \neg c \wedge \rm{post(n+d)}$
+-   Again, the trick is to find a good definition for $\rm{post(n+d)}$; it is also called the "loop invariant".
