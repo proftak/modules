@@ -301,7 +301,7 @@ else  // line n+t+1
 ```
 
 -   $\rm{pre(n+1)} = \rm{pre(n)} \wedge c$
--   $\rm{pre(n+t+2)} = \rm{pre(n)} \wedge \neg c$
+-   $\rm{pre(n+t+2)} = \rm{pre(n)} \wedge \neg c$. Note that the mathematical symbol $\neg$ means the same as the C++ operator `!`, it means "logical not" or "logical negation."
 -   $\rm{post(n+t)}$ has no general form; it depends on the actual code of "then-block". Note that even $c$ may not be true after the code of "then-block".
 -   $\rm{post(n+t+e+1)}$ has no general form; it depends on the actual code of "else-block". Note that $c$ may actually be true after the code of "else-block".
 -   $\rm{pre(n+t+e+2)} = \rm{post(n+t)} \vee \rm{post(n+t+e+1)}$
@@ -333,10 +333,7 @@ As a result, all we say at this time is that
 $\rm{post(2)} = (x < 3) \wedge ((x = 0) \vee \rm{post(3)})$. Note
 that $\rm{pre(3)} = \rm{post(2)}$.
 
-The statement on line
-3 looks familiar. It involves a function of $x$.
-In this case, the inverse function is $x-1$. We can then derive the
-following:
+The statement on line 3 looks familiar. It involves a function of $x$. In this case, the inverse function is $x-1$. We can then derive the following:
 
 $\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{align}$
 
@@ -355,14 +352,14 @@ all. Second, we can go through the loop at least once and then exit the
 loop. Regardless of whether we get into the loop or not, one thing is
 for sure: $x < 3$ must be false. As a result,
 
-$\begin{align} \rm{pre(\ref{4})} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{align}$
+$\begin{align} \rm{pre(4)} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{align}$
 
 In other words, when we exit the loop, we know that $x = 3$.
 
 In its general form, a prechecking loop is as follows:
 
 ```c
-while (c) // line n while:while}%
+while (c) // line n
     // while-block lines n+1 to n+w, w is the number of lines in the while-block
 // line n+w+1, this is after the loop
 ```
