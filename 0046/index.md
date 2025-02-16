@@ -116,12 +116,7 @@ $x$ should be forgotten. Then, we add the fact that $x = 5$."
 
 This results in the following derivation:
 
-$\begin{aligned}
-      \rm{post(3)} & = & \rm{forget(\rm{post(2)},x)} \wedge (x = 5) \\
-                                   & = & \rm{forget((x = 0) \wedge (y = 2),x)} \wedge (x = 5) \\
-                                   & = & (y = 2) \wedge (x = 5)
-    
-\end{aligned}$
+$\begin{align}       \rm{post(3)} & = & \rm{forget(\rm{post(2)},x)} \wedge (x = 5) \\\\                                    & = & \rm{forget((x = 0) \wedge (y = 2),x)} \wedge (x = 5) \\\\                                   & = & (y = 2) \wedge (x = 5) \end{align}$
 
 Now, onto the last statement. We only have to reapply what we learned in
 the previous step:
