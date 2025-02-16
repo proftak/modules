@@ -338,7 +338,7 @@ The statement on line
 In this case, the inverse function is $x-1$. We can then derive the
 following:
 
-$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(\2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{align}$
+$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(2)},x,x - 1)} \\\\ & = & ((x-1) < 3) \wedge (((x-1) = 0) \vee \rm{post(2)}) \\\\ & = & (x \le 3) \wedge ((x = 1) \vee \rm{post(2)}) \end{align}$
 
 This is interesting because the same notation appears on the left and
 the right-hand side of the equation. The solution is to find a
