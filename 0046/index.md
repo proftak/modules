@@ -61,10 +61,10 @@ statements.
 
 ```c
 // algorithm constant assignment
-x = 0; // line 1 constassign1:x0
-y = 2; // line 2 constassign1:y2
-x = 5; // line 3 constassign1:x5
-y = 1; // line 4 constassign1:y1
+x = 0; // line 1 
+y = 2; // line 2 
+x = 5; // line 3 
+y = 1; // line 4 
 ```
 
 Assuming this algorithm stands alone, there is no pre-condition to it.
@@ -145,8 +145,8 @@ $\rm{post(1)} = (x < y) \wedge (y = 10)$
 Here, we already know for sure that $y$ has a value of 10. This means
 that the inequality $(x < y)$ can now be resolved as $(x < 10)$. The
 main purpose of doing this is to decouple variables from each other. In
-other words, we want to lessen the impact of a change to one variable on
-conditions that involve other variables.
+other words, we want to lessen the impact of changing one variable on
+conditions involving other variables.
 
 In this example, a later assignment can change the value of $y$.
 However, that will not impact the fact that we already know that
@@ -154,7 +154,7 @@ $(x < 10)$.
 
 ## Simple self-referencing assignments
 
-Now that we can handle constant assignments and a sequence, let's move
+Now that we can handle constant assignments and a sequence let's move
 on to something *slightly* more interesting.
 
 Let us consider algorithm `self-assignment 1`.
@@ -162,8 +162,8 @@ Let us consider algorithm `self-assignment 1`.
 ```c
 // algorithm self-assignment 1
 y = 2;   // line 1
-x = x+3; // line 2 selfassign1:xp3
-y = y-1; // line 3 selfassign1:ym1
+x = x+3; // line 2 
+y = y-1; // line 3 
 ```
 
 Note that the first two statements of algorithm `self-assignment 1`
@@ -181,8 +181,8 @@ words, $x = 3$ after the statement.
 In the analysis of post-conditions, we have a more obscure way to come to
 the same conclusion.
 
-First, let us define a "function" $f(x) = x + 3$. This is really just a
-notation so that $f(3) = 6$, $f(-2) = 1$ and etc. When some functions,
+First, let us define a "function" $f(x) = x + 3$. This is just a
+notation so that $f(3) = 6$, $f(-2) = 1$, etc. When some functions,
 we can also define an "inverse function". In this case, the inverse
 function is $f^{-1}(x) = x - 3$. What this really means is simply that
 $f^{-1}(f(x)) = x$. In other words, $f^{-1}$ undoes whatever $f$ does.
@@ -260,10 +260,10 @@ Let's consider algorithm `findmax` that makes $z$ the maximum of $x$ and
 $y$.
 
 ```c
-if (x>y) // line 1 findmax:if
-  z = x; // line 2 findmax:zgx
+if (x>y) // line 1 
+  z = x; // line 2 
 else     // line 3
-  z = y; // line 4 findmax:zgy
+  z = y; // line 4 
 // line 5
 ```
 
@@ -314,9 +314,9 @@ Let us consider algorithm `while loop 1`.
 
 ```c
 // algorithm while loop 1
-x = 0;        // line 1 while1:init
-while (x<3)   // line 2 while1:while
-  x = x + 1;  // line 3 while1:step
+x = 0;        // line 1 
+while (x<3)   // line 2 
+  x = x + 1;  // line 3 
 // line 4, this is after the loop
 ```
 
@@ -371,8 +371,8 @@ while (c) // line n
 The general form of a post-checking loop is as follows:
 
 ```c
-do // line n %\label{repeat:repeat}%
-    // lines n+1 to n+d, there are d lines in the do-block
+do        // line n 
+          // lines n+1 to n+d, there are d lines in the do-block
 while (c) // line n+d+1
 ```
 
