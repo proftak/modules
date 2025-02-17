@@ -294,10 +294,10 @@ Here is the general conditional statement:
 
 ```c
 if (c) // line n
-    // lines n+1 to n+t, t lines of code in the then-block
-else  // line n+t+1
-    // line n+t+2 to n+t+e+1, e lines of code in the else-block
-// line n+t+e+2
+       // lines n+1 to n+t, t lines of code in the then-block
+else   // line n+t+1
+       // line n+t+2 to n+t+e+1, e lines of code in the else-block
+       // line n+t+e+2
 ```
 
 -   $\rm{pre(n+1)} = \rm{pre(n)} \wedge c$
@@ -349,8 +349,8 @@ $\rm{post(2)} = (x \le 3)$.
 How about $\rm{pre(4)}$? In theory, we can get
 there using two means. First, it is possible not to enter the loop at
 all. Second, we can go through the loop at least once and then exit the
-loop. Regardless of whether we get into the loop or not, one thing is
-for sure: $x < 3$ must be false. As a result,
+loop. Regardless of whether we get into the loop, one thing is
+certain: $x < 3$ must be false. As a result,
 
 $\begin{align} \rm{pre(4)} & = & \neg(x < 3) \wedge (\rm{pre(2)} \vee \rm{post(3)}) \\\\ & = & (x \ge 3) \wedge ((x = 3) \vee (x \le 3)) \\\\ & = & (x \ge 3) \wedge (x \le 3) \\\\ & = & (x = 3) \end{align}$
 
