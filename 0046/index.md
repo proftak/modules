@@ -161,9 +161,10 @@ Let us consider algorithm `self-assignment 1`.
 
 ```c
 // algorithm self-assignment 1
-y = 2;   // line 1
-x = x+3; // line 2 
-y = y-1; // line 3 
+x = 0;   // line 1
+y = 2;   // line 2
+x = x+3; // line 3 
+y = y-1; // line 4 
 ```
 
 Note that the first two statements of algorithm `self-assignment 1`
