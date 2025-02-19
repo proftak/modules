@@ -135,7 +135,7 @@ start --> decision
 decision -->|true| eat
 decision -->|false| finish
 eat --> decision
-eat --- finish
+eat ~~~ finish
 ```
 
 ## The syntax of a "while" loop
