@@ -82,7 +82,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 	* $\\{b,c\\}$
 	* $\\{a,b,c\\}$
 * $\mathbb{P}(S)$ is called the "power set of the set $S$", it consists all subsets of $S$.
-* $|\mathbb{P}(S)| = 2^{|S|}$
+* $\|\mathbb{P}(S)\| = 2^{\|S\|}$
 * ~~TODO: add section on nested containment~~ (completed)
 * $\\{a,b\\} \times \\{1,2,3\\} = \\{ (a,1), (a,2), (a,3), (b,1), (b,2), (b,3)  \\}$
 	* $(Tak, Iraj) \in \\{a,b\\} \times \\{1,2,3\\}$ is false
