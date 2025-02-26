@@ -322,7 +322,7 @@ condition -->|"$$\rm{pre}(n) \wedge c$$"| thenBlock
 condition -->|"$$\rm{pre}(n) \wedge \neg c$$"| elseBlock
 thenBlock -->|"$$\rm{post}(n+t)$$"| merge
 elseBlock -->|"$$\rm{post}(n+t+e+1)$$"| merge
-merge --> |"$$\rm{post}(n+t) \vee \rm{post}(n+t+e+1)$$"| finish
+merge --> |"$$\rm{post}(n+t) \vee \\ \rm{post}(n+t+e+1)$$"| finish
 ```
 
 ## Loops
