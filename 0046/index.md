@@ -171,10 +171,10 @@ Note that the first two statements of algorithm `self-assignment 1`
 are the same as the first two
 statements of algorithm `constant assignment`. Let's start with the first
 statement that is different. We know that
-$\rm{pre(2)} = (x = 0) \wedge (y = 2)$. What is the
-$\rm{post(2)}$?
+$\rm{pre(3)} = (x = 0) \wedge (y = 2)$. What is the
+$\rm{post(3)}$?
 
-Let us examine what we are doing on line 2. In this assignment statement, we first
+Let us examine what we are doing on line 3. In this assignment statement, we first
 evaluate the right-hand side. $x = 0$ at this point, so $x + 3 = 3$.
 Then, we take the value of 3 and use that to update $x$. In other
 words, $x = 3$ after the statement.
@@ -196,7 +196,7 @@ With these new tools, we can get back to work. Let us keep the
 definition that $f(x) = x + 3$ and $f^{-1}(x) = x - 3$. Then, we have the
 following derivation:
 
-$\begin{align} \rm{post(2)} & = & \rm{sub(\rm{pre(2)},x,f^{-1}(x))} \\\\ & = & \rm{sub((x = 0) \wedge (y = 2),x,x - 3)} \\\\ & = & ((x - 3) = 0) \wedge (y = 2) \\\\ & = & (x = 3) \wedge (y = 2) \end{align}$
+$\begin{align} \rm{post(3)} & = & \rm{sub(\rm{pre(3)},x,f^{-1}(x))} \\\\ & = & \rm{sub((x = 0) \wedge (y = 2),x,x - 3)} \\\\ & = & ((x - 3) = 0) \wedge (y = 2) \\\\ & = & (x = 3) \wedge (y = 2) \end{align}$
 
 Of course, this doesn't really come as a surprise. However, we now know
 *why* it is the case!
@@ -205,7 +205,7 @@ On to the last statement, we define $g(y) = y - 1$. The inverse function
 is $g^{-1}(y) = y + 1$ so that $g^{-1}(g(y)) = y$. Given this, we can
 finish the derivation:
 
-$\begin{align} \rm{post(3)} & = & \rm{sub(\rm{post(2)},y,g^{-1}(y))} \\\\ & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\\\  & = & (x = 3) \wedge ((y+1) = 2) \\\\ & = & (x = 3) \wedge (y = 1) \end{align}$
+$\begin{align} \rm{post(4)} & = & \rm{sub(\rm{post(4)},y,g^{-1}(y))} \\\\ & = & \rm{sub((x = 3) \wedge (y = 2),y,y + 1)} \\\\  & = & (x = 3) \wedge ((y+1) = 2) \\\\ & = & (x = 3) \wedge (y = 1) \end{align}$
 
 This is yet another earth-breaking discovery (not!). Although it may
 seem that we could have used intuition (sometimes called "eyeball
