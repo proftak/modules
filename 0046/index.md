@@ -190,7 +190,7 @@ $f^{-1}(f(x)) = x$. In other words, $f^{-1}$ undoes whatever $f$ does.
 
 Next, let us define a substitution operation. $\rm{sub(c,x,y)}$ means
 that in condition $c$, replace all occurances of $x$ with $y$. For
-example, $\rm{sub(x + y = z,y,y-1)} = x + (y-1) = z$.
+example, $\rm{sub(x + y = z,y,y-1)} = (x + (y-1) = z)$.
 
 With these new tools, we can get back to work. Let us keep the
 definition that $f(x) = x + 3$ and $f^{-1}(x) = x - 3$. Then, we have the
