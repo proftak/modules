@@ -315,8 +315,14 @@ start@{ shape: stadium, label: "start" }
 condition@{ shape: diamond, label: "c?" }
 thenBlock@{ shape: rect, label: "lines n+1 to n+t" }
 elseBlock@{ shape: rect, label: "lines n+t+2 to n+t+e+1" }
+merge@{ shape: diamond, label: "" }
 finish@{ shape: stadium, label: "line n+t+e+2" }
-start -->|"$\rm{pre}(n)$"| condition
+start -->|"$$\rm{pre}(n)$$"| condition
+condition -->|"$$\rm{pre}(n) \wedge c$$"| thenBlock
+condition -->|"$$\rm{pre}(n) \wedge \neg c$$"| elseBlock
+thenBlock -->|"$$\rm{post}(n+t)$$"| merge
+elseBlock -->|"$$\rm{post}(n+t+e+1)$$"| merge
+merge --> |"$$\rm{post}(n+t) \vee \rm{post}(n+t+e+1)$$"| finish
 ```
 
 ## Loops
