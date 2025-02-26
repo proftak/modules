@@ -307,6 +307,18 @@ else   // line n+t+1
 -   $\rm{post(n+t+e+1)}$ has no general form; it depends on the actual code of "else-block". Note that $c$ may actually be true after the code of "else-block".
 -   $\rm{pre(n+t+e+2)} = \rm{post(n+t)} \vee \rm{post(n+t+e+1)}$
 
+In a flowchart representation:
+
+```mermaid
+flowchart TD
+start@{ shape: stadium, label: "start" }
+condition@{ shape: diamond, label: "c?" }
+thenBlock@{ shape: rect, label: "lines n+1 to n+t" }
+elseBlock@{ shape: rect, label: "lines n+t+2 to n+t+e+1" }
+finish@{ shape: stadium, label: "line n+t+e+2" }
+start -->|"$\rm{pre}(n)$"| condition
+```
+
 ## Loops
 
 We are now on our final stretch!
