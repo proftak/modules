@@ -4,7 +4,7 @@ title: "Module 0054: Introduction to Arrays"
 
 # About this module
 
--   Prerequisites: [0012](../0012), [0013](../0013), [0016](../0016)
+-   Prerequisites: [0012](../0012/mdModule.html), [0013](../0013/mdModule.html), [0016](../0016)
 
 -   Objectives: This module introduces the concept of arrays, as well as
     some simple algorithms that work on arrays.
@@ -120,9 +120,25 @@ array *is* an independent variable! This fact makes tracing an
 algorithm involving an array rather tedious. A table/spreadsheet should
 be used because the gridlines help significantly.
 
-As an exercise, trace algorithm
-[\[algorithm:init0\]](#algorithm:init0){reference-type="ref"
-reference="algorithm:init0"}, assuming array $a$ has 3 elements.
+The initialization algorithm has the following trace:
+
+|line #|`i`|`n`|`a[0]`|`a[1]`|`a[2]`|comments|
+|-|-|-|-|-|-|-|
+|pre|?|3|?|?|?||
+|1|0| | | | | |
+|2| | | | | |`i<n` is true|
+|3| | |0| | | |
+|4|1| | | | | |
+|2| | | | | |`i<n` is true|
+|3| | | |0| | |
+|4|2| | | | | |
+|2| | | | | |`i<n` is true|
+|3| | | | |0| |
+|4|3| | | | | |
+|2| | | | | |`i<n` is false|
+|post| | | | | | |
+
+
 
 # Searching for a value in an array
 
