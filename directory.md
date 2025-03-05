@@ -3,6 +3,7 @@
 * [Module 0016: Loops](./0016/index.md)
 * [Module 0040: Nested statements](./0040/index.md)
 * [Module 0046: Pre and post conditions](./0046/index.md)
+* [Module 0054: Introduction to Arrays](./0054/index.md)
 * [Module 0082: Big and little Omicron, Omega and Theta](./0082/mdModule.md)
 * [Module 0279: Boolean Operator](./0279/mdModule.md)
 * [Module 0280: Basic Set Notations](./0280/mdModule.md)
