@@ -144,78 +144,72 @@ The initialization algorithm has the following trace:
 
 ## Unsorted array
 
-Given an unsorted array $a$ and a value $v$ to find, how do we know
-whether the array has an element that matches the value $v$ or not?
+Given an unsorted array `a` that has `n` elements and a value `v` to find, how do we know
+Does the array have an element that matches the value `v`?
 
-Algorithm
-[\[algorithm:inflinsearch\]](#algorithm:inflinsearch){reference-type="ref"
-reference="algorithm:inflinsearch"} is the not-so-formal version.
+The following algorithm is the not-so-formal version.
 
-``` {#algorithm:inflinsearch .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:inflinsearch" caption="An informal algorithm to search for a value in an unsorted array."}
+```c
+// An informal algorithm to search for a value in an unsorted array.
 start with the first element
-while there are more elements, and the current one does not match %$v$% do
+while (there are more elements, and the current one does not match v)
     move on to the next element
-end while
-if we have exhausted all elements then
-  conclude no element has a value of %$v$%
+if (we have exhausted all elements)
+  conclude no element has a value of v
 else
-  conclude at least one element has a value of %$v$%
-end if
+  conclude at least one element has a value of v
 ```
 
 Recall our technique of using an integer variable to control which
-element we want to access. We an reapply that technique here. In fact,
-we'll use the same variable $i$ for this purpose.
+element we want to access. We can reapply that technique here. In fact,
+we'll use the same variable `i` for this purpose.
 
-To start with the first element means $i$ should be initialized to 0.
-Hence, we have $i \leftarrow 0$ as our first statement.
+To start with the first element means `i` should be initialized to 0.
+Hence, we have `i=0;` as our first statement.
 
 Next, let us consider the phrase "there are more elements." Since we
 start with the first element, then as long as the index remains within
-the range of 0 to $|a|-1$, there is at least one more element to
+the range of 0 to `n-1`, there is at least one more element to
 consider. Consequently, "there are more elements" translates to the
-condition $i < |a|$. Note that we *cannot* use $i \le |a|$ because when
-$i = |a|$, $a[i]$ is not defined anymore.
+condition `i<n`. Note that we *cannot* use `i<=n` because when
+`i==n`, `a[i]` is not defined anymore.
 
-The next phrase to consider is "the current one does not match $v$". The
-"current one" is an element controled by the indexing variable $i$. In
-other words, the "current one" is simply $a[i]$. To say that $a[i]$ does
-not match $v$ is to say $a[i] \ne v$.
+The next phrase to consider is "the current one does not match `v`". The
+"current one" is an element controlled by the indexing variable `i`. In
+other words, the "current one" is simply `a[i]`. To say that `a[i]` does
+not match `v` is to say `a[i]!=v`.
 
 As a result, the condition of the prechecking loop can be more formally
-written as $(i < |a|) \wedge (a[i] \ne v)$.
+written as `(i < n) && (a[i] != v)`.
 
-The only thing to do in the loop is to move on the next element. Because
-the current element is controled by the indexing variable $i$, to move
-on to the next element is to bump $i$ up by 1. This means the action
-"move on to the next element" is really just $i \leftarrow
-    i + 1$.
+The only thing to do in the loop is to move on to the next element. Because
+the current element is controlled by the indexing variable `i`, to move
+on to the next element is to bump `i` up by 1. This means the action
+"move on to the next element" is really just `i=i+1;`
 
-In the conditional (if-then-else) statement, how do we know we have
+In the conditional (if-else) statement, how do we know we have
 exhausted all the elements in the array? If we have searched through the
-array and no element matches, $i = |a|$, and that is the reason to exit
+array and no element matches, then `i==n`, and that is the reason to exit
 the prechecking loop. As a result, "we have exhausted all elements"
-should be replaced by $i = |a|$.
+should be replaced by `i==n`.
 
-Algorithm
-[\[algorithm:linsearch\]](#algorithm:linsearch){reference-type="ref"
-reference="algorithm:linsearch"} is the result of replacing all the
-not-so-formal description with formal pseudocode.
+The following algorithm is the result of replacing all the not-so-formal description with formal pseudocode.
 
-``` {#algorithm:linsearch .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:linsearch" caption="The formalized version of algorithm \\ref{algorithm:inflinsearch}."}
-while %$(i < |a|) \wedge (a[i] \ne v)$% do
-  %$i \leftarrow i + 1$%
-end while
-if %$i = |a|$% then
-  // conclude no element in %$a$% has a value of %$v$%
+```c
+// The formalized version of the algorithm to see if an array with n elements
+// has an element that matches the value of v
+i=0;
+while ((i < n) && (a[i] != v)
+  i=i+1;
+if (i==n)
+  ;// conclude no element in a has a value of v
 else
-  // conclude %$a[i]$% is the first element in %$a$% that has a value of %$v$%
-end if
+  ;// conclude a[i] is the first element in a that has a value of v
 ```
 
 Again, it really helps to trace an algorithm. In this case, try to
-consider $a$ as an array of 4 elements. Let's assume $a[0] = 2$,
-$a[1] = 0$, $a[2] = 10$ and $a[3] = 1$.
+consider `a` as an array of 4 elements. Let's assume `a[0] == 2`,
+`a[1] == 0`, `a[2] == 10` and `a[3] == 1`.
 
-Perform two traces. First, assume $v = 7$, trace. Then, assume $v = 0$,
-trace.
+Perform two traces. First, assume `v == 7`, trace. Then, assume `v == 0`,
+re-trace.
