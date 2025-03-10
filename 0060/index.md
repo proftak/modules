@@ -98,7 +98,7 @@ Let us assume that we compare `v` with `a[m]`, the first candidate has
 an index of `b`, and the last candidate has an index of `e`. Then, there
 are three possible outcomes:
 
--   `v==a[m]: the search is over! We just confirmed that value $v$ can
+-   `v==a[m]`: the search is over! We just confirmed that value $v$ can
     be found in the array.
 -   `v < a[m]`: we can rule out `a[m]`, `a[m+1]`,... `a[e]`.
 -   `v > a[m]`: we can rule out `a[b]`, `a[b+1]`,... `a[m]`.
