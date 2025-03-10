@@ -199,7 +199,7 @@ The following algorithm is the result of replacing all the not-so-formal descrip
 // The formalized version of the algorithm to see if an array with n elements
 // has an element that matches the value of v
 i=0;
-while ((i < n) && (a[i] != v)
+while ((i < n) && (a[i] != v))
   i=i+1;
 if (i==n)
   ;// conclude no element in a has a value of v
