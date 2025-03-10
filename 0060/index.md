@@ -91,127 +91,90 @@ when `v > a[n-1]`, we still need to examine all `n` items in the array.
 
 Binary search works only if an array is sorted. The basic idea is to
 compare the value to find with an element in the middle of the array.
-Depending on the outcome, we can throw away one half of the candidates,
-or confirm the value does exist.
+Depending on the outcome, we can rule out one-half of the candidates
+or confirm that the value does exist.
 
-Let us assume that we compare $v$ with $a[m]$, the first candidate has
-an index of $b$, and the last candidate has an index of $e$. Then, there
+Let us assume that we compare `v` with `a[m]`, the first candidate has
+an index of `b`, and the last candidate has an index of `e`. Then, there
 are three possible outcomes:
 
--   $v = a[m]$: the search is over! We just confirmed that value $v$ can
+-   `v==a[m]: the search is over! We just confirmed that value $v$ can
     be found in the array.
-
--   $v < a[m]$: we can throw away $a[m]$, $a[m+1]$,\... $a[e]$.
-
--   $v > a[m]$: we can throw away $a[b]$, $a[b+1]$,\... $a[m]$.
+-   `v < a[m]`: we can rule out `a[m]`, `a[m+1]`,... `a[e]`.
+-   `v > a[m]`: we can rule out `a[b]`, `a[b+1]`,... `a[m]`.
 
 If we pick $m$ to be half way between $b$ and $e$, then we can throw
 away at least one half of the candidates after one comparison.
 
 ## Algorithm
 
-The binary search algorithm is described in algorithm
-[\[algorithm:bsearch\]](#algorithm:bsearch){reference-type="ref"
-reference="algorithm:bsearch"}. This algorithm assumes that $a$ is an
+The binary search algorithm is described in the following algorithm. This algorithm assumes that $a$ is an
 array with at least one item, and $v$ is the value that we are searching
 for.
 
-``` {#algorithm:bsearch .numberLines .pseudocode language="pseudocode" numbers="left" label="algorithm:bsearch" caption="The binary search algorithm"}
-%$e \leftarrow |a|-1$ \label{bsearch:inite}%
-repeat %\label{bsearch:repeat}%
-  %$m \leftarrow \lfloor \frac{b+e}{2} \rfloor$ \label{bsearch:computem}%
-  if %$a[m] < v$% then %\label{bsearch:firsthalf}% then
-    %$b \leftarrow m+1$ \label{bsearch:moveb}%
-  else
-    if %$v < a[m]$% then %\label{bsearch:secondhalf}% 
-      %$e \leftarrow m - 1$ \label{bsearch:movee}%
-    end if
-  end if
-until %$(b > e) \vee (a[m] = v)$ \label{bsearch:until}%
-if %$b>e$% then %\label{bsearch:notfound}%
-  // conclude %$v$% cannot be found in %$a$%
-else
-  // conclude %$v$% is found in %$a$%
-end if
+```c
+// The binary search algorithm, assume array a has n items non-decreasingly sorted
+// k is the value to search for
+b=0;                               // line 1
+e=n-1;                             // line 2
+do {                               // line 3
+  m = (b+e)/2;                     // line 4
+  if (a[m] < v)                    // line 5
+    b = m + 1;                     // line 6
+  else                             // line 7
+    if (v < a[m])                  // line 8
+      e = m - 1;                   // line 9
+} while ((b <= e) && (a[m] != v)); // line 10
+if ($>e)                           // line 11
+  // line 12: conclude v cannot be found in a
+else                               // line 13
+  // line 14: conclude v is found in a
 ```
 
 Let us dissect this algorithm.
 
--   Lines [\[bsearch:initb\]](#bsearch:initb){reference-type="ref"
-    reference="bsearch:initb"} and
-    [\[bsearch:inite\]](#bsearch:inite){reference-type="ref"
-    reference="bsearch:inite"} initialize variables $b$ and $e$,
-    respectively. $b$ is the index of the first element that can still
-    contain value $v$. It is initialized to 0 because we need to
-    consider all elements initially. For the same reason, $e$ is
-    initialized to $|a|-1$ because that is the index of the last element
+-   Lines 1 and
+    2 initialize variables `b` and `e`,
+    respectively. `b` is the index of the first element that can still
+    contain value `v`. It is initialized to 0 because we need to
+    consider all elements initially. For the same reason, `e` is
+    initialized to `n-1` because that is the index of the last element
     in the entire array.
-
--   Everything between line
-    [\[bsearch:repeat\]](#bsearch:repeat){reference-type="ref"
-    reference="bsearch:repeat"} and line
-    [\[bsearch:until\]](#bsearch:until){reference-type="ref"
-    reference="bsearch:until"} is the logic of binary search.
-
--   Line [\[bsearch:computem\]](#bsearch:computem){reference-type="ref"
-    reference="bsearch:computem"} computes the value of $m$ so it is
-    half-way between $b$ and $e$. The symbol $\lfloor x \rfloor$ is
-    called the "floor" of $x$. The floor of $x$ is the largest integer
-    that is less than or equal to $x$. In *this context*, we are simply
-    truncating any fractional value.
-
--   Line
-    [\[bsearch:firsthalf\]](#bsearch:firsthalf){reference-type="ref"
-    reference="bsearch:firsthalf"} checks to see if we can remove the
-    first half of the candidates. If $a[m] < v$, then we know that
-    $a[b] \le a[b+1] \le a[b+2] \ldots a[m] < v$, and so we can
-    eliminate all those elements as candidates.
-
--   Line [\[bsearch:moveb\]](#bsearch:moveb){reference-type="ref"
-    reference="bsearch:moveb"}: Once we know that we can eliminate the
+-   Everything between line    3 and line 10 is the logic of binary search.
+-   Line 4 computes the value of $m$ so it is
+    halfway between `b` and `e`. As long as `b` and `e` are integers, the result of the division is automatically truncated to the integer part.
+-   Line 5 checks to see if we can remove the
+    first half of the candidates. If `a[m] < v`, then we know that
+    `a[b] <= a[b+1] <= a[b+2]... a[m] < v`, and so we can
+    rule out all those elements as candidates.
+-   Line 6: Once we know that we can eliminate the
     first half of the candidates, we can do so by changing $b$. Note
-    that we do not change to $b$ to $m$ because $a[m] \ne v$. Instead,
-    we move $b$ to $m+1$. This subtle point makes all the differences in
+    that we do not change to `b` to `m` because `a[m] != v`. Instead,
+    we move `b` to `m+1`. This subtle point makes all the differences in
     terms of terminating the loop.
-
--   Lines
-    [\[bsearch:secondhalf\]](#bsearch:secondhalf){reference-type="ref"
-    reference="bsearch:secondhalf"} and
-    [\[bsearch:movee\]](#bsearch:movee){reference-type="ref"
-    reference="bsearch:movee"} are the counterparts of lines
-    [\[bsearch:firsthalf\]](#bsearch:firsthalf){reference-type="ref"
-    reference="bsearch:firsthalf"} and
-    [\[bsearch:moveb\]](#bsearch:moveb){reference-type="ref"
-    reference="bsearch:moveb"}. Instead of getting rid of the first
-    half, these lines checks to see if we can eliminate the self half.
-
--   Line [\[bsearch:until\]](#bsearch:until){reference-type="ref"
-    reference="bsearch:until"} specifies when we can get out of the
-    loop. There are two reasons. First, when $b > e$, we have no
-    candidates left. Note that when $b = e$, it means that there is one
-    more element to be considered. Second, when $a[m] = v$, there is
-    nothing to check anymore, because we have just found an element of
-    value $v$.
-
--   Line [\[bsearch:notfound\]](#bsearch:notfound){reference-type="ref"
-    reference="bsearch:notfound"} checks to see if value $v$ is found in
-    the array or not. If $b > e$, it means that we exited the loop
+-   Lines 8 and 9 are the counterparts of lines
+    5 and
+    6. Instead of ruling out the first
+    half, these lines check to see if we can rule out the self half.
+-   Line 10 specifies when we have another iteration to perform. There are two reasons that are in the conjunction. First, when `b <= e`, we have at least one candidate left. Note that when `b == e`, it means that there is exactly one
+    more element to considered. Second, when `a[m] != v`, the logic confirms that the algorithm has not just found an element that has the key (search value).
+-   Line 11 checks to see if value $v$ is found in
+    the array or not. If `b > e`, it means that we exited the loop
     because we ran out of candidates. Therefore, we can then confirm
-    that value $v$ does not exist in $a$.
+    that value `v` does not exist in `a`.
 
 ## Now, that's efficient!
 
 The binary search algorithm is very efficient because each comparison
-eliminates at least one half of the remaining candidates. This means
-that if we start off with 511 candidates, we'll end up with 255 after
-one comparison, 127 after two comparisons, 63 after three comparisons,
-and etc. It'll take 9 comparisons that confirm a value $v$ is not in an
+rules out at least one half of the remaining candidates. This means
+that if we start with 511 candidates, we'll end up with 255 after
+one comparison, 127 after two, 63 after three, etc. It'll take 9 comparisons that confirm a value `v` is not in an
 array of 511 elements.
 
-Let $n = |a|$, and $q$ be the number of comparisons needed to confirm
-$v$ is not in $a$. Then $q = \lceil \log{(n)} / \log{(2)} \rceil$. The
+Let `n` be the number of elements in `a` and `q` be the number of comparisons needed to confirm
+`v` is not in `a`. Then $q = \lceil \log{(n)} / \log{(2)} \rceil$. The
 symbol $\lceil x \rceil$ is the ceiling of $x$, which is the smallest
 integer that is larger than or equal to $x$.
 
-Using this formula, to look up a name in a phonebook with 6 billion
+Using this formula, to look up a name in a phonebook with 8 billion
 entries will only take up to 33 comparisons!
