@@ -125,7 +125,7 @@ do {                               // line 3
     if (v < a[m])                  // line 8
       e = m - 1;                   // line 9
 } while ((b <= e) && (a[m] != v)); // line 10
-if ($>e)                           // line 11
+if (b>e)                           // line 11
   // line 12: conclude v cannot be found in a
 else                               // line 13
   // line 14: conclude v is found in a
