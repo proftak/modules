@@ -5,6 +5,7 @@
 ./0046/index.md:title: "Module 0046: Pre and post conditions"
 ./0054/index.md:title: "Module 0054: Introduction to Arrays"
 ./0060/index.md:title: "Module 0060: Algorithms to search for an item in an array"
+./0065/index.md:title: "Module 0065: Subroutines (functions) control flow"
 ./0082/mdModule.md:title: "Module 0082: Big and little Omicron, Omega and Theta"
 ./0279/mdModule.md:title: "Module 0279: Boolean Operator"
 ./0280/mdModule.md:title: "Module 0280: Basic Set Notations"
