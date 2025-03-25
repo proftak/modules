@@ -77,7 +77,7 @@ We need to modify how code is traced to explain how a called function knows wher
 
 The following is a trace that corresponds to the C++ code introduced earlier:
 
-|comments             |line #|&nbps;&nbps;&nbps;&nbps;&nbps;&nbps;&nbps;&nbps;&nbps;&nbps;|
+|comments             |line #|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 | ------------------- | ----- | --------------- |
 |invoke 'f', remember where to return to|4|**ret line #**|
 |remember to return to line 5 when function `f` completes| |5|
