@@ -79,6 +79,7 @@ The following is a trace that corresponds to the C++ code introduced earlier:
 
 |comments             |line&nbsp;#|<span style="color: transparent;">ret_line_#</span>|
 | ------------------- | ----- | --------------- |
+| |3| |
 |invoke `f`, remember where to return to|4|**ret line #**|
 |remember to return to line 5 when function `f` completes| |5|
 |continue execute in function `f`|1| |
