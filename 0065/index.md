@@ -77,9 +77,9 @@ We need to modify how code is traced to explain how a called function knows wher
 
 The following is a trace that corresponds to the C++ code introduced earlier:
 
-|comments             |line #|<span style="color: transparent;">ret_line_#</span>|
+|comments             |line&nbsp;#|<span style="color: transparent;">ret_line_#</span>|
 | ------------------- | ----- | --------------- |
-|invoke 'f', remember where to return to|4|**ret line #**|
+|invoke `f`, remember where to return to|4|**ret line #**|
 |remember to return to line 5 when function `f` completes| |5|
 |continue execute in function `f`|1| |
 |function `f` completes, use the right-most column to indicate where to return to, and deallocate it|2|~~ret line #~~|
@@ -89,6 +89,19 @@ The following is a trace that corresponds to the C++ code introduced earlier:
 |function `f` completes, use the right-most column to indicate where to return to, and deallocate it|2|~~ret line $~~|
 |now execution returns to the caller|6| |
 |all done|post| |
+
+## To invoke a function
+
+1. Dynamically allocate the next available column on the right-hand side and label it "ret line #" (return line number).
+2. On the following row, remember the line number to return to on the newly allocated column
+3. Continue execution on the first line of the invoked function
+
+## To return when a function completes
+
+1. Locate the right-most column that is labeled "ret line #".
+2. Copy-and-paste the return line number to the "line #" column **of the next row**
+3. Use strike-out style to indicate the "ret line #" column is now deallocated, like "~~ret line #~~"
+4. Once a column is deallocated, it becomes available again.
 
 
 
