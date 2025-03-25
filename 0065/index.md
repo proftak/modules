@@ -69,3 +69,28 @@ The function `main` is no longer just a shell. Lines 3 and 4 are *calls* to the 
 |6|When an invoked function completes, execution continues immediately after the invocation.|
 |post|When `main` returns, the program execution completes|
 
+But how does the computer know where to return to from the function? In other words, in the first invocation, line 2 leads to line 5. However, in the second invocation, line 2 leads to line 6.
+
+# Dynamically allocated columns in a trace
+
+We need to modify how code is traced to explain how a called function knows where to return. First, we move the "comments" column to the left. This allows the right side to expand and contract as necessary. Second, we introduce a way to document how columns can be dynamically allocated and deallocated.
+
+The following is a trace that corresponds to the C++ code introduced earlier:
+
+|comments             |line #|  |
+|:--------------------|:-----|:-|
+|invoke 'f', remember where to return to|4|**ret line #**|
+|remember to return to line 5 when function `f` completes| |5|
+|continue execute in function `f`|1| |
+|function `f` completes, use the right-most column to indicate where to return to, and deallocate it|2|~~ret line #~~|
+|now execution returns to the caller, but line 5 is another invocation, so the previously deallocated column is reallocated|5|**ret line #**|
+|after the second invocation of `f`, remember to return to line 6| |6|
+|continue execution in function `f`|1| |
+|function `f` completes, use the right-most column to indicate where to return to, and deallocate it|2|~~ret line $~~|
+|now execution returns to the caller|6| |
+|all done|post| |
+
+
+
+
+
