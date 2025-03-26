@@ -57,6 +57,8 @@ There are two functions defined in this program: `f` and `main`. Function `f` ha
 
 The function `main` is no longer just a shell. Lines 3 and 4 are *calls* to the function `f`. The verb "call" is also interchangeable with "invoke". It is best to take a look at the trace of this code to understand what "calling" or "invoking" means.
 
+<div style="break-inside: avoid" markdown=1>
+
 |line #|Comments|
 |-|-|
 |3|`main` is the entry point of an entire program|
@@ -68,6 +70,8 @@ The function `main` is no longer just a shell. Lines 3 and 4 are *calls* to the 
 |2|The invoked function `f` completes|
 |6|When an invoked function completes, execution continues immediately after the invocation.|
 |post|When `main` returns, the program execution completes|
+
+</div>
 
 But how does the computer know where to return to from the function? In other words, in the first invocation, line 2 leads to line 5. However, in the second invocation, line 2 leads to line 6.
 
