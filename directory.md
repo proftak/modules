@@ -80,3 +80,4 @@
 * [Module 0443: A more hair-splitting way to define set notations](./0443/mdModule.md)
 * [Module 0444: The Block Statement](./0444/mdModule.md)
 * [Module 0450: Just a test](./0450/mdModule.md)
+* [Module 0451: Local variables](./0451/index.md)
