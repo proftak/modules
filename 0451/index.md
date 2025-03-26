@@ -57,3 +57,30 @@ Like the "ret line #" (return line number), local variables are allocated and de
 |`f` completes, deallocate both `x` and `ret line #`|4| |~~ret&nbsp;line&nbsp;#~~|~~x~~|
 |the algorithm completes|11|
 | |post|
+
+# How to look up a local variable
+
+When a local variable is referenced, such as lines 3 and 9 of the previous example, the following mechanism is used to find the column associated with the referenced local variable:
+
+1. Locate the rightmost `ret line #` column.
+2. Search for the column labeled with the variable's name.
+
+These steps allow you to resolve which `x` to use on line 3. When line 3 executes, there are two columns labeled `x`. Following the above instructions, only the most recently allocated column labeled `x` is updated.
+
+*Generally speaking* when a variable is referenced, it refers to the rightmost column (that is not deallocated) labeled with the variable's name.
+
+# The allocation and deallocation of local variables
+
+A function allocates local variables *after* it starts execution. The following are the steps to allocate a local variable `x`:
+
+1. Find the leftmost available column.
+2. Label the column with the name of the variable `x`.
+3. In the next row, put a question mark `?` in the column to indicate the variable starts with an unknown value.
+
+A function deallocates local variables when it completes and is ready to return to the caller. Technically, local variables are deallocated before the `ret line #` column. However, for all practical considerations, we can consider local variables and the `ret line #` column are deallocated at the same time.
+
+# Global variables
+
+If there are *local* variables, there must be *global* variables.
+
+While C++ does support global variables, developers generally avoid using them. There are many reasons to avoid using global variables, but these reasons are difficult to understand in a beginning class.
