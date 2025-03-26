@@ -104,7 +104,14 @@ The following is a trace that corresponds to the C++ code introduced earlier:
 3. Use strike-out style to indicate the "ret line #" column is now deallocated, like "~~ret line #~~"
 4. Once a column is deallocated, it becomes available again.
 
+# How are functions useful?
 
+As illustrated [in the example](#an-example-of-function-invocation), functions provide a mechanism to execute the same block of code (in the example, the code contained in function `f`) at multiple points of invocation. This ability reduces, and in many cases eliminates, the copy-and-paste method.
 
+At the same time, the ability to name a block of code and separate it from the context in which this block of code is used helps to reduce the apparent complexity of algorithms. This is similar to the outlining approach when writing an essay. A function serves as a "main point to be expanded" so that the writer (developer) can focus on a few items and how they relate to each other at any time.
+
+# What about the variables?
+
+The introduction of functions also adds a new dimension to the concept of variables that will be discussed in a different module.
 
 
