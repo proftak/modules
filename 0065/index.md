@@ -81,6 +81,9 @@ We need to modify how code is traced to explain how a called function knows wher
 
 The following is a trace that corresponds to the C++ code introduced earlier:
 
+<div style="break-inside: avoid" markdown=1>
+
+
 |comments             |line&nbsp;#|<span style="color: transparent;">ret_line_#</span>|
 | ------------------- | ----- | --------------- |
 | |3| |
@@ -94,6 +97,8 @@ The following is a trace that corresponds to the C++ code introduced earlier:
 |function `f` completes, use the right-most column to indicate where to return to, and deallocate it|2|~~ret line $~~|
 |now execution returns to the caller|6| |
 |all done|post| |
+
+</div>
 
 ## To invoke a function
 
