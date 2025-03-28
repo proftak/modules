@@ -35,6 +35,8 @@ Lines 2 and 7 are definitions of variables. Let's take a closer look at one of t
 
 Like the "ret line #" (return line number), local variables are allocated and deallocated dynamically. This is best illustrated in the following trace of the above algorithm:
 
+<div style="break-inside: avoid;" markdown=1>
+
 |comments|line&nbsp;#| | | |
 |-|-|-|-|-|
 |`main` is the entry point of execution|6|
@@ -57,6 +59,8 @@ Like the "ret line #" (return line number), local variables are allocated and de
 |`f` completes, deallocate both `x` and `ret line #`|4| |~~ret&nbsp;line&nbsp;#~~|~~x~~|
 |the algorithm completes|11|
 | |post|
+
+</div>
 
 # How to look up a local variable
 
