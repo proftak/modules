@@ -82,3 +82,4 @@
 ./0450/mdModule.md:title: "Module 0450: Just a test"
 ./0451/index.md:title: "Module 0451: Local variables"
 ./0452/index.md:title: "Module 0452: ARC AI Resource Panel Custom GPT Instructions"
+./0453/index.md:title: "Module 0453: AI in Higher Education"
