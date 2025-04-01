@@ -29,3 +29,12 @@ The fundamental question is how AI can help students achieve long-term career an
 
 What exactly is "in the best interest of students?"
 
+## Student-centric values
+
+What does a specific student value? This is not a question for any institution to answer but rather an inquiry that demands much self-reflection on the part of a student.
+
+# AI as a clutch/transmission
+
+If we think of instructors as an engine and students as the wheels of a vehicle, AI is a potential universal transmission. 
+
+Instructors and students are individuals; no two are the same. The challenges of education are that how an instructor thinks, presents, and processes may not align with those of a student. As such, LLM and other AI technologies can serve as a "transmission," so that the engine (the instructor) operates at its peak efficiency while converting the kinetic energy in the most efficient way for a student to benefit from it.
