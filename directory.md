@@ -81,3 +81,4 @@
 * [Module 0444: The Block Statement](./0444/mdModule.md)
 * [Module 0450: Just a test](./0450/mdModule.md)
 * [Module 0451: Local variables](./0451/index.md)
+* [Module 0452: ARC AI Resource Panel Custom GPT Instructions](./0452/index.md)
