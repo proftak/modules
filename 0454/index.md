@@ -55,6 +55,22 @@ The trace of the previous sample program is as follows:
 | |10|~~x~~|
 | |post|
 
+# What has changed?
+
+First, "ret line #" (return line number) is replaced by simply "return". This is because with return values, it is not sufficient to only keep track of the line number that a completed invoked function needs to return to. In the sample code, line 9 is visited 3 times.
+
+When a "return" column is allocated, it is populated with the entire line on which the invocation is specified; however, the function's invocation is replaced by a single question mark. Note that if there are multiple function calls on the same line, only the invoking one is replaced by a placeholder.
+
+The placeholder (`?`) must remember where to put the return value when the invoked function executes a `return` statement. As such, the `return` statement of the invoked function replaces the placeholder with the actual return value.
+
+In C/C++, a `return` statement has two steps. Step one is to specify the return value. Step 2 is to actually return to the caller. In the trace, this is represented by the following actions:
+
+* Copy and paste the `return` column value to the `line#` row. This step is to remind us what *else* is on the line that the function returns to.
+* Once we know what else we need to do on the line that the invoked function returns, then the `return` column is no longer needed, and as a result, it is deallocated.
+
+
+
+
 
 
 
