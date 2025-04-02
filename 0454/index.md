@@ -40,7 +40,7 @@ The trace of the previous sample program is as follows:
 |-|-|-|-|
 | |7|**`x`**|
 | | |?      |
-| |9|       |return|
+| |9|       |**return**|
 |use '?' as a placeholder of where the returned value goes| |       |9: `x=?+m_mg();`|
 | |1|       |      |
 |the return statement replaces the return value place holder with the actual return value|2|       |9: `x=7+m_ng();`|
