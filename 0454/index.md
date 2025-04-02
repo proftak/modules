@@ -36,7 +36,7 @@ Because integers can be used on both sides of addition, the invocation of functi
 
 The trace of the previous sample program is as follows:
 
-|comments|line#|<span style="color:transparent;" markdown=1>**`x`**</span>|<span style="color:transparent;" markdown=1>return</span>|
+|comments|line#|<span style="color:transparent;" markdown=1>**`x`**</span>|<span style="color:transparent;" markdown=1>9: `x=?+m_ng();`</span>|
 |-|-|-|-|
 | |7|**`x`**|
 | | |?      |
@@ -49,9 +49,9 @@ The trace of the previous sample program is as follows:
 | | |       |9: `x=7+?;`|
 | |4|       |           |
 |the return statement replaces the return value place holder with the actual return value|5|       |9: `x=7+5;`|
-|copy-and-paste the filled return information to the following line # column, then deallocate the "return" column| |       |~~return~~|
+|copy-and-paste the filled return information to the line# column of the following row, then deallocate the "return" column| |       |~~return~~|
 |the third time we get back to line 9 has no additional function invocations, proceed as usual|9: `x=7+5;`|12         |
-| |10|
+| |10|~~x~~|
 | |post|
 
 
