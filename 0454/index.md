@@ -36,7 +36,7 @@ Because integers can be used on both sides of addition, the invocation of functi
 
 The trace of the previous sample program is as follows:
 
-|comments|line#|<span style="color:transparent;" markdown=1>**`x`**</span>|<span style="color:transparent;" markdown=1>9: `x=?+m_ng();`</span>|
+|comments|line#|<span style="color:transparent;" markdown=1>**`x`**</span>|<span style="color:transparent;" markdown=1>9:&nbsp;`x=?+m_ng();`</span>|
 |-|-|-|-|
 | |7|**`x`**|
 | | |?      |
