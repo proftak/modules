@@ -38,6 +38,7 @@ The trace of the previous sample program is as follows:
 
 |comments|line#|<span style="color:transparent;" markdown=1>**`x`**</span>|<span style="color:transparent;" markdown=1>9:&nbsp;`x=?+m_ng();`</span>|
 |-|-|-|-|
+| |pre|
 | |7|**`x`**|
 | | |?      |
 | |9|       |**return**|
