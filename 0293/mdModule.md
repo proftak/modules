@@ -200,7 +200,7 @@ prove that $g$ is injective and surjection, then we know that
 $|\mathbb{N}\times \mathbb{N}| = |\mathbb{N}| = \aleph_0$, and that is
 just awesome!
 
-Intuitively, we now $g$ is injective. Because of the way the diagonal
+Intuitively, we know $g$ is injective. Because of the way the diagonal
 lines "sweep" in only one direction, no two pixels can map to the same
 natural number. Of course, this is not a very rigorous proof.
 Nonetheless, it makes sense.
