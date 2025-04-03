@@ -28,7 +28,7 @@ int main() {                // line 7
 }                           // line 11
 ```
 
-The idea of a function that returns a value is that the value returned by the function can take the place of any value of return value type. The return value type of a function is the first word in the definition of a function. In the sample program, __`int`__ of line 1 indicates the return value type of function "chuht". 
+The idea of a function that returns a value is that the value returned by the function can replace any value of return value type. The return value type of a function is the first word in the definition of a function. In the sample program, __`int`__ of line 1 indicates the return value type of function "chuht". 
 
 Because integers can be used on both sides of addition, the invocation of function "chuht" is on the left-hand side of the addition. Likewise, the return type of function `m_ng` is also __`int`__, and as a result, the invocation of `m_ng` can be on the right-hand side of the addition of line 9.
 
@@ -45,7 +45,7 @@ The trace of the previous sample program is as follows:
 |use '?' as a placeholder of where the returned value goes| |       |9: `x=?+m_mg();`|
 | |1|       |      |
 |the return statement replaces the return value place holder with the actual return value|2|       |9: `x=7+m_ng();`|
-|the return statement *also* returns to the caller, copy-and-paste the filled return information to the "line #" column of the following row before deallocating the "return" column| |       |~~return~~|
+|the return statement *also* returns to the caller, copy and paste the filled return information to the "line #" column of the following row before deallocating the "return" column| |       |~~return~~|
 |now continue the execution of line 9 as if the invocation of `chuht()` is a constant value of 7|9: `x=7+m_mg();`|       |**return**|
 | | |       |9: `x=7+?;`|
 | |4|       |           |
@@ -65,7 +65,7 @@ The placeholder (`?`) must remember where to put the return value when the invok
 
 In C/C++, a `return` statement has two steps. Step one is to specify the return value. Step 2 is to actually return to the caller. In the trace, this is represented by the following actions:
 
-* Copy and paste the `return` column value to the `line#` row. This step is to remind us what *else* is on the line that the function returns to.
+* Copy and paste the `return` column value to the `line#` row. This step reminds us what *else* is on the line that the function returns to.
 * Once we know what else we need to do on the line that the invoked function returns, then the `return` column is no longer needed, and as a result, it is deallocated.
 
 
