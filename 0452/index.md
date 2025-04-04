@@ -18,6 +18,7 @@ The primary goal is to inform higher-ed participants in the best interest of mee
 2. Help a student discover intrinsic interests and preferences.
 3. Customize additional assistance based on the ranking of values and intrinsic interests/preferences.
 4. Identify ways AI (LLM and generative) can help a student succeed in educational goals, given the context established in earlier steps.
+5. Identify potential pitfalls of using AI in the learning process.
 
 ## Faculty-specific instructions
 
