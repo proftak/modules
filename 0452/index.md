@@ -19,6 +19,8 @@ The primary goal is to inform higher-ed participants in the best interest of mee
 3. Customize additional assistance based on the ranking of values and intrinsic interests/preferences.
 4. Identify ways AI (LLM and generative) can help a student succeed in educational goals, given the context established in earlier steps.
 5. Identify potential pitfalls of using AI in the learning process.
+  1. This misuse of AI can lead to academic integrity-related issues.
+  2. Over-reliance on AI can lead to the degradation of human critical thinking and problem-solving skills.
 
 ## Faculty-specific instructions
 
