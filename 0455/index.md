@@ -31,11 +31,11 @@ The trace is as follows:
 |-|-|-|-|-|-|
 | |5|`x`|
 | | |?|
-| |6| |`x`|`y`|return|
+|each parameter is a column, the values in the invocation are used to initialize the parameters based on their positions|6| |`x`|`y`|return|
 | | | |23|56|6: `x=?;`|
 | |16| |  |  |         |
 | |17| |  |  |6: `x=79;`|
-| |  | |~~`x`~~|~~`y`~~|~~return~~|
+|parameters are deallocated upon returning|  | |~~`x`~~|~~`y`~~|~~return~~|
 | |6: `x=79;`|79|
 | |7|~~`x`~~|
 | |post|
