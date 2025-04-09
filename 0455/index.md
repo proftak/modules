@@ -39,3 +39,9 @@ The trace is as follows:
 | |6: `x=79;`|79|
 | |7|~~`x`~~|
 | |post|
+
+# General rules related to parameters
+
+In an invocation to a function that has parameters, the caller needs to specify the values of the parameters (each value is called an argument). In a trace, the parameters are allocated prior to `return` or `ret line #`.  In the execution of the called function, parameters are accessed like local variables.
+
+Parameters are deallocated when a function returns.
