@@ -50,7 +50,7 @@ Parameters are deallocated when a function returns.
 
 Up to now, there has been no need to reference columns in a trace. However, the following topic requires certain columns to be identified. As a result, it becomes necessary to name columns like in a spreadsheet. It is also helpful to be able to reference rows in some cases.
 
-As a result, the format of the tracing of code is adjusted accordingly. For easier references to line numbers, the algorithms will be represented in a spreasheet manner as follows.
+As a result, the format of the tracing of code is adjusted accordingly. For easier reference to line numbers, the algorithms will be represented in a spreadsheet as follows.
 
 | |A|
 |-|-|
