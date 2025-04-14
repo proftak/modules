@@ -54,18 +54,18 @@ As a result, the format of the tracing of code is adjusted accordingly. For easi
 
 | |A|
 |-|-|
-|**1**|`int f(int n) {`|
-|**2**|`  if (n<2) {`|
-|**3**|`    return 1;`|
-|**4**|`  } else {`|
-|**5**|`    return n*f(n-1);`|
-|**6**|`  }`|
-|**7**|`}`|
-|**8**|`int main() {`|
-|**9**|`  int x;`|
-|**10**|`  x = f(3);`|
-|**11**|`  return 0;`|
-|**12**|`}`|
+|**1**|<span style=""font-family: monospace"" markdown=1>int&nbsp;f(int n) {</span>|
+|**2**|<span style=""font-family: monospace"" markdown=1>&nbsp; if (n<2) {</span>|
+|**3**|<span style=""font-family: monospace"" markdown=1>&nbsp;   return 1;</span>|
+|**4**|<span style=""font-family: monospace"" markdown=1>&nbsp; } else {</span>|
+|**5**|<span style=""font-family: monospace"" markdown=1>&nbsp;   return n*f(n-1);</span>|
+|**6**|<span style=""font-family: monospace"" markdown=1>&nbsp; }</span>|
+|**7**|<span style=""font-family: monospace"" markdown=1>}</span>|
+|**8**|<span style=""font-family: monospace"" markdown=1>int&nbsp;main() {</span>|
+|**9**|<span style=""font-family: monospace"" markdown=1>&nbsp; int x;</span>|
+|**10**|<span style=""font-family: monospace"" markdown=1>&nbsp; x = f(3);</span>|
+|**11**|<span style=""font-family: monospace"" markdown=1>&nbsp; return 0;</span>|
+|**12**|<span style=""font-family: monospace"" markdown=1>}</span>|
 
 The corresponding trace is as follows:
 
