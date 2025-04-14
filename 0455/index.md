@@ -134,7 +134,7 @@ The corresponding trace is as follows:
 |**4**|||?|||
 |**5**||6|5|||
 |**6**|parameter n is allocated like any other parameter|7||n|ret line #|
-|**7**|note how column D is a reference to column *C*{: style="color: red;"}|||ref col *C*{: style="color: red;"}|8|
+|**7**|note how column D is a reference to column C|||ref col *C*{: style="color: red;"}|8|
 |**8**||1||||
 |**9**|any reference to parameter n is deferred to column C|2|6|||
 |**10**|parameter n is deallocated like any other parameter|3||n|ret line #|
@@ -160,4 +160,3 @@ int main() {
   return 0;
 }
 ```
-Test <span style="color: red;">this</span>!
