@@ -53,7 +53,6 @@ Up to now, there has been no need to reference columns in a trace. However, the 
 As a result, the format of the tracing of code is adjusted accordingly. For easier reference to line numbers, the algorithms will be represented in a spreadsheet as follows.
 
 <div style=""font-family: monospace;"" markdown=1>
-  
 | |A|
 |-|-|
 |**1**|int&nbsp;f(int&nbsp;n)&nbsp;{|
@@ -68,7 +67,6 @@ As a result, the format of the tracing of code is adjusted accordingly. For easi
 |**10**|&nbsp;&nbsp;x&nbsp;=&nbsp;f(3);|
 |**11**|&nbsp;&nbsp;return&nbsp;0;|
 |**12**|}|
-
 </div>
 
 The corresponding trace is as follows:
