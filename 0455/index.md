@@ -46,4 +46,53 @@ Invoking a function with parameters requires the caller to specify the values of
 
 Parameters are deallocated when a function returns.
 
+# Trace formatting
+
+Up to now, there has been no need to reference columns in a trace. However, the following topic requires certain columns to be identified. As a result, it becomes necessary to name columns like in a spreadsheet. It is also helpful to be able to reference rows in some cases.
+
+As a result, the format of the tracing of code is adjusted accordingly. For easier references to line numbers, the algorithms will be represented in a spreasheet manner as follows.
+
+| |A|
+|-|-|
+|**1**|`int f(int n) {`|
+|**2**|`  if (n<2) {`|
+|**3**|`    return 1;`|
+|**4**|`  } else {`|
+|**5**|`    return n*f(n-1);`|
+|**6**|`  }`|
+|**7**|`}`|
+|**8**|`int main() {`|
+|**9**|`  int x;`|
+|**10**|`  x = f(3);`|
+|**11**|`  return 0;`|
+|**12**|`}`|
+
+The corresponding trace is as follows:
+
+| |A|B|C|D|E|F|G|H|I|
+|-|-|-|-|-|-|-|-|-|-|
+|**1**||pre||||||||
+|**2**||8|x|||||||
+|**3**|||?|||||||
+|**4**||10||n|return|||||
+|**5**||||3|10: x=?;|||||
+|**6**||1||||||||
+|**7**|n<=1 is F|2||||||||
+|**8**||5||||n|return|||
+|**9**||||||2|5: return n*?;|||
+|**10**||1||||||||
+|**11**|n<=1 is F|2||||||||
+|**12**||5||||||n|return|
+|**13**||||||||1|5: return n*?;|
+|**14**||1||||||||
+|**15**|n<=1 is T|2||||||||
+|**16**||3|||||||5: return n*1;|
+|**17**||||||||n|return|
+|**18**||5: return n*1;|||||5: return n*2;|||
+|**19**||||||n|return|||
+|**20**||5: return n*2;|||10: x=6;|||||
+|**21**||||n|return|||||
+|**22**||10: x=6;|6|||||||
+|**23**||11||||||||
+|**24**||post||||||||
 
