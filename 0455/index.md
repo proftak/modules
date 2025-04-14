@@ -52,20 +52,22 @@ Up to now, there has been no need to reference columns in a trace. However, the 
 
 As a result, the format of the tracing of code is adjusted accordingly. For easier reference to line numbers, the algorithms will be represented in a spreadsheet as follows.
 
+<div style=""font-family: monospace;"" markdown=1>
 | |A|
 |-|-|
-|**1**|<span style=""font-family: monospace"" markdown=1>int&nbsp;f(int n) {</span>|
-|**2**|<span style=""font-family: monospace"" markdown=1>&nbsp; if (n<2) {</span>|
-|**3**|<span style=""font-family: monospace"" markdown=1>&nbsp;   return 1;</span>|
-|**4**|<span style=""font-family: monospace"" markdown=1>&nbsp; } else {</span>|
-|**5**|<span style=""font-family: monospace"" markdown=1>&nbsp;   return n*f(n-1);</span>|
-|**6**|<span style=""font-family: monospace"" markdown=1>&nbsp; }</span>|
-|**7**|<span style=""font-family: monospace"" markdown=1>}</span>|
-|**8**|<span style=""font-family: monospace"" markdown=1>int&nbsp;main() {</span>|
-|**9**|<span style=""font-family: monospace"" markdown=1>&nbsp; int x;</span>|
-|**10**|<span style=""font-family: monospace"" markdown=1>&nbsp; x = f(3);</span>|
-|**11**|<span style=""font-family: monospace"" markdown=1>&nbsp; return 0;</span>|
-|**12**|<span style=""font-family: monospace"" markdown=1>}</span>|
+|**1**|int&nbsp;f(int&nbsp;n)&nbsp;{|
+|**2**|&nbsp;&nbsp;if&nbsp;(n<2)&nbsp;{|
+|**3**|&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;1;|
+|**4**|&nbsp;&nbsp;}&nbsp;else&nbsp;{|
+|**5**|&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;n*f(n-1);|
+|**6**|&nbsp;&nbsp;}|
+|**7**|}|
+|**8**|int&nbsp;main()&nbsp;{|
+|**9**|&nbsp;&nbsp;int&nbsp;x;|
+|**10**|&nbsp;&nbsp;x&nbsp;=&nbsp;f(3);|
+|**11**|&nbsp;&nbsp;return&nbsp;0;|
+|**12**|}|
+</div>
 
 The corresponding trace is as follows:
 
