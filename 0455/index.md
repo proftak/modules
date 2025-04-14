@@ -160,4 +160,4 @@ int main() {
   return 0;
 }
 ```
-Test this{: style="color: red;"}!
+Test *this*{: style="color: red;"}!
