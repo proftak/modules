@@ -126,7 +126,7 @@ A pass-by-reference parameter is a *reference* to something else. A change to a 
 
 The corresponding trace is as follows:
 
-| |A|B|C{: style="color: red;"}|D|E|
+| |A|B|C|D|E|
 |-|-|-|-|-|-|
 |**1**|Comments|line#||||
 |**2**||pre||||
@@ -160,3 +160,4 @@ int main() {
   return 0;
 }
 ```
+Test this{: style="color: red;"}!
