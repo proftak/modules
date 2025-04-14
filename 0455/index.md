@@ -100,3 +100,45 @@ The corresponding trace is as follows:
 |**23**||11||||||||
 |**24**||post||||||||
 
+# Another kind of parameter
+
+The type of parameter discussed up to this point is "passed by value". The column representing the parameter has the *value* of the parameter. As such, this kind of parameter acts much like a local variable.
+
+Although the return value of a function can be used to return the result of a function, many functions have more effects than can be reflected by a single return value. Other times, a function also needs to modify items that do not "belong" to it. Most programming languages, like C++, support a second type of parameter called "passed by reference".
+
+A pass-by-reference parameter is a *reference* to something else. A change to a pass-by-reference parameter does not modify the column that represents the parameter but the column that the parameter references. Here is an example:
+
+<div style="font-family: monospace;" markdown=1>
+
+| |A|
+|-|-|
+|**1**|void&nbsp;f(int&nbsp;&n)&nbsp;{|
+|**2**|&nbsp;&nbsp;n&nbsp;=&nbsp;n&nbsp;+&nbsp;1;|
+|**3**|}|
+|**4**|int&nbsp;main()&nbsp;{|
+|**5**|&nbsp;&nbsp;int&nbsp;x;|
+|**6**|&nbsp;&nbsp;x&nbsp;=&nbsp;5;|
+|**7**|&nbsp;&nbsp;f(x);|
+|**8**|&nbsp;&nbsp;return&nbsp;0;|
+|**9**|}|
+
+</div>
+
+The corresponding trace is as follows:
+
+| |A|B|C|D|E|
+|-|-|-|-|-|-|
+|**1**|Comments|line#||||
+|**2**||pre||||
+|**3**||4|x|||
+|**4**|||?|||
+|**5**||6|5|||
+|**6**|parameter n is allocated like any other parameter|7||n|ret line #|
+|**7**|note how column D is a reference to column C|||ref col C|8|
+|**8**||1||||
+|**9**|any reference to parameter n is deferred to column C|2|6|||
+|**10**|parameter n is deallocated like any other parameter|3||n|ret line #|
+|**11**||8||||
+|**12**||post||||
+
+
