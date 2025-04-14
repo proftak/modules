@@ -126,7 +126,7 @@ A pass-by-reference parameter is a *reference* to something else. A change to a 
 
 The corresponding trace is as follows:
 
-| |A|B|C|D|E|
+| |A|B|*C*{: style="color: red;"}|D|E|
 |-|-|-|-|-|-|
 |**1**|Comments|line#||||
 |**2**||pre||||
@@ -134,7 +134,7 @@ The corresponding trace is as follows:
 |**4**|||?|||
 |**5**||6|5|||
 |**6**|parameter n is allocated like any other parameter|7||n|ret line #|
-|**7**|note how column D is a reference to column C|||ref col C|8|
+|**7**|note how column D is a reference to column *C*{: style="color: red;"}|||ref col C|8|
 |**8**||1||||
 |**9**|any reference to parameter n is deferred to column C|2|6|||
 |**10**|parameter n is deallocated like any other parameter|3||n|ret line #|
@@ -160,4 +160,4 @@ int main() {
   return 0;
 }
 ```
-Test *this*{: style="color: red;"}!
+Test {::}this{: style="color: red;"}!
