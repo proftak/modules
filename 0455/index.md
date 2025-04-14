@@ -31,7 +31,7 @@ The trace is as follows:
 |-|-|-|-|-|-|
 | |5|`x`|
 | | |?|
-|each parameter is a column, the values in the invocation are used to initialize the parameters based on their positions|6| |`x`|`y`|return|
+|each parameter is a column, and the values in the invocation are used to initialize the parameters based on their positions|6| |`x`|`y`|return|
 | | | |23|56|6: `x=?;`|
 | |16| |  |  |         |
 | |17| |  |  |6: `x=79;`|
@@ -42,6 +42,8 @@ The trace is as follows:
 
 # General rules related to parameters
 
-In an invocation to a function that has parameters, the caller needs to specify the values of the parameters (each value is called an argument). In a trace, the parameters are allocated prior to `return` or `ret line #`.  In the execution of the called function, parameters are accessed like local variables.
+Invoking a function with parameters requires the caller to specify the values of the parameters (each value is called an argument). The parameters are allocated in a trace before `return` or `ret line #`. When the function is executed, the parameters are accessed like local variables.
 
 Parameters are deallocated when a function returns.
+
+
