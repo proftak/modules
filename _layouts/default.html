@@ -84,7 +84,11 @@
         async function copyRawMd() {
             let request = new Request({{ rawUrl -}});
             let content = await fetch(request);
+            if (!content.ok) {
+                throw new Error('Cannot get the raw content')
+            }
             let text = await content.text()
+            await new Promise(resolve => setTimeout(resolve, 100))
             await navigator.clipboard.writeText(text);
             alert("The source document is copied to the clipboard.")
         }
