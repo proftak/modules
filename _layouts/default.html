@@ -85,7 +85,7 @@
             let request = new Request({{ rawUrl -}});
             let content = await fetch(request);
             let text = await content.text()
-            navigator.clipboard.writeText(text);
+            await navigator.clipboard.writeText(text);
             alert("The source document is copied to the clipboard.")
         }
     </script>
