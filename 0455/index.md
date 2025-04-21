@@ -160,3 +160,39 @@ int main() {
   return 0;
 }
 ```
+
+# General rules related to parameters
+
+## Terminology
+
+In a function definition, *parameters* are specified. `x` and `y` are parameters in the following function definition:
+
+```c
+int f(int x, int y) {
+  return x+y;
+}
+```
+
+In a function invocation, *arguments* are specified. `23` and `65` are arguments in the following function invocation:
+
+```c
+x = f(23,65);
+```
+
+## In an invocation
+
+Both pass-by-value and pass-by-reference parameters require columns to be allocated, one for each parameter. The allocation of columns is the leftmost available column. After a column is allocated, it is labeled with the name of the parameter.
+
+If a parameter of the called function is passed by value, then the argument in the function call is evaluated as a general expression. The value of the expression becomes the initial value of the column of the parameter.
+
+If a parameter of the called function is passed by reference, then the argument in the function call should be something that can be on the left-hand side of an assignment. This means the argument should have a column associated with it. The column corresponding to the parameter should be documented as a reference to the column specified by the argument.
+
+## When referenced
+
+When a pass-by-value parameter is referenced, the value of the parameter is retrieved in the right-most column that is labeled by the name of the parameter.
+
+When a pass-by-reference parameter is referenced, the value of the column that is referenced by the parameter is retrieved.
+
+## When an invocation completes
+
+When a function returns, all parameters are deallocated along with the `return` or `ret line #` columns.
