@@ -91,13 +91,13 @@ The corresponding trace is as follows:
 |**14**||1||||||||
 |**15**|n<=1 is T|2||||||||
 |**16**||3|||||||5: return n*1;|
-|**17**||||||||n|return|
+|**17**||||||||~~n~~|~~return~~|
 |**18**||5: return n*1;|||||5: return n*2;|||
-|**19**||||||n|return|||
+|**19**||||||~~n~~|~~return~~|||
 |**20**||5: return n*2;|||10: x=6;|||||
-|**21**||||n|return|||||
+|**21**||||~~n~~|~~return~~|||||
 |**22**||10: x=6;|6|||||||
-|**23**||11||||||||
+|**23**||11|~~x~~|||||||
 |**24**||post||||||||
 
 # Another kind of parameter
@@ -137,8 +137,8 @@ The corresponding trace is as follows:
 |**7**|note how column D is a reference to column C|||ref col *C*{: style="color: red;"}|8|
 |**8**||1||||
 |**9**|any reference to parameter n is deferred to column C|2|6|||
-|**10**|parameter n is deallocated like any other parameter|3||n|ret line #|
-|**11**||8||||
+|**10**|parameter n is deallocated like any other parameter|3||~~n~~|~~ret line #~~|
+|**11**||8|~~x~~|||
 |**12**||post||||
 
 ## Exercise
@@ -265,9 +265,9 @@ The trace corresponding to the above code is as follows:
 |**24**||8|||||||||||3|
 |**25**|i<n is F|6||||||||||||
 |**26**||10|||||||||20: x=12;|||
-|**27**|||||||||a|n|return|sum|i|
+|**27**|||||||||~~a~~|~~n~~|~~return~~|~~sum~~|~~i~~|
 |**28**||20: x=12;|12|||||||||||
-|**29**||21|x|b[0]|b[1]|b[2]|b[3]|b[4]||||||
+|**29**||21|~~x~~|~~b[0]~~|~~b[1]~~|~~b[2]~~|~~b[3]~~|~~b[4]~~||||||
 |**30**||post||||||||||||
 
 </div>
