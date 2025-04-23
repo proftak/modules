@@ -228,6 +228,8 @@ In C/C++, arrays can *only* be passed by reference. Furthermore, an array passed
 |**21**|&nbsp;&nbsp;return&nbsp;0;|
 |**22**|}|
 
+</div>
+
 A few lines are worth noting:
 
 * line 14: this is how an array of integers is declared in C/C++.
@@ -270,6 +272,5 @@ The trace corresponding to the above code is as follows:
 |**29**||21|~~x~~|~~b[0]~~|~~b[1]~~|~~b[2]~~|~~b[3]~~|~~b[4]~~||||||
 |**30**||post||||||||||||
 
-</div>
 
 
