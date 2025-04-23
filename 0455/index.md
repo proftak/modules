@@ -196,3 +196,80 @@ When a pass-by-reference parameter is referenced, the value of the column that i
 ## When an invocation completes
 
 When a function returns, all parameters are deallocated along with the `return` or `ret line #` columns.
+
+# Arrays as parameters
+
+In C/C++, arrays can *only* be passed by reference. Furthermore, an array passed as a parameter only knows where to find the first column corresponding to the array. Observe the following example:
+
+<div style=""font-family: monospace;"" markdown=1>
+
+| |A|
+|-|-|
+|**1**|int&nbsp;sumArray(int&nbsp;a[],&nbsp;int&nbsp;n)&nbsp;{|
+|**2**|&nbsp;&nbsp;int&nbsp;sum;|
+|**3**|&nbsp;&nbsp;int&nbsp;i;|
+|**4**|&nbsp;&nbsp;i=0;|
+|**5**|&nbsp;&nbsp;sum=0;|
+|**6**|&nbsp;&nbsp;while&nbsp;(i<n)&nbsp;{|
+|**7**|&nbsp;&nbsp;&nbsp;&nbsp;sum=sum+a[i];|
+|**8**|&nbsp;&nbsp;&nbsp;&nbsp;i=i+1;|
+|**9**|&nbsp;&nbsp;}|
+|**10**|&nbsp;&nbsp;return&nbsp;sum;|
+|**11**|}|
+|**12**|int&nbsp;main()&nbsp;{|
+|**13**|&nbsp;&nbsp;int&nbsp;x;|
+|**14**|&nbsp;&nbsp;int&nbsp;b[5];|
+|**15**|&nbsp;&nbsp;b[0]=4;|
+|**16**|&nbsp;&nbsp;b[1]=2;|
+|**17**|&nbsp;&nbsp;b[2]=6;|
+|**18**|&nbsp;&nbsp;b[3]=1;|
+|**19**|&nbsp;&nbsp;b[4]=8;|
+|**20**|&nbsp;&nbsp;x=sumArray(b,3);|
+|**21**|&nbsp;&nbsp;return&nbsp;0;|
+|**22**|}|
+
+A few lines are worth noting:
+
+* line 14: this is how an array of integers is declared in C/C++.
+* line 1: this is how to specify that the type of a parameter is an array of integers
+* line 20: parameter `n` does not match the actual number of elements in array `b`
+
+
+The trace corresponding to the above code is as follows:
+
+| |A|B|C|D|E|F|G|H|I|J|K|L|M|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|**1**|Comments|line#||||||||||||
+|**2**||pre||||||||||||
+|**3**||12|x|b[0]|b[1]|b[2]|b[3]|b[4]||||||
+|**4**|||?|?|?|?|?|?||||||
+|**5**||15||4||||||||||
+|**6**||16|||2|||||||||
+|**7**||17||||6||||||||
+|**8**||18|||||1|||||||
+|**9**||19||||||8||||||
+|**10**||20|||||||a|n|return|||
+|**11**|||||||||ref col D|3|20: x=?;|||
+|**12**||1||||||||||sum|i|
+|**13**||||||||||||?|?|
+|**14**||4|||||||||||0|
+|**15**||5||||||||||0||
+|**16**|i<n is T|6||||||||||||
+|**17**||7||||||||||4||
+|**18**||8|||||||||||1|
+|**19**|i<n is T|6||||||||||||
+|**20**||7||||||||||6||
+|**21**||8|||||||||||2|
+|**22**|i<n is T|6||||||||||||
+|**23**||7||||||||||12||
+|**24**||8|||||||||||3|
+|**25**|i<n is F|6||||||||||||
+|**26**||10|||||||||20: x=12;|||
+|**27**|||||||||a|n|return|sum|i|
+|**28**||20: x=12;|12|||||||||||
+|**29**||21|x|b[0]|b[1]|b[2]|b[3]|b[4]||||||
+|**30**||post||||||||||||
+
+</div>
+
+
