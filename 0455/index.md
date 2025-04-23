@@ -201,7 +201,7 @@ When a function returns, all parameters are deallocated along with the `return` 
 
 In C/C++, arrays can *only* be passed by reference. Furthermore, an array passed as a parameter only knows where to find the first column corresponding to the array. Observe the following example:
 
-<div style=""font-family: monospace;"" markdown=1>
+<div style="font-family: monospace;" markdown=1>
 
 | |A|
 |-|-|
