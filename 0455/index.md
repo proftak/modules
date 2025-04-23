@@ -272,5 +272,11 @@ The trace corresponding to the above code is as follows:
 |**29**||21|~~x~~|~~b[0]~~|~~b[1]~~|~~b[2]~~|~~b[3]~~|~~b[4]~~||||||
 |**30**||post||||||||||||
 
+The most important part of this trace is what line 7 does, specifically the evaluation of `a[i]`. `a` is a parameter; it is easy to locate it as the right-most column labeled `a`. However, because it is used as an array (hinted by the use of the brackets `[]`), the parameter as a reference to column D is *where the referenced array starts*. For example, when variable `i` has a value of 2, the idea is to figure out where element 2 should be at if the beginning of the array starts at column D. The calculation is as follows:
+
+* column D is `a[0]`
+* column E is `a[1]`
+* column F is `a[2]`
+* etc.
 
 
