@@ -187,6 +187,19 @@ If a parameter of the called function is passed by value, then the argument in t
 
 If a parameter of the called function is passed by reference, then the argument in the function call should be something that can be on the left-hand side of an assignment. This means the argument should have a column associated with it. The column corresponding to the parameter should be documented as a reference to the column specified by the argument.
 
+## Passing a parameter as a parameter
+
+There are four possible cases:
+
+* a passed-by-value parameter `x` is passed-by-value to parameter `y`
+  * Evaluate parameter `x` as an expression; the parameter `y` starts with the value of the expression
+* a passed-by-value parameter `x` is passed-by-reference to parameter `y`.
+  * This cannot be a general expression; it should be `x` on its own. The column of parameter `y` references the column of `x`.
+* a passed-by-reference parameter `x` is passed-by-value to parameter `y`.
+  * Evaluate parameter `x` as an expression; the value of the expression becomes the value of parameter `y`.
+* a passed-by-reference parameter is passed-by-reference
+  * This cannot be a general expression; it should be `x` on its own. The column referenced by `x` becomes the column referenced by `y`.
+
 ## When referenced
 
 When a pass-by-value parameter is referenced, the value of the parameter is retrieved in the right-most column that is labeled by the name of the parameter.
