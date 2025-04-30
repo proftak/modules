@@ -191,7 +191,7 @@ If a parameter of the called function is passed by reference, then the argument 
 
 There are four possible cases:
 
-* a passed-by-value parameter `x` is passed-by-value to parameter `y`
+* a passed-by-value parameter `x` is passed-by-value to parameter `y`.
   * `void f(int y) {} void g(int x) { f(x); }`
   * Evaluate parameter `x` as an expression; the parameter `y` starts with the value of the expression
 * a passed-by-value parameter `x` is passed-by-reference to parameter `y`.
@@ -200,7 +200,7 @@ There are four possible cases:
 * a passed-by-reference parameter `x` is passed-by-value to parameter `y`.
   * `void f(int y) {} void g(int &x) { f(x); }`
   * Evaluate parameter `x` as an expression; the value of the expression becomes the value of parameter `y`.
-* a passed-by-reference parameter is passed-by-reference
+* a passed-by-reference parameter `x` is passed-by-reference to parameter `y`.
   * `void f(int &y) {} void g(int &x) { f(x); }`
   * This cannot be a general expression; it should be `x` on its own. The column referenced by `x` becomes the column referenced by `y`.
 
