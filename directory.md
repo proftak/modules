@@ -85,3 +85,4 @@
 * [Module 0453: AI in Higher Education](./0453/index.md)
 * [Module 0454: Functions that return a value](./0454/index.md)
 * [Module 0455: Parameters](./0455/index.md)
+* [Module 0456: A session of writing an algorithm](./0456/index.md)
