@@ -32,3 +32,30 @@ It is equally important to understand what the expected output is:
 # Process log
 
 We will do this in class!
+
+## The top-down approach
+
+The top-down approach is similar to outlining when writing essays. While top-down is an excellent way to divide a big problem into smaller logical units, the top-down approach is not exactly conducive to writing actual algorithms.
+
+In our example, the top-down approach is great for breaking the overall program down into smaller parts. In this process, a larger component is broken into smaller components, *but not necessarily how the smaller components are structured in the larger component.*
+
+For example, based on the output specification, we know that we need the logic to work on each student and figure out the letter grade. This suggests that the bigger problem of "for each student..." includes a smaller problem of "convert a score to a letter grade."
+
+## The bottom-up step
+
+In order to convert a score to a letter grade, we first examine what is needed and not so much how to specify the logic:
+
+* the score
+* an array of letter thresholds
+* due to the limitation of C/C++, an array parameter also needs a length as a separate parameter
+* the answer is an integer where 0 represents 'F', 1 represents 'D', etc.
+
+
+Based on this analysis, we can determine the *prototype* of the function is as follows:
+
+```c
+int scoreToGrade(double score, double thresholds[], int numThresholds);
+```
+
+A prototype of a function expresses the *interface* (the "what") of a function, but it does not include the actual algorithm (the "how"). In a prototype specification, the return type, function name, and a parenthesized list of parameters are specified, much like a function *definition*. The main difference is that instead of a brace-enclosed block of code, a semicolon is used to terminate a prototype specification.
+
