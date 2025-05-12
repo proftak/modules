@@ -59,3 +59,22 @@ int scoreToGrade(double score, double thresholds[], int numThresholds);
 
 A prototype of a function expresses the *interface* (the "what") of a function, but it does not include the actual algorithm (the "how"). In a prototype specification, the return type, function name, and a parenthesized list of parameters are specified, much like a function *definition*. The main difference is that instead of a brace-enclosed block of code, a semicolon is used to terminate a prototype specification.
 
+### Working out the algorithm
+
+The first step in working out an algorithm is to perform the task by hand. In this case, a *typical* threshold table for grading is as follows:
+
+|threshold|lowest grade if exceeding the threshold|
+|-|-|
+|60%|D|
+|70%|C|
+|80%|B|
+|90%|A|
+
+Given a score of 75%, what is the matching grade? In the attempt to perform this task, it is best to refrain from using the "eyeball" algorithm. The eyeball algorithm refers to quickly scanning and "intuitively" completing the task. 
+
+Instead, try to think of a way to describe how to complete the task to a person who does not know how to perform this task. In this case, the description may be similar to the following:
+
+The lowest possible grade is an 'F'. Compare the given score to the left column of the table. If the score is greater than the threshold, move to the next row. Keep doing this until one of the following happens:
+the
+* A letter grade of A, or
+* The threshold is larger than the score.
