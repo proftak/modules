@@ -86,3 +86,4 @@
 ./0454/index.md:title: "Module 0454: Functions that return a value"
 ./0455/index.md:title: "Module 0455: Parameters"
 ./0456/index.md:title: "Module 0456: A session of writing an algorithm"
+./0457/index.md:title: "Module 0457: Tak's thoughts on AI, summer 2025 edition"
