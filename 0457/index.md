@@ -34,6 +34,15 @@ The fact that some experienced software engineers *question* the validity of AI-
 
 Sam Altman [discussed essential skills](https://www.windowscentral.com/software-apps/sam-altman-claims-knowing-what-questions-to-ask-trumps-raw-intelligence-as-ai-advances) for employment in the era of AI.
 
+**Thoughts**:
+
+If solving a problem is navigating from point A to point B, Sam Altman is saying the following:
+
+* Humans should know how to define the waypoints, then let AI find the best routes from one waypoint to the next.
+* Point A, point B, and all waypoints should be precisely specified.
+
+
+
 # AI in general
 
 ## Neural Net AI is a black box
