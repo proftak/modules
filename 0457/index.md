@@ -41,8 +41,6 @@ If solving a problem is navigating from point A to point B, Sam Altman is saying
 * Humans should know how to define the waypoints, then let AI find the best routes from one waypoint to the next.
 * Point A, point B, and all waypoints should be precisely specified.
 
-
-
 # AI in general
 
 ## Neural Net AI is a black box
@@ -51,13 +49,13 @@ The CEO of Anthropic is one of many to [openly admit](https://www.thealgorithmic
 
 **Thoughts**:
 
-Computer scientists know how a neural network works, much like how electrical engineers know how a transistor works. In the case of transistors, electronic engineers know how to organize transistors to accommplish specific computational tasks. Then we have computer engineers and software engineers to derive classic computational solutions to solve specific problems.
+Computer scientists understand how a neural network works, much like how electrical engineers comprehend how a transistor works. In the case of transistors, electronic engineers know how to organize transistors to accomplish specific computational tasks. Then, we have computer engineers and software engineers who derive classic computational solutions to solve specific problems.
 
 Not so much in the case of neural networks. The back propagation training of a single-layer neural network is understood. Large language models (LLMs) rely on *huge* neural networks that have billions of neurons on each layer, and more than a hundred layers. At this scale, humans do not fully understand how the model works or how learned concepts are represented and applied.
 
-Much of the research related to neural-network-based AI is based on experimentation, and in some ways, experimentation in a witchcraft way. This can be contrasted to two approaches in many STEM-related research. The scientific method is based on deriving a model/theory to explain a phenomenon, and then experiments are specifically designed to test the validity of the theory. The engineering method relies on validated models to put together a design that is known to solve a specific problem. Experiments are designed to verify the function of a design and to spot mistakes or oversights.
+Much of the research related to neural-network-based AI is based on experimentation, and in some ways, this experimentation is akin to witchcraft. This can be contrasted with two approaches in many STEM-related research studies. The scientific method is based on deriving a model/theory to explain a phenomenon, and then experiments are specifically designed to test the validity of the theory. The engineering method relies on validated models to put together a design that is known to solve a specific problem. Experiments are designed to verify the function of a design and to spot mistakes or oversights.
 
 No scientific theory or engineering design is 100% correct. However, there is *certainty* that is guaranteed by the process of validation and verification.
 
-However, a neural-network-based AI system is such a black art that there is essentially no certainty. While the application of a neural-network-based mechanism does not need to be probabilistic, the AI-centric application is mostly probabilistic. The same input presented to the same system does not guarantee the same output.
+However, a neural-network-based AI system is such a black art that there is essentially no certainty. While the application of a neural-network-based mechanism does not require it to be probabilistic, the AI-centric application is typically probabilistic. The same input presented to the same system does not guarantee the same output.
 
