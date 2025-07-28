@@ -40,12 +40,25 @@ If solving a problem is navigating from point A to point B, Sam Altman is saying
 
 * Humans should know how to define the waypoints, then let AI find the best routes from one waypoint to the next.
 * Point A, point B, and all waypoints should be precisely specified.
+* Humans should be able to measure the distance and direction of a location compared to a waypoint.
+
+## Chinese Universities Embrace AI
+
+MIT Technology Review discovered that [Chinese universities are more likely to embrace the student use of AI](https://www.technologyreview.com/2025/07/28/1120747/chinese-universities-ai-use/).
+
+**Thoughts**:
+
+This is the Yin-Yang/duality of Eastern versus Western approaches. The same duality exists in the practice of medicine. Eastern (specifically Chinese) scholars tend to be more comfortable with not fully understanding the exact nature of mechanisms and focus more on associating the action and reaction of black-box mechanisms. Western scholars, after the Greek philosophers, focus more on first understanding the exact mechanisms in the form of a rigid framework of theories before using such mechanisms in practical applications. Of course, this comparison is not absolute and universal.
+
+LLM-based tools are here to stay, and employers expect productivity gain with the proper use of such tools. Consequently, students need to understand the nature of LLMs, their limitations, and how to utilize these tools effectively. This approach extends to more general neural network-based machine learning. 
 
 # AI in general
 
 ## Neural Net AI is a black box
 
 The CEO of Anthropic is one of many to [openly admit](https://www.thealgorithmicbridge.com/p/no-one-knows-how-ai-works) that neural-net-based AI is a black box, and no one knows how it works. 
+
+While the underlying learning and behavior mechanisms of a back-propagation neural network are well understood, what a neural network with many hidden layers can learn is not exactly understood. What a neural network with a high layer count learns can be inferred by tests, but such tests of a complex black box are sparse compared to all practical uses.
 
 **Thoughts**:
 
@@ -59,3 +72,12 @@ No scientific theory or engineering design is 100% correct. However, there is *c
 
 However, a neural-network-based AI system is such a black art that there is essentially no certainty. While the application of a neural-network-based mechanism does not require it to be probabilistic, the AI-centric application is typically probabilistic. The same input presented to the same system does not guarantee the same output.
 
+# What *do* we teach about AI?
+
+## Back-propagation neural network
+
+This applies to most, if not all, LLM (Large Language Model) and other forms of AI tools.
+
+* **Probabilistic.** Several aspects are probabilistic. The key point is the lack of exactness or "rigor."
+* **Imitative.** The primary function of a neural network (in computer science) is imitation. There is a dependency on **what** it is imitating. The source material that LLM neural networks learn from is human-filtered, human-curated, and human-annotated. In other words, despite the term "artificial", the neural network form of AI in the case of LLMs is very human-based.
+* **Surface level.** Language floats on top of thoughts. LLMs are trained on language content. By their very imitative nature, LLMs can imitate on a language level, not on a thought level. The human brain/mind itself is also a black-box. Using a black box to imitate another black box on a surface level is a limiting approach.
