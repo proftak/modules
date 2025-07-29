@@ -82,6 +82,20 @@ This applies to most, if not all, LLM (Large Language Model) and other forms of 
 * **Imitative.** The primary function of a neural network (in computer science) is imitation. There is a dependency on **what** it is imitating. The source material that LLM neural networks learn from is human-filtered, human-curated, and human-annotated. In other words, despite the term "artificial", the neural network form of AI in the case of LLMs is very human-based.
 * **Surface level.** Language floats on top of thoughts. LLMs are trained on language content. By their very imitative nature, LLMs can imitate on a language level, not on a thought level. The human brain/mind itself is also a black-box. Using a black box to imitate another black box on a surface level is a limiting approach.
 
+## Strong and weak links
+
+At the core of GPT (Generative Pre-trained Transformer) technology, a context that is based on the prompts, the responses, and various internal states of the conversation determines the likelihood of the next concept and token.
+
+In a strong link, the most likely next concept or token significantly outweighs the alternatives. In a weak link, many conflicting concepts or tokens have similar weights and likelihood. Internal to the GPT engine, it can distinguish a strong from a weak link. However, the overall response to a prompt does not show these internal states.
+
+One way to test for weak links is to repeat a prompt several times (each prompt in its own conversation with no memory of the other experiments) and evaluate the differences in the responses. If the responses are divergent, then we know the existence of at least one weak link in the chain.
+
+## Convergence by filtering
+
+Users of chatbots should be aware of the human factor in the creation of such chatbots. Without a consistent policy to filter and select training samples, a neural network cannot converge, and its responses will have many weak links. When presented with conflicting or divergent training samples, the back propagation training of a neural network does not reason, abstract, and learn what is common in such divergent samples.
+
+In STEM subjects, this type of filtering has a small effect on the validity and bias of the responses. However, in many other conversations, this kind of filtering can effectively steer the user in one direction without considering the alternative directions.
+
 # How do we teach in the age of AI?
 
 ## Fundamentals
