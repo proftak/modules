@@ -93,3 +93,7 @@ In the age of AI, one challenge is assessing the understanding of fundamentals. 
 Based on the relatively weak logical deduction ability of neural network chatbots, diagnosis-based assessments may be viable. The question is presented in the form of a derivation of a conclusion. Steps of the derivation may include errors. The learner is asked whether the derivation and conclusion are correct, and if not, where the flaws are. The type of question exploits the "agreeableness" of chatbots.
 
 To generate questions of this variety, it is best to rely on an algorithm that can systematically but randomly insert erroneous steps in a chain of reasoning or derivation.
+
+## In-person assessment
+
+Back to the basics. In-person, pen-and-paper quizzes and exams are as effective as they have always been. 
