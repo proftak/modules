@@ -76,8 +76,20 @@ However, a neural-network-based AI system is such a black art that there is esse
 
 ## Back-propagation neural network
 
-This applies to most, if not all, LLM (Large Language Model) and other forms of AI tools.
+This applies to most, if not all, LLM (Large Language Model) and other forms of AI tools. Understanding the general nature of a tool helps to determine how it can be used effectively in an application.
 
 * **Probabilistic.** Several aspects are probabilistic. The key point is the lack of exactness or "rigor."
 * **Imitative.** The primary function of a neural network (in computer science) is imitation. There is a dependency on **what** it is imitating. The source material that LLM neural networks learn from is human-filtered, human-curated, and human-annotated. In other words, despite the term "artificial", the neural network form of AI in the case of LLMs is very human-based.
 * **Surface level.** Language floats on top of thoughts. LLMs are trained on language content. By their very imitative nature, LLMs can imitate on a language level, not on a thought level. The human brain/mind itself is also a black-box. Using a black box to imitate another black box on a surface level is a limiting approach.
+
+# How do we teach in the age of AI?
+
+## Fundamentals
+
+Knowing how to ask a chatbot for an answer is not the same as understanding the answer. More importantly, getting an answer from a chatbot is far from being able to verify and validate the answer! Regardless of the subject, being able to validate and understand an answer is crucial in the long run.
+
+In the age of AI, one challenge is assessing the understanding of fundamentals. The classical method of asking students to derive solutions is no longer an adequate assessment.
+
+Based on the relatively weak logical deduction ability of neural network chatbots, diagnosis-based assessments may be viable. The question is presented in the form of a derivation of a conclusion. Steps of the derivation may include errors. The learner is asked whether the derivation and conclusion are correct, and if not, where the flaws are. The type of question exploits the "agreeableness" of chatbots.
+
+To generate questions of this variety, it is best to rely on an algorithm that can systematically but randomly insert erroneous steps in a chain of reasoning or derivation.
