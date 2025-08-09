@@ -24,6 +24,20 @@ Another distinct feature of a GPT is an "attention* mechanism. Without an attent
 
 # Tips to make use of a GPT/LLM
 
+## GPT/LLM is a tool
+
+Like *any* tool, GPT/LLM has limitations. More importantly, the effective use of such a tool relies on the skills and competencies of the user. 
+
+### An LLM is trained on language samples
+
+This point is significant because a practical prompt needs to use language (words) to provide sufficient context.
+
+### An LLM is trained on content written by "average" people
+
+### An LLM is trained on mostly grammatically correct content
+
+For simpler queries, the grammar and punctuation of a prompt may not impact the results. However, for complex conversations, grammatically correct prompts can yield better results. This is because a GPT can better parse and understand a grammatically correct prompt.
+
 ## Awareness of context window size
 
 For coding purposes, if the concerned source code has more tokens than the length of the context window, then an LLM cannot be aware of the entire program. In a complex conversation, if the conversation (including prompts and responses) is longer than the context window size, then earlier parts of the discussion no longer inform the continuation of the conversation.
@@ -32,7 +46,9 @@ The awareness of context window size is, therefore, vital when GPT/LLM is used t
 
 ## Handling long and/or complex discussions
 
+A GPT can estimate the length of a conversation in terms of tokens. It can be helpful to check the length of a conversation to make sure the relevant part is within the context window. In the event of a conversation that is close to the context window length, there are methods to help maintain the relevant part of the context.
+
 * Summarize. This performs two tasks at once. It compactifies the information that is still in the context window, and it also refreshes such content to be the latest part of the context window. Most GPT makes use of a mechanism that is similar to first-in-first-out to maintain the context window. As a result, asking a GPT/LLM to summarize refreshes the context.
 * Fact extraction. Similar to summarizing, but with a focus on extracting just the factual data to formulate the latest context. 
-* External memory.
+* External memory. Exports a conversation to be stored. Most GPTs can create a file (usually in Markdown format) for downloading.
 
