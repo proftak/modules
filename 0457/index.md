@@ -28,6 +28,16 @@ From a psychological and organizational perspective, Meta's action may be detrim
 
 The fact that some experienced software engineers *question* the validity of AI-generated suggestions is interesting. In a sense, the "vibe" in Vibe coding is the antithesis of the term "engineering." A more fundamental question is whether these questioning experienced software engineers are wasting their time because the AI-generated suggestions are correct to begin with. We will reexamine this in a later section.
 
+## More on vibe or AI-assisted coding
+
+[Disasters happen](https://www.zdnet.com/article/bad-vibes-how-an-ai-agent-coded-its-way-to-disaster/). In this case, AI-generated code led to the deletion of tables in a database. 
+
+**Thoughts**:
+
+There are several key issues. The first issue is whether the AI assistant interprets the human's natural language description correctly. Mathematics and its notations predate the invention and use of computers by centuries. Why were mathematical notations even invented? This is not about internationalization because mathematics had been developed in parallel in multiple cultures. Mathematical notations are about conciseness, but most importantly, it is about precision.
+
+
+
 # AI in education
 
 ## Sam Altman's "Knowing what questions to ask"
@@ -111,3 +121,5 @@ To generate questions of this variety, it is best to rely on an algorithm that c
 ## In-person assessment
 
 Back to the basics. In-person, pen-and-paper quizzes and exams are as effective as they have always been. 
+
+There is an equity concern regarding in-person, on-paper assessments. See this [ChatGPT conversation](https://chatgpt.com/share/688cd2cc-d158-8013-955b-4b8f5a76bb0b) on this topic.
