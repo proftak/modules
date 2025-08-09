@@ -34,6 +34,8 @@ This point is significant because a practical prompt needs to use language (word
 
 ### An LLM is trained on content written by "average" people
 
+A GPT/LLM does not reason like a person. 
+
 ### An LLM is trained on mostly grammatically correct content
 
 For simpler queries, the grammar and punctuation of a prompt may not impact the results. However, for complex conversations, grammatically correct prompts can yield better results. This is because a GPT can better parse and understand a grammatically correct prompt.
@@ -51,4 +53,14 @@ A GPT can estimate the length of a conversation in terms of tokens. It can be he
 * Summarize. This performs two tasks at once. It compactifies the information that is still in the context window, and it also refreshes such content to be the latest part of the context window. Most GPT makes use of a mechanism that is similar to first-in-first-out to maintain the context window. As a result, asking a GPT/LLM to summarize refreshes the context.
 * Fact extraction. Similar to summarizing, but with a focus on extracting just the factual data to formulate the latest context. 
 * External memory. Exports a conversation to be stored. Most GPTs can create a file (usually in Markdown format) for downloading.
+
+# CS in the GPT/LLM era
+
+## Knowing how to use GPT/LLM is essential
+
+Employers expect their employees to be efficient and productive. GPT/LLM tools *can* improve the efficiency and productivity of software development and coding. 
+
+Students may equate this to using a homework assignment description as a prompt to get a working program for submission. This misunderstanding can be costly in the long run. This is because the complexity of any homework assignments at a community college level is *well* within the capacity of a GPT/LLM. However, commercial and industrial computer programs are too complex to fit in the context window of a GPT/LLM. As a result, the apparent success of turning in solutions to homework assignments using GPT/LLM tools does not correlate with the actual competency needed in industry.
+
+
 
