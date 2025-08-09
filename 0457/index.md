@@ -62,6 +62,10 @@ This is the Yin-Yang/duality of Eastern versus Western approaches. The same dual
 
 LLM-based tools are here to stay, and employers expect productivity gain with the proper use of such tools. Consequently, students need to understand the nature of LLMs, their limitations, and how to utilize these tools effectively. This approach extends to more general neural network-based machine learning. 
 
+## It takes skills to use AI effectively
+
+AI (GPT/LLM) has intrinsic limitations. In a broad sense, the same skills in effective written and oral communication are also helpful in interaction with GPT/LLM tools. This is mainly because an LLM (large-language model) is trained based on content that is grammatically correct and effectively structured. The importance of the user's language skills increases with the complexity and length of a conversation with an AI tool.
+
 # AI in general
 
 ## Neural Net AI is a black box
