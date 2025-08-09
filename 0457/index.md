@@ -36,8 +36,6 @@ The fact that some experienced software engineers *question* the validity of AI-
 
 There are several key issues. The first issue is whether the AI assistant interprets the human's natural language description correctly. Mathematics and its notations predate the invention and use of computers by centuries. Why were mathematical notations even invented? This is not about internationalization because mathematics had been developed in parallel in multiple cultures. Mathematical notations are about conciseness, but most importantly, it is about precision.
 
-
-
 # AI in education
 
 ## Sam Altman's "Knowing what questions to ask"
@@ -65,6 +63,10 @@ LLM-based tools are here to stay, and employers expect productivity gain with th
 ## It takes skills to use AI effectively
 
 AI (GPT/LLM) has intrinsic limitations. In a broad sense, the same skills in effective written and oral communication are also helpful in interaction with GPT/LLM tools. This is mainly because an LLM (large-language model) is trained based on content that is grammatically correct and effectively structured. The importance of the user's language skills increases with the complexity and length of a conversation with an AI tool.
+
+An awareness of how GPT/LLM works is also important. For example, understanding the purposes and limitations of a context window is crucial to lengthy AI conversations on complex topics. There are techniques to sustain long and complex discussions.
+
+The effective use of AI tools requires critical thinking skills, thought organization, and problem-solving skills. 
 
 # AI in general
 
