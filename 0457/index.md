@@ -70,6 +70,16 @@ An awareness of how GPT/LLM works is also important. For example, understanding 
 
 The effective use of AI tools requires critical thinking skills, thought organization, and problem-solving skills. Not surprisingly, good communication skills are also essential in utilizing GPTs. This is because GPTs are (mostly) trained on human-created content that is grammatically correct. 
 
+## AI-amplified Dunning-Kruger Effect
+
+[The Dunning-Kruger Effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) describes the phenomenon of the correlation between actual competency versus self-assessed level of competency. Specifically, people with little competency more often overestimate their competency than people with high competency.
+
+AI (specifically chatbots) amplifies this effect. [According to ChatGPT](https://chatgpt.com/share/6898d6c6-f9a0-8013-b727-95443e3a72e9), an IQ of 85 is sufficient to operate a computer or smartphone sufficiently to ask questions in the web or app interface of ChatGPT. Depending on the version and specific test, ChatGPT demonstrates an IQ of 120 to 155. This means a person with an IQ of 85 may be able to answer questions that require an IQ of 120 (or more). Human self-reflection helps individuals differentiate their abilities from those of the AI tool. However, there is also a correlation between IQ and correct attribution (see the later part of the [linked ChatGPT conversation](https://chatgpt.com/share/6898d6c6-f9a0-8013-b727-95443e3a72e9)).
+
+This presents a unique challenge to educators who encounter students who use GPT tools to shortcut their education. Increasing awareness of the amplified Dunning-Kruger Effect may help, but only to a certain degree, because a person can choose to disbelieve or willfully neglect. This issue is also easier to explain in a career education class, as opposed to a general education class. This is due to career-education classes can often quote from specific job descriptions or invite employers as guest speakers.
+
+This amplified Dunning-Kruger Effect, combined with the inability to detect AI-assisted submissions, can be highly detrimental to students. The amplified Dunning-Kruger Effect increases the gap between the competency expected by employers and the self-assessed competency. The gap may not be discovered until after a student graduates with a degree.
+
 # AI in general
 
 ## Neural Net AI is a black box
