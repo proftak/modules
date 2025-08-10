@@ -124,6 +124,14 @@ Users of chatbots should be aware of the human factor in the creation of such ch
 
 In STEM subjects, this type of filtering has a small effect on the validity and bias of the responses. However, in many other conversations, this kind of filtering can effectively steer the user in one direction without considering the alternative directions.
 
+## Context window
+
+The context window of a GPT specifies the number of tokens (words and punctuation marks) that form the "attention". As of Summer 2025, this window is usually 256 thousand tokens in a higher-end GPT. 256 thousand tokens is about 1 MB (megabytes) of text, code, etc. While most casual use of GPT can hardly reach this limit, many documents can easily exceed this limit: legal documents, contracts, etc. The code base of commercial or industrial computer programs also often exceeds this limit.
+
+Once a problem is too large to fit in the context window, a GPT does not issue any warnings. References to content that scrolls off the context window trigger the GPT to search beyond the conversation itself. This frequently leads to incorrect assumptions. 
+
+To solve complex problems, a user must have mastery of the domain knowledge and skills of problem-solving, analysis, critical thinking, and communication. This allows a user to utilize a GPT within its capabilities. This is accomplished by breaking a complex problem into smaller problems with clear interfaces to the larger issue. The user also needs to validate the responses from the GPT tool. Knowing how to work within the limitations of a GPT requires skills and competencies that are beyond the domain knowledge and competency of a manual method.
+
 # How do we teach in the age of AI?
 
 ## Fundamentals
