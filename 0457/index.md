@@ -12,7 +12,7 @@ The following are some recent developments relevant to teaching computer informa
 
 ## AI Researcher Payscale
 
-Meta has recently started a high-profile hiring (mostly poaching) campaign, offering up to $100,000,000 (not clear about the method of distribution) to AI researchers already working for competing companies. 
+Meta has recently started a high-profile hiring (mostly poaching) campaign, offering up to $1,000,000,000 (not clear about the method of distribution) to AI researchers already working for competing companies. 
 
 **Thoughts**:
 
@@ -27,6 +27,8 @@ From a psychological and organizational perspective, Meta's action may be detrim
 **Thoughts**:
 
 The fact that some experienced software engineers *question* the validity of AI-generated suggestions is interesting. In a sense, the "vibe" in Vibe coding is the antithesis of the term "engineering." A more fundamental question is whether these questioning experienced software engineers are wasting their time because the AI-generated suggestions are correct to begin with. We will reexamine this in a later section.
+
+Assuming the human user has no experience in programming nor an educational background in computer science, vibe coding is severely limited by the context window of a GPT. A typical GPT (as of summer 2025) has a context window of about 256k tokens. That loosely translates to a context of about 1 MB combining code, prompt, response, etc. While this capacity can develop some useful programs, it is insufficient for commercial or industrial programs. A GPT does not warn about approaching and exceeding the context window capacity. This can lead to incoherent code or code that makes incorrect assumptions, even if a specification was provided in an earlier prompt.
 
 ## More on vibe or AI-assisted coding
 
@@ -58,7 +60,7 @@ MIT Technology Review discovered that [Chinese universities are more likely to e
 
 This is the Yin-Yang/duality of Eastern versus Western approaches. The same duality exists in the practice of medicine. Eastern (specifically Chinese) scholars tend to be more comfortable with not fully understanding the exact nature of mechanisms and focus more on associating the action and reaction of black-box mechanisms. Western scholars, after the Greek philosophers, focus more on first understanding the exact mechanisms in the form of a rigid framework of theories before using such mechanisms in practical applications. Of course, this comparison is not absolute and universal.
 
-LLM-based tools are here to stay, and employers expect productivity gain with the proper use of such tools. Consequently, students need to understand the nature of LLMs, their limitations, and how to utilize these tools effectively. This approach extends to more general neural network-based machine learning. 
+LLM-based tools are here to stay, and employers expect productivity gains with the proper use of such tools. Consequently, students need to understand the nature of LLMs, their limitations, and how to utilize these tools effectively. This approach extends to more general neural network-based machine learning. 
 
 ## It takes skills to use AI effectively
 
@@ -66,7 +68,7 @@ AI (GPT/LLM) has intrinsic limitations. In a broad sense, the same skills in eff
 
 An awareness of how GPT/LLM works is also important. For example, understanding the purposes and limitations of a context window is crucial to lengthy AI conversations on complex topics. There are techniques to sustain long and complex discussions.
 
-The effective use of AI tools requires critical thinking skills, thought organization, and problem-solving skills. 
+The effective use of AI tools requires critical thinking skills, thought organization, and problem-solving skills. Not surprisingly, good communication skills are also essential in utilizing GPTs. This is because GPTs are (mostly) trained on human-created content that is grammatically correct. 
 
 # AI in general
 
