@@ -4,6 +4,7 @@ plugins:
 - jekyll-remote-theme
 - jekyll-toc
 - jekyll-mermaid
+- jekyll-numbered-headings
 
 # use_math: true
 toc: true
