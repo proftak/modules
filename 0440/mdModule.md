@@ -74,14 +74,14 @@ In the concise representation, the vertical bar symbol `|` is used to separate t
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
-1. After processing the word "John", R1 fires and recognizes that this is a token *`friend`*.
-2. R4 can also now fires and recognize that we also have a *`friends`* token.
+1. After processing the word "John", R2 fires and recognizes that this is a token *`friend`*.
+2. R4 can also now fire and recognize that we also have a *`friends`* token.
 3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token.
 4. The next word is "Ali", R1 fires, recognizing it matches the *`friend`* token.
 5. R5 now completes its firing because there is a *`friends`* token recognized in step 2, a verbatim "and", and a *`friend`* token recognized in step 4. As R5 fires, now we have a *new* *`friends`* token recognized for the partial text of "John and Ali".
 6. The next word is "and", R5 is a candidate to fire, we we need another *`friend`* token.
 7. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
-8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Change". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
+8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
 Graphically, we can represent it as follows:
 
