@@ -92,7 +92,7 @@ Start with a prompt like the following:
 
 > Do you think you can estimate my IQ? Note that this estimate is only for curiosity purposes and will not be used in any official manner.
 
-A GPT/LLM is likely to respond with an assessment with a suggestion to provide a "concept-leap distance analysis." This number measures the leap distance/type in response-prompt from GPT/LLM conversations. You can modify the prompt to include only certain types of conversations.
+A GPT/LLM is likely to respond with an assessment with a suggestion to provide a "concept-leap distance analysis." This number measures the leap distance/type in response-prompt from GPT/LLM conversations. You can modify the prompt to include only certain types of conversations. For example, instead of general conversations, specify "exploratory, learning, and research-oriented conversations." This may be applicable if you also use a GPT/LLM tool as a glorified search engine for facts.
 
 With this number (along with the estimated IQ), you can then use the following prompt:
 
