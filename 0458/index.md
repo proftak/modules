@@ -94,3 +94,15 @@ Some professors may choose to hide from students, but most are approachable. Dem
 
 This can be as casual as a weekly visit to an office hour for 15 minutes, discussing fringe/tangential topics related to a course. Regular contact with a professor enables the professor to write recommendations or to serve as a meaningful reference. The effect is compounded if the office hour visits involve discussions of personal projects and other activities that demonstrate competencies that an employer looks for. One competency is the effective use of GPT/LLM tools. 
 
+## Reinvent the wheel
+
+[Starting from scratch](https://www.businessinsider.com/openai-cofounder-greg-brockman-engineer-trait-technical-humility-2025-8) is not always an inefficient method, especially in a fast-revolving field. 
+
+The key to using this mentality effectively includes the following:
+
+* A thorough understanding of existing designs or approaches.
+* A clear definition of the current design objectives.
+
+An analysis of how and why existing designs or approaches fail to meet the design objectives is the first step. The "delta" drives the "reinvention" process. If the delta is sufficient, then a "start from scratch" approach may be warranted.
+
+With search engines, a user has to read about the current approaches to adapt them to his/her objectives. This involves some thinking and adaptations in many cases. However, in the age of GPT/LLM, the tool can "do the thinking" and apparently come up with *a* solution. This convenience is efficient in cases where a person's objective matches known solutions. Such objectives are seldom applicable in a post-GPT/LLM employment. Getting used to the mentality of "starting from scratch" is, therefore, particularly important in the age of GPT/LLM.

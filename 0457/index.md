@@ -80,6 +80,28 @@ This presents a unique challenge to educators who encounter students who use GPT
 
 This amplified Dunning-Kruger Effect, combined with the inability to detect AI-assisted submissions, can be highly detrimental to students. The amplified Dunning-Kruger Effect increases the gap between the competency expected by employers and the self-assessed competency. The gap may not be discovered until after a student graduates with a degree.
 
+## GPT/LLM as a pedagogy assistant
+
+For people who have an extended chat history with a GPT/LLM, the GPT/LLM can advise customized pedagogy suggestions. Here is an *example*.
+
+Start with a prompt like the following:
+
+> Based on our conversation up to this point, can you estimate my IQ?
+
+> I understand IQ is usually measured by specific, rigorous tests. However, there are also general traits associated with people within particular ranges of IQ. You can potentially use the "delta" between your responses and my follow-up prompts to measure the concept leap distance (extrapolation of patterns and problem-solving abilities).
+
+> Do you think you can estimate my IQ? Note that this estimate is only for curiosity purposes and will not be used in any official manner.
+
+A GPT/LLM is likely to respond with an assessment with a suggestion to provide a "concept-leap distance analysis." This number measures the leap distance/type in response-prompt from GPT/LLM conversations. You can modify the prompt to include only certain types of conversations.
+
+With this number (along with the estimated IQ), you can then use the following prompt:
+
+> Based on this analysis, suggest some pointers so I can relate to a population centered around an IQ of 100. This is of importance because I teach at a community college with no entry barriers. As a result, the student population is likely to center around an IQ of 100.
+
+> These suggestions can be general strategies in communication styles and/or modality of communication. To provide additional context, I teach only in-person classes. This piece of information can be helpful because I can use gestures and interact in real-time with students.
+
+The response to this prompt is customized to each individual. A GPT/LLM may even offer to summarize the suggestions into a "pocket" version for easier reference in a class or an office hour environment.
+
 # AI in general
 
 ## Neural Net AI is a black box
