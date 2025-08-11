@@ -98,12 +98,14 @@
     </script>
     <script>hljs.highlightAll();</script>
     <script>
+        // the following code sets the title of a document
         if (document.querySelector('#title').innerHTML == "")
         {
             document.querySelector('#title').innerHTML = document.title
         }
     </script>
     <script>
+        // the following script allows checkboxes to be checked and unchecked
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(checkbox => {
           // remove the disabled attribute; added by kramdown by default
