@@ -154,6 +154,10 @@ Once a problem is too large to fit in the context window, a GPT does not issue a
 
 To solve complex problems, a user must have mastery of the domain knowledge and skills of problem-solving, analysis, critical thinking, and communication. This allows a user to utilize a GPT within its capabilities. This is accomplished by breaking a complex problem into smaller problems with clear interfaces to the larger issue. The user also needs to validate the responses from the GPT tool. Knowing how to work within the limitations of a GPT requires skills and competencies that are beyond the domain knowledge and competency of a manual method.
 
+## "Soft" skills
+
+The skills of analysis, problem-solving, critical thinking, and communication are all important in the effective use of GPT/LLM. 
+
 # How do we teach in the age of AI?
 
 ## Fundamentals
