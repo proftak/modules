@@ -122,7 +122,7 @@ No scientific theory or engineering design is 100% correct. However, there is *c
 
 However, a neural-network-based AI system is such a black art that there is essentially no certainty. While the application of a neural-network-based mechanism does not require it to be probabilistic, the AI-centric application is typically probabilistic. The same input presented to the same system does not guarantee the same output.
 
-# What *do* we teach about AI?
+# *What* do we teach about AI?
 
 ## Back-propagation neural network
 
@@ -158,7 +158,7 @@ To solve complex problems, a user must have mastery of the domain knowledge and 
 
 The skills of analysis, problem-solving, critical thinking, and communication are all important in the effective use of GPT/LLM. 
 
-# How do we teach in the age of AI?
+# *How* do we teach in the age of AI?
 
 ## Fundamentals
 
