@@ -122,6 +122,14 @@ No scientific theory or engineering design is 100% correct. However, there is *c
 
 However, a neural-network-based AI system is such a black art that there is essentially no certainty. While the application of a neural-network-based mechanism does not require it to be probabilistic, the AI-centric application is typically probabilistic. The same input presented to the same system does not guarantee the same output.
 
+## GPTs and thought-forking
+
+If the content in the context window leads to alternative forks for a human, a GPT cannot explore multiple branches like a person. In the case of a fork, the transformer mechanism probabilistically chooses the next token (word). 
+
+In order for a GPT to explore multiple branches, the context window must include such an instruction, such as "generate alternative views." With the explicit instructions, the included forks, and the instruction to explore options, both become parts of the context for the transformer to continue looking for additional forks.
+
+This is another example that illustrates the importance of understanding the general mechanism of a GPT in order to use it effectively.
+
 # *What* do we teach about AI?
 
 ## Back-propagation neural network
