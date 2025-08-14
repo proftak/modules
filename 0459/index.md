@@ -16,3 +16,11 @@ In the context of OER, a custom GPT can serve as an interactive book, a tutor, o
 # Why is this important?
 
 The authoring of a book is difficult not because of the author lacking the knowledge, but how the knowledge is presented to the target audience. A custom GPT only needs the knowledge to be correct, complete, and organized. The actual presentation of the material is flexible, and it can be catered to each individual learner based on reading comprehension level, competency of prerequisite knowledge, language preferences, etc.
+
+A custom GPT can also create practice questions and examples on-the-fly. This ability allows a learner to learn in different ways.
+
+# Support files
+
+The support files can be in a variety of formats, but Markdown is one of the best choices.
+
+It is important that the support files be structured. This refers to content (semantic) structure, not format structure. 
