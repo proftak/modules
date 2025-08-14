@@ -88,3 +88,4 @@
 * [Module 0456: A session of writing an algorithm](./0456/index.md)
 * [Module 0457: Tak's thoughts on AI, summer 2025 edition](./0457/index.md)
 * [Module 0458: CS in the GPT/LLM era](./0458/index.md)
+* [Module 0459: OER as a Custom GPT](./0459/index.md)
