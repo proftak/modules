@@ -12,3 +12,7 @@ A custom GPT is a structures interaction with ChatGPT. There are two main compon
 Together, a custom GPT can serve a specific role, with specific constraints and mode of operation, and specific knowledge to reference.
 
 In the context of OER, a custom GPT can serve as an interactive book, a tutor, or a virtual professor. The key is the collection of support files.
+
+# Why is this important?
+
+The authoring of a book is difficult not because of the author lacking the knowledge, but how the knowledge is presented to the target audience. A custom GPT only needs the knowledge to be correct, complete, and organized. The actual presentation of the material is flexible, and it can be catered to each individual learner based on reading comprehension level, competency of prerequisite knowledge, language preferences, etc.
