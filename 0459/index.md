@@ -198,3 +198,5 @@ Now convert our discussion title "Analogical rebuttal analysis" into a knowledge
 ```
 
 You may find a browser extension that allows you to copy a ChatGPT discussion/conversation in Markdown to be particularly useful. This allows you to paste the content of a discussion directly into a prompt for processing. The Chrome extension [ExportGPT](https://chatopenai.pro/exportgpt/) works well, even in the free version.
+
+Instead of using a ChatGPT discussion, you can also use the content converted from a PDF and other sources.
