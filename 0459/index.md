@@ -50,6 +50,8 @@ The role of the human is, therefore, to think of what ideas, concepts, facts, an
 First, we start with the template of a knowledge file:
 
 ```text
+The following is a template for a knowledge file, we will refer to it as "the knowledge file template" in the following prompts.
+
 # {{Project / Domain Title}}
 _Aim: A retrieval-friendly knowledge file for Custom GPTs. Keep sections concise (≈300–500 tokens) and self-contained._
 
@@ -146,9 +148,7 @@ _Concrete, minimal examples improve retrieval precision._
 Then we present the instruction to convert a conversation into a knowledge file of the specified template:
 
 ```text
-# Prompt: Transform Discussion into Knowledge File
-
-You are given a long, unorganized, and meandering discussion on a specific topic.  
+You will be given a long, unorganized, and meandering discussion on a specific topic.  
 Your task is to **restructure the content into a clean, semantically coherent knowledge file** that can be uploaded into a Custom GPT for retrieval.
 
 ## Instructions
@@ -189,11 +189,12 @@ Your task is to **restructure the content into a clean, semantically coherent kn
    - Do not include explanation, commentary, or meta-text — just the file.
 
 ---
+```
 
-## Input
-Here is the raw discussion to be transformed:
+And then finally, we present the actual discussion to be converted. Note that ChatGPT can retrieve an entire chat just by referencing the topic. If possible, use the full title of the discussion. Here is an example of a prompt:
 
-
+```text
+Now convert our discussion title "Analogical rebuttal analysis" into a knowledge file using the above knowledge file template and instructions.
 ```
 
 You may find a browser extension that allows you to copy a ChatGPT discussion/conversation in Markdown to be particularly useful. This allows you to paste the content of a discussion directly into a prompt for processing. The Chrome extension [ExportGPT](https://chatopenai.pro/exportgpt/) works well, even in the free version.
