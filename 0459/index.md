@@ -185,7 +185,7 @@ Your task is to **restructure the content into a clean, semantically coherent kn
    - Use lists, tables, and headings liberally to create natural lexical breakpoints.
 
 6. **Final Output**
-   - Return the finished **Markdown document only**.
+   - Return the finished **Markdown document only**, provide a link to download the document.
    - Do not include explanation, commentary, or meta-text — just the file.
 
 ---
