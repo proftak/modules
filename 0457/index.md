@@ -183,3 +183,11 @@ To generate questions of this variety, it is best to rely on an algorithm that c
 Back to the basics. In-person, pen-and-paper quizzes and exams are as effective as they have always been. 
 
 There is an equity concern regarding in-person, on-paper assessments. See this [ChatGPT conversation](https://chatgpt.com/share/688cd2cc-d158-8013-955b-4b8f5a76bb0b) on this topic.
+
+## Objectives
+
+### If AI is not available, can I do this?
+
+For example, in computer programming, understanding enough about an API (application programming interface) and the basic framework to get a project started can be tedious. Tedious means it takes time to assemble all the relevant information, involving 4 or 5 browser windows, each with 10 or more tabs. Can I (the author of this module) do it? Yes, but it is a rather laborious and boring endeavor. If a GPT can put the basic framework together, I can double-check to make sure that it makes sense, test to make sure it works, and use it as a starting point.
+
+The key is that I am still a domain knowledge expert, with sufficient knowledge and skills to *evaluate* what a GPT generates. And, in the absence of GPT tools, I can perform the task because of my knowledge and skills related to the domain, although it will take longer.
