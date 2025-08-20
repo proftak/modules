@@ -82,7 +82,7 @@ $\sum_{i=b}^{e} f(i)$ can be re-expressed using the generalized template as $+_{
 
 Yes, for two reasons.
 
-The first reason is that there is no better way to explain the summation (sigma) notation. The recursive definition only relies on existing operators (addition, etc.) and the very same definition being defined. The key is the base-case where the summation returns the identity of addition, zero. 
+The first reason is that there is no better way to explain the summation (sigma) notation. The recursive definition only relies on existing operators (addition, etc.) and the very same definition being defined. The key is the base case where the summation returns the identity of addition, zero. 
 
 In other words, this recursive definition of summation is concise (short, does not take many words), complete (does not depend on something else), and sound (correct).
 
