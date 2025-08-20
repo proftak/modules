@@ -76,7 +76,7 @@ $\bigcup_{e \in X}f(e) = (X = \\{\\}) ? \\{\\} : \left(f\left(d(X)\right) \cup \
 
 ## Back to Sigma (summation)
 
-$\sum_{i=b}^{e} f(i)$ can be re-expressed using the generalized template as $+_{e \in \{i\|i \in \mathbb{Z} \wedge i \le e \wedge i \ge b\}} f(e)$. In this form, $i(+)$ is the identity of addition, zero.
+$\sum_{i=b}^{e} f(i)$ can be re-expressed using the generalized template as $+_{e \in \\{i\|i \in \mathbb{Z} \wedge i \le e \wedge i \ge b\\}} f(e)$. In this form, $i(+)$ is the identity of addition, zero.
 
 # But is this really necessary?
 
