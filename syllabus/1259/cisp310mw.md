@@ -1,6 +1,6 @@
 {% assign semester="Fall 2025" %}
 {% assign officeHour="* Office hours:\n  * M-F: 0800-0900\n__" %}
-{% assign courseCode="10835" %}
+{% assign courseCode="12024" %}
 {% assign classInfo="* Meetings: MW 1030-1320\n* Drop date: 2025/11/18\n* Units: 4 (3 lecture units+1 lab units)\n* number of hours: 216\n" %}
 {% assign courseTitle="	CISP 310: Computer Architecture and Organization" %}
 {% assign courseDescription="This course covers the organization and behavior of real computer systems at the assembly-language level. Topics include the mapping of statements and constructs in a high-level language onto sequences of machine instructions, as well as the internal representation of simple data types and structures. Numerical computation is examined, noting the various data representation errors and potential procedural errors."  %}
