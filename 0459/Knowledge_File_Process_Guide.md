@@ -55,7 +55,7 @@ Each chunk should be structured as:
 ---
 
 ## 6. Export as Markdown
-- Save the file as `Module_XXXX_KnowledgeFile.md`.
+- Save the file as `xxxx_KnowledgeFile.md` where `xxxx` is the name of the original file or the title of the original content.
 - Upload to the custom GPT knowledge base.
 
 ---
