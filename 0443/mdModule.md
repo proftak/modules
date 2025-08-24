@@ -23,7 +23,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of a potentially complicated expression. The actual definition of $P(a)$ depends on the context.
   * Concept: a predicate is a function that returns a boolean value.
   * Concept level: abstraction notation, a predicate is a placeholder of some operation on some value that returns a boolean value. Predicates are useful in the discussion of quantifiers.
-  * Example: Let $P(x)=(x \mod 2)=0)$, then $P(1)$ returns false, while $P(24)$ returns true.
+  * Example: Let $P(x)=((x \mod 2)=0)$, then $P(1)$ returns false, while $P(24)$ returns true.
 * $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
   * Concept: universal quantifier to quantify a statement being universally true.
   * Concept level: an abstract concept that is needed to define set notations.
