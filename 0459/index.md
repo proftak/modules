@@ -6,24 +6,24 @@ title: "Module 0459: OER as a Custom GPT"
 
 A custom GPT is a structured interaction with ChatGPT. There are two main components to a custom GPT:
 
-* An instruction. This is the text that is preloaded into every prompt in a custom GPT chat. The purpose of the instruction is to remind ChatGPT of everything that it should know in the interaction.
-* Support files. These files are from the knowledge "chunk" from which a custom GPT response may refer. These files can be large and exceed the context window size of a model.
+* An instruction. This is the text that is preloaded into every prompt in a custom GPT chat. The purpose of the instruction is to remind ChatGPT of everything that it should know in the interaction. This component should be concise, to-the-point, and not necessarily written in complete sentences and paragraphs.
+* Support files. These files are from the knowledge "chunk" that a custom GPT response may refer to. These files can be large and exceed the context window size of a model.
 
-Together, a custom GPT can serve a specific role, with specific constraints and mode of operation, and specific knowledge to reference.
+Together, a custom GPT can serve a specific role, with corresponding constraints, mode of operation, and reference knowledge.
 
-In the context of OER, a custom GPT can serve as an interactive book, a tutor, or a virtual professor. The key is the collection of support files.
+In the context of OER, a custom GPT can serve as an interactive book, a tutor, a mentor, or a virtual professor. The key is the collection of support files.
 
-# Why is this important?
+# Importance
 
-The authoring of a book is difficult not because of the author lacking the knowledge, but how the knowledge is presented to the target audience. A custom GPT only needs the knowledge to be correct, complete, and organized. The actual presentation of the material is flexible, and it can be catered to each individual learner based on reading comprehension level, competency of prerequisite knowledge, language preferences, etc.
+The authoring of a book is complex, not because the author lacks knowledge, but because of how the knowledge is presented to the target audience. A custom GPT only needs the knowledge to be correct, complete, and organized. The actual presentation of the material is flexible, and it can be catered to each individual learner based on reading comprehension level, competency of prerequisite knowledge, language preferences, etc.
 
-A custom GPT can also create practice questions and examples on-the-fly. This ability allows a learner to learn in different ways.
+A custom GPT can also create practice questions and examples on the fly. This ability allows a learner to learn in different ways.
 
 # Support files
 
 The support files can be in a variety of formats, but Markdown is one of the best choices.
 
-It is important that the support files be structured. This refers to content (semantic) structure, not format structure. 
+A structured support file makes a custom GPT more effective in its search and referencing of custom knowledge.  This refers to content (semantic) structure, not format structure. 
 
 # Gritty details
 
@@ -200,3 +200,7 @@ Now convert our discussion title "Analogical rebuttal analysis" into a knowledge
 You may find a browser extension that allows you to copy a ChatGPT discussion/conversation in Markdown to be particularly useful. This allows you to paste the content of a discussion directly into a prompt for processing. The Chrome extension [ExportGPT](https://chatopenai.pro/exportgpt/) works well, even in the free version.
 
 Instead of using a ChatGPT discussion, you can also use the content converted from a PDF and other sources.
+
+# Knowledge file process guide
+
+ChatGPT created a [knowledge file process guide](Knowledge_File_Process_Guide.md) to describe the steps to convert a human-created content file into a structured knowledge file that more suitable in a custom GPT.
