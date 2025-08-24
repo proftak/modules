@@ -12,11 +12,6 @@ This document describes the **generalized steps** to convert an instructional mo
 
 ## 2. Atomize the Content
 - Break down large sections into **atomic chunks**, where each chunk covers **one core concept** only.
-- Example from Module 0012:
-  - Instead of one long “Assignment” section, split into:
-    - Assignment — Overview & Operator Meaning  
-    - Assignment — Identifier Rules  
-    - Assignment — Semicolon Rationale
 
 ---
 
@@ -54,9 +49,7 @@ Each chunk should be structured as:
 
 **Retrieval Hooks:** [comma-separated keywords]
 
-**Content:**
-
-[Original instructional explanation, with examples and code]
+**Content:** [Original instructional explanation with examples]
 ```
 
 ---
@@ -64,32 +57,6 @@ Each chunk should be structured as:
 ## 6. Export as Markdown
 - Save the file as `Module_XXXX_KnowledgeFile.md`.
 - Upload to the custom GPT knowledge base.
-
----
-
-## Example (from Module 0012)
-A chunk from “Self-referencing assignment” looks like:
-
-```markdown
-## Self-referencing assignment
-
-**Intent:** Define self-referencing assignment; RHS uses the variable's current value.
-
-**Q/A Examples:**
-- **Q:** What is a self-referencing assignment?  
-  **A:** It’s when the RHS of an assignment includes the LHS variable.
-
-**Synonyms:** augmented update, accumulate, running total, += equivalent
-
-**Retrieval Hooks:** aeTotalExpense = aeTotalExpense + x, evaluate rhs first, accumulation pattern
-
-**Content:**
-
-```c
-aeTotalExpense = aeTotalExpense + x;
-```
-This updates aeTotalExpense by adding x to its current value.
-```
 
 ---
 
