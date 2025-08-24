@@ -14,29 +14,36 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Concept: "element of" as an operator that returns a boolean value.
   * Concept level: foundational, all other set notations depend on this concept.
   * Symbol: $\in$.
+  * Example: $1 \in \mathbb{Z}$ is true. In this context, $\mathbb{Z}$ is the set of all integers. However, $1.25 \in \mathbb{Z}$ is false.
 * $a = b$ means that the value of $a$ and the value of $b$ are the same, hence interchangeable.
   * Concept: "equal to" as an operator that returns a boolean value when two values or expressions can be used interchangeably.
-  * Concept level: foundational, many other set notations such as intersection, union, etc. depend on this concept.
+  * Concept level: foundational, many other set notations, such as intersection, union, etc., depend on this concept.
   * Symbol: $=$.
+  * Example: $\frac{2}{2} = 2-1$
 * As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of a potentially complicated expression. The actual definition of $P(a)$ depends on the context.
   * Concept: a predicate is a function that returns a boolean value.
   * Concept level: abstraction notation, a predicate is a placeholder of some operation on some value that returns a boolean value. Predicates are useful in the discussion of quantifiers.
+  * Example: Let $P(x)=(x \mod 2)=0)$, then $P(1)$ returns false, while $P(24)$ returns true.
 * $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
   * Concept: universal quantifier to quantify a statement being universally true.
   * Concept level: an abstract concept that is needed to define set notations.
   * Symbol: $\forall$
+  * Example: $\forall i((i \in \mathbb{Z}) \Rightarrow (i \in \mathbb{R}))$ is true. In this context, $\mathbb{R}$ is the set of real numbers.
 * $\boxed{\exists e}(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
   * Concept: existential quantifier to quantify a statement being true for at least one "instance."
   * Concept level: an abstract concept that is needed to define set notations.
   * Symbol: $\exists$
+  * Example: $\exists i(i \in \mathbb{Z \wedge i>0 \wedge i<1)$ is false.
 * $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
   * Concept: intersection.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
   * Symbol: $\cap$
+  * Example: $\mathbb{Z} \cap \mathbb{R} = \mathbb{Z}$
 * $\forall e((e \in (\boxed{X \cup Y)}) \Leftrightarrow ((e \in X) \vee (e \in Y)))$ is *definitive*. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
   * Concept: union.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
   * Symbol: $\cup$
+  * Example: \mathbb{Z} \cup \mathbb{R} = \mathbb{R}$
 * $\forall e((e \in (\boxed{X - Y})) \Leftrightarrow ((e \in X) \wedge \neg(e \in Y)))$ is *definitive*. $X - Y$ is the *difference* of the sets $X$ and $Y$.
   * Concept: difference.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
@@ -61,8 +68,18 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * $\boxed{\\{\\}}$ is known as the empty set.
 * $\boxed{\|X\|}$ is the cardinality of the set $X$, the cardinality of a set is *similar* to the number of elements in the set.
 * $\boxed{\forall e \in X(P(e))}$ is an abbreviation of $\forall e((e \in X) \Rightarrow (P(e)))$, it says "for every element $e$ in set $X$, $P(e)$ is true."
+  * Concept: universal qualifier with a filter.
+  * Concept level: an abbreviation to improve notational conciseness.
+  * Example: $\forall i \in \mathbb{Z}(i \in \mathbb{R})$ is true, relate this to the earlier example of the universal quantifier.
 * $\boxed{\exists e \in X(P(e))}$ is an abbreviation of $\exists e((e \in X) \wedge (P(e)))$, it says "there is at least one element $e$ in set $X$ such that $P(e)$ is true."
+  * Concept: existential quantifier with a filter
+  * Concept level: an abbreviation with a filter.
+  * Example: $\exists i \in \mathbb{Z}((i>0) \wedge (i<1))$ is false, relate this to the earlier example of the existential quantifier
 * The general BNF of a tuple is as follows: **(** [ *`element`* \{ **,** *`element`* \}*] **)**. The ordering of values in a tuple is significant.
+  * Concept: tuple
+  * Concept level: notational, a tuple is an array
+  * Symbol: $(...)$
+  * Example: $(1,3)$ is a 2-tuple, it can be seen as an array named `x` that has two elements, `x[0]==1` and `x[1]==3`.
 * $\forall e(\forall f(((e,f) \in \boxed{X \times Y}) \Leftrightarrow ((e \in X) \wedge (f \in Y))))$ is definitive. $X \times Y$ is called the cartesian product of the sets $X$ and $Y$, each element in $X \times Y$ is a two-tuple (tuple with two items), where the first item in the 2-tuple is an element from $X$ and the second item is an element from $Y$.
 * Given $X$ and $Y$ are sets, then $(\boxed{X=Y}) \Leftrightarrow ((X \subseteq Y) \wedge (Y \subseteq X))$, this defines the equality of two sets, and it lays the foundation of understanding nested sets. This definition is also equivalent to $(X=Y) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (e \in Y)))$.
   * Examples to be discussed in class.
