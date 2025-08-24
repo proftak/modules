@@ -7,7 +7,7 @@ title: "Module 0281: Transistor to logic gate"
 -   Prerequisites:
 
 -   Objectives: This module is an introduction to the essential material
-    of CISP310.
+    of CISP310. Specifically, this module connects the elemental logical constructs like disjunction, conjunction, and negation to physical devices like transistors.
 
 # Physical states
 
@@ -18,31 +18,31 @@ are/were used to implement computers at one point of time or another.
 
 ### Electro-mechanical
 
-An electro-mechanical device is one that uses electricity to physically
-(mechanically) actuate/move contacts. A motor drives a rotor. On each
+An electro-mechanical device is one that uses electricity to actuate/move contacts physically
+(mechanically). A motor drives a rotor. On each
 rotor are contact points at different rotational positions. The rotor
 then connects different electrical contact points on the stator.
 
-An electro-mechanical computer is extremely bulky due to the use of
-rotors, plug boards and motors. The use of motors (to change state by
+An electromechanical computer is extremely bulky due to the use of
+rotors, plug boards, and motors. The use of motors (to change state by
 changing the rotational state of rotors) is also very slow compared to
 other mechanisms. However, given the right circumstances, an
-electro-mechanical computer can be worthwhile.
+electromechanical computer can be worthwhile.
 
 At the end of World War 2, German Enigma encryption machines received a
 fourth wheel to scramble broadcast communication. This made the previous
 manual deciphering method no longer effective. The bombe computer was
 devised to semi-automate the deciphering process. Despite being one of
-the slowest mechanisms, electro-mechanical bombe proved to be effective
+the slowest mechanisms, the electromechanical bombe proved to be effective
 against the Enigma encryption machines.
 
 ### Vacuum tubes
 
 A is, as the name implies, a glass tube that is *mostly* vacuum inside.
 At the center of a vacuum tube is a heating element that is not unlike
-the filament of an incandescent light bulb. The heating element heats up
-the next layer that is known as the cathode. The cathode must be
-sufficiently heated in order for electrons to become mobile.
+the filament of an incandescent light bulb. The heating element heats 
+the next layer, which is known as the cathode. The cathode must be
+sufficiently heated for electrons to become mobile.
 
 Depending on the device, there is at least one but potentially more
 layers outside the cathode. For our discussion, a has two layers outside
@@ -60,40 +60,40 @@ electrical current.
 
 However, by using a relatively low negative voltage at the gate, the
 current passing through can be reduced. The voltage difference between
-the cathode and anode is in the order of 100Vs, while the gate voltage
-is in the order of 1Vs.
+the cathode and anode is in the order of 100V, while the gate voltage
+is in the order of 1V.
 
 Essentially, a triode is a non-mechanical and non-hydraulic valve. The
 key concept, however, is that the control mechanism of the valve uses
 the same physics (electrical) as the quantity being controlled.
 
-Bulky, hot, energy consuming, vacuum tubes are components that make
+Bulky, hot, energy-consuming vacuum tubes are components that make
 rather large computers. Furthermore, due to the large surface areas of
 the cathode and anode, vacuum tubes are also relatively slow devices.
 Nonetheless, computers made from vacuum tubes have no moving mechanical
-components, and thus a big improvement in terms of reliability and
+components, and thus, a significant improvement in terms of reliability and
 speed.
 
-Although there were computer prior to the Colossus, the Colossus is one
-of the most recognized vacuum tube computers due to its role also at the
-end of World War 2. The Colossus was invented to decipher message
-encoded by . The Lorenz cipher is considerably more complex (and
+Although there were computers before the Colossus, the Colossus is one
+of the most recognized vacuum tube computers due to its role at the
+end of World War 2. The Colossus was invented to decipher messages
+encoded by. The Lorenz cipher is considerably more complex (and
 expensive) compared to the Enigma machines. As such, the Lorenz cipher
 was only used for "ultra" secret communication. But this also made it a
-high priority target to crack.
+high-priority target to crack.
 
 ### Transistors
 
 A transistor is a general term for devices that make use of
 semiconductor material. A semiconductor material is actually a
-non-conducting material "" with other elements. For example, Silicon
+non-conducting material with other elements. For example, Silicon
 (Si) does not conduct electricity. However, when elements like boron and
-phosphorus, the material conducts due to the charged carrier (either as
+phosphorus are present, the material conducts due to the charged carrier (either as
 holes or electrons).
 
-The term semiconductor implies the material can conduct or *not* to
+The term semiconductor implies the material can conduct or *not* 
 conduct. This is due to the most basic semiconductor construct, the PN
-junction. A PN junction is one that allows the flow of current in only
+junction. A PN junction allows the flow of current in only
 one direction.
 
 A transistor is a mechanism that is based on the simple PN junction. The
@@ -105,7 +105,7 @@ controlled are electrical.
 
 Even the original transistors are a bit smaller than vacuum tubes in
 size. Furthermore, because there is no need to encourage electrons to
-fly through vacuum, the operating electrical potentials of transistors
+fly through a vacuum, the operating electrical potentials of transistors
 are considerably less than those of vacuum tubes.
 
 As a result, computers made from transistors are much smaller than those
@@ -114,7 +114,7 @@ well.
 
 There are several revolutions in terms of transistor technologies. For
 this module, there will be no discussion of the various types of
-transistor nor the packaging of transistors.
+transistor or the packaging of transistors.
 
 ## Physical states
 
@@ -126,7 +126,7 @@ device as allowing flow (closed) or not allowing flow (open).
 
 Likewise, we can also measure physical quantities as the outputs of
 devices. For electronic or electro-mechanical devices, this often means
-measuring the electrical potential of a electrical contact point. Again,
+measuring the electrical potential of an electrical contact point. Again,
 because our focus is on digital and binary computers, the electrical
 potential is either high or low.
 
@@ -136,11 +136,11 @@ or their observable states. After all, it is all physics!
 # Truth
 
 Computer science is not a science because it has nothing to do with the
-truth (of nature). Instead, it is a study of implications of artificial
+truth (of nature). Instead, it is a study of the implications of artificial
 rules regarding truth values.
 
 How does this relate to physical devices and physical states? Easy!
-Since a device has two states (either observable like voltage or actual
+Since a device has two states (either observable, like voltage, or actual
 like allowing flow), it is understandable that we can *assign* truth
 values to the states. For example, we can *arbitrarily* assign "true" to
 a high voltage and "false" to a low voltage. There are times when the
@@ -148,7 +148,7 @@ truth assignment is reversed.
 
 But what does this buy us? There is nothing to gain by randomly labeling
 truth values to physical states. However, what if we can design
-circuitry so that the circuitry mimics logical operations?
+circuitry so that it mimics logical operations?
 
 Let's see how this works.
 
@@ -160,7 +160,7 @@ transistors in the Logisim. Go to Help \| Library Reference \|
 Transistor.
 
 The first type is the more intuitive type. We will call this an N
-transistors. In real circuits, an N transistor can be a BJT (bi-polar
+transistors. In real circuits, an N transistor can be a BJT (bipolar
 junction transistor) or a MOSFET (metal oxide semiconductor field effect
 transistor). Regardless of the type, a high voltage control signal turns
 on the valve to allow flow, and a low voltage control signal turns off
@@ -170,20 +170,20 @@ the valve to stop flow.
 
 For an N-transistor, the arrow goes from low voltage to high voltage,
 while the pin perpendicular to the direction of the arrow is the gate
-(control signal). Unlike a general purpose valve, an N-transistor only
-let flow from low voltage to high voltage.
+(control signal). Unlike a general-purpose valve, an N-transistor only
+lets flow from low voltage to high voltage.
 
 The second type has a negated control signal, meaning a low voltage
 turns on the valve and a high voltage turns off the valve. This type of
 transistor is a P transistor. Again, A P transistor can be a BJT or a
 MOSFET. In the diagram of a P-transistor, the arrow has to go from high
 voltage to low voltage. The bubble indicates that the control signal is
-negated where a low voltage at the gate enables flow from high voltage
+negated, where a low voltage at the gate enables flow from high voltage
 to low voltage.
 
 ![A P-transistor](p-transistor.png)
 
-To clarify a potential confusion, in both N or P transistors, the arrow
+To clarify a potential confusion, in both N and P transistors, the arrow
 indicates the flow from the "source" to the "drain". However, in the
 case of an N transistor, the source is a low voltage (ground), whereas a
 P transistor has the high voltage (usually called "power" or VCC) as
@@ -201,24 +201,24 @@ label="fig:nand2"></span></p>
 <figcaption>Circuit using 4 transistors.</figcaption>
 </figure>
 
-First of all, a solid dot means there is connection at a junction.
-Otherwise, if two wires crosses without a solid dot, the wires are not
+First of all, a solid dot means there is a connection at a junction.
+Otherwise, if two wires cross without a solid dot, the wires are not
 connected. The input pins are square, indicating the voltage is to be
 specified by something else. The single output pin is circular,
 indicating the voltage is the result of whatever connects to it.
 
-There are four transistors, Q1 to Q4 in this circuit. Note how Q1 and Q2
+There are four transistors, Q1 to Q4, in this circuit. Note how Q1 and Q2
 are P transistors, while Q3 and Q4 are N transistors. Furthermore, the
 gates of Q1 and Q3 are connected to input X, while the gates of Q2 and
-Q4 are connected to input Y.
+Q4 is connected to input Y.
 
 Instead of actually quantifying X and Y in voltages, let's just assign a
-value of 1 to a high voltage, and a value of 0 to a low voltage. The
+value of 1 to a high voltage and a value of 0 to a low voltage. The
 same applies to the output and all the other "nodes" of this circuit. A
 "node" is a term that refers to all the wires that are electrically
-connected and therefore logically the same conductor.
+connected and, therefore, logically the same conductor.
 
-First of all, see how the arrows of Q1 and Q2 are in opposite direction
+First of all, see how the arrows of Q1 and Q2 are in opposite directions
 from those of Q3 and Q4? This is not a mistake. This is because in the
 case of a P transistor, the "source" is the high voltage end, whereas in
 the case of an N transistor, the "source" is the low voltage end. Also,
@@ -231,7 +231,7 @@ object all the way to the right) depending on the inputs X and Y.
 
 In the first case, let X and Y both be zeroes. This turns on both Q1 and
 Q2, connecting the output pin to the high voltage source. There is no
-path to connect to the low voltage source because Q3 and Q4 are both
+path to connect to the low-voltage source because Q3 and Q4 are both
 disabled (not connecting). This is illustrated in figure
 [2](#fig:2n2p00){reference-type="ref" reference="fig:2n2p00"}.
 
