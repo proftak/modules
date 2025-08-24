@@ -1,12 +1,12 @@
-# Knowledge File Creation Process (Generalized from Module 0012)
+# Knowledge File Creation Process
 
-This document describes the **generalized steps** to convert an instructional module (e.g., Module 0012: Variables, Assignment, and Sequences) into a **knowledge file** optimized for use in a custom GPT. The same steps can be applied to other content files.
+This document describes the **generalized steps** to convert an instructional module into a **knowledge file** optimized for use in a custom GPT. The same steps can be applied to other content files.
 
 ---
 
 ## 1. Extract the Source Content
 - Begin with the raw instructional module in Markdown (or plain text).
-- Identify the main **sections** and **subsections** (e.g., Variables, Assignment, Trace Tables).
+- Identify the main **sections** and **subsections**.
 
 ---
 
@@ -61,14 +61,7 @@ Each chunk should be structured as:
 
 ---
 
-## 6. Optimize for Both GPT and Humans (Optional)
-- If intended for both human readers and GPT:
-  - Keep metadata compact (or hide synonyms/hooks in HTML comments).
-  - Weave Q/A pairs into the narrative as “Check Your Understanding” sections.
-
----
-
-## 7. Export as Markdown
+## 6. Export as Markdown
 - Save the file as `Module_XXXX_KnowledgeFile.md`.
 - Upload to the custom GPT knowledge base.
 
@@ -83,7 +76,7 @@ A chunk from “Self-referencing assignment” looks like:
 **Intent:** Define self-referencing assignment; RHS uses the variable's current value.
 
 **Q/A Examples:**
-- **Q:** What is self-referencing assignment?  
+- **Q:** What is a self-referencing assignment?  
   **A:** It’s when the RHS of an assignment includes the LHS variable.
 
 **Synonyms:** augmented update, accumulate, running total, += equivalent
