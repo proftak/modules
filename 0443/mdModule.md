@@ -11,16 +11,45 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 # Operators and notations
 
 * $\boxed{a \in X}$ means $a$, as a value, is an element of set $X$. This is a boolean operator that can be evaluated to be true or false.
+  * Concept: "element of" as an operator that returns a boolean value.
+  * Concept level: foundational, all other set notations depend on this concept.
+  * Symbol: $\in$.
 * $a = b$ means that the value of $a$ and the value of $b$ are the same, hence interchangeable.
-* As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of a potentially complicated expression. The actual definition of $P(a)$ depends on the context. 
+  * Concept: "equal to" as an operator that returns a boolean value when two values or expressions can be used interchangeably.
+  * Concept level: foundational, many other set notations such as intersection, union, etc. depend on this concept.
+  * Symbol: $=$.
+* As a predicate, $P(a)$ is a function that returns a boolean (true/false) value, $a$ is the parameter, and $P$ is the name of the predicate. This is a useful notation that takes the place of a potentially complicated expression. The actual definition of $P(a)$ depends on the context.
+  * Concept: a predicate is a function that returns a boolean value.
+  * Concept level: abstraction notation, a predicate is a placeholder of some operation on some value that returns a boolean value. Predicates are useful in the discussion of quantifiers.
 * $\boxed{\forall e}(P(e))$ means "for every value $e$, $P(e)$ is true." This universally-quantified expression returns a boolean value.
+  * Concept: universal quantifier to quantify a statement being universally true.
+  * Concept level: an abstract concept that is needed to define set notations.
+  * Symbol: $\forall$
 * $\boxed{\exists e}(P(e))$ means "there is at least one value $e$ such that $P(e)$ is true." This existentially-quantified expression returns a boolean value.
+  * Concept: existential quantifier to quantify a statement being true for at least one "instance."
+  * Concept level: an abstract concept that is needed to define set notations.
+  * Symbol: $\exists$
 * $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
+  * Concept: intersection.
+  * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
+  * Symbol: $\cap$
 * $\forall e((e \in (\boxed{X \cup Y)}) \Leftrightarrow ((e \in X) \vee (e \in Y)))$ is *definitive*. $X \cup Y$ is the *union* of the sets $X$ and $Y$.
+  * Concept: union.
+  * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
+  * Symbol: $\cup$
 * $\forall e((e \in (\boxed{X - Y})) \Leftrightarrow ((e \in X) \wedge \neg(e \in Y)))$ is *definitive*. $X - Y$ is the *difference* of the sets $X$ and $Y$.
+  * Concept: difference.
+  * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
+  * Symbol: $-$
 * $\boxed{X \subseteq Y} \Leftrightarrow \forall e(((e \in X) \Rightarrow (e \in Y)))$ is *definitive*. $X \subseteq Y$ evaluates whether $X$ is a subset of $Y$, it says "every element $e$ in set $X$ is also in set $Y$."
+  * Concept: subset of.
+  * Concept level: a basic set operator that returns a boolean value. Dependent on boolean operators, element of, and quantifiers.
+  * Symbol: $\subseteq$
 * $\boxed{X \subset Y} \Leftrightarrow ((X \subseteq Y) \wedge (\exists e((e \in Y) \wedge \neg(e \in X))))$ is definitive. $X \subset Y$ evaluates whether $X$ is a *proper* subset of $Y$. There needs to be one element in $Y$ but not in $X$.
-* $\forall e((e \in \boxed{\\{e\|P(e)\\}}) \Leftrightarrow (P(e)))$ is *definitive*. This is a notation to describe the membership of a set with an infinite number of elements where $P$ is a predicate.
+  * Concept: (from here on, fill in these in your notes)
+  * Concept level:
+  * Symbol:
+* $\forall e((e \in \boxed{\\{e\|P(e)\\}}) \Leftrightarrow (P(e)))$ is *definitive*. This is a notation to describe the membership of a set with an infinite number of elements, where $P$ is a predicate.
 * To describe all the members of a set that has a finite number of elements:
   * The general BNF syntax is as follows: **\{** [ *`element`* \{ **,** *`element`* \}*] **\}**
     * Anything that is **bold** is a terminal; it should be a part of the expression verbatim.
