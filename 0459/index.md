@@ -206,7 +206,7 @@ In the creation of content that will serve as knowledge in a custom GPT, ChatGPT
 Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledge_File_Process_Guide) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval. The following is the raw Markdown version for copy and paste into ChatGPT:
 
 ```markdown
-{% include Knowledge_File_Process_Guide.md %}
+{% include_relative Knowledge_File_Process_Guide.md %}
 ```
 
 You can also use content converted from PDFs and other sources as the human-created content. [PDFToMarkdown](https://www.pdftomarkdown.co/) is a client-side converter. For video content, [Youtube Transcript](https://chromewebstore.google.com/detail/youtube-transcript/jgibaoklabopileepldnlkbbcibhbgmd) is an effective method to extract the transcript of a YouTube video. 
