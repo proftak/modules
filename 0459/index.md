@@ -199,8 +199,13 @@ Now convert our discussion title "Analogical rebuttal analysis" into a knowledge
 
 You may find a browser extension that allows you to copy a ChatGPT discussion/conversation in Markdown to be particularly useful. This allows you to paste the content of a discussion directly into a prompt for processing. The Chrome extension [ExportGPT](https://chatopenai.pro/exportgpt/) works well, even in the free version.
 
-Instead of using a ChatGPT discussion, you can also use the content converted from a PDF and other sources.
+# Resources
 
-# Knowledge file process guide
+In the creation of content that will serve as knowledge in a custom GPT, ChatGPT has generated this [general writing guide](General_Writing_Guide_Knowledge_files.md). 
 
-ChatGPT created a [knowledge file process guide](Knowledge_File_Process_Guide.md) to describe the steps to convert a human-created content file into a structured knowledge file that more suitable in a custom GPT.
+Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledg_File_Process_Guide.md) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval.
+
+Instead of using a ChatGPT discussion, you can also use content converted from PDFs and other sources. [PDFToMarkdown](https://www.pdftomarkdown.co/) is a client-side converter.
+
+
+
