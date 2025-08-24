@@ -201,9 +201,9 @@ You may find a browser extension that allows you to copy a ChatGPT discussion/co
 
 # Resources
 
-In the creation of content that will serve as knowledge in a custom GPT, ChatGPT has generated this [general writing guide](General_Writing_Guide_Knowledge_files.md). 
+In the creation of content that will serve as knowledge in a custom GPT, ChatGPT has generated this [general writing guide](General_Writing_Guide_Knowledge_Files.md). 
 
-Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledg_File_Process_Guide.md) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval.
+Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledge_File_Process_Guide.md) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval.
 
 Instead of using a ChatGPT discussion, you can also use content converted from PDFs and other sources. [PDFToMarkdown](https://www.pdftomarkdown.co/) is a client-side converter.
 
