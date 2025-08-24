@@ -45,11 +45,7 @@ There are several key points:
 
 In the creation of content that will serve as knowledge in a custom GPT, ChatGPT has generated this [general writing guide](General_Writing_Guide_Knowledge_Files). 
 
-Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledge_File_Process_Guide) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval. The following is the raw Markdown version for copy and paste into ChatGPT:
-
-```markdown
-{% include_relative Knowledge_File_Process_Guide.md %}
-```
+Once the human-created content is completed, ChatGPT has also generated a [processing guide](Knowledge_File_Process_Guide.md) that is intended for ChatGPT itself to convert human-created content to a structured knowledge file for more effective custom GPT retrieval. 
 
 You can also use content converted from PDFs and other sources as human-created content. 
 
