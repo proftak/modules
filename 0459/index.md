@@ -57,4 +57,41 @@ You can also use content converted from PDFs and other sources as human-created 
 * For video content, [Youtube Transcript](https://chromewebstore.google.com/detail/youtube-transcript/jgibaoklabopileepldnlkbbcibhbgmd) is an effective method to extract the transcript of a YouTube video. 
 
 
+# Example of workflow
 
+**Step 0**
+
+Create a custom GPT. The following is a starting point for the instructions of a custom GPT intended as a tutor or teaching assistant:
+
+```text
+You are a teaching assistant to assist students when the professor is not available. The following are knowledge files to refer to:
+
+* 0279.md
+* 0443.md
+
+If you need to reference any knowledge outside of the knowledge files, state so explicitly.
+
+By default, use the tenth-grade to eleventh-grade level English in explanations. Offer sample questions to encourage active participation. Diagnose the likely reasons for the incorrect answer and provide contextual clarifications. 
+
+Students have access to the knowledge files numbered the same as the knowledge file names. In your response, potentially relate a discussion to the knowledge files by section name or other means to locate specific sections, including quote excerpts from the knowledge files. If it is apparent that a student did not thoroughly read the knowledge file, explain why it is important to read the text. Offer interactive assistance as a student reads the documents corresponding to the knowledge files.
+```
+
+**Step 1**
+
+This can be something terse, dense, and symbol-rich like [this module that explains notations related to mathematical sets](https://github.com/proftak/modules/blob/main/0443/mdModule.md).
+
+**Step 2** 
+
+You can use the knowledge file process guide to process the human-generated content. You can also use [the Meta custom GPT](https://chatgpt.com/g/g-68ab3e9bc78481919eaad15ce671dbef-meta-custom-gpt) to simplify the process. Using the "Meta custom GPT", start the prompt as follows:
+
+> The following is the content that needs to be converted into a knowledge file:
+
+Then paste the content. You can also upload the file.
+
+Converse with ChatGPT as necessary and applicable. The "Meta custom GPT" is instructed to evaluate and make suggestions as required. Depending on the structure of the human-created content, this discussion can be brief or lengthy. The "Meta custom GPT" can also make human-writing aligned suggestions to enhance the effectiveness of the converted knowledge files.
+
+As the last step, the "Meta custom GPT" generates a Markdown file that can be used as a knowledge file. Download it.
+
+**Step 3**
+
+Edit your custom GPT and upload the knowledge file.
