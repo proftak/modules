@@ -33,7 +33,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Concept: existential quantifier to quantify a statement being true for at least one "instance."
   * Concept level: an abstract concept that is needed to define set notations.
   * Symbol: $\exists$
-  * Example: $\exists i(i \in \mathbb{Z \wedge i>0 \wedge i<1)$ is false.
+  * Example: $\exists i(i \in \mathbb{Z} \wedge i>0 \wedge i<1)$ is false.
 * $\forall e((e \in (\boxed{X \cap Y)}) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
   * Concept: intersection.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
