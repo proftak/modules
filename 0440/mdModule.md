@@ -97,7 +97,23 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 7. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
 8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
-Graphically, we can represent it as follows:
+Using plain text, the token expansion and structure of the sequence can be viewed as follows:
+
+```text
+
+friends
+├── friends
+│   ├── friends
+│   │   └── friend → "John"
+│   ├── "and"
+│   └── friend → "Ali"
+├── "and"
+└── friend → "Chang"
+
+```
+
+
+Graphically, we can represent the parsing of the input sequence as follows:
 
 ```mermaid
 flowchart LR
