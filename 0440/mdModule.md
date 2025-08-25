@@ -62,11 +62,14 @@ Let us examine the three meta syntax rules as examples. The production being exp
   * This format is more visual and is generally easier to read. However, it requires the ability to format and display boldface and italic fonts.
 * Using quotes: person ::= "Johnny"
   * This format is generally the best option if there is no way to format or display boldface and italic fonts. Because only terminals are quoted, meta symbols such as `::=` and `|` used in the meta syntax itself are clear.
-* Using brackets: <person> ::= Johnny
+* Using brackets: \<person\> ::= Johnny
   * This format can be more confusing because the terminals are not quoted. It becomes an issue if the syntax to be expressed uses symbols that are already being used in the meta syntax. For example, suppose the vertical bar `|` is also a terminal. In that case, there is no way to differentiate between the meta syntax use and being a terminal in the language being specified.
-* Using brackets for tokens and quoted terminals: <person> ::= "Johnny"
+  * This format can also be tricky to enter, depending on the editor and file format. Angle brackets are used in HTML, and by extension, Markdown. To display angle brackets, they need to be "escaped", which adds complexity.
+* Using brackets for tokens and quoted terminals: \<person\> ::= "Johnny"
   * This is a good combination of the two simple formats, plain text-friendly.
-  * The angle brackets `<` and `>` are not required in this case, but they provide a more visual cue to differentiate between a token and a terminal.
+  * This format has the same potential problem of needing to "escape" the angle brackets in HTML and Markdown.
+ 
+The reading modules of this class use the boldface and italic format. However, from a learner's perspective, it may be easier to use the quoted terminal method. Avoid the use of the angle bracket method.
 
 ### Repetition
 
