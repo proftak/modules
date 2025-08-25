@@ -50,7 +50,11 @@ In a way, you can see a token instance as a folder, whereas a terminal instance 
 
 Returning to a statement made earlier, the BNF that makes use of hyperlinks is easier to read because each token is a hyperlink to the rules that specify how that token can expand. Compared to using a lengthy table of productions and relying on human eyes to scan and locate productions based on the left-hand side of the `::=` symbol, hyperlinks are more interactive and easier to apply.
 
+### Alternative BNF meta syntax
+
 Depending on the medium (file format), italic and boldface may not be viable options. This is especially the case when syntax needs to be described in a plain-text file. In this case, the convention is that quotes enclose terminals, whereas tokens appear without special punctuation marks.
+
+Another plain-text BNF represents tokens using the `<` and `>` symbols to enclose the token identifier; terminals are unmarked. 
 
 ### Repetition
 
