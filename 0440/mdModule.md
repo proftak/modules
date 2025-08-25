@@ -69,13 +69,15 @@ This shows that there are two alternatives to expand a `statement-seq` token:
 * *`statement`*: the first alternative is a simpler token, a single statement.
 * *`statement-seq statement`*: the second alternative specifies a statement sequence, followed by a single statement.
 
+When a token can expand to a sequence that includes one or more instances of itself, the definition is "recursive." On the other hand, if a token can only expand to terminals, it is called a "base case." A recursive production (syntax rule) is what allows input sequences that may contain pattern repetitions.
+
 ### An example
 
 Let us consider an example that does not relate to a complex programming language. For brevity, we will use the following notation:
 
 *`token1`* ::= *`token2`* **blah**
 
-The above example is a rule to expand *`token1`* to *`token2`* followed by the word "blah" verbatim. You can consider the symbol ::= to mean "can expand to".
+The above example is a rule to expand *`token1`* to *`token2`* followed by the word "blah" verbatim. You can consider the symbol `::=` to mean "can expand to".
 
 With this notation, we now define the following rules:
 
@@ -85,23 +87,24 @@ With this notation, we now define the following rules:
 * R4: *`friends`* ::= *`friend`*
 * R5: *`friends`* ::= *`friends`* **and** *`friend`*
 
-Note that R1, R2, and R3 are alternatives to expand *`friend`*, while R4 and R5 are alternatives to expand *`friends`*. A more concise way to represent the same set of rules is as follows:
+Note that R1, R2, and R3 are alternatives to expand *`friend`*, they are all base cases. R4 and R5 are alternatives to expand *`friends`*. R5 specifies that the token *`friends`* expands to a sequence that has another *`friends`* token instance, therefore R5 is "recusive." A more concise way to represent the same set of rules is as follows:
 
 * *`friend`* ::= **Ali** \| **John** \| **Chang**
 * *`friends`* ::= *`friend`* \| *`friends`* **and** *`friend`*
 
-In the concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the "::=" symbol. 
+In this concise representation, the vertical bar symbol `|` is used to separate the alternatives to expand the token on the left-hand side of the "::=" symbol. While more concise, this syntax specification does not identify the individual productions R1 to R5.
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
-1. After processing the word "John", R2 fires and recognizes that this is a token *`friend`*.
+1. After processing the word "John", R2 fires and recognizes that this is a token *`friend`*. In the parsing of an input sequence, a rule "fires" means the right-hand side of the rule (to the right of `::=`) is recognized, and the recognized part of the sequence is now considered to be a token instance of the left-hand side (to the left of `::=`) of the production.
 2. R4 can also now fire and recognize that we also have a *`friends`* token.
-3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token.
+3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token in order for R5 to fire.
 4. The next word is "Ali", R1 fires, recognizing it matches the *`friend`* token.
-5. R5 now completes its firing because there is a *`friends`* token recognized in step 2, a verbatim "and", and a *`friend`* token recognized in step 4. As R5 fires, now we have a *new* *`friends`* token recognized for the partial text of "John and Ali".
-6. The next word is "and", R5 is a candidate to fire, we need another *`friend`* token.
-7. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
-8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
+5. At this point, we have a token instance of *`friends`* representing "John" in the input sequence, the terminal "and" is after this *`friends`* token instance, and we have a `*friend`* token instance representing "Ali" in the input sequence.
+6. R5 now completes its firing because there is a *`friends`* token recognized in step 2, a verbatim "and", and a *`friend`* token recognized in step 4. As R5 fires, now we have a *new* *`friends`* token instance recognized for the partial text of "John and Ali".
+7. The next word is "and", R5 is a candidate to fire, we need another *`friend`* token.
+8. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
+9. R5 now completes its *second* firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
 Using plain text, the token expansion and structure of the sequence can be viewed as follows:
 
