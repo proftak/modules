@@ -73,6 +73,8 @@ When a token can expand to a sequence that includes one or more instances of its
 
 ### An example
 
+#### The productions
+
 Let us consider an example that does not relate to a complex programming language. For brevity, we will use the following notation:
 
 *`token1`* ::= *`token2`* **blah**
@@ -96,6 +98,8 @@ In this concise representation, the vertical bar symbol `|` is used to separate 
 
 Let us consider how the sentence "John and Ali and Chang" is considered syntactically correct as the token *`friends`*.
 
+#### The steps
+
 1. After processing the word "John", R2 fires and recognizes that this is a token *`friend`*. In the parsing of an input sequence, a rule "fires" means the right-hand side of the rule (to the right of `::=`) is recognized, and the recognized part of the sequence is now considered to be a token instance of the left-hand side (to the left of `::=`) of the production.
 2. R4 can also now fire and recognize that we also have a *`friends`* token.
 3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token in order for R5 to fire.
@@ -105,6 +109,8 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 7. The next word is "and", R5 is a candidate to fire, we need another *`friend`* token.
 8. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
 9. R5 now completes its *second* firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
+
+#### Plain text syntax tree
 
 Using plain text, the token expansion and structure (also known as a syntax tree) of the sequence can be viewed as follows:
 
@@ -121,9 +127,11 @@ friends
 
 ```
 
+#### Simple text syntax tree
+
 This plain text "graphical" representation relies on the use of "box" characters. The following "simple text syntax tree" is an alternative method to show the hierarchy of token instances.
 
-`friend("John")` represents that the sequence "John" is recognized as an instance of the *`friend`* token. Likewise, `friends(friend("john"))` shows the hierarchy that a *`friend`* token expands to a *`friend`* token (as per rule R4), the *`friend`* token, in return, expands to the terminal **John**. As a result, the above diagram using box characters can be represented using only simpler ASCII text as follows:
+`friend("John")` represents that the sequence "John" is recognized as an instance of the *`friend`* token. Likewise, `friends(friend("john"))` shows the hierarchy that a *`friends`* token expands to a *`friend`* token (as per rule R4), the *`friend`* token, in return, expands to the terminal **John** as per rule R2. As a result, the above diagram using box characters can be represented as the following "simple text syntax tree":
 
 ```c
 friends(  friends(  friends(friend("John")), "and", friend("Ali") ), "and", friend("Chang") )
@@ -142,6 +150,8 @@ friends(
   friend("Chang")
 )
 ```
+
+#### Parsing graph
 
 Graphically, we can represent the parsing of the input sequence as follows:
 
