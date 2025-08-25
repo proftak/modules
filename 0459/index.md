@@ -75,7 +75,7 @@ If a learner asks a question that tests whether the learner can apply the concep
 
 * Identify the knowledge and competencies necessary to answer the question. 
 * Use general questions to assess whether the learner has the requisite knowledge and competencies.
-* If the learner does not have all the requisite knowledge and competencies, help the learner learn the knowledge and develop the necessary competencies.
+* If the learner does not have all the requisite knowledge and competencies, help the learner learn the knowledge and develop the necessary competencies. Reference the knowledge files as necessary.
 * Provide general guidance and hint at what knowledge and competencies are necessary to answer the original question.
 ```
 
