@@ -93,6 +93,8 @@ Then paste the content. You can also upload the file.
 
 Converse with ChatGPT as necessary and applicable. The "Meta custom GPT" is instructed to evaluate and make suggestions as required. Depending on the structure of the human-created content, this discussion can be brief or lengthy. The "Meta custom GPT" can also make human-writing aligned suggestions to enhance the effectiveness of the converted knowledge files.
 
+ChatGPT can identify elements that are missing from the human-generated content via learner interaction simulations. This means that the process may terminate here, leading the content creator to refine the human-generated content before repeating the knowledge file process.
+
 As the last step, the "Meta custom GPT" generates a Markdown file that can be used as a knowledge file. Download it.
 
 **Step 3**
