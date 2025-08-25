@@ -56,6 +56,18 @@ Depending on the medium (file format), italic and boldface may not be viable opt
 
 Another plain-text BNF represents tokens using the `<` and `>` symbols to enclose the token identifier; terminals are unmarked. 
 
+Let us examine the three meta syntax rules as examples. The production being expressed is that the terminal "Johnny" can be parsed as a "person" token.
+
+* Using boldface and italic: *`person`* ::= **Johnny**
+  * This format is more visual and is generally easier to read. However, it requires the ability to format and display boldface and italic fonts.
+* Using quotes: person ::= "Johnny"
+  * This format is generally the best option if there is no way to format or display boldface and italic fonts. Because only terminals are quoted, meta symbols such as `::=` and `|` used in the meta syntax itself are clear.
+* Using brackets: <person> ::= Johnny
+  * This format can be more confusing because the terminals are not quoted. It becomes an issue if the syntax to be expressed uses symbols that are already being used in the meta syntax. For example, suppose the vertical bar `|` is also a terminal. In that case, there is no way to differentiate between the meta syntax use and being a terminal in the language being specified.
+* Using brackets for tokens and quoted terminals: <person> ::= "Johnny"
+  * This is a good combination of the two simple formats, plain text-friendly.
+  * The angle brackets `<` and `>` are not required in this case, but they provide a more visual cue to differentiate between a token and a terminal.
+
 ### Repetition
 
 BNF can be used to express the repetition of a pattern. Let us consider the syntactic rule of a `statement-seq` (statement sequence):
