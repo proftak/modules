@@ -46,6 +46,8 @@ In this syntactic rule, the token *`iteration-statement`* has four alternative e
 
 Essentially, a token (italicized and not boldfaced) is a placeholder. A placeholder can hold the place (a position in a sequence) of nothing or many components. A boldfaced item is also known as a "terminal", a terminal specifies the text expected verbatim.
 
+In a way, you can see a token instance as a folder, whereas a terminal instance is a file. This analogy cannot capture the sequencing of tokens and terminals in the expansion of a token. However, the folder/file analogy does capture the concept of hierarchy. 
+
 Returning to a statement made earlier, the BNF that makes use of hyperlinks is easier to read because each token is a hyperlink to the rules that specify how that token can expand. Compared to using a lengthy table of productions and relying on human eyes to scan and locate productions based on the left-hand side of the `::=` symbol, hyperlinks are more interactive and easier to apply.
 
 Depending on the medium (file format), italic and boldface may not be viable options. This is especially the case when syntax needs to be described in a plain-text file. In this case, the convention is that quotes enclose terminals, whereas tokens appear without special punctuation marks.
