@@ -11,11 +11,21 @@ title: "Module 0440: Syntax and the Syntax to Describe Syntax"
 * How is this done?
   * This is accomplished by using a *meta* syntax language.
  
+# Syntax
+
+Syntax is grammar for programming languages. The importance of syntax is the same as grammar for natural languages: it facilitates the proper parsing and understanding of program code.
+
+Unlike natural languages, however, programming languages have *relatively* simple rules. This may make it seem easy to learn a programming language. The difficulty of learning and using a programming language is that the computer needs a program to match the syntax *exactly* to be understood. In the case of two humans talking in a natural language, many minor grammatical mistakes do not significantly impede communication.
+
+As a result, the syntax of a programming language needs to be specified with precision. 
+
 # Meta syntax
 
-The syntax of a programming language is like the grammatical rules of the programming language. These rules are often specified by some form of meta syntax. One commonly used meta syntax is called [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) (Backus-Naur form). 
+The syntax of a programming language is like the grammar of the programming language. Some form of meta syntax often specifies these rules. The word "meta" in this context means "one level more abstract", derived from the Greek word that means "beyond." In other words, meta syntax specifies the rules of the syntax of a language that describes the syntax of a programming language. The syntax of a programming language specifies what constitutes the correct ordering and *structuring* of code.
 
-The syntax of C++ is intermediate compared to other programming languages. A plain BNF description of C++ can be difficult to follow. However, a BNF description that makes use of hyperlinks is considerably easier to follow. Fortunately, Alessio Marchetti has already created a [hyperlinked BNF description of the syntax of C++](https://alx71hub.github.io/hcb/).
+One commonly used meta syntax is called [BNF](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) (Backus-Naur form). 
+
+The syntax of C++ is intermediate compared to other programming languages. A plain BNF description of C++ can be difficult to follow. However, a BNF description that makes use of hyperlinks is considerably easier to follow for reasons that will be discussed later. Fortunately, Alessio Marchetti has already created a [hyperlinked BNF description of the syntax of C++](https://alx71hub.github.io/hcb/).
 
 ## How to read the BNF notation
 
@@ -36,7 +46,9 @@ In this syntactic rule, the token *`iteration-statement`* has four alternative e
 
 Essentially, a token (italicized and not boldfaced) is a placeholder. A placeholder can hold the place (a position in a sequence) of nothing or many components. A boldfaced item is also known as a "terminal", a terminal specifies the text expected verbatim.
 
-Depending on the medium, italic and boldface may not be viable options. This is especially the case when syntax needs to be described in a plain-text file. In this case, the convention is that quotes enclose terminals, whereas tokens appear without special punctuation marks.
+Returning to a statement made earlier, the BNF that makes use of hyperlinks is easier to read because each token is a hyperlink to the rules that specify how that token can expand. Compared to using a lengthy table of productions and relying on human eyes to scan and locate productions based on the left-hand side of the `::=` symbol, hyperlinks are more interactive and easier to apply.
+
+Depending on the medium (file format), italic and boldface may not be viable options. This is especially the case when syntax needs to be described in a plain-text file. In this case, the convention is that quotes enclose terminals, whereas tokens appear without special punctuation marks.
 
 ### Repetition
 
@@ -59,7 +71,7 @@ Let us consider an example that does not relate to a complex programming languag
 
 The above example is a rule to expand *`token1`* to *`token2`* followed by the word "blah" verbatim. You can consider the symbol ::= to mean "can expand to".
 
-With this notation, now we define the following rules:
+With this notation, we now define the following rules:
 
 * R1: *`friend`* ::= **Ali**
 * R2: *`friend`* ::= **John**
@@ -81,7 +93,7 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token.
 4. The next word is "Ali", R1 fires, recognizing it matches the *`friend`* token.
 5. R5 now completes its firing because there is a *`friends`* token recognized in step 2, a verbatim "and", and a *`friend`* token recognized in step 4. As R5 fires, now we have a *new* *`friends`* token recognized for the partial text of "John and Ali".
-6. The next word is "and", R5 is a candidate to fire, we we need another *`friend`* token.
+6. The next word is "and", R5 is a candidate to fire, we need another *`friend`* token.
 7. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
 8. R5 now completes its firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
