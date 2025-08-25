@@ -69,7 +69,7 @@ This shows that there are two alternatives to expand a `statement-seq` token:
 * *`statement`*: the first alternative is a simpler token, a single statement.
 * *`statement-seq statement`*: the second alternative specifies a statement sequence, followed by a single statement.
 
-When a token can expand to a sequence that includes one or more instances of itself, the definition is "recursive." On the other hand, if a token can only expand to terminals, it is called a "base case." A recursive production (syntax rule) is what allows input sequences that may contain pattern repetitions.
+When a token can expand to a sequence that includes one or more instances of itself, the definition is "recursive." On the other hand, if a token can only expand to terminals or other tokens, it is called a "base case." There are complicated cases of indirect recursive definitions where the recursive inclusion of the token being expanded is not in a single production, but indirectly through the expansion of multiple productions. A recursive production (syntax rule) is what allows input sequences that may contain pattern repetitions.
 
 ### An example
 
