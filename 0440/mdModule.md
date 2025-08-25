@@ -106,7 +106,7 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 8. The next word is "Chang", R3 fires, we just recognized another *`friend`* token.
 9. R5 now completes its *second* firing because there is a *`friends`* token (corresponding to "John and Ali"), a verbatim word "and", and also a *`friend`* token corresponding to "Chang". We now have another *`friends`* token recognized to represent the entire text of "John and Ali and Chang".
 
-Using plain text, the token expansion and structure of the sequence can be viewed as follows:
+Using plain text, the token expansion and structure (also known as a syntax tree) of the sequence can be viewed as follows:
 
 ```text
 
@@ -121,6 +121,27 @@ friends
 
 ```
 
+This plain text "graphical" representation relies on the use of "box" characters. The following "simple text syntax tree" is an alternative method to show the hierarchy of token instances.
+
+`friend("John")` represents that the sequence "John" is recognized as an instance of the *`friend`* token. Likewise, `friends(friend("john"))` shows the hierarchy that a *`friend`* token expands to a *`friend`* token (as per rule R4), the *`friend`* token, in return, expands to the terminal **John**. As a result, the above diagram using box characters can be represented using only simpler ASCII text as follows:
+
+```c
+friends(  friends(  friends(friend("John")), "and", friend("Ali") ), "and", friend("Chang") )
+```
+
+This representation can be broken into multiple lines with indentation for clarity:
+
+```c
+friends(
+  friends(
+    friends(friend("John")),
+    "and",
+    friend("Ali")
+  ),
+  "and",
+  friend("Chang")
+)
+```
 
 Graphically, we can represent the parsing of the input sequence as follows:
 
