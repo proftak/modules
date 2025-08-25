@@ -99,7 +99,7 @@ Let us consider how the sentence "John and Ali and Chang" is considered syntacti
 1. After processing the word "John", R2 fires and recognizes that this is a token *`friend`*. In the parsing of an input sequence, a rule "fires" means the right-hand side of the rule (to the right of `::=`) is recognized, and the recognized part of the sequence is now considered to be a token instance of the left-hand side (to the left of `::=`) of the production.
 2. R4 can also now fire and recognize that we also have a *`friends`* token.
 3. The next word is "and", R5 is a *candidate* to fire, but we need another *`friend`* token in order for R5 to fire.
-4. The next word is "Ali", R1 fires, recognizing it matches the *`friend`* token.
+4. The next word is "Ali", R1 fires, recognizing "Ali" matches the *`friend`* token.
 5. At this point, we have a token instance of *`friends`* representing "John" in the input sequence, the terminal "and" is after this *`friends`* token instance, and we have a `*friend`* token instance representing "Ali" in the input sequence.
 6. R5 now completes its firing because there is a *`friends`* token recognized in step 2, a verbatim "and", and a *`friend`* token recognized in step 4. As R5 fires, now we have a *new* *`friends`* token instance recognized for the partial text of "John and Ali".
 7. The next word is "and", R5 is a candidate to fire, we need another *`friend`* token.
