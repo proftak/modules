@@ -229,30 +229,10 @@ The truth table of equivalence is as follows:
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $((q) \Rightarrow (r)) \wedge (p)$?
+What is the truth table of the expression $(q) \vee ((p) \Rightarrow (\neg (r)))$?
 </summary>
 
-|$p$|$q$|$r$|$((q) \Rightarrow (r)) \wedge (p)$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|0|
-|0|1|0|0|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|1|
-|1|1|0|0|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((r) \wedge (p)) \Rightarrow (q)$?
-</summary>
-
-|$p$|$q$|$r$|$((r) \wedge (p)) \Rightarrow (q)$|
+|$p$|$q$|$r$|$(q) \vee ((p) \Rightarrow (\neg (r)))$|
 |-|-|-|-|
 |0|0|0|1|
 |0|0|1|1|
@@ -269,137 +249,17 @@ What is the truth table of the expression $((r) \wedge (p)) \Rightarrow (q)$?
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $(q) \Leftrightarrow ((r) \wedge (p))$?
+What is the truth table of the expression $((p) \Rightarrow (\neg (r))) \Leftrightarrow (q)$?
 </summary>
 
-|$p$|$q$|$r$|$(q) \Leftrightarrow ((r) \wedge (p))$|
+|$p$|$q$|$r$|$((p) \Rightarrow (\neg (r))) \Leftrightarrow (q)$|
 |-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|0|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|0|
-|1|1|0|0|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(p) \Rightarrow ((q) \Leftrightarrow (r))$?
-</summary>
-
-|$p$|$q$|$r$|$(p) \Rightarrow ((q) \Leftrightarrow (r))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|1|
-|1|0|0|1|
-|1|0|1|0|
-|1|1|0|0|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(r) \vee ((p) \Rightarrow (q))$?
-</summary>
-
-|$p$|$q$|$r$|$(r) \vee ((p) \Rightarrow (q))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
+|0|0|0|0|
+|0|0|1|0|
 |0|1|0|1|
 |0|1|1|1|
 |1|0|0|0|
 |1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(\neg ((r) \Leftrightarrow (q))) \vee (p)$?
-</summary>
-
-|$p$|$q$|$r$|$(\neg ((r) \Leftrightarrow (q))) \vee (p)$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((p) \vee (r)) \Rightarrow (q)$?
-</summary>
-
-|$p$|$q$|$r$|$((p) \vee (r)) \Rightarrow (q)$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|0|
-|0|1|0|1|
-|0|1|1|1|
-|1|0|0|0|
-|1|0|1|0|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(q) \Rightarrow ((r) \Leftrightarrow (p))$?
-</summary>
-
-|$p$|$q$|$r$|$(q) \Rightarrow ((r) \Leftrightarrow (p))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|1|
-|1|1|0|0|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(r) \Leftrightarrow (\neg ((p) \vee (q)))$?
-</summary>
-
-|$p$|$q$|$r$|$(r) \Leftrightarrow (\neg ((p) \vee (q)))$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|0|
 |1|1|0|1|
 |1|1|1|0|
 
@@ -409,18 +269,18 @@ What is the truth table of the expression $(r) \Leftrightarrow (\neg ((p) \vee (
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $((q) \wedge (r)) \Leftrightarrow (p)$?
+What is the truth table of the expression $(p) \Leftrightarrow ((r) \vee (q))$?
 </summary>
 
-|$p$|$q$|$r$|$((q) \wedge (r)) \Leftrightarrow (p)$|
+|$p$|$q$|$r$|$(p) \Leftrightarrow ((r) \vee (q))$|
 |-|-|-|-|
 |0|0|0|1|
-|0|0|1|1|
-|0|1|0|1|
+|0|0|1|0|
+|0|1|0|0|
 |0|1|1|0|
 |1|0|0|0|
-|1|0|1|0|
-|1|1|0|0|
+|1|0|1|1|
+|1|1|0|1|
 |1|1|1|1|
 
 </details>
@@ -429,15 +289,35 @@ What is the truth table of the expression $((q) \wedge (r)) \Leftrightarrow (p)$
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $((\neg (q)) \vee (p)) \Leftrightarrow (r)$?
+What is the truth table of the expression $((r) \Leftrightarrow (q)) \Rightarrow (\neg (p))$?
 </summary>
 
-|$p$|$q$|$r$|$((\neg (q)) \vee (p)) \Leftrightarrow (r)$|
+|$p$|$q$|$r$|$((r) \Leftrightarrow (q)) \Rightarrow (\neg (p))$|
+|-|-|-|-|
+|0|0|0|1|
+|0|0|1|1|
+|0|1|0|1|
+|0|1|1|1|
+|1|0|0|0|
+|1|0|1|1|
+|1|1|0|1|
+|1|1|1|0|
+
+</details>
+
+
+
+<details markdown=1>
+<summary markdown=1> 
+What is the truth table of the expression $((q) \vee (p)) \wedge (r)$?
+</summary>
+
+|$p$|$q$|$r$|$((q) \vee (p)) \wedge (r)$|
 |-|-|-|-|
 |0|0|0|0|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|0|
+|0|0|1|0|
+|0|1|0|0|
+|0|1|1|1|
 |1|0|0|0|
 |1|0|1|1|
 |1|1|0|0|
@@ -449,50 +329,10 @@ What is the truth table of the expression $((\neg (q)) \vee (p)) \Leftrightarrow
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $(r) \vee ((q) \Rightarrow (p))$?
+What is the truth table of the expression $((r) \Rightarrow (p)) \Leftrightarrow (\neg (q))$?
 </summary>
 
-|$p$|$q$|$r$|$(r) \vee ((q) \Rightarrow (p))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|0|
-|0|1|1|1|
-|1|0|0|1|
-|1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((q) \Rightarrow (p)) \vee (\neg (r))$?
-</summary>
-
-|$p$|$q$|$r$|$((q) \Rightarrow (p)) \vee (\neg (r))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|1|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((r) \wedge (\neg (p))) \Leftrightarrow (q)$?
-</summary>
-
-|$p$|$q$|$r$|$((r) \wedge (\neg (p))) \Leftrightarrow (q)$|
+|$p$|$q$|$r$|$((r) \Rightarrow (p)) \Leftrightarrow (\neg (q))$|
 |-|-|-|-|
 |0|0|0|1|
 |0|0|1|0|
@@ -507,100 +347,21 @@ What is the truth table of the expression $((r) \wedge (\neg (p))) \Leftrightarr
 
 
 
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(p) \wedge (\neg ((q) \Rightarrow (r)))$?
-</summary>
-
-|$p$|$q$|$r$|$(p) \wedge (\neg ((q) \Rightarrow (r)))$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|0|
-|0|1|0|0|
-|0|1|1|0|
-|1|0|0|0|
-|1|0|1|0|
-|1|1|0|1|
-|1|1|1|0|
-
-</details>
-
-
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $(q) \vee ((r) \wedge (p))$?
+What is the truth table of the expression $((q) \Leftrightarrow (r)) \vee (p)$?
 </summary>
 
-|$p$|$q$|$r$|$(q) \vee ((r) \wedge (p))$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|0|
-|0|1|0|1|
-|0|1|1|1|
-|1|0|0|0|
-|1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((q) \Leftrightarrow (p)) \vee (r)$?
-</summary>
-
-|$p$|$q$|$r$|$((q) \Leftrightarrow (p)) \vee (r)$|
+|$p$|$q$|$r$|$((q) \Leftrightarrow (r)) \vee (p)$|
 |-|-|-|-|
 |0|0|0|1|
-|0|0|1|1|
+|0|0|1|0|
 |0|1|0|0|
-|0|1|1|1|
-|1|0|0|0|
-|1|0|1|1|
-|1|1|0|1|
-|1|1|1|1|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $(q) \Rightarrow (\neg ((p) \wedge (r)))$?
-</summary>
-
-|$p$|$q$|$r$|$(q) \Rightarrow (\neg ((p) \wedge (r)))$|
-|-|-|-|-|
-|0|0|0|1|
-|0|0|1|1|
-|0|1|0|1|
 |0|1|1|1|
 |1|0|0|1|
 |1|0|1|1|
 |1|1|0|1|
-|1|1|1|0|
-
-</details>
-
-
-
-<details markdown=1>
-<summary markdown=1> 
-What is the truth table of the expression $((r) \Rightarrow (q)) \Leftrightarrow (p)$?
-</summary>
-
-|$p$|$q$|$r$|$((r) \Rightarrow (q)) \Leftrightarrow (p)$|
-|-|-|-|-|
-|0|0|0|0|
-|0|0|1|1|
-|0|1|0|0|
-|0|1|1|0|
-|1|0|0|1|
-|1|0|1|0|
-|1|1|0|1|
 |1|1|1|1|
 
 </details>
@@ -609,18 +370,20 @@ What is the truth table of the expression $((r) \Rightarrow (q)) \Leftrightarrow
 
 <details markdown=1>
 <summary markdown=1> 
-What is the truth table of the expression $((p) \Rightarrow (q)) \vee (r)$?
+What is the truth table of the expression $(p) \vee ((q) \Rightarrow (r))$?
 </summary>
 
-|$p$|$q$|$r$|$((p) \Rightarrow (q)) \vee (r)$|
+|$p$|$q$|$r$|$(p) \vee ((q) \Rightarrow (r))$|
 |-|-|-|-|
 |0|0|0|1|
 |0|0|1|1|
-|0|1|0|1|
+|0|1|0|0|
 |0|1|1|1|
-|1|0|0|0|
+|1|0|0|1|
 |1|0|1|1|
 |1|1|0|1|
 |1|1|1|1|
 
 </details>
+
+
