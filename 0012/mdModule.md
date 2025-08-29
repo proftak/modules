@@ -22,6 +22,22 @@ to perform for you. Here is the task:
 This is a simple example, yet it illustrates some algorithm concepts.
 Let's see what kind of concepts are illustrated.
 
+# Another example
+
+A variable is essentially a placeholder when specifying an action to perform or a condition to evaluate. This makes it possible to generalize a concrete description to one that can be applied more generally.
+
+A concrete example: I have US$50 in a savings account at the beginning of the year. Based on an annual interest rate of 2%, I will have a $1 return at the end of the year.
+
+A more general statement: Based on an annual interest rate of 2%, I will have whatever amount of money I have at the beginning of the year times 2% return at the end of the year.
+
+An even more general statement: I will have whatever amount of money I have at the beginning of the year times the annual interest rate of return at the end of the year.
+
+The phrase "whatever amount of money I have at the beginning of the year", "annual interest", and "return at the end of the year" are placeholders. The first two serve as inputs to the rule, while the third is an output to capture the result of the calculation. In programming, the name of a variable can be arbitrarily long or short. Furthermore, in programming, the definition and references of a variable must match exactly. 
+
+In contrast, in a conversation, the use of a placeholder is often more vague, especially when demonstrative pronouns and adjectives are utilized. The words "this" and "that" are demonstrative pronouns when used by themselves, as in "multiply that by the annual interest rate." The same words can also be used as adjectives when combined with a noun, such as "multiply that balance by the annual interest rate."
+
+**AI-related statement:** The use of demonstrative pronouns and pronouns, in general, leads to confusion because sometimes they are not sufficient to fully resolve what object is being referenced. This is the reason why the definition and subsequent references of variables in programming are exact. This is also why "vibe coding" is not effective. In cases where a pronoun is insufficient to resolve the object being referenced, a human will notice the situation and ask for clarification. An AI tool may make an unannounced assumption, leading the generated program to deviate from what the "vibe coder" intends.
+
 # Variable
 
 A "variable", as the name implies, is an object that can hold a value,
