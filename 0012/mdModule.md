@@ -26,7 +26,7 @@ Let's see what kind of concepts are illustrated.
 
 A variable is essentially a placeholder when specifying an action to perform or a condition to evaluate. This makes it possible to generalize a concrete description to one that can be applied more generally.
 
-A concrete example: I have US$50 in a savings account at the beginning of the year. Based on an annual interest rate of 2%, I will have a $1 return at the end of the year.
+A concrete example: I have US\$50 in a savings account at the beginning of the year. Based on an annual interest rate of 2%, I will have a \$1 return at the end of the year.
 
 A more general statement: Based on an annual interest rate of 2%, I will have whatever amount of money I have at the beginning of the year times 2% return at the end of the year.
 
