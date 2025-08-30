@@ -2,36 +2,98 @@
 title: "Module 0460: A Quick Guide to Update a Curriculum"
 ---
 
-# Explanation
+# Structure of a curriculum
 
-## For new courses
+The following outlines the structure of a curriculum. Because the formatting does not use headers, it can be difficult to mechanically structure a curriculum. The output of a curriculum uses boldface, the horizontal ruler, and other non-structural formatting. The first task to prepare a curriculum for mechanical processing is to parse the content as output into the hierarchical structure.
+
+The following is a structure outline of a curriculum:
+
+* Section 1: Curriculum Cycle Information
+  * Course
+  * Proposal Type
+  * Faculty Initiator
+  * Outline Status
+  * Last Full Review
+  * Last Curriculum Action
+  * Official
+* Section 2: Submission Information
+  * Proposal
+  * Revised item
+  * Explanation
+* Section 3: Basic Course Information
+  * Identifier
+  * Title
+  * Units
+  * Prerequisite
+  * Hours
+  * Description
+* Section 4: Learning Outcomes and Objectives
+* Section 5: Course Topics
+* Section 6: Methods of Instruction
+* Section 7: Typical Student Assignments
+* Section 8: Evaluation and Assessment Methods
+* Section 9: Distance Education
+  * Percentage
+* Section 10: Representative List of Textbooks
+* Section 11: Additional Course Information
+  * Faculty Discipline(s)
+  * Short Title for Transcripts
+  * Type of Grading
+  * Times Taken for Credit
+  * Enrollment Family
+  * Cross-Listed Courses
+  * Taxonomy of Programs (TOP) Code
+  * Student Accountability Model (SAM) Code
+* Section 12: Prerequisite Justification
+  * Prerequisite or Corequisite for each prerequisite or corequisite
+  * Justification  
+* Section 13: Relationship to College Programs
+  * Need/Purpose for the Course
+  * Degrees and Certificates
+  * Prerequisite To
+  * Corequisite To
+  * Advisory To
+  * Embedded in Descriptions
+* Section 14: Course Identification (C-ID) Number
+* Section 15: Relationship to Transfer Institutions
+  * Transfer: CSU
+  * Transfer: UC
+* Digital Signatures
+
+# Sections of a curriculum
+
+This part contains specific instructions, criteria and examples of each section as previously mentioned.
+
+## Explanation
+
+### For new courses
 
 The explanation should describe what the course covers and how it benefits students. Typically, the explanation is identical to the Need/Purpose in the Relationship to the College section. If extra context is added for the initial creation, be sure the long-term Need/Purpose is also included. The more specific the better. 
 
-## For 6-year review proceess revisions
+### For 6-year review proceess revisions
 
 you can use this standard catchall, "This proposal updates the course outline to current curriculum standards and practices." You can also describe in detail what you changed and why.
 For off-cycle revisions: please describe the revisions done and the general reasons for those changes or the specific reasons for each change, whichever best suits your needs. 
 
-## For deletions
+### For deletions
 
 The standard explanation is, "Upon review, the department has determined that this course no longer meets the needs of our students." You can use this or a more specific explanation.
 
-# Description
+## Description
 
 The catalog description should be written in the present tense, using complete sentences, and for an audience of students interested in taking courses at this level but with little knowledge of the discipline. It should describe what the course covers.
 Spell out any acronyms the first time you use them. Avoid repetition, when possible. Avoid marketing pitches. However, you can speak directly to students, using the phrase, “Students develop skills in …” or similar sentences. 
 Be sure to inform students if field trips are involved, if the course is repeatable, if there are TBA hours in the course, if the course is limited to only certain students, and if the course is Pass/No Pass only.
 Developers use "This course...", "It covers...", "It emphasizes...", and "Topics include..." at the beginning of sentences. Using “Students develop/learn/refine” is increasingly common.
 
-# Learning Outcomes and Objectives
+## Learning Outcomes and Objectives
 
 learning outcomes complete the following sentence: "Upon completion of this course, the student will be able to..."
 each SLO should begin with a lowercase letter and end with a period.
 learning outcomes should be measurable or demonstrable and should involve critical thinking.
 for transfer‐level courses (numbered 300 or higher), the majority of course objectives should begin with verbs from the Evaluation, Synthesis, and Analysis areas of the Bloom's taxonomy chart. However, please keep in mind that the verbs should be used accurately with students in mind.
 
-# Course Topics
+## Course Topics
 
 1. Topics should not be a review of previous courses in a series.
 2. This section should contain a list of the topics covered in the course. It should provide sufficient detail that a new instructor, unfamiliar with the course, can get a good sense of how to teach it for the first time.
@@ -43,13 +105,13 @@ for transfer‐level courses (numbered 300 or higher), the majority of course ob
 
 For transferable courses (300/400 level) that have both lecture and lab components, the committee’s policy is that lecture and lab topics should not be on the same line. Each line should be either all lecture topics or all lab topics. Non-transferable courses (sub-300) do not need to split lecture and lab.
 
-# Methods of Instruction
+## Methods of Instruction
 
 The Methods of Instruction section describes the learning activities that instructors use to help students accomplish the learning outcomes for the course. Although the set of instruction methods is representative, please include enough information that an outside reader would get a sense of the course’s level of rigor. Please use the plural form if the activity occurs more than once in the course. For example, if there is only one lecture then use "lecture," but if there are multiple lectures throughout the course then use "lectures."
 
 Common things to include: Lectures, demonstrations, media presentations, large-group discussions, small-group discussions, lab activities, projects, field trips, guest speakers, small-group activities, and student presentations.
 
-# Typical Student Assignment
+## Typical Student Assignment
 
 Title 5, section 55002, states that a course outline must specify types or provide examples of required reading and writing assignments and other assignments to be completed outside of instructional time.
 
@@ -59,23 +121,23 @@ Our current format establishes a clear connection between the assignments and th
 
 Please choose two SLOs from section 4 and write student assignments that address the SLOs directly. Make sure to use the exact SLO from the outline after giving the assignment example.
 
-## Examples
+### Examples
 
 The following examples illsutrate the semantics and formatting (including the use of punctuation marks):
 
-### Example 1
+#### Example 1
 
 Sample Assignment #1:
 Scale of seventh chords assignment. Read chapter 3 in the text and listen to the lecture related to the scale of seventh chords. Practice the scale of sevenths as requested in skill drill 6. Be prepared to perform the scale of sevenths in any of the twelve major keys for your instructor.
 (Addresses SLO: perform the scale of sevenths at the piano in any key.)
 
-### Example 2
+#### Example 2
 
 Sample Assignment #2:
 Listen to the recorded example and follow the score of Miles Davis' "Blue in Green." Find the four-note voicings for each chord as explained in unit 4. Play the bass note in your left finger 5, the melody in your right finger 5, and the other two tones in your left and right thumbs.
 (Addresses SLO: apply four-note solo piano style at the keyboard from a lead sheet.)
 
-# Evaluation and Assessment Methods
+## Evaluation and Assessment Methods
 
 The Evaluation Methods section answers the question: Upon what activities or products is a student’s grade based? This section is representative of the assessment and evaluation activities that departmental faculty may use to measure learning outcomes. Please be inclusive of multiple pedagogies and avoid deficit-minded assessments. Be as descriptive as possible.
 
@@ -84,9 +146,9 @@ Work to ensure that the evaluation methods assess the course’s current learnin
 Common things to include:
 Discussions, presentations, projects, portfolios, journals, written reports, essays, lab activities, exams. For courses which include DE, including "discussions" as an evaluation method is a best practice.
 
-# Representative List of Textbooks
+## Representative List of Textbooks
 
-## General description of requirements
+### General description of requirements
 
 A representative list of textbooks gives discipline colleagues a sense of the content and level of difficulty of the course. Additionally, it's required for articulation purposes.
 
@@ -106,17 +168,17 @@ Year: If possible, use the most recent version of a textbook. For articulation, 
 
 Locally developed materials: If you create your own materials for a course, or if you provide content from multiple sources, then enter the phrase “Instructor-provided materials” or “Instructor-generated materials” as the title for a textbook, leaving the other fields blank.
 
-## Examples
+### Examples
 
 * Abrams, S. (2022). EmpoWORD: A Student-Centered Anthology and Handbook for College Writers. Portland: Portland State University Library. 10.15760/pdxopen-17.
 * Peterson, O., Newborn, P., and Evens, B. (2023). The Jazz Pianists (2nd ed.). Jazz House. 
 * The professor is expected to provide up-to-date quality learning materials based on their current industry expertise and experience that meets or exceeds that available in the representative textbook. (2023). ZTC Course.
 
-# Supplementary materisls/requirements
+## Supplementary materisls/requirements
 
 If a course requires or if a specific offering might require students to have specific materials, please list them here. This might include having access to a mic and webcam for online offerings or specialized gear, software or materials for any modality. If no specific supplementary materials are needed, please leave this section blank.
 
-## Examples
+### Examples
 
 Minimum requirements for a desktop or laptop for the virtual lab and software is a 8-core or greater processor, 32 GB RAM, 1TB storage space, video card with 5GB VRAM or greater.
 
