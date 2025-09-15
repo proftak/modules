@@ -37,11 +37,11 @@ Now, let's take a closer look at this block of code.
 -   line 1: this is a "marker" that marks the
     beginning of actions to be repeated.
 -   line
-    2: this line serves two purposes.
+    3: this line serves two purposes.
     First, the word "while" is a marker that marks the end of actions to
     be repeated. Second, this line expresses the condition that
     specifies when the action should be repeated.
--   line 3: this is the action to be repeated. In
+-   line 2: this is the action to be repeated. In
     general, there can be exactly one statement between the markers
     "do" and "while".
 
