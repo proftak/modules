@@ -51,7 +51,7 @@ We can improve our linear search algorithm to work more efficiently. The origina
 i=0;
 while ((i<n) && (a[i] != v))
   i = i + 1;
-if (i=n)
+if (i==n)
   // conclude no element in a has a value of v
 else
   // conclude a[i] is the first element with a value of v
