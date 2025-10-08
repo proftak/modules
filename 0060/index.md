@@ -65,7 +65,7 @@ we need to modify the conditional statement because now we can exit with
 array. The condition that confirms that value `v` is not in the array
 should be `(i == n) || (a[i] != v)`.
 
-As a result, the algorithm is modified as in the following algorithm.
+As a result, the algorithm is modified as in <a href="#sortedLinSearch">the following algorithm</a>.
 
 ```c
 // Improved linear search algorithm that works only for non-decreasingly sorted arrays.
