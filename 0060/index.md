@@ -51,10 +51,7 @@ We can improve our linear search algorithm to work more efficiently. The origina
 i=0;
 while ((i<n) && (a[i] != v))
   i = i + 1;
-if (i==n)
-  // conclude no element in a has a value of v
-else
-  // conclude a[i] is the first element with a value of v
+found = i<n;
 ```
 
 Note that if array `a` is sorted in a non-decreasing way, and we find that `v < a[i]`, then we already know that
@@ -75,10 +72,7 @@ As a result, the algorithm is modified as in the following algorithm.
 i=0;
 while ((i<n) && (a[i]<v))
   i=i+1;
-if ((i==n) || (a[i] != v))
-  // conclude no element in a has a value of v
-else
-  // conclude a[i] is the first element in a that has a value of v
+found = ((i<n) && (a[i] == v))
 ```
 
 With this modification, the number of elements to examine is variable
@@ -125,10 +119,7 @@ do {                               // line 3
     if (v < a[m])                  // line 8
       e = m - 1;                   // line 9
 } while ((b <= e) && (a[m] != v)); // line 10
-if (b>e)                           // line 11
-  // line 12: conclude v cannot be found in a
-else                               // line 13
-  // line 14: conclude v is found in a
+found = b <= e;                    // line 11
 ```
 
 Let us dissect this algorithm.
@@ -158,8 +149,8 @@ Let us dissect this algorithm.
     half, these lines check to see if we can rule out the self half.
 -   Line 10 specifies when we have another iteration to perform. There are two reasons that are in the conjunction. First, when `b <= e`, we have at least one candidate left. Note that when `b == e`, it means that there is exactly one
     more element to considered. Second, when `a[m] != v`, the logic confirms that the algorithm has not just found an element that has the key (search value).
--   Line 11 checks to see if value $v$ is found in
-    the array or not. If `b > e`, it means that we exited the loop
+-   Line 11 updates variable `found` to reflect if value $v$ is found in
+    the array. If `b > e`, it means that we exited the loop
     because we ran out of candidates. Therefore, we can then confirm
     that value `v` does not exist in `a`.
 
