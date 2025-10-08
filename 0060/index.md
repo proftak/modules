@@ -48,10 +48,10 @@ We can improve our linear search algorithm to work more efficiently. The origina
 // Linear search algorithm that works for sorted and unsorted arrays
 // Assume v contains the value to be search in an array a that has n elements
 // Assume array a elements have specific values
-i=0;
-while ((i<n) && (a[i] != v))
-  i = i + 1;
-found = i<n;
+i=0;                          // line 1
+while ((i<n) && (a[i] != v))  // line 2
+  i = i + 1;                  // line 3
+found = i<n;                  // line 4
 ```
 
 Note that if array `a` is sorted in a non-decreasing way, and we find that `v < a[i]`, then we already know that
@@ -69,10 +69,10 @@ As a result, the algorithm is modified as in the following algorithm.
 
 ```c
 // Improved linear search algorithm that works only for non-decreasingly sorted arrays.
-i=0;
-while ((i<n) && (a[i]<v))
-  i=i+1;
-found = ((i<n) && (a[i] == v))
+i=0;                            // line 1
+while ((i<n) && (a[i]<v))       // line 2
+  i=i+1;                        // line 3
+found = ((i<n) && (a[i] == v))  // line 4
 ```
 
 With this modification, the number of elements to examine is variable
