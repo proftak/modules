@@ -244,23 +244,23 @@ are true).
 
 ## An example using substitution to explain rule matching and firing
 
-$A=\{0,1,p,q,r,s,t,\phi,\rho,\psi\}$
-$\Omega=\{\neg, \wedge, \vee, \Rightarrow\}$
-$I=\{\neg 0,1,p \wedge q, q \Rightarrow r, \neg s \Rightarrow \neg r\}$
+$A=\\{0,1,p,q,r,s,t,\phi,\rho,\psi\\}$
+$\Omega=\\{\neg, \wedge, \vee, \Rightarrow\\}$
+$I=\\{\neg 0,1,p \wedge q, q \Rightarrow r, \neg s \Rightarrow \neg r\\}$
 * $p \in W$
 * $p \wedge p \in W$
 * $p \vee \neg p \in W$
 * $\neg (u \in W)$
 
-$Z=\{\{\} \vdash \phi \vee \neg \phi,\{\rho \wedge \phi\} \vdash \rho, \{\rho \wedge \phi\} \vdash \phi, \{\rho, \rho \Rightarrow \phi\} \vdash \phi, \{\neg \phi \Rightarrow \neg \rho, \rho\} \vdash \phi\}$
+$Z=\\{\\{\\} \vdash \phi \vee \neg \phi,\\{\rho \wedge \phi\\} \vdash \rho, \\{\rho \wedge \phi\\} \vdash \phi, \\{\rho, \rho \Rightarrow \phi\\} \vdash \phi, \\{\neg \phi \Rightarrow \neg \rho, \rho\\} \vdash \phi\\}$
 Each rule is like $T \vdash WFF(\phi, \rho, \psi)$
 $I \subseteq D$, but what else are in $D$?
 
-1. $\{\rho \wedge \phi\} \vdash \rho \in Z$, substitute: $\rho / p, \phi / q$, the RHS set matches $p \wedge q \in D$, now we can also claim $p \in D$
-1. $\{\rho \wedge \phi\} \vdash \phi \in Z$, substitute: $\rho / p, \phi / q$, the RHS set matches $p \wedge q \in D$, now we can also claim $q \in D$
-2. $\{\rho, \rho \Rightarrow \phi\} \vdash \phi \in Z$, substitute: $\rho/q, \phi/r$, confirm that $q \in D$, $q \Rightarrow r \in D$, fire the rule, confirm $r \in D$
-3. $\{\neg \phi \Rightarrow \neg \rho, \rho\} \vdash \phi \in Z$, substitute: $\phi/s,\rho/r$, fire the rule, confirm $s \in D$
-4. $\{\} \vdash \rho \vee \neg \rho$, $\rho/t$, fire the rule, confirm $t \vee \neg t \in D$
+1. $\\{\rho \wedge \phi\\} \vdash \rho \in Z$, substitute: $\rho / p, \phi / q$, the RHS set matches $p \wedge q \in D$, now we can also claim $p \in D$
+1. $\\{\rho \wedge \phi\\} \vdash \phi \in Z$, substitute: $\rho / p, \phi / q$, the RHS set matches $p \wedge q \in D$, now we can also claim $q \in D$
+2. $\\{\rho, \rho \Rightarrow \phi\\} \vdash \phi \in Z$, substitute: $\rho/q, \phi/r$, confirm that $q \in D$, $q \Rightarrow r \in D$, fire the rule, confirm $r \in D$
+3. $\\{\neg \phi \Rightarrow \neg \rho, \rho\\} \vdash \phi \in Z$, substitute: $\phi/s,\rho/r$, fire the rule, confirm $s \in D$
+4. $\\{\\} \vdash \rho \vee \neg \rho$, $\rho/t$, fire the rule, confirm $t \vee \neg t \in D$
 
 ## Completeness and soundness
 
@@ -712,7 +712,7 @@ the given facts.
 </details>
 
 <details>
-  <summary>3. What does the transformation rule $\{\psi_1, \dots, \psi_m\} \vdash \phi$ mean?</summary>
+  <summary>3. What does the transformation rule $\\{\psi_1, \dots, \psi_m\\} \vdash \phi$ mean?</summary>
   <p>This transformation rule means that if all the antecedents $\psi_1, \dots, \psi_m$ are true, then the consequent $\phi$ can be inferred as true.</p>
 </details>
 
@@ -751,12 +751,12 @@ the given facts.
 
 <details>
   <summary>10. What does it mean for a propositional logic system to be sound?</summary>
-  <p>A propositional logic system is sound if every syntactic inference made by the system is semantically valid, meaning that if $ \{\phi_1, \dots, \phi_n\} \vdash \psi $, then $ \{\phi_1, \dots, \phi_n\} \models \psi $.</p>
+  <p>A propositional logic system is sound if every syntactic inference made by the system is semantically valid, meaning that if $ \\{\phi_1, \dots, \phi_n\\} \vdash \psi $, then $ \\{\phi_1, \dots, \phi_n\\} \models \psi $.</p>
 </details>
 
 <details>
   <summary>11. What does it mean for a propositional logic system to be complete?</summary>
-  <p>A propositional logic system is complete if every semantically valid inference can also be derived syntactically. In other words, if $ \{\phi_1, \dots, \phi_n\} \models \psi $, then $ \{\phi_1, \dots, \phi_n\} \vdash \psi $.</p>
+  <p>A propositional logic system is complete if every semantically valid inference can also be derived syntactically. In other words, if $ \\{\phi_1, \dots, \phi_n\\} \models \psi $, then $ \\{\phi_1, \dots, \phi_n\\} \vdash \psi $.</p>
 </details>
 
 <details>
@@ -794,7 +794,7 @@ the given facts.
 
 <details>
   <summary>17. What is a transformation rule in a propositional logic system?</summary>
-  <p>A transformation rule in a propositional logic system is a syntactic rule that allows us to infer new WFFs based on a set of existing WFFs. The general form is $ \{\psi_1, \dots, \psi_n\} \vdash \phi $, where the antecedents imply the consequent.</p>
+  <p>A transformation rule in a propositional logic system is a syntactic rule that allows us to infer new WFFs based on a set of existing WFFs. The general form is $ \\{\psi_1, \dots, \psi_n\\} \vdash \phi $, where the antecedents imply the consequent.</p>
 </details>
 
 <details>
