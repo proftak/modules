@@ -97,13 +97,13 @@ $n$. In this case, the birthdate of a student does not affect the
 birthdate of any other student. In other words, *each* student can
 choose one day out of 365. As a result,
 
-$|\Omega| = 365^{n}$
+$\|\Omega\| = 365^{n}$
 
 We have the answer now:
 
 $$\begin{aligned}
-    \mathrm{Pr}(E,\Omega) & = \frac{|E|}{|\Omega|} \\
-                          & = \frac{|\Omega|-|F|}{\Omega} \\
+    \mathrm{Pr}(E,\Omega) & = \frac{\|E\|}{\|\Omega\|} \\
+                          & = \frac{\|\Omega\|-\|F\|}{\Omega} \\
 			  & = 1-\frac{\mathrm{P}(365,n)}{365 ^ n}
   
 \end{aligned}$$
