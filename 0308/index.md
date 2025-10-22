@@ -102,8 +102,8 @@ $\|\Omega\| = 365^{n}$
 We have the answer now:
 
 $$\begin{aligned}
-    \mathrm{Pr}(E,\Omega) & = \frac{\|E\|}{\|\Omega\|} \\
-                          & = \frac{\|\Omega\|-\|F\|}{\Omega} \\
+    \mathrm{Pr}(E,\Omega) & = \frac{|E|}{|\Omega|} \\
+                          & = \frac{|\Omega|-|F|}{|\Omega|} \\
 			  & = 1-\frac{\mathrm{P}(365,n)}{365 ^ n}
   
 \end{aligned}$$
