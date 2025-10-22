@@ -25,6 +25,7 @@
 * [Module 0304: Calling and returning from functions](./0304/mdModule.md)
 * [Module 0305: Counting](./0305/mdModule.md)
 * [Module 0307: Parameters and local variables](./0307/mdModule.md)
+* [Module 0308: Discrete Probability](./0308/index.md)
 * [Module 0310: Graph search algorithms](./0310/mdModule.md)
 * [Module 0312: Relations](./0312/mdModule.md)
 * [Module 0319: Introduction to algorithm design and pseudocoding](./0319/mdModule.md)
