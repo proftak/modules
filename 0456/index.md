@@ -17,7 +17,7 @@ It is crucial to understand what the "input" of an algorithm consists of. For th
 * An array "ids" where each element of the array corresponds to the ID number of a student. All elements of this array are unique. (What does unique mean?)
 * An array "scores" where each element is a real (what does this mean?) value from 0 to 1, indicating the ratio of points earned divided by points possible. The position of elements of this array corresponds to the "ids" array. This means `scores[5]` is the score earned by the student corresponding to the ID of `ids[5]`.
 * Neither `ids` nor `scores` is sorted.
-* An array "grades" where each element specifies a threshold of a letter grade. `grades[0]` is the minimum score to earn a letter grade of "D", `grades[1]` is the minimum score to earn a letter grade of "C", etc.
+* An array "thresholds" where each element specifies a threshold of a letter grade. `thresholds[0]` is the minimum score to earn a letter grade of "D", `thresholds[1]` is the minimum score to earn a letter grade of "C", etc.
 * An integer "numStudents" that indicates the number of students in a class. The arrays `ids` and `scores` have `numStudents` elements.
 
 ## The output
