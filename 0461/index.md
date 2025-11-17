@@ -90,3 +90,22 @@ int main() {
   return 0;
 }
 ```
+
+The execution of this code is traced as follows:
+
+<div style="font-family: monospace;" markdown=1>
+
+| |A|B|C|D|E|
+|-|-|-|-|-|-|
+|**1**|comments|line#||||
+|**2**||pre||||
+|**3**||11||||
+|**4**||12|aRec.aData.gpa|aRec.aData.active|aRec.id|
+|**5**|||?|?|?|
+|**6**||14|3.5|||
+|**7**||15||true||
+|**8**||16|||1729384|
+|**9**||18||||
+|**10**||post||||
+
+</div>
