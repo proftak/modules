@@ -100,19 +100,67 @@ The execution of this code is traced as follows:
 |**1**|comments|line#||||
 |**2**||pre||||
 |**3**||11||||
-|**4**||12|aRec.aData.gpa|aRec.aData.active|aRec.id|
+|**4**||12|aRec.id|aRec.aData.gpa|aRec.aData.active|
 |**5**|||?|?|?|
-|**6**||14|3.5|||
-|**7**||15||true||
-|**8**||16|||1729384|
+|**6**||14||3.5||
+|**7**||15|||true|
+|**8**||16|1729384|||
 |**9**||18||||
 |**10**||post||||
 
 </div>
 
+
 # Structure assignment
 
 An single assignment statement can copy an entire structure instance to another.
+
+
+```c
+struct Academic {
+  double gpa;
+  bool active;
+};
+
+struct StudentRec {
+  int id;
+  struct Academic aData;
+};
+
+int main() {
+  struct StudentRec aRec;
+  struct Academic acad;
+
+  acad.gpa = 3.5;
+  acad.active = true;
+  aRec.aData = acad;
+  aRec.id = 1729384;
+
+  return 0;
+}
+```
+
+The following is the trace of this code. Note how on row 10, both columns of member `aData` of the structure instance `aRec` are updated at the same time.
+
+<div style="font-family: monospace;" markdown=1>
+
+| |A|B|C|D|E|F|G|
+|-|-|-|-|-|-|-|-|
+|**1**|comments|line#||||||
+|**2**||pre||||||
+|**3**||11||||||
+|**4**||12|aRec.id|aRec.aData.gpa|aRec.aData.active|||
+|**5**|||?|?|?|||
+|**6**||13||||acad.gpa|acad.active|
+|**7**||||||?|?|
+|**8**||15||||3.5||
+|**9**||16|||||true|
+|**10**||17||3.5|true|||
+|**11**||18|1729384|||||
+|**12**||19||||||
+|**13**||post||||||
+
+</div>
 
 # Passing a structure as a parameter
 
