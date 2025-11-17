@@ -91,3 +91,4 @@
 * [Module 0458: CS in the GPT/LLM era](./0458/index.md)
 * [Module 0459: OER as a Custom GPT](./0459/index.md)
 * [Module 0460: A Quick Guide to Update a Curriculum](./0460/index.md)
+* [Module 0461: Types and Structures](./0461/index.md)
