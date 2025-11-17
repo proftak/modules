@@ -109,3 +109,11 @@ The execution of this code is traced as follows:
 |**10**||post||||
 
 </div>
+
+# Structure assignment
+
+An single assignment statement can copy an entire structure instance to another.
+
+# Passing a structure as a parameter
+
+Unlike an array which can only be passed by reference, a structure can be passed by reference of by value.
