@@ -9,6 +9,8 @@ A "type" in programming specifies a category of values. We have already encounte
 * `int`: short for integer.
 * `bool`: short for Boolean. This is a category of values that can only be true or false.
 * `double`: short for "IEEE Double Precision Floating Point". This is a category of values that is *like* real numbers in mathematics.
+
+All three are known as *built-in* types in C++. These are also called "scalar" types or "atomic" types because they are elemental and cannot be broken up into smaller pieces in C++.
   
 # What is a structure?
 
@@ -34,3 +36,57 @@ struct StudentRecord {
 };
 ```
 
+This is the *definition* of a structure (the cookie cutter). The cookie cutter has a name of `StudentRecord`, and the structure has three members:
+
+* `id` is an integer member.
+* `gpa` is a real number member.
+* `active` is a Boolean member.
+
+A cookie cutter is fairly useless, let us expand the program as follows:
+
+
+```c
+struct StudentRecord {
+  int id;
+  double gpa;
+  bool active;
+};
+
+int main() {
+  struct StudentRecord aRec;
+
+  aRec.id = 1920416;
+  aRec.gpa = 3.5;
+  aRec.active = true;
+
+  return 0;
+}
+```
+
+The line that reads `struct StudentRecord aRec;` uses the structure as a user-defined type to create the object (structure instance, or cookie) called `aRec`. The subsequent lines assign specific values to each member of the structure instance/object/cookie.
+
+The "dot notation" can be thought of as the apostrophe-s in English (possessive). This means that the expression `aRec.gpa` can be interpreted as "aRec's GPA (member)" or "the GPA member of aRec". 
+
+In a trace, a column is used for each member in a structure instance that is of a built-in type. This implies that structure definitions can nest. Consider the following:
+
+```c
+struct Academic {
+  double gpa;
+  bool active;
+};
+
+struct StudentRec {
+  int id;
+  struct Academic aData;
+};
+
+int main() {
+  struct StudentRec aRec;
+
+  aRec.aData.gpa = 3.5;
+  aRec.aData.active = true;
+  aRec.id = 1729384;
+
+  return 0;
+}
+```
