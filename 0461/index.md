@@ -165,3 +165,33 @@ The following is the trace of this code. Note how on row 10, both columns of mem
 # Passing a structure as a parameter
 
 Unlike an array which can only be passed by reference, a structure can be passed by reference of by value.
+
+```c
+struct Academic {
+  double gpa;
+  bool active;
+};
+
+struct StudentRec {
+  int id;
+  struct Academic aData;
+};
+
+void initAcad(struct Academic &acad, double gpa, bool active) {
+  acad.gpa = gpa;
+  acad.active = active;
+}
+
+int main() {
+  struct StudentRec aRec;
+  struct Academic acad;
+
+  initAcad(acad, 3.5 true);
+  aRec.aData = acad;
+  aRec.id = 1729384;
+
+  return 0;
+}
+```
+
+When a structure is passed by reference, the parameter becomes a reference to the first column of the structure instance.
