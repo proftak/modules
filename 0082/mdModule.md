@@ -145,9 +145,9 @@ These definitions are mirrors of those of the supremum. Let us reuse the
 notations of $A$ and $X$.
 
 This time let use define a predicate
-$Q(y,X) = \forall x \in X: y \le x$. This predicate means $y$ is a lower
+$Q(y,X) = \forall x \in X(y \le x)$. This predicate means $y$ is a lower
 bound of $X$. Now, we define
-$i = \inf X \Leftrightarrow (Q(i,X) \wedge (\forall i(Q(i',X) \Rightarrow i' \le i)))$.
+$i = \inf X \Leftrightarrow (Q(i,X) \wedge (\forall i'(Q(i',X) \Rightarrow i' \le i)))$.
 This means that $i$ is the maximum lower bound of $X$.
 
 ## Limit of a sequence
