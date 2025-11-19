@@ -9,6 +9,7 @@ plugins:
 # use_math: true
 toc: true
 mermaid: true
+full-width: true
 
 markdown: kramdown
 # mathjax: true
