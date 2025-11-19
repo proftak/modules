@@ -195,3 +195,30 @@ int main() {
 ```
 
 When a structure is passed by reference, the parameter becomes a reference to the first column of the structure instance.
+
+<div style="font-family: monospace;" markdown=1>
+
+| |A|B|C|D|E|F|G|H|I|J|K|
+|-|-|-|-|-|-|-|-|-|-|-|-|
+|**1**|comments|line#||||||||||
+|**2**||pre||||||||||
+|**3**||16||||||||||
+|**4**||17|aRec|aRec|aRec|||||||
+|**5**|||id|aData|aData|||||||
+|**6**||||gpa|active|||||||
+|**7**|||?|?|?|||||||
+|**8**||18||||acad|acad|||||
+|**9**||||||gpa|active|||||
+|**10**||||||?|?|||||
+|**11**||20||||||ret&nbsp;line&nbsp;#|acad|gpa|active|
+|**12**||||||||21|ref&nbsp;col&nbsp;F|3.5|true|
+|**13**||11||||||||||
+|**14**||12||||3.5||||||
+|**15**||13|||||true|||||
+|**16**||14||||||ret&nbsp;line&nbsp;#|acad|gpa|active|
+|**17**||21||3.5|true|||||||
+|**18**||22|1729384|||||||||
+|**19**||24||||||||||
+|**20**||post||||||||||
+
+</div>
