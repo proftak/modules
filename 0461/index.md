@@ -215,7 +215,7 @@ When a structure is passed by reference, the parameter becomes a reference to th
 |**13**||11||||||||||
 |**14**||12||||3.5||||||
 |**15**||13|||||true|||||
-|**16**||14||||||ret&nbsp;line&nbsp;#|acad|gpa|active|
+|**16**||14||||||~~ret&nbsp;line&nbsp;#~~|~~acad~~|~~gpa~~|~~active~~|
 |**17**||21||3.5|true|||||||
 |**18**||22|1729384|||||||||
 |**19**||24||||||||||
