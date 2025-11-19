@@ -239,3 +239,53 @@ When a structure is passed by reference, the parameter becomes a reference to th
 |**20**||post||||||||||
 
 </div>
+
+This program can be simplied because variable `acad` was not really needed. A member that is a structure can be passed by reference itself:
+
+```c
+struct Academic {
+  double gpa;
+  bool active;
+};
+
+struct StudentRec {
+  int id;
+  struct Academic aData;
+};
+
+void initAcad(struct Academic &acad, double gpa, bool active) {
+  acad.gpa = gpa;
+  acad.active = active;
+}
+
+int main() {
+  struct StudentRec aRec;
+
+  initAcad(aRec.aData, 3.5 true);
+  aRec.id = 1729384;
+
+  return 0;
+}
+```
+<div style="font-family: monospace;" markdown=1>
+
+| |A|B|C|D|E|F|G|H|I|
+|-|-|-|-|-|-|-|-|-|-|
+|**1**|comments|line#||||||||
+|**2**||pre||||||||
+|**3**||16||||||||
+|**4**||17|aRec|aRec|aRec|||||
+|**5**||||aData|aData|||||
+|**6**|||id|gpa|active|||||
+|**7**|||?|?|?|||||
+|**8**||19||||ret&nbsp;line&nbsp;#|acad|gpa|active|
+|**9**||||||20|ref&nbsp;col&nbsp;D|3.5|true|
+|**10**||11||||||||
+|**11**||12||3.5||||||
+|**12**||13|||true|||||
+|**13**||14||||~~ret&nbsp;line&nbsp;#~~|~~acad~~|~~gpa~~|~~active~~|
+|**14**||20|1729384|||||||
+|**15**||22||||||||
+|**16**||post||||||||
+
+</div>
