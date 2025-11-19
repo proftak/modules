@@ -1,6 +1,6 @@
-# remote_theme: pages-themes/primer@v0.6.0
+remote_theme: pages-themes/primer@v0.6.0
 # remote_theme: pages-themes/minimal@v0.2.0
-remote_theme: mmistakes/minimal-mistakes@v4.27.3
+# remote_theme: mmistakes/minimal-mistakes@v4.27.3
 # theme: jekyll-theme-minimal-mistakes
 
 plugins:
