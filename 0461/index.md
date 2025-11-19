@@ -1,5 +1,6 @@
 ---
 title: "Module 0461: Types and Structures"
+full-width: true
 ---
 
 # What is a type?
