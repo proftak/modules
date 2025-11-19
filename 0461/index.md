@@ -63,7 +63,24 @@ int main() {
 }
 ```
 
-The line that reads `struct StudentRecord aRec;` uses the structure as a user-defined type to create the object (structure instance, or cookie) called `aRec`. The subsequent lines assign specific values to each member of the structure instance/object/cookie.
+The line that reads `struct StudentRecord aRec;` uses the structure as a user-defined type to create the object (structure instance, or cookie) called `aRec`. The subsequent lines assign specific values to each member of the structure instance/object/cookie. The execution of the previous program can be traced as follows:
+
+<div style="font-family: monospace;" markdown=1>
+
+| |A|B|C|D|E|
+|-|-|-|-|-|-|
+|**1**|comments|line#||||
+|**2**||pre||||
+|**3**||11||||
+|**4**||12|aRec.id|aRec.aData.gpa|aRec.aData.active|
+|**5**|||?|?|?|
+|**6**||14||3.5||
+|**7**||15|||true|
+|**8**||16|1729384|||
+|**9**||18||||
+|**10**||post||||
+
+</div>
 
 The "dot notation" can be thought of as the apostrophe-s in English (possessive). This means that the expression `aRec.gpa` can be interpreted as "aRec's GPA (member)" or "the GPA member of aRec". 
 
