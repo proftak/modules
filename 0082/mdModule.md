@@ -192,6 +192,14 @@ $$\begin{aligned}
     
 \end{aligned}$$
 
+Alternatively, assuming $N \subseteq \mathbb{N}$, then we can define the following:
+
+$$(w = \limsup_{n \in N}x_n) \Leftrightarrow (w = \inf\{m | m=\sup \{x_k | k \ge m \wedge k \in N\}})$$
+
+then 
+
+$$\limsup_{n \rightarrow \infty}x_n = \limsup_{n \in \mathbb{N}}x_n$$
+
 Note that even though $\lim_{i \rightarrow \infty}(-1)^{i}$ does not
 exist,
 
