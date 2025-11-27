@@ -135,9 +135,13 @@ use define
 $s = \sup X \Leftrightarrow (P(s,X) \wedge (\forall s'(P(s',X)\Rightarrow s \le s')))$.
 This basically means that $s$ is the minimum upper bound of $X$.
 
-Note that $\sup(X)$ may be different from $\max(X)$. This is because the
+Note that in general when $A$ is not totally ordered, 
+$\sup(X)$ may be different from $\max(X)$.This is because the
 supremum needs not be an element of $X$, but the maximum needs to be an
 element of $X$.
+
+It is even possible that 
+$\sup(X)$ does not exist because $A$ only needs to be partially ordered.
 
 ## Infimum
 
