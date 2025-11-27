@@ -194,7 +194,7 @@ $$\begin{aligned}
 
 Alternatively, assuming $N \subseteq \mathbb{N}$, then we can define the following:
 
-$$(w = \limsup_{n \in N}x_n) \Leftrightarrow (w = \inf\{m | m=\sup \{x_k | k \ge m \wedge k \in N\}})$$
+$$(w = \limsup_{n \in N}x_n) \Leftrightarrow (w = \inf\{m | m=\sup \{x_k | k \ge m \wedge k \in N\}\})$$
 
 then 
 
