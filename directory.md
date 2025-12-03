@@ -28,6 +28,7 @@
 * [Module 0308: Discrete Probability](./0308/index.md)
 * [Module 0310: Graph search algorithms](./0310/mdModule.md)
 * [Module 0312: Relations](./0312/mdModule.md)
+* [Module 0315: Predicate Calculus via Prolog](./0315/index.md)
 * [Module 0319: Introduction to algorithm design and pseudocoding](./0319/mdModule.md)
 * [Module 0351: Signed vs unsigned integer representation](./0351/mdModule.md)
 * [Module 0352: Binary comparison](./0352/mdModule.md)
