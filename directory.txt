@@ -93,3 +93,4 @@
 ./0459/index.md:title: "Module 0459: OER as a Custom GPT"
 ./0460/index.md:title: "Module 0460: A Quick Guide to Update a Curriculum"
 ./0461/index.md:title: "Module 0461: Types and Structures"
+./0462/index.md:title: "Module 0462: CS reality in 2026"
