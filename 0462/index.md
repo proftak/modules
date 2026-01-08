@@ -16,3 +16,15 @@ For *most* freshman and sophomore students, the COVID pandemic impact is signifi
 The impact of COVID/pandemic is not limited to the depth of knowledge due to the modality of delivery. The change to pass/no pass scale and the consequent "pass-along" effect changed the math readiness of high school graduates.
 
 Furthermore, there is also the attention span muscle apathy issue. During the pandemic, many high school classes were online and asynchronous. As a result, students did not get the opportunity to develop their attention span (brain) muscles.
+
+Where classes are online and asynchronous, most students do not learn to take notes. The lack of note-taking skills severely impact college-level success.
+
+## GPT as an academic shortcut
+
+Essentially, a GPT can complete almost all homework assignments that require writing, coding included.
+
+# But Why?
+
+## Why is attention span important?
+
+## Why is it important to take notes?
