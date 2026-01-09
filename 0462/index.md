@@ -3,11 +3,11 @@ title: "Module 0462: CS reality in 2026"
 ---
 # Context
 
-The context of this module is for students persuing a computer science degree, possibly in freshman or sophomore year. 
+The context of this module is for students pursuing a computer science degree, possibly in their freshman or sophomore year. 
 
-# Variables
+# Factors
 
-There are many variables or parameters that impact the CS reality.
+There are many factors that impact the CS reality in 2026.
 
 ## COVID/pandemic impact
 
@@ -48,6 +48,10 @@ Taking notes either by writing or typing externalizes short-term memory to a for
 
 The brutal answer is "you will not get hired". And yes, that is assuming with a B.Sc. in Computer Science. As of the beginning of 2026, CEOs of large tech companies are vibe coding to prototype ideas. The trend is to "cut out the middleperson (software engineer)".
 
-Some people may be curious about "what difference does it make?" After all, *if* vibe coding will replace all software engineers, then whether a computer science student uses GPT to do all the homework should not matter because *there is no job*.
+Some people may be curious about "what difference does it make?" After all, *if* vibe coding will replace all software engineers, then whether a computer science student uses GPT to do all the homework should not matter because *there are no jobs*. If there are no jobs, that makes selecting computer science as a major completely moot.
+
+The key point is that vibe coding is only productively applicable in certain cases. The "vibe" of *vibe* coding implies a casual use of normal language, as opposed to a programming or formal language. Natural languages are ambiguous and not suitable for the specification of something (like a computer program) that requires precision. Computer science may be a relatively new field of study, but mathematics is not. The reason why mathematics has its own symbols is not only for conciseness, but also for precision. The use of parentheses, for example, explicitly states the nested nature of a structure. Most natural languages fall apart quickly when a complex concept that requires precise nesting specification needs to be explained.
+
+As a result, vibe coding is intrinsically limited to applications where logical precision is not of great importance.
 
 # What to do?
