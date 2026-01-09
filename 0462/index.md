@@ -39,7 +39,10 @@ The short-term memory of a human is limited to 5 to 9 items, and the retention t
 
 Then why do many students feel that they can retain all the material while in a lecture? This is because a professor often repeats the same concept. Each mention of a concept is a refresh of the memory, extending the retention of the concept by another 20 to 40 seconds. Some short-term memory content can be committed to long-term memory during a lecture, but that depends on many factors. 
 
-Taking notes either by writing or typing externalizes short-term memory to a form that persists until there is sufficient resources to commit the content to long-term memory. 
+Taking notes either by writing or typing externalizes short-term memory to a form that persists until there are sufficient resources to commit the content to long-term memory. The *act* of taking notes already helps commit short-term memory content to long-term memory. There are multiple mechanisms at play:
+
+* Each mode (listening, talking, reading, and writing) of processing content involves a different part of the brain. By engaging more pathways to process information, the same concept can be retrieved by different pathways.
+* Because most people cannot take verbatim notes, note taking require active processing to abbreviate and condense the content. This mental process forces the brain to relate a new concept to established concepts in order to record it in a concise way.
 
 ## Why is it important to complete assessments without AI help?
 
