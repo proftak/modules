@@ -46,4 +46,8 @@ Taking notes either by writing or typing externalizes short-term memory to a for
 
 ## Why is it important to complete assessments without AI help?
 
+The brutal answer is "you will not get hired". And yes, that is assuming with a B.Sc. in Computer Science. As of the beginning of 2026, CEOs of large tech companies are vibe coding to prototype ideas. The trend is to "cut out the middleperson (software engineer)".
+
+Some people may be curious about "what difference does it make?" After all, *if* vibe coding will replace all software engineers, then whether a computer science student uses GPT to do all the homework should not matter because *there is no job*.
+
 # What to do?
