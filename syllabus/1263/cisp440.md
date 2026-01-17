@@ -1,0 +1,15 @@
+{% assign semester="Spring 2026" %}
+{% assign officeHour="* Office hours:\n  * M-F: 0800-0900\n" %}
+{% assign courseCode="10669" %}
+{% assign classInfo="* Meetings: MW 1200-1320 STEM 305\n* Drop date with 'W': 2026/04/19\n* Units: 3 (3 lecture units)\n* number of hours: 162\n" %}
+{% assign courseTitle="CISP 440: Discrete Structures for Computer Science" %}
+{% assign courseDescription="This course is an introduction to the discrete structures used in computer science with an emphasis on their applications. Topics include functions, relations, and sets; basic logic; proof techniques; basics of counting; graphs and trees; and discrete probability."  %}
+{%- capture slos -%}
+analyze how formal tools of symbolic logic are used to model real-life situations, including those arising in computing contexts such as program correctness, database queries, and algorithms.
+compare mathematical induction as a proof technique to recursion and recursively defined structures as programming concepts.
+analyze a problem to create relevant recurrence equations.
+design different traversal methods for trees and graphs.
+choose between the binomial theorem for independent events and Bayes’ theorem for dependent events.
+{% endcapture %}
+{% assign topics="<table><thead><tr><th>topics</th><th>date</th></tr></thead><tr><td>Propositional logic <br />Logical connectives <br />Truth tables <br />Normal forms (conjunctive and disjunctive) <br />Validity</td>  <td>02/04/2026</td></tr> <tr><td>Predicate logic <br />Universal and existential quantification <br />Modus ponens and modus tollens <br />Limitations of predicate logic</td>  <td>02/18/2026</td></tr> <tr><td>Proof techniques <br />Notions of implication, converse, inverse, contrapositive, negation, and contradiction</td>  <td>02/25/2026</td></tr> <tr><td>The structure of mathematical proofs <br />Direct proofs <br />Proof by counterexample <br />Proof by contradiction</td>  <td>03/04/2026</td></tr> <tr><td>Mathematical induction <br />Strong induction <br />Recursive mathematical definitions <br />Well orderings</td>  <td>03/25/2026</td></tr> <tr><td>Discrete Probability <br />Finite probability space, probability measure, events</td>  <td>04/06/2026</td></tr> <tr><td>Pascal’s identity <br />The binomial theorem <br />Solving recurrence relations <br />Common examples <br />The Master theorem</td>  <td>04/15/2026</td></tr> <tr><td>Conditional probability, independence, Bayes’ theorem <br />Integer random variables, expectation <br />Law of large numbers</td>  <td>04/22/2026</td></tr> <tr><td>Undirected graphs <br />Directed graphs</td>  <td>05/04/2026</td></tr> <tr><td>Trees <br />Spanning trees/forests <br />Traversal strategies</td>  <td>05/11/2026</td></tr> <tr><td>Final exam</td>  <td>05/13/2026</td></tr> <tr><td></td>  <td></td></tr> <tr><td></td>  <td></td></tr> <tr><td></td>  <td></td></tr></table>" %}
+{% include syllabus.md courseCode=courseCode courseTitle=courseTitle courseDescription=courseDescription classInfo=classInfo semester=semester topics=topics officeHour=officeHour slos=slos %}
