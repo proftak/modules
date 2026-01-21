@@ -27,7 +27,7 @@ These are also the ones that we tend to use in natural languages.
 
 ## Conjunction
 
-Conjunction is known as the English word "and". The mathematical symbol $\wedge$ represents conjunction. This is a Boolean
+Conjunction is known as the English word "and." The mathematical symbol $\wedge$ represents conjunction. This is a Boolean
 operator described by the following truth table:
 
 |x|y|$x \wedge y$|
@@ -177,7 +177,7 @@ truth table:
 
 Semantically, however, it may be a little confusing. Normally, in just
 about any natural language, implication is not considered a Boolean
-operator lumped with "and", "or', "not". When we say "studying hard
+operator lumped with "and", "or", "not." When we say "studying hard
 implies better grades", it is considered an assertion of the
 implication!
 
