@@ -27,7 +27,7 @@ These are also the ones that we tend to use in natural languages.
 
 ## Conjunction
 
-Conjunction is known as the English word "and". The mathematical symbol $\wedge$ represents conjunction. This is a Boolean
+Conjunction is known as the English word "and." The mathematical symbol $\wedge$ represents conjunction. This is a Boolean
 operator described by the following truth table:
 
 |x|y|$x \wedge y$|
@@ -177,30 +177,30 @@ truth table:
 
 Semantically, however, it may be a little confusing. Normally, in just
 about any natural language, implication is not considered a Boolean
-operator lumped with "and", "or', "not". When we say "studying hard
+operator lumped with "and", "or", "not." When we say "studying hard
 implies better grades", it is considered an assertion of the
 implication!
 
 Now let us take a look at a absurd (it works only because it is absurd!)
 implication:
 
-"A blue cat is sick implies tomorrow is Doom's day."
+"A blue cat is sick implies tomorrow is doomsday."
 
 This implication statement itself has a true/false value. Let us
 consider all four possibilities.
 
--   "A blue cat is sick", "tomorrow is Doom's days." This pairing
+-   "A blue cat is sick", "tomorrow is doomsday." This pairing
     confirms the implication, the implication is true.
 
 -   "It is not the case that a blue cat is sick", "tomorrow is not
-    Doom's day". The implication is still true because it does not say
+    doomsday." The implication is still true because it does not say
     anything about what happens when "a blue cat is sick" is not true!
 
--   "it is not the case that a blue cat is sick", "tomorrow *is* Doom's
-    day". The implication is still true because it does not suggest
+-   "it is not the case that a blue cat is sick", "tomorrow *is* doomsday."
+    The implication is still true because it does not suggest
     anything when "a blue cat is sick" is false.
 
--   "A blue cat is sick" and "tomorrow is not Doom's day", in this case,
+-   "A blue cat is sick" and "tomorrow is not doomsday", in this case,
     the implication itself is false.
 
 Sure, we can always use $\neg x \vee y$ instead of $x \Rightarrow y$ in
