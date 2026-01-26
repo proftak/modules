@@ -1,5 +1,5 @@
 {% assign semester="Spring 2026" %}
-{% assign officeHour="* Office hours:\n  * M-F: 0800-0900\n" %}
+{% include_relative officehour.md %}
 {% assign courseCode="10287" %}
 {% assign classInfo="* Meetings: T Th 17:30-20:20 in Raef 161\n* Drop date with 'W': 2026/04/19\n* Units: 4 (3 lecture units+1 lab units)\n* number of hours: 216\n" %}
 {% assign courseTitle="	CISP 310: Computer Architecture and Organization" %}
