@@ -1,5 +1,5 @@
 {% assign semester="Spring 2026" %}
-{% assign officeHour="* Office hours:\n  * M-F: 0800-0900\n" %}
+{% include_relative officehour.md %}
 {% assign courseCode="10669" %}
 {% assign classInfo="* Meetings: MW 1200-1320 STEM 305\n* Drop date with 'W': 2026/04/19\n* Units: 3 (3 lecture units)\n* number of hours: 162\n" %}
 {% assign courseTitle="CISP 440: Discrete Structures for Computer Science" %}
