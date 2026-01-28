@@ -66,6 +66,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
     * Anything that is followed immediately by an asterisk * can occur any number of times, including zero.
   * Given the syntax described, the ordering of elements in this notation is not important. As an example, $\\{a,b,c\\} = \\{a,c,b\\} = \\{b,a,c\\} = \\{b,c,a\\} = \\{c,a,b\\} = \\{c,b,a\\}$.
   * $\boxed{\\{\\}}$ is known as the empty set.
+  * Membership in a set must be unique. This means no two elements in a set can be equal to each other.
 * $\boxed{\|X\|}$ is the cardinality of the set $X$, the cardinality of a set is *similar* to the number of elements in the set.
 * $\boxed{\forall e \in X(P(e))}$ is an abbreviation of $\forall e((e \in X) \Rightarrow (P(e)))$, it says "for every element $e$ in set $X$, $P(e)$ is true."
   * Concept: universal qualifier with a filter.
