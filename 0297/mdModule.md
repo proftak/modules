@@ -262,41 +262,6 @@ $I \subseteq D$, but what else are in $D$?
 3. $\\{\neg \phi \Rightarrow \neg \rho, \rho\\} \vdash \phi \in Z$, substitute: $\phi/s,\rho/r$, fire the rule, confirm $s \in D$
 4. $\\{\\} \vdash \rho \vee \neg \rho$, $\rho/t$, fire the rule, confirm $t \vee \neg t \in D$
 
-## Practice questions
-Propositional Logic Assessment Questions
-
-**Question 1: Identifying Well-Formed Formulae (WFFs)** Given a logic system where A\={p,q,r} and Ω2​\={∧,⇒}, apply the recursive definition of a WFF to determine which of the following strings is a valid WFF. Explain your reasoning based on the rule ∀i∈{1..n}(isAWFF(ϕi​))∧(c∈Ωn​)⇒isAWFF(c(ϕ1​,…,ϕn​)).
-
-*   A) p∧*   B) p∧(q⇒r)*   C) ⇒(p,q)
-
-**Question 2: Understanding the Set of Axioms (**I**)** In the formal 4-tuple L(A,Ω,Z,I), the set I represents WFFs known to be true. If I\={p,p⇒q}, is the WFF q considered part of I? Is it considered part of the set of derivable formulae D? Briefly explain the difference.
-
-**Question 3: Schema Matching and Substitution** Consider the transformation rule t∈Z: {ϕ,ϕ⇒ψ}⊢ψ. Given the set of axioms I\={r,r⇒s}, demonstrate the substitution of variables (r,s) for schemata (ϕ,ψ) required to "fire" this rule and establish s∈D.
-
-**Question 4: Single-Hop Inference (Modus Tollens Pattern)** Given the system:
-
-*   I\={(s∨t)⇒q,¬q}*   Z\={{ϕ⇒ψ,¬ψ}⊢¬ϕ} Identify the WFF that is added to D after a single application of the transformation rule.
-
-**Question 5: Two-Hop Derivation (Conjunction and Simplification)** Given:
-
-*   I\={p∧q,p⇒r}*   Z\={{ρ∧ϕ}⊢ρ,{ϕ,ϕ⇒ψ}⊢ψ} Show the two-step process (two "hops") required to derive r.
-
-**Question 6: Three-Hop Derivation (Chain of Implication)** Given the following system:
-
-*   I\={p,p⇒q,q⇒r,r⇒s}*   Z\={{ϕ,ϕ⇒ψ}⊢ψ} Using the transformation rule provided, list the sequence of WFFs that must be added to D to eventually derive s.
-
-**Question 7: Three-Hop Derivation (DeMorgan’s and Conjunction)** A logic system contains:
-
-*   I\={¬(p∨q),r}*   Z\={{¬(ϕ∨ψ)}⊢¬ϕ∧¬ψ,{ϕ∧ψ}⊢ϕ,{ϕ,ψ}⊢ϕ∧ψ} Show the three hops required to reach the target WFF: ¬p∧r.
-
-**Question 8: Variable vs. Schemata Roles** Explain why schemata symbols (like ϕ,ψ,ρ) are used in the rules within Z, but do not typically appear in the WFFs contained within I. Refer to the concept of "wildcard" matching in your answer.
-
-**Question 9: Four-Hop Challenge (Mixed Operators)** Given the following system:
-
-*   I\={p∧q,q⇒r,¬s⇒¬r,s⇒t}*   Z\={{ρ∧ϕ}⊢ϕ,{ρ,ρ⇒ϕ}⊢ϕ,{¬ϕ⇒¬ρ,ρ}⊢ϕ} Detail the four hops necessary to establish that t∈D.
-
-**Question 10: Derivability vs. Truth** In Module 0297, a derivation is described as a "syntactic operation". If a system L is **sound**, what does the derivation I⊢ϕ tell us about the logical relationship between the axioms in I and the formula ϕ in the context of Boolean algebra?.
-
 ## Completeness and soundness
 
 It is important to differentiate a transformation inference from a
