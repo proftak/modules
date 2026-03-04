@@ -262,52 +262,52 @@ $I \subseteq D$, but what else are in $D$?
 3. $\\{\neg \phi \Rightarrow \neg \rho, \rho\\} \vdash \phi \in Z$, substitute: $\phi/s,\rho/r$, fire the rule, confirm $s \in D$
 4. $\\{\\} \vdash \rho \vee \neg \rho$, $\rho/t$, fire the rule, confirm $t \vee \neg t \in D$
 
-## Self assessment questions
+## Self-assessment questions
 
 **Question 1: Identifying Well-Formed Formulae (WFFs)**
-In a propositional logic system $\mathcal{L}(A, \Omega, Z, I)$, $A$ is the set of symbols and $\Omega$ is the set of connectives [1, 2]. Using the recursive definition where $\forall e \in A(\mathrm{isAWFF}(e))$ and $\forall i \in \{1..n\}(\mathrm{isAWFF}(\phi_i)) \wedge (c \in \Omega_n) \Rightarrow \mathrm{isAWFF}(c(\phi_1, \dots, \phi_n))$, determine if the following are WFFs given $A=\{p, q\}$ and $\Omega_2=\{\wedge, \Rightarrow\}$ [3]:
+In a propositional logic system $\mathcal{L}(A, \Omega, Z, I)$, $A$ is the set of symbols and $\Omega$ is the set of connectives. Using the recursive definition where $\forall e \in A(\mathrm{isAWFF}(e))$ and $\forall i \in \\{1..n\\}(\mathrm{isAWFF}(\phi_i)) \wedge (c \in \Omega_n) \Rightarrow \mathrm{isAWFF}(c(\phi_1, \dots, \phi_n))$, determine if the following are WFFs given $A=\\{p, q\\}$ and $\Omega_2=\\{\wedge, \Rightarrow\\}$:
 *   a) $p \Rightarrow (q \wedge p)$
 *   b) $\wedge(p, q, p)$
 *   c) $q \wedge \Rightarrow p$
 
 **Question 2: Components of the 4-Tuple**
-A propositional calculus is defined as a 4-tuple $\mathcal{L}(A, \Omega, Z, I)$ [1]. Briefly define the role of the set $Z$ and the set $I$, and explain why $I$ is considered a subset of the set of all possible WFFs $W$ [2, 4].
+A propositional calculus is defined as a 4-tuple $\mathcal{L}(A, \Omega, Z, I)$. Briefly define the role of the set $Z$ and the set $I$, and explain why $I$ is considered a subset of the set of all possible WFFs $W$.
 
 **Question 3: The Role of Schemata in Transformation Rules**
-In the set of transformation rules $Z$, we often use symbols like $\phi, \psi$, and $\rho$ [5]. According to the sources, why are these symbols called "schemata" or "wildcards," and how do they differ from the "variable" symbols found in the set $I$ [6]?
+In the set of transformation rules $Z$, we often use symbols like $\phi, \psi$, and $\rho$. According to the sources, why are these symbols called "schemata" or "wildcards," and how do they differ from the "variable" symbols found in the set $I$?
 
 **Question 4: Rule Matching and Firing**
-Given a transformation rule $t \in Z$ defined as $\{\phi, \phi \Rightarrow \psi\} \vdash \psi$, and a set of derivable formulae $D$ where $\{p, p \Rightarrow q\} \subseteq D$, describe the mechanical process of "substitution" required to "fire" the rule and add a new WFF to $D$ [7, 8].
+Given a transformation rule $t \in Z$ defined as $\\{\phi, \phi \Rightarrow \psi\\} \vdash \psi$, and a set of derivable formulae $D$ where $\\{p, p \Rightarrow q\\} \subseteq D$, describe the mechanical process of "substitution" required to "fire" the rule and add a new WFF to $D$.
 
 **Question 5: Three-Hop Derivation (Chain of Implication)**
 Consider the following logic system:
-*   $I = \{p, p \Rightarrow q, q \Rightarrow r, r \Rightarrow s\}$
-*   $Z = \{ \{\phi, \phi \Rightarrow \psi\} \vdash \psi \}$
-Using only the provided rule in $Z$, show the three "hops" (intermediate WFFs added to $D$) necessary to prove that $s \in D$ [8, 9].
+*   $I = \\{p, p \Rightarrow q, q \Rightarrow r, r \Rightarrow s\\}$
+*   $Z = \\{ \\{\phi, \phi \Rightarrow \psi\\} \vdash \psi \\}$
+Using only the provided rule in $Z$, show the three "hops" (intermediate WFFs added to $D$) necessary to prove that $s \in D$.
 
 **Question 6: Three-Hop Derivation (Conjunction and Modus Ponens)**
 In a system where:
-*   $I = \{p \wedge q, p \Rightarrow r, r \Rightarrow t\}$
-*   $Z = \{ \{\alpha \wedge \beta\} \vdash \alpha, \{\phi, \phi \Rightarrow \psi\} \vdash \psi \}$
-Demonstrate the three steps required to derive $t$ from the initial axioms in $I$ [9, 10].
+*   $I = \\{p \wedge q, p \Rightarrow r, r \Rightarrow t\\}$
+*   $Z = \\{ \\{\alpha \wedge \beta\\} \vdash \alpha, \\{\phi, \phi \Rightarrow \psi\\} \vdash \psi \\}$
+Demonstrate the three steps required to derive $t$ from the initial axioms in $I$.
 
 **Question 7: Three-Hop Derivation (DeMorgan’s Application)**
 Given the system:
-*   $I = \{\neg(p \vee q), r\}$
-*   $Z = \{ \{\neg(\phi \vee \psi)\} \vdash \neg \phi \wedge \neg \psi, \{\alpha \wedge \beta\} \vdash \alpha, \{\phi, \psi\} \vdash \phi \wedge \psi \}$
-Show the three hops required to establish the new derivable WFF: $\neg p \wedge r$ [10, 11].
+*   $I = \\{\neg(p \vee q), r\\}$
+*   $Z = \\{ \\{\neg(\phi \vee \psi)\\} \vdash \neg \phi \wedge \neg \psi, \\{\alpha \wedge \beta\\} \vdash \alpha, \\{\phi, \psi\\} \vdash \phi \wedge \psi \\}$
+Show the three hops required to establish the new derivable WFF: $\neg p \wedge r$.
 
 **Question 8: Four-Hop Challenge (Substitution and Modus Tollens)**
 Given the system:
-*   $I = \{p \wedge q, q \Rightarrow r, \neg s \Rightarrow \neg r, s \Rightarrow t\}$
-*   $Z = \{ \{\rho \wedge \phi\} \vdash \phi, \{\rho, \rho \Rightarrow \phi\} \vdash \phi, \{\neg \phi \Rightarrow \neg \rho, \rho\} \vdash \phi \}$
-Provide the sequence of four rule applications (hops) to prove $t \in D$ [9, 12].
+*   $I = \\{p \wedge q, q \Rightarrow r, \neg s \Rightarrow \neg r, s \Rightarrow t\\}$
+*   $Z = \\{ \\{\rho \wedge \phi\\} \vdash \phi, \\{\rho, \rho \Rightarrow \phi\\} \vdash \phi, \\{\neg \phi \Rightarrow \neg \rho, \rho\\} \vdash \phi \\}$
+Provide the sequence of four rule applications (hops) to prove $t \in D$.
 
 **Question 9: Syntactic vs. Semantic Entailment**
-Module 0297 distinguishes between $\vdash$ (syntactic entailment) and $\models$ (semantic entailment) [13]. Define both terms and explain which one refers to a "mechanical" operation that can be performed by a computer without understanding the "meaning" of the symbols [13, 14].
+Module 0297 distinguishes between $\vdash$ (syntactic entailment) and $\models$ (semantic entailment). Define both terms and explain which one refers to a "mechanical" operation that can be performed by a computer without understanding the "meaning" of the symbols.
 
 **Question 10: Soundness and Completeness**
-If a propositional logic system is described as 
+If a propositional logic system is described as "sound," what does this imply about the relationship between the transformations in $Z$ and the rules of Boolean algebra? Conversely, what would it mean for a system to be "complete"?
 
 ## Completeness and soundness
 
