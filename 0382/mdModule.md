@@ -68,7 +68,7 @@ $\left(\forall e \in X \left(f(e) \right) \right) = \left( \bigwedge_{e \in X} f
 
 Since we have introduced $d(X)$ at this point, we can also define other big operators based on iterating through elements in a set. *In general*, if $\square$ is an operator, and $i(\square)$ is the identity of the operator such that $\forall x(x \square i(\square) = x)$, then we can define the following:
 
-$\square_{e \in X} f(e) = (X=\\{\\}) ? i(\square) : f(d(x)) \square \left( \square_{e \in (X-\\{d(x)\\}} f(e) \right)$
+$\square_{e \in X} f(e) = (X=\\{\\}) ? i(\square) : f(d(X)) \square \left( \square_{e \in (X-\\{d(X)\\})} f(e) \right)$
 
 Let us apply this abstract big operator format to the big union. Union ($\cup$) has an identity of an empty set ($\{\}$). This means the following:
 
