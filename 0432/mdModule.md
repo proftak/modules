@@ -2,6 +2,15 @@
 title: "Module 0432: TTP assembly language basics"
 ---
 
+# About this module
+
+-   Prerequisites: [0352](../0352/mdModule.html)
+
+-   Objectives: This module describes the TTP architecture -- its registers, RAM,
+    ALU and the five flags -- the instruction set, how labels are
+    defined, and the stack and caller/callee conventions that make TTP
+    assembly compatible with C.
+
 # The general architecture
 
 This is a general description of TTP (Tak's Toy Processor). There are four instruction-addressable registers: A, B, C, and D. The registers are general-purpose registers, meaning that there are no restrictions on which instruction applies to which register. The program counter, PC, is not directly addressable in instructions.

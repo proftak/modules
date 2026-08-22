@@ -2,6 +2,14 @@
 title: "Module 0434: TTP programming"
 ---
 
+# About this module
+
+-   Prerequisites: [0352](../0352/mdModule.html)
+
+-   Objectives: This module describes the TTP architecture and its instruction set,
+    the byte directive for reserving and initializing storage, and how
+    labels are defined.
+
 # General description of the architecture and instructions
 
 A, B, C and D are the four instruction-addressable general-purpose registers. The program counter, PC, is not directly addressable in instructions.

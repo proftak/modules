@@ -1,0 +1,23 @@
+# Structural checks on the module library and the sequence files.
+# Catches drift that is otherwise invisible until a reader hits it:
+# a link to a module that does not exist, a prerequisite pointing at
+# nothing, or a sequence naming a module by a title it no longer has.
+
+name: validate
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check modules and sequences
+        run: python3 .github/scripts/validate_modules.py
