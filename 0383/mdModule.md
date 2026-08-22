@@ -3,6 +3,15 @@ title: "Module 0383: The Logisim Schematic of TTP"
 author: Tak Auyeung
 ---
 
+# About this module
+
+-   Prerequisites: [0299](../0299/mdModule.html), [0352](../0352/mdModule.html)
+
+-   Objectives: This module is a guide to reading the TTP Logisim schematic:
+    the register bank, the ALU, the controller and RAM, the registers that
+    are not software addressable, and how to work out what a microcode slice
+    does.
+
 # Main sections of TTP
 
 ![The overall circuit of TTP](ttp.png)

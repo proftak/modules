@@ -2,6 +2,14 @@
 title: "Module 0414: GitHub Markdown OER for students"
 ---
 
+# About this module
+
+-   Prerequisites:
+
+-   Objectives: This module explains what it means for course material to be
+    maintained as Markdown in a GitHub repository, what that offers
+    students, and how to read, edit and contribute to it.
+
 # What is this?
 
 While Tak has always used OER (Open Education Resource), the material is now being converted to Markdown, managed as a GitHub repository.

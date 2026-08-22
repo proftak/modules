@@ -1,6 +1,14 @@
 ---
-title: "Module 0394: Installing riverSpider"
+title: "Module 0394: Installing the Cygwin-based riverSpider"
 ---
+
+# About this module
+
+-   Prerequisites:
+
+-   Objectives: This module describes what riverSpider and Cygwin are, and
+    how to set up the portable Cygwin-based riverSpider so that the TTP tool
+    chain runs on Windows.
 
 # What is `riverSpider`?
 

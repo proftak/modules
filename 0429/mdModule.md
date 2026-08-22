@@ -2,6 +2,14 @@
 title: "Module 0429: Notetaking"
 ---
 
+# About this module
+
+-   Prerequisites:
+
+-   Objectives: This module explains why notetaking aids retention and
+    understanding, and presents a three-section structure (pre-lecture,
+    in-lecture and post-lecture) for taking and maintaining notes.
+
 # Why?
 
 When we learn from a lecture, a book, or a video, there is an illusion of grasping the material. At the moment of reading, watching, or conversing, the learner may feel everything is connected and hence understood. However, this is an illusion because the short-term memory is elusive and limited.

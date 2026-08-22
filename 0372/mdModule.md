@@ -3,6 +3,15 @@ title: "Module 0372: Caller-callee agreement"
 author: Tak Auyeung
 ---
 
+# About this module
+
+-   Prerequisites: [0304](../0304/mdModule.html)
+
+-   Objectives: This module specifies the agreement between a caller and a
+    callee on TTP: how the stack operates, the order in which arguments and
+    the return address are pushed, which side allocates and deallocates each
+    part of the call frame, and where a return value is left.
+
 # Stack operation specification
 
 Register D is the designated stack point. Although register D is a general-purpose register, it is designated by *convention* in order to specify the agreement between the caller and the callee.

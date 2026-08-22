@@ -3,6 +3,15 @@ title: "Module 0368: Tracking changes of a circuit"
 author: Tak Auyeung
 ---
 
+# About this module
+
+-   Prerequisites: [0281](../0281/mdModule.html)
+
+-   Objectives: This module presents a tabular method for tracking how a
+    change at the inputs of a circuit propagates, alternating node-
+    connectivity and propagational-delay rows until a steady state is
+    reached.
+
 * Terms:
   * Port: a port is a point of connection on a component, such as a gate, to a wire.
   * Node: a node is a collection of wires that are electrically connected.

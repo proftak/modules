@@ -1,5 +1,5 @@
 ---
-title: "Module 0281: Transistor to logic gate"
+title: "Module 0281: From physical devices to logic gates"
 ---
 
 # About this module

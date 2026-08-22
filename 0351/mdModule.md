@@ -2,6 +2,15 @@
 title: "Module 0351: Signed vs unsigned integer representation"
 ---
 
+# About this module
+
+-   Prerequisites: [0283](../0283/mdModule.html)
+
+-   Objectives: This module explains how a finite bit-width limits the
+    values an integer can represent, and how congruent modulo and two's
+    complement allow the same bit pattern to represent either a signed or an
+    unsigned value.
+
 # Finite bit-width
 
 Although the set of integers (math symbol $\mathbb{Z}$) has an infinite number of elements, the way an integer value is store in a computer has a finite bit-width. And with that, a finite range of values to be represented.
@@ -82,7 +91,7 @@ But why is this significant? Well, it is significant *specifically* in the case 
 
 It helps to use an example. Let $w=4$, and $v=3$. Then $-3 \equiv_{16} ((16-1)-3)+1$. The trick is how we look at $((16-1)-3)$. Obviously, it is the same as $15-3$. Let's example the base-2 representations: $15=1111_2$, and $3=0011_2$.
 
-In fact, it is true that for all $w>1$, the binary representation of $2^w-1$ consists of $w$ contiguous 1's! In the [binary subtraction module](../0284/mdModule.html), we learn that $t_{i+1}=b(x_i,y_i)+b(q_i,k_i)=!x_iy_i + !(x_i \oplus y_i)t_i$. If $x_i$ is guaranteed a 1, and the initial $t_0=0$, then we can prove (using proof by induction) that $t_i=0$ for the entire $t$ row.
+In fact, it is true that for all $w>1$, the binary representation of $2^w-1$ consists of $w$ contiguous 1's! In the [binary subtraction module](../0283/mdModule.html), we learn that $t_{i+1}=b(x_i,y_i)+b(q_i,k_i)=!x_iy_i + !(x_i \oplus y_i)t_i$. If $x_i$ is guaranteed a 1, and the initial $t_0=0$, then we can prove (using proof by induction) that $t_i=0$ for the entire $t$ row.
 
 In fact, for each digit in this specific case (when $x_i=1$), $q_i = x_i \oplus y_i= 1\oplus y_i= !y_i$, and since $t_i=0$, $d_i = q_i \oplus t_i = q_i \oplus 0 = q_i = !y_i$. You can proof that for any boolean value $k$, $k \oplus 0=k$, and $k \oplus 1=!k$
 
