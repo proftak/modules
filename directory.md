@@ -19,7 +19,7 @@
 * [Module 0293: Aleph null](./0293/mdModule.md)
 * [Module 0296: Floating point numbers](./0296/mdModule.md)
 * [Module 0297: Propositional Logic](./0297/mdModule.md)
-* [Module 0298: D-ﬂipﬂop and other basic memory devices](./0298/mdModule.md)
+* [Module 0298: D-flipflop and other basic memory devices](./0298/mdModule.md)
 * [Module 0299: Clocked circuits](./0299/mdModule.md)
 * [Module 0303: \"Compiling\" control structure to TTPASM](./0303/mdModule.md)
 * [Module 0304: Calling and returning from functions](./0304/mdModule.md)
