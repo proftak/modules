@@ -3,6 +3,14 @@ title: "Module 0374: Structures and arrays in TTPASM"
 author: Tak Auyeung
 ---
 
+# About this module
+
+-   Prerequisites: [0307](../0307/mdModule.html)
+
+-   Objectives: This module explains how arrays and structures are laid out
+    in memory, and how to access their elements and members in TTPASM using
+    label-defined offsets.
+
 # Arrays
 
 Most compilers allocate space for arrays in a straightforward way.  Let us consider the following declaration where `TYPEX` is the name of a type, and `BUFLEN` is a natural number.

@@ -2,6 +2,15 @@
 title: "Module 0352: Binary comparison"
 author: Tak Auyeung
 ---
+
+# About this module
+
+-   Prerequisites: [0351](../0351/mdModule.html)
+
+-   Objectives: This module shows how the borrow, sign and overflow flags
+    produced by a binary subtraction determine whether one value is less
+    than another, for both the signed and the unsigned interpretation.
+
 # Only "less-than" is needed
 
 Because all other comparisons can be translated to less-than, possibly with the use of some logical operators, we are only concerned with less than in this module.

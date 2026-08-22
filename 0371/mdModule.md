@@ -2,6 +2,14 @@
 title: "Module 0371: Tracing TTP code execution"
 ---
 
+# About this module
+
+-   Prerequisites: [0394](../0394/mdModule.html), [0432](../0432/mdModule.html)
+
+-   Objectives: This module describes how to assemble a TTPASM program, run
+    it under Logisim, and read the resulting execution trace, both step-by-
+    step and using riverSpider.
+
 # To start
 
 You will need your own copy of the assembler. You can clone [the assembler](https://docs.google.com/spreadsheets/d/1TcbAnH3Qj4xTizfTpMcDmXEq9CN_rVDQIa2BwSSEeXQ/edit?usp=sharing) by using the menu item "File \| Make a copy", be sure to specify the (destination) Folder as some folder in *your own* Google Drive.

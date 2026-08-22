@@ -2,6 +2,14 @@
 title: "Module 0283: Binary Addition and Subtraction"
 ---
 
+# About this module
+
+-   Prerequisites: [0281](../0281/mdModule.html), [0282](../0282/mdModule.html)
+
+-   Objectives: This module generalizes base-10 addition and subtraction to
+    base-2, and shows that the resulting single-digit sum, difference, carry
+    and borrow can all be implemented using logic gates.
+
 # Addition
 
 ## Base-10 Addition

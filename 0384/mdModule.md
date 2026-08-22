@@ -3,6 +3,14 @@ title: "Module 0384: TTP conditional jumps"
 author: Tak Auyeung
 ---
 
+# About this module
+
+-   Prerequisites: [0383](../0383/mdModule.html)
+
+-   Objectives: This module explains how a conditional jump instruction uses
+    one bit of the flags register to select what is routed to the program
+    counter, and why a jump-if-flag-is-zero instruction is not necessary.
+
 # Description
 
 A conditional jump is a jump instruction, like `jmpi` and the corresponding register-based instruction `jmp`, but only conditionally. A conditional jump instruction uses a specific bit in the `flags` register to determine whether to jump or not.

@@ -1,7 +1,16 @@
 ---
-title: "Module 0364: An example of how to understand something"
+title: "Module 0364: A worked example of understanding a technical paper"
 author: Tak Auyeung
 ---
+
+# About this module
+
+-   Prerequisites:
+
+-   Objectives: This module demonstrates a process for understanding an
+    unfamiliar technical document, using a quantum computing paper as the
+    worked example. The general points are collected in the boxes on the
+    right and can be read on their own.
 
 # Why do I want to read this article?
 
