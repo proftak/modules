@@ -4,7 +4,7 @@ title: "Module 0307: Parameters and local variables"
 
 # About this module
 
--   Prerequisites: [0304](../0304/mdModule.html), [0306](../0306/mdModule.md)
+-   Prerequisites: [0304](../0304/mdModule.html)
 
 -   Objectives: This module discusses how parameters are passed in
     assembly language code in a way that is compatible with C code.

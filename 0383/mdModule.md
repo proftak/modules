@@ -1,5 +1,5 @@
 ---
-title: "Module 0383: TTP"
+title: "Module 0383: The Logisim Schematic of TTP"
 author: Tak Auyeung
 ---
 

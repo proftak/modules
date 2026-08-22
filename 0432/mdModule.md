@@ -1,5 +1,5 @@
 ---
-title: "Module 0432: A general description of TTP"
+title: "Module 0432: TTP assembly language basics"
 ---
 
 # The general architecture
