@@ -1,5 +1,5 @@
 ---
-title: "Module 0298: D-ﬂipﬂop and other basic memory devices"
+title: "Module 0298: D-flipflop and other basic memory devices"
 ---
 
 # About this module

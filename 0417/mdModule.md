@@ -2,11 +2,14 @@
 title: "Module 0417: Time Budgeting and Management for College Students"
 ---
 
-## What is this?
+# About this module
 
-This short article/module introduces time budgeting and management in the context of college students.
+-   Prerequisites:
 
-With time budgeting and management, a student can minimize, not necessarily totally eliminate, missing deadlines and/or forgetting important dates. 
+-   Objectives: This module introduces time budgeting and management in
+    the context of college students. With them, a student can minimize,
+    though not necessarily eliminate, missed deadlines and forgotten
+    dates.
 
 ## Time budgeting
 
