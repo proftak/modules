@@ -1,4 +1,4 @@
-{% assign semester="Spring 2026" %}
+{% assign semester="Fall 2026" %}
 {% include_relative officehour.md %}
 {% assign courseCode="11908" %}
 {% assign classInfo="* Meetings: M W 1030-1320 in STEM 306\n* Drop date with 'W': 2026/11/17\n* Units: 4 (3 lecture units+1 lab units)\n* number of hours: 216\n" %}
