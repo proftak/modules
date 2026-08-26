@@ -43,7 +43,7 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Concept: union.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
   * Symbol: $\cup$
-  * Example: \mathbb{Z} \cup \mathbb{R} = \mathbb{R}$
+  * Example: $\mathbb{Z} \cup \mathbb{R} = \mathbb{R}$
 * $\forall e((e \in (\boxed{X - Y})) \Leftrightarrow ((e \in X) \wedge \neg(e \in Y)))$ is *definitive*. $X - Y$ is the *difference* of the sets $X$ and $Y$.
   * Concept: difference.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
