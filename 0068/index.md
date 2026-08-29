@@ -8,8 +8,7 @@ full-width: true
 -   Prerequisites: [0382](../0382), [0308](../0308), [0035](../0035)
 
 - Objectives: This module introduces the concept of recursive
-  definitions and algorithms. It also discusses how we can prove the
-  correctness of recursive algorithms by induction.
+  definitions and algorithms.
 
 # What is recursion?
 
