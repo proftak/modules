@@ -136,8 +136,7 @@ time complexity of $\Theta(n^2)$.
 
 # Binary search
 
-We explored binary search in module [0085](../0085). We already know
-that its time complexity is $\Theta(\log(n))$, where $n$ is the number
+Binary search has a time complexity of $\Theta(\log(n))$, where $n$ is the number
 of elements in the array being searched.
 
 The pattern of the time complexity of binary search is
@@ -150,9 +149,7 @@ complexity of $\Theta(\log(n))$.
 
 Merge sort and the average case of quick sort have a complexity of
 $T(n) \in \Theta(n\log(n))$, where $n$ is the number of elements in the
-array being sorted. We proved this in module [0079](../0079) for the
-iterative version of merge sort. We also proved this in module
-[0087](../0087) for the recursive version of quicksort.
+array being sorted. 
 
 The general pattern of algorithms with this kind of time complexity is
 $T(n) = k_1 + k_2n + T(rn) + T((1-r)n)$ ($0.5 \le r < 1$).
@@ -188,7 +185,7 @@ ${i \choose j}$ of those parts. Consequently, the total of all the parts
 at level $i+1$ is $x = \sum_{j=0}^{i} {i \choose j}r^{j}(1-r)^{i-j}$. We
 know that $x = 1$ because the formula is the same as the total
 probabilities of a binomial distribution with a success ratio of $r$ and
-$i$ trials! You can refer to module [0062](../0062) for a more detailed
+$i$ trials! You can refer to module [0308](../0308) for a more detailed
 discussion of the binomial distribution.
 
 This proves that the total number of operations per level of the
