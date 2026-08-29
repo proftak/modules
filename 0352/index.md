@@ -5,7 +5,7 @@ author: Tak Auyeung
 
 # About this module
 
--   Prerequisites: [0351](../0351)
+-   Prerequisites: [0283](../0283), [0351](../0351)
 
 -   Objectives: This module shows how the borrow, sign and overflow flags
     produced by a binary subtraction determine whether one value is less

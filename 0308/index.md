@@ -4,7 +4,7 @@ title: "Module 0308: Discrete Probability"
 
 # About this module
 
--   Prerequisites: [0305](../0305)
+-   Prerequisites: [0443](../0443), [0382](../0382), [0289](../0289), [0293](../0293), [0305](../0305)
 
 -   Objectives: This module explores discrete probabilities.
 

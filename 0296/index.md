@@ -4,7 +4,7 @@ title: "Module 0296: Floating point numbers"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0282](../0282), [0351](../0351)
 
 -   Objectives: This module looks into the IEEE floating point number
     representation, the parsing and conversion there of.

@@ -4,7 +4,7 @@ title: "Module 0351: Signed vs unsigned integer representation"
 
 # About this module
 
--   Prerequisites: [0283](../0283)
+-   Prerequisites: [0282](../0282), [0283](../0283)
 
 -   Objectives: This module explains how a finite bit-width limits the
     values an integer can represent, and how congruent modulo and two's

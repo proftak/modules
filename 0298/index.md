@@ -4,7 +4,7 @@ title: "Module 0298: D-flipflop and other basic memory devices"
 
 # About this module
 
--   Prerequisites: [Module 0281](../0281)
+-   Prerequisites: [0281](../0281), [0368](../0368)
 
 -   Objectives: This module explores the most basic memory devices
     implemented in logic gates, including the flexible D-flipflop.

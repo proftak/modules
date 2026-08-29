@@ -5,7 +5,7 @@ author: Tak Auyeung
 
 # About this module
 
--   Prerequisites: [0299](../0299), [0352](../0352)
+-   Prerequisites: [0283](../0283), [0352](../0352), [0298](../0298), [0299](../0299), [0432](../0432)
 
 -   Objectives: This module is a guide to reading the TTP Logisim schematic:
     the register bank, the ALU, the controller and RAM, the registers that

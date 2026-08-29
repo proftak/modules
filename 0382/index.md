@@ -2,6 +2,10 @@
 title: "Module 0382: The recursive definition of summation and other \"big-operators\""
 ---
 
+# About this module
+
+-   Prerequisites: [0279](../0279), [0443](../0443)
+
 # Summation
 
 The sigma Greek letter is often used to denote summation. For example, $\sum_{i=2}^{5} i^2=2^2+3^2+4^2+5^2=4+9+16+25=54$. In general, the sigma (summation) notation is $\sum_{i=b}^{e} f(i)$ where $i$ is the index variable, $b$ is the start integer value of $i$, $e$ is the inclusive end value of $i$, and $f(i)$ is a function of $i$ where the value of the function is being added.

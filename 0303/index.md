@@ -7,7 +7,7 @@ kramdown:
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0352](../0352), [0432](../0432), [0384](../0384)
 
 -   Objectives: This module explains how C control structures are
     compiled to assembly language code.

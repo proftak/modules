@@ -4,7 +4,7 @@ title: "Module 0414: GitHub Markdown OER for students"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0355](../0355)
 
 -   Objectives: This module explains what it means for course material to be
     maintained as Markdown in a GitHub repository, what that offers

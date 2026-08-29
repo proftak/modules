@@ -5,7 +5,7 @@ author: Tak Auyeung
 
 # About this module
 
--   Prerequisites: [0383](../0383)
+-   Prerequisites: [0432](../0432), [0383](../0383)
 
 -   Objectives: This module explains how a conditional jump instruction uses
     one bit of the flags register to select what is routed to the program

@@ -4,7 +4,7 @@ title: "Module 0282: Values, Numbers and Bases"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0281](../0281)
 
 -   Objectives: This modules explores something that we seem to be
     familiar with: numbers.

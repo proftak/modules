@@ -4,7 +4,7 @@ title: "Module 0090: Categories of Time Complexity"
 
 # About this module
 
-- Prerequisites: [0082](../0082), [0068](../0068)
+-   Prerequisites: [0382](../0382), [0305](../0305), [0308](../0308), [0082](../0082), [0068](../0068)
 
 - Objectives: This module explores various common categories of time
   complexities.

@@ -4,7 +4,7 @@ title: "Module 0082: Big and little Omicron, Omega and Theta"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0279](../0279), [0443](../0443), [0293](../0293), [0312](../0312)
 
 -   Objectives: This module discusses asymptotic notations in the
     context of algorithm time complexity.

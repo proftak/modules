@@ -5,7 +5,7 @@ author: Tak Auyeung
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0355](../0355)
 
 -   Objectives: This module demonstrates a process for understanding an
     unfamiliar technical document, using a quantum computing paper as the

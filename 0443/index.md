@@ -2,11 +2,12 @@
 title: "Module 0443: A more hair-splitting way to define set notations"
 ---
 
-# Prerequisites
+# About this module
 
-* [Module 0279: boolean operators](https://auyeunt.github.io/modules/0279)
-* [Module 0440: the syntax to describe syntax](https://auyeunt.github.io/modules/0440)
-* A general understanding of and the ability to differentiate the following words/phrases: "all," "every," and "at least one."
+-   Prerequisites: [0279](../0279), [0440](../0440)
+
+-   Also assumed: a general understanding of and the ability to differentiate
+    the following words/phrases: "all," "every," and "at least one."
 
 # Operators and notations
 

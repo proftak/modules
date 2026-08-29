@@ -4,7 +4,7 @@ title: "Module 0315: Predicate Calculus via Prolog"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0279](../0279), [0443](../0443), [0382](../0382), [0289](../0289), [0297](../0297)
 
 -   Objectives: This module introduces predicate calulus by using
     examples of using Prolog.

@@ -4,7 +4,7 @@ title: "Module 0299: Clocked circuits"
 
 # About this module
 
--   Prerequisites: [0298](../0298)
+-   Prerequisites: [0283](../0283), [0368](../0368), [0298](../0298)
 
 -   Objectives: This module discusses how simple clocked circuits work.
 
@@ -72,12 +72,6 @@ ignored and the internal state of a register is not altered.
 
 This is a circuit that increments the value of the register when the
 clock ticks.
-
-<script>
-    let newElement = document.createElement('div')
-    newElement.innerHTML = "ABC"
-    insertInplace(newElement)
-</script>
 
 Note how the adder is "always" outputting a value that is one more than
 the output of the register. "Always" is quoted because there is a slight

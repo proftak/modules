@@ -4,7 +4,7 @@ title: "Module 0304: Calling and returning from functions"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0432](../0432), [0383](../0383)
 
 -   Objectives: This module explains how to call and return from a
     subroutine using C and TTP assembly language.

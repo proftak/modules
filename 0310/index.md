@@ -4,7 +4,7 @@ title: "Module 0310: Graph search algorithms"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0279](../0279), [0443](../0443), [0289](../0289), [0293](../0293)
 
 -   Objectives: This module explores the concept of graphs and graph
     related algorithms.

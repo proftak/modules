@@ -4,7 +4,7 @@ title: "Module 0371: Tracing TTP code execution"
 
 # About this module
 
--   Prerequisites: [0394](../0394), [0432](../0432)
+-   Prerequisites: [0394](../0394), [0432](../0432), [0383](../0383)
 
 -   Objectives: This module describes how to assemble a TTPASM program, run
     it under Logisim, and read the resulting execution trace, both step-by-

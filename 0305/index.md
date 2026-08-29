@@ -4,7 +4,7 @@ title: "Module 0305: Counting"
 
 # About this module
 
--   Prerequisites:
+-   Prerequisites: [0443](../0443), [0382](../0382), [0289](../0289)
 
 -   Objectives: This module discusses the matter of counting possible
     outcomes in experiments.

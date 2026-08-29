@@ -4,7 +4,7 @@ title: "Module 0432: TTP assembly language basics"
 
 # About this module
 
--   Prerequisites: [0352](../0352)
+-   Prerequisites: [0352](../0352), [0298](../0298), [0299](../0299)
 
 -   Objectives: This module describes the TTP architecture -- its registers, RAM,
     ALU and the five flags -- the instruction set, how labels are

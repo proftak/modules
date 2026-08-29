@@ -4,7 +4,7 @@ title: "Module 0290: Injection, Surjection and Bijection"
 
 # About this module
 
--   Prerequisites: [0289](../0289)
+-   Prerequisites: [0279](../0279), [0443](../0443), [0289](../0289)
 
 -   Objectives: This module explores categories of functions known as
     injection, surjection, and bijection, as well as the implications of
