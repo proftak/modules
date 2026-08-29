@@ -4,7 +4,7 @@ title: "Module 0289: Functions as Sets"
 
 # About this module
 
--   Prerequisites: [0288](../0288)
+-   Prerequisites: [0443](../0443)
 
 -   Objectives: This module explores how a "function" can be seen as a
     set.
