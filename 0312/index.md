@@ -4,7 +4,7 @@ title: "Module 0312: Relations"
 
 # About this module
 
--   Prerequisites: [0280](../0280),[0285](../0285)
+-   Prerequisites: [0443](../0443)
 
 -   Objectives: This module introduces relations and the types of
     relations in mathematics.
