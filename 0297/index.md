@@ -4,8 +4,7 @@ title: "Module 0297: Propositional Logic"
 
 # About this module
 
--   Prerequisites: [0280](../0280), [0285](../0285), [0288](../0288),
-    [0289](../0289)
+-   Prerequisites: [0443](../0443), [0289](../0289)
 
 -   Objectives: This module explores propositional logic, specifically
     its connection and application in Computer Science.
