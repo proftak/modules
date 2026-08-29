@@ -4,7 +4,7 @@ title: "Module 0293: Aleph null"
 
 # About this module
 
--   Prerequisites: [0290](../0290), [0280](../0280)
+-   Prerequisites: [0290](../0290), [0443](../0443)
 
 -   Objectives: This module discusses the special cardinality known as
     $\aleph_0$ and examples of how to map elements of one set to
