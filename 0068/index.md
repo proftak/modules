@@ -5,7 +5,7 @@ full-width: true
 
 # About this module
 
-- Prerequisites: [0035](../0035}
+- Prerequisites: [0035](../0035)
 
 - Objectives: This module introduces the concept of recursive
   definitions and algorithms. It also discusses how we can prove the
