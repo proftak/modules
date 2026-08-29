@@ -12,7 +12,7 @@ title: "Module 0289: Functions as Sets"
 # Tuples
 
 In order to describe a function as a set, we need to utilize the concept
-of tuples. In module [0280](../0280), we discussed how each element of
+of tuples. In module [0443](../0443), we discussed how each element of
 the Cartesian product of two sets is a 2-tuple.
 
 A tuple, in general, is an ordered container where its components are
