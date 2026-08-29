@@ -34,6 +34,9 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Concept level: an abstract concept that is needed to define set notations.
   * Symbol: $\exists$
   * Example: $\exists i(i \in \mathbb{Z} \wedge i>0 \wedge i<1)$ is false.
+* Given two sets, $X$ and $Y$, their equality is established as follows: $(X=Y) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (e \in Y))$
+  * Concept: two sets are equal if they contain the same elements
+  * Concept level: the equality of sets makes it possible to have a set nested in another set as an element
 * $\forall e((e \in (\boxed{X \cap Y})) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
   * Concept: intersection.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
@@ -67,6 +70,8 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Given the syntax described, the ordering of elements in this notation is not important. As an example, $\\{a,b,c\\} = \\{a,c,b\\} = \\{b,a,c\\} = \\{b,c,a\\} = \\{c,a,b\\} = \\{c,b,a\\}$.
   * $\boxed{\\{\\}}$ is known as the empty set.
   * Membership in a set must be unique. This means no two elements in a set can be equal to each other.
+* A set can be an element in *another* set
+  * Example: $\\{a, b\\} \in \\{\\{a, b\\}\\}$ is true, $\\{a, b\\} \\in \\{a, b\\}$ is false.
 * $\boxed{\|X\|}$ is the cardinality of the set $X$, the cardinality of a set is *similar* to the number of elements in the set.
 * $\boxed{\forall e \in X(P(e))}$ is an abbreviation of $\forall e((e \in X) \Rightarrow (P(e)))$, it says "for every element $e$ in set $X$, $P(e)$ is true."
   * Concept: universal qualifier with a filter.
@@ -130,6 +135,5 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 	* $\\{a,b,c\\}$
 * $\mathbb{P}(S)$ is called the "power set of the set $S$", it consists all subsets of $S$.
 * $\|\mathbb{P}(S)\| = 2^{\|S\|}$
-* ~~TODO: add section on nested containment~~ (completed)
 * $\\{a,b\\} \times \\{1,2,3\\} = \\{ (a,1), (a,2), (a,3), (b,1), (b,2), (b,3)  \\}$
 	* $(Tak, Iraj) \in \\{a,b\\} \times \\{1,2,3\\}$ is false
