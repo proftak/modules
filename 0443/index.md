@@ -37,6 +37,9 @@ title: "Module 0443: A more hair-splitting way to define set notations"
 * Given two sets, $X$ and $Y$, their equality is established as follows: $(X=Y) \Leftrightarrow (\forall e((e \in X) \Leftrightarrow (e \in Y))$
   * Concept: two sets are equal if they contain the same elements
   * Concept level: the equality of sets makes it possible to have a set nested in another set as an element
+* $\neg \forall e(P(e)) = \exists e(\neg P(e))$ and $\neg \exists e(P(e)) = \forall e(\neg P(e))$
+  * Concept: distribute the negation on a quantifier into the quantified condition
+  * Concept level: foundational for proofs
 * $\forall e((e \in (\boxed{X \cap Y})) \Leftrightarrow ((e \in X) \wedge (e \in Y)))$ is *definitive*, $X \cap Y$ is the *intersection* of the sets $X$ and $Y$. The term "definitive" means an expression true by definition.
   * Concept: intersection.
   * Concept level: a basic set operator that returns a set. Dependent on boolean operators, element of, and quantifiers.
@@ -74,11 +77,11 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Example: $\\{a, b\\} \in \\{\\{a, b\\}\\}$ is true, $\\{a, b\\} \\in \\{a, b\\}$ is false.
 * $\boxed{\|X\|}$ is the cardinality of the set $X$, the cardinality of a set is *similar* to the number of elements in the set.
 * $\boxed{\forall e \in X(P(e))}$ is an abbreviation of $\forall e((e \in X) \Rightarrow (P(e)))$, it says "for every element $e$ in set $X$, $P(e)$ is true."
-  * Concept: universal qualifier with a filter.
+  * Concept: universal qualifier with a filter. A universally quantified statement is true only if the quantified condition is true for all values. $(e \in X)$ is true only for $e$ being an element in $X$. This makes the implication true for all elements that are not in $X$, achieving the filtering effect of a universal quantifier.
   * Concept level: an abbreviation to improve notational conciseness.
   * Example: $\forall i \in \mathbb{Z}(i \in \mathbb{R})$ is true, relate this to the earlier example of the universal quantifier.
 * $\boxed{\exists e \in X(P(e))}$ is an abbreviation of $\exists e((e \in X) \wedge (P(e)))$, it says "there is at least one element $e$ in set $X$ such that $P(e)$ is true."
-  * Concept: existential quantifier with a filter
+  * Concept: existential quantifier with a filter. An existentially quantified statement is false only if the quantified condition is false for all values. $e \in X$ is false only for $e$ *not* being in $X$. This makes the conjunction false for all elements that are not in $X$, achieving the filter effect of an existential quantifier.
   * Concept level: an abbreviation with a filter.
   * Example: $\exists i \in \mathbb{Z}((i>0) \wedge (i<1))$ is false, relate this to the earlier example of the existential quantifier
 * The general BNF of a tuple is as follows: **(** [ *`element`* \{ **,** *`element`* \}*] **)**. The ordering of values in a tuple is significant.
