@@ -1,6 +1,7 @@
 * [Module 0012: Variables, assignment statements and sequences](./0012/index.md)
 * [Module 0013: Conditions and conditional statements](./0013/index.md)
 * [Module 0016: Loops](./0016/index.md)
+* [Module 0035: Proof by Induction](./0035/index.md)
 * [Module 0040: Nested statements](./0040/index.md)
 * [Module 0046: Pre and post conditions](./0046/index.md)
 * [Module 0054: Introduction to Arrays](./0054/index.md)
