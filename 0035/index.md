@@ -4,7 +4,7 @@ title: "Module 0035: Proof by Induction"
 
 # About this module
 
-- Prerequisites: [0032](../0032)
+- Prerequisites:
 
 - Objectives: This module introduces proof by induction.
 
