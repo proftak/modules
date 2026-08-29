@@ -1,3 +1,8 @@
+---
+title: "Module 0068: Recursive definitions and algorithms"
+full-width: true
+---
+
 # About this module
 
 - Prerequisites: [0035](../0035), [0058](../0058)
