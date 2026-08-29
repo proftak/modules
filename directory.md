@@ -9,6 +9,7 @@
 * [Module 0065: Subroutines (functions) control flow](./0065/index.md)
 * [Module 0068: Recursive definitions and algorithms](./0068/index.md)
 * [Module 0082: Big and little Omicron, Omega and Theta](./0082/index.md)
+* [Module 0090: Categories of Time Complexity](./0090/index.md)
 * [Module 0279: Boolean Operator](./0279/index.md)
 * [Module 0280: Basic Set Notations](./0280/index.md)
 * [Module 0281: From physical devices to logic gates](./0281/index.md)
