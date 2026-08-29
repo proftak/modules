@@ -6,6 +6,7 @@
 * [Module 0054: Introduction to Arrays](./0054/index.md)
 * [Module 0060: Algorithms to search for an item in an array](./0060/index.md)
 * [Module 0065: Subroutines (functions) control flow](./0065/index.md)
+* [Module 0068: Recursive definitions and algorithms](./0068/index.md)
 * [Module 0082: Big and little Omicron, Omega and Theta](./0082/index.md)
 * [Module 0279: Boolean Operator](./0279/index.md)
 * [Module 0280: Basic Set Notations](./0280/index.md)
