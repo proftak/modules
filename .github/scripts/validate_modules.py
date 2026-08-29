@@ -15,9 +15,11 @@ MODULE_SRC = sorted(list(ROOT.glob("[0-9][0-9][0-9][0-9]/mdModule.md"))
                     + list(ROOT.glob("[0-9][0-9][0-9][0-9]/index.md")))
 SEQUENCES = sorted(ROOT.glob("sequences/*.md"))
 
-# ../NNNN/name.html  ->  NNNN/name.md
-REL = re.compile(r"\.\./(\d{4})/([A-Za-z0-9_-]+)\.html")
-LINK = re.compile(r"\[([^\]]+)\]\(\.\./(\d{4})/([A-Za-z0-9_-]+)\.html\)")
+# Module links are written as ../NNNN (the directory, served by its index.html).
+# The older ../NNNN/name.html form is still recognised so the check keeps
+# working on any file that has not been converted yet.
+REL = re.compile(r"\.\./(\d{4})(?:/([A-Za-z0-9_-]+)\.html)?")
+LINK = re.compile(r"\[([^\]]+)\]\(\.\./(\d{4})(?:/([A-Za-z0-9_-]+)\.html)?(?:#[^)]*)?\)")
 TITLE = re.compile(r'^title:\s*"(.*)"\s*$', re.M)
 
 problems = []
@@ -37,15 +39,27 @@ def title_of(mod_dir):
     return None
 
 
-def target_exists(num, stem):
-    return (ROOT / num / f"{stem}.md").exists()
+def module_src(num, stem):
+    """Source file a module link points at, or None if there is none.
+
+    A bare ../NNNN link resolves to whichever index/mdModule source the
+    directory actually holds.
+    """
+    stems = (stem,) if stem else ("index", "mdModule")
+    for s in stems:
+        p = ROOT / num / f"{s}.md"
+        if p.exists():
+            return p
+    return None
 
 
 # 1. every relative module link resolves
 for path in MODULE_SRC + SEQUENCES:
     for num, stem in REL.findall(path.read_text(encoding="utf-8")):
-        if not target_exists(num, stem):
-            note(path, f"link to ../{num}/{stem}.html but {num}/{stem}.md does not exist")
+        if module_src(num, stem) is None:
+            target = f"../{num}/{stem}.html" if stem else f"../{num}"
+            want = f"{num}/{stem}.md" if stem else f"{num}/index.md"
+            note(path, f"link to {target} but {want} does not exist")
 
 # 2. every Prerequisites entry resolves and names a real module
 for path in MODULE_SRC:
@@ -64,8 +78,8 @@ for path in MODULE_SRC:
 # 3. sequences: targets must exist, carry an About block, and be named correctly
 for path in SEQUENCES:
     for text_label, num, stem in LINK.findall(path.read_text(encoding="utf-8")):
-        src = ROOT / num / f"{stem}.md"
-        if not src.exists():
+        src = module_src(num, stem)
+        if src is None:
             continue  # already reported by check 1
         body = src.read_text(encoding="utf-8")
         if "# About this module" not in body:

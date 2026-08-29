@@ -1,6 +1,6 @@
 # modules
 
-First of all, all the content pages, including this one, are supposed to be [rendered by Jekyll](https://proftak.github.io/modules). If the URL on your browser is `https://github.com/...`, click the link in the previous sentence!
+First of all, all the content pages, including this one, are supposed to be [rendered by Jekyll](https://auyeunt.github.io/modules). If the URL on your browser is `https://github.com/...`, click the link in the previous sentence!
 
 This is a `GitHub` repository that hosts Prof. Tak's instructional content. The majority of the content is located at [his site](http://dtkb.org/~auyeunt/teaches/modules). However, some newer content is being developed here. Some older content is being converted into GitHub Markdown format.
 

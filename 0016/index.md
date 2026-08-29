@@ -4,7 +4,7 @@ title: "Module 0016: Loops"
 
 # About this module
 
--   Prerequisites: [0013](../0013/mdModule.html)
+-   Prerequisites: [0013](../0013)
 -   Objectives: This module discusses various iterative control
     structures.
 

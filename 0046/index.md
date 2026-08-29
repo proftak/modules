@@ -4,7 +4,7 @@ title: "Module 0046: Pre and post conditions"
 
 # About this module
 
--   Prerequisites: [0012](../0012/mdModule.html), [0013](../0013/mdModule.html)
+-   Prerequisites: [0012](../0012), [0013](../0013)
 
 -   Objectives: This module introduces the concepts of pre and post
     conditions for various types of statements.

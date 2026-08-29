@@ -102,7 +102,7 @@ Your final response must be accurate and truthful without any hallucinations.
 
 **Step 1**
 
-This can be something terse, dense, and symbol-rich like [this module that explains notations related to mathematical sets](https://github.com/proftak/modules/blob/main/0443/mdModule.md).
+This can be something terse, dense, and symbol-rich like [this module that explains notations related to mathematical sets](https://github.com/auyeunt/modules/blob/main/0443/index.md).
 
 **Step 2** 
 

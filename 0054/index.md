@@ -4,7 +4,7 @@ title: "Module 0054: Introduction to Arrays"
 
 # About this module
 
--   Prerequisites: [0012](../0012/mdModule.html), [0013](../0013/mdModule.html), [0016](../0016)
+-   Prerequisites: [0012](../0012), [0013](../0013), [0016](../0016)
 
 -   Objectives: This module introduces the concept of arrays, as well as
     some simple algorithms that work on arrays.

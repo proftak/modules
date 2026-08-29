@@ -4,7 +4,7 @@ title: "Module 0040: Nested statements"
 
 # About this module
 
--   Prerequisites: [0012](../0012/mdModule.html), [0013](../0013/mdModule.html), [0016](../0016)
+-   Prerequisites: [0012](../0012), [0013](../0013), [0016](../0016)
 -   Objectives: This module introduces the use of nested statements in
     which one or more statements are embedded into another statement.
 
