@@ -76,6 +76,9 @@ title: "Module 0443: A more hair-splitting way to define set notations"
   * Membership in a set must be unique. This means no two elements in a set can be equal to each other.
 * A set can be an element in *another* set
   * Example: $\\{a, b\\} \in \\{\\{a, b\\}\\}$ is true, $\\{a, b\\} \\in \\{a, b\\}$ is false.
+* A power set of a set $S$ is defined as: $\forall e(e \in \boxed{\mathcal{P}(S)}) \Rightleftarrow (e \subseteq S)$
+  * Concept: a power set of a set $S$ is the set of all subsets of $S$
+  * Concept level: this is a concept built upon the concept of a set, subset, and the fact that a set can be an element of another set
 * $\boxed{\|X\|}$ is the cardinality of the set $X$, the cardinality of a set is *similar* to the number of elements in the set.
 * $\boxed{\forall e \in X(P(e))}$ is an abbreviation of $\forall e((e \in X) \Rightarrow (P(e)))$, it says "for every element $e$ in set $X$, $P(e)$ is true."
   * Concept: universal qualifier with a filter. A universally quantified statement is true only if the quantified condition is true for all values. $(e \in X)$ is true only for $e$ being an element in $X$. This makes the implication true for all elements that are not in $X$, achieving the filtering effect of a universal quantifier.
